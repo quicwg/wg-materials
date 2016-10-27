@@ -51,3 +51,6 @@ Discuss the suitability of the input documents for adoption by the WG for its ch
 We will also hear feedback from early implementers of the protocol.
 
 
+### Parking Lot ("if time permits")
+
+* Brian Trammel, [draft-trammell-plus-statefulness](https://datatracker.ietf.org/doc/draft-trammell-plus-statefulness/) and how it might apply to QUIC (5 min talk, 10 min discussion)
