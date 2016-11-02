@@ -61,7 +61,7 @@ commits will only be responded to with best effort, and may not be seen.
 
 Issues will be labeled by the Chairs as either `editorial` or `design`.
 
-* **Design** issues require discussion and consensus in the Working Group. This discussion can happen both in the issue and on the [Working Group mailing list](https://lists.w3.org/Archives/Public/ietf-http-wg/), as outlined below. 
+* **Design** issues require discussion and consensus in the Working Group. This discussion can happen both in the issue and on the [Working Group mailing list](https://www.ietf.org/mailman/listinfo/quic), as outlined below. 
 
 * **Editorial** issues can be closed by the editor(s) without consensus or notification. Typically, any discussion will take place on the issue itself.
 
