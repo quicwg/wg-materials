@@ -2,7 +2,7 @@
 
 * [Meeting chat](xmpp:quic@jabber.ietf.org?join)
 * [Meetecho](http://www.meetecho.com/ietf97/quic) remote participation
-* [Minutes](http://etherpad.tools.ietf.org:9000/p/ietf97quic)
+* [Minutes](hhttp://etherpad.tools.ietf.org:9000/p/notes-ietf-97-quic)
 
 
 ## Tuesday, 15 November 2016
