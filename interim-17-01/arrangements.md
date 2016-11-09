@@ -40,7 +40,7 @@ to get from Narita to the meeting location is to take the [Narita
 Express](http://www.jreast.co.jp/e/nex/) train, a one-hour trip that costs approximately ¥2,800.
 
 [HND](http://www.haneda-airport.jp/inter/en/) is Haneda International Airport, which is much closer
-to Tokyo, but not quite as many International flights. There are a variety of ways to get from
+to Tokyo, but has slightly fewer international flights. There are a variety of ways to get from
 Haneda to the meeting location, but the most direct is to take the [Keikyu-Kuko
 Line](http://www.haneda-tokyo-access.com/en/) (which changes into the Asakusa Line) to Takaracho
 Station, about a 35 minute train ride.
