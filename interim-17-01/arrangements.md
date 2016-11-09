@@ -25,10 +25,10 @@ See [the agenda](agenda.md) for full details.
 [Akamai](https://akamai.com/) is hosting our meeting at their
 offices in Tokyo, Japan ([map](https://goo.gl/maps/8cs81Mp1yJx)).
 
-    Akamai Tokyo
-    6F Kyobashi Trust Tower 
-    2 1 3 Kyobashi, Chuo ku 
-    Tokyo 104 0031 
+    Akamai Technologies Tokyo Office
+    6F, Kyobashi Trust Tower
+    2-1-3 Kyobashi, Chuo-ku
+    Tokyo 104-0031
 
 
 ### Transportation
