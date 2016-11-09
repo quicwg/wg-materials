@@ -6,10 +6,10 @@ hosted by Akamai in Tokyo, Japan.
 
 ### Register
 
-To aid planning, please [register your intended
-participation](http://doodle.com/poll/ma78wgcecbcin4fz) (remote or in person), as soon as possible.
+To aid planning, please **[register your intended
+participation](http://doodle.com/poll/ma78wgcecbcin4fz)** (remote or in person) as soon as possible.
 Registration will close two weeks before the Interim, and space may not be available for those who
-do note register.
+do not register.
 
 
 ### Schedule and Agenda
@@ -22,8 +22,8 @@ See [the agenda](agenda.md) for full details.
 
 ### Meeting Location
 
-[Akamai](https://akamai.com/) is hosting our meeting at [their
-offices](https://goo.gl/maps/8cs81Mp1yJx) in Tokyo, Japan.
+[Akamai](https://akamai.com/) is hosting our meeting at their
+offices in Tokyo, Japan ([map](https://goo.gl/maps/8cs81Mp1yJx)).
 
     Akamai Tokyo
     6F Kyobashi Trust Tower 
