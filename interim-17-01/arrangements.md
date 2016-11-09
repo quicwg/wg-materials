@@ -25,10 +25,10 @@ See [the agenda](agenda.md) for full details.
 [Akamai](https://akamai.com/) is hosting our meeting at [their
 offices](https://goo.gl/maps/8cs81Mp1yJx) in Tokyo, Japan.
 
-	Akamai Tokyo
-  6F Kyobashi Trust Tower 
-  2 1 3 Kyobashi, Chuo ku 
-  Tokyo 104 0031 
+    Akamai Tokyo
+    6F Kyobashi Trust Tower 
+    2 1 3 Kyobashi, Chuo ku 
+    Tokyo 104 0031 
 
 
 ### Transportation
@@ -49,7 +49,7 @@ Upon arrival, it's advisable to get a [Suica](http://www.jreast.co.jp/e/pass/sui
 [Pasmo](http://www.pasmo.co.jp/en/) IC card to pay for public transportation, as well as use in
 convenience stores and vending machines.
 
-The closest stations to Akamai's offices are Kyobashi (Ginza Line), Takaracho (Asakusa Line), and Tokyo Station (too many to list).
+The closest stations to the venue are Kyobashi (Ginza Line), Takaracho (Asakusa Line), and Tokyo Station (too many to list).
 
 
 ### Accommodation
