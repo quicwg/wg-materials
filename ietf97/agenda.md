@@ -17,14 +17,14 @@ _9:30-12:00, Grand Ballroom I_
 
 ### Charter Overview
 
-_~30 minutes_
+_~20 minutes_
 
 Review [our charter](https://datatracker.ietf.org/wg/quic/charter/) and discuss as necessary.
 
 
 ### Planning
 
-_~45 minutes_
+_~20 minutes_
 
 Discuss how the group will meet its charter, including (but not limited to):
 
