@@ -53,4 +53,4 @@ We will also hear feedback from early implementers of the protocol.
 
 ### Parking Lot ("if time permits")
 
-* Brian Trammel, [presentation](https://quicwg.github.io/ietf97/quic-statefulness.pdf) on  [draft-trammell-plus-statefulness](https://datatracker.ietf.org/doc/draft-trammell-plus-statefulness/) and how it might apply to QUIC (5 min talk, 10 min discussion)
+* Brian Trammel, [presentation](https://quicwg.github.io/wg-materials/ietf97/quic-statefulness.pdf) on  [draft-trammell-plus-statefulness](https://datatracker.ietf.org/doc/draft-trammell-plus-statefulness/) and how it might apply to QUIC (5 min talk, 10 min discussion)
