@@ -48,13 +48,13 @@ Discuss how the group will meet its charter, including (but not limited to):
 * Meeting planning
 * Implementation expectations and interop testing
 
-The chairs explained that there will be a interim meetings between each IETF meeting, i.e. Janurary [0], June, and Sept/October. The WG has a very agressive time schedule, to bound the time the people commiting the time to do the work. The intent is to have remote attendence possibilities for the Interime meetings. 
+The chairs explained that there will be a interim meetings between each IETF meeting, i.e. Janurary [0], June, and Sept/October. The WG has a very agressive time schedule, to bound the time the people committing the time to do the work. The intent is to have remote attendance possibilities for the Interime meetings. 
 
 The WG will use GitHub following the model of HTTPBIS. See slide 17 (Getting Started (2)) for links. There is explanation of method of working on GitHub. 
 
-Jeef Hodges raised the question if the WG would use the W3C mailserver for gatewaying. The answer is no.
+Jeff Hodges raised the question if the WG would use the W3C mailserver for gatewaying. The answer is no.
 
-Please sign up for the interim in january earlier rather than later. The other two interims will one be in North America and one in Europe.
+Please sign up for the interim in January earlier rather than later. The other two interims will one be in North America and one in Europe.
 
 [0] https://mailarchive.ietf.org/arch/msg/quic/SxWbqUbfJ6qBWOpnTfY_C4bIWc8
 
@@ -69,7 +69,7 @@ See: https://www.ietf.org/proceedings/97/slides/slides-97-quic-quic-00.pdf.
 
 Jana speaking about the core specification and what discussion that has been happening so far. The intention is not to conclude on these topics, simply review them. 
 
-Topics raised include, packet numbers, endianess, versioning, etc. See slides.
+Topics raised include, packet numbers, endian-ness, versioning, etc. See slides.
 
 Spencer asked how many have read the draft, a show hand showed a significant part of the room had done that. 
 
@@ -211,7 +211,7 @@ Eric Rescorla: The version has to bee echoed in the TLS handshake. The issue tyi
 
 Ted Hardie: Supports that these are orthogonal version. Martin responded that if you change the transport you may affect the upper layer. Ted responded that it is only an issue if that affects the properties that the upper layer needs. 
 
-Mike Bishop: We want things simple, but not simpler than necessary. We need to state which application that is using the QUIC connection. There are two fields. Martin commented that one is unathenticated, thus we need a third one. 
+Mike Bishop: We want things simple, but not simpler than necessary. We need to state which application that is using the QUIC connection. There are two fields. Martin commented that one is unauthenticated, thus we need a third one. 
 
 Jana: 
 Martin, to resolve this we can 
@@ -220,7 +220,7 @@ EKR:
     
 Mike Bishop: There is not only draft version. What brought us ALPN, was HTTP/2. We don't want to have every different upper layer bound to different transport versions. Will require a lot to support. Not desirable. 
 
-Let Mike know what proposed ALPN idenfier the HTTP/2 over QUIC should use. 
+Let Mike know what proposed ALPN identifier the HTTP/2 over QUIC should use. 
 
 Question, what about versions of QUIC or TLS etc. There are no semantic order in the ALPN field. 
 
