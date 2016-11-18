@@ -1,6 +1,6 @@
 # QUIC Working Group Minutes - IETF 97
 
-Scribed by Magnus Westerlund
+*Scribed by Magnus Westerlund*
 
 
 * [Meeting chat](xmpp:quic@jabber.ietf.org?join)
@@ -48,7 +48,7 @@ Discuss how the group will meet its charter, including (but not limited to):
 * Meeting planning
 * Implementation expectations and interop testing
 
-The chairs explained that there will be a interim meetings between each IETF meeting, i.e. Janurary [0], June, and Sept/October. The WG has a very agressive time schedule, to bound the time the people committing the time to do the work. The intent is to have remote attendance possibilities for the Interime meetings. 
+The chairs explained that there will be a interim meetings between each IETF meeting, i.e. January [0], June, and Sept/October. The WG has a very agressive time schedule, to bound the time the people committing the time to do the work. The intent is to have remote attendance possibilities for the Interim meetings. 
 
 The WG will use GitHub following the model of HTTPBIS. See slide 17 (Getting Started (2)) for links. There is explanation of method of working on GitHub. 
 
@@ -104,7 +104,7 @@ Hannes asked about the design choices. Before there has been changes to TLS, whe
 
 Discussion what attacks are possible against this proposal. Topic raised by Subodh.
 
-Humm for adopting the document:  Very strong support, none against. 
+Hum for adopting the document:  Very strong support, none against. 
 
 * [draft-shade-quic-http2-mapping](https://datatracker.ietf.org/doc/draft-shade-quic-http2-mapping/)
 See: https://www.ietf.org/proceedings/97/slides/slides-97-quic-http2-semantics-over-quic-01.pdf
