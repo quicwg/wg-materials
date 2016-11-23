@@ -14,7 +14,7 @@ do not register.
 
 ### Schedule and Agenda
 
-We'll be meeting Tuesday to Thursday, 24-26 January 2017. Meetings will begin at 9:30AM and end at
+We'll be meeting Tuesday to Thursday, 24-26 January 2017. Meetings will begin at 9:30am and end at
 approximately 5pm on each day (although we may choose to end earlier).
 
 See [the agenda](agenda.md) for full details.
@@ -37,7 +37,7 @@ Tokyo is served by two major airports.
 
 [NRT](http://www.narita-airport.jp/en/) is Narita International Airport. The quickest, easiest way
 to get from Narita to the meeting location is to take the [Narita
-Express](http://www.jreast.co.jp/e/nex/) train, a one-hour trip that costs approximately ¥2,800.
+Express](http://www.jreast.co.jp/e/nex/) train to Tokyo Station, a one-hour trip that costs approximately ¥2,800.
 
 [HND](http://www.haneda-airport.jp/inter/en/) is Haneda International Airport, which is much closer
 to Tokyo, but has slightly fewer international flights. There are a variety of ways to get from
