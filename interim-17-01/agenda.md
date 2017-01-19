@@ -9,6 +9,7 @@
 9:30 - Start (doors open at 9:00)
 
 * Welcome, Introductions
+* Scribes, Blue Sheets, NOTE WELL
 * ~30 minutes - Transport / Loss Drafts Overview (Martin, Jana)
 * Transport / Loss issue discussion
 
@@ -23,6 +24,7 @@
 
 9:30 - Start (doors open at 9:00)
 
+* Scribes, Blue Sheets, NOTE WELL
 * ~30 minutes - TLS Draft Overview (Martin)
 * TLS issue discussion
 
@@ -38,6 +40,7 @@
 
 9:30 - Start (doors open at 9:00)
 
+* Scribes, Blue Sheets, NOTE WELL
 * Next Steps - getting to interop, implementation plans, editor plans, meeting planning
 * Transport / Loss issue discussion (cont'd)
 
