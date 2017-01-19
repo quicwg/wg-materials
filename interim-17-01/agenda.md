@@ -38,7 +38,7 @@
 9:30 - Start (doors open at 9:00)
 
 * Next Steps - getting to interop, implementation plans, editor plans, meeting planning
-* Transport / Loss issue discussion
+* Transport / Loss issue discussion (cont'd)
 
 12:30-1:30 - Lunch
 
