@@ -6,10 +6,7 @@ hosted by Akamai in Tokyo, Japan.
 
 ### Register
 
-To aid planning, please **[register your intended
-participation](http://doodle.com/poll/ma78wgcecbcin4fz)** (remote or in person) as soon as possible.
-Registration will close two weeks before the Interim, and space may not be available for those who
-do not register.
+**Registration for the meeting has closed**. To see if you are registered, check [the registration page](http://doodle.com/poll/ma78wgcecbcin4fz).
 
 
 ### Schedule and Agenda
