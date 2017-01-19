@@ -1,5 +1,6 @@
 # IETF QUIC Working Group Interim Meeting Agenda
 
+* [Meeting arrangements](https://github.com/quicwg/wg-materials/blob/master/interim-17-01/arrangements.md)
 * [Issues List](https://github.com/quicwg/base-drafts/issues)
 * [Drafts](https://github.com/quicwg/base-drafts)
 
