@@ -32,6 +32,7 @@
 
 * ~30 minutes - HTTP Draft Overview (Mike)
 * HTTP issue discussion
+* [QPACK](https://tools.ietf.org/html/draft-bishop-quic-http-and-qpack-01)
 
 ~5:00 - End
 
