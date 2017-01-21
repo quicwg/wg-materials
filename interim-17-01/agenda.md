@@ -11,7 +11,7 @@
 * Welcome, Introductions
 * Scribes, Blue Sheets, NOTE WELL
 * ~30 minutes - Transport / Loss Drafts Overview (Martin, Jana)
-* Transport / Loss issue discussion
+* [Transport / Loss issue discussion](transport-issues.md)
 
 12:30-1:30 - Lunch
 
