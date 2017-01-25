@@ -77,6 +77,13 @@ Issues that have consensus will be labelled as `editor-ready`. After the editor 
 
 When a new draft is published, the design issues that have been closed since the last draft will be highlighted on the mailing list, to aid reviewers. If substantive new information is brought to our attention, issues can be reopened by the Chairs.
 
+### Discretionary Design Issue Labels
+
+We also use the following labels to help understand the state of our design issues:
+
+* **Needs Discussion**: The issue needs significant Working Group discussion before it can progress.
+* **Confirm Consensus**: There is a resolution that the proponents believe reflects a consensus position, needs to be confirmed with the WG.
+* **Notify Consensus**: The WG has achieved consensus in a meeting, needs to be confirmed on the mailing list.
 
 
 ## Pull Requests
