@@ -75,7 +75,7 @@ Consensus for the resolution of a design issue can be established in a few diffe
 
 The editors can also propose resolutions for the group's consideration by incorporating them into the draft(s); when doing so, the issue should not be closed until consensus is declared.
 
-Issues that have consensus will be labelled as `editor-ready`. After the editor has incorporated a resolution into the specification, the issue can be closed.
+Issues that have consensus but which aren't yet reflected in text will be labelled as `editor-ready`. After the editors have incorporated a resolution into the specification, the issue can be closed.
 
 When a new draft is published, the design issues that have been closed since the last draft will be highlighted on the mailing list, to aid reviewers. 
 
