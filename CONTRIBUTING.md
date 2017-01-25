@@ -59,7 +59,7 @@ commits will only be responded to with best effort, and may not be seen.
 
 ## Resolving Issues
 
-The `open` issues in the issues list are those that we are currently or plan to discuss. When an issue is `closed`, it implies that the group has consensus and is not currently discussing the issue. If substantive new information is brought to our attention, issues can be reopened by the Chairs.
+The `open` issues in the issues list are those that we are currently or plan to discuss. When an issue is `closed`, it implies that the group has consensus and it is reflected in the draft(s). If substantive new information is brought to our attention, issues can be reopened by the Chairs.
 
 Issues will be labeled by the Chairs as either `editorial` or `design`.
 
