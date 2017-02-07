@@ -1,7 +1,7 @@
 # Minutes: QUIC Working Group 25-01-17
 
-Chairs: Mark Nottingham, Lars Eggert
-Scribes: Ted Hardie, Brian Trammell
+* Chairs: Mark Nottingham, Lars Eggert
+* Scribes: Ted Hardie, Brian Trammell
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->

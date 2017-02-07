@@ -1,7 +1,7 @@
 # Minutes: QUIC Working Group 24-01-17
 
-Chairs:  Lars Eggert, Mark Nottingham
-Scribes: Ted Hardie, Patrick McManus
+* Chairs:  Lars Eggert, Mark Nottingham
+* Scribes: Ted Hardie, Patrick McManus
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -31,16 +31,15 @@ Scribes: Ted Hardie, Patrick McManus
 
 ## Administrivia
 
-9:30 - Start (doors open at 9:00)
-Welcome, Introductions
-Scribes, Blue Sheets, NOTE WELL
-
-9:29  Side conversations on cipher suite negotiation and ALPN negotiation.
-9:30 Mark notes that we’ll start in 5 minutes to allow folks to make their way in (abou 5 folks still not present)
-9:31 White Blue sheets begin circulating.
-9:35: Mark goes through logistics.  Lunch at 12:00.  Drinks/Coffee available.
-9:37 Note Well
-9:40 Introductions
+- 9:30 - Start (doors open at 9:00)
+- Welcome, Introductions
+- Scribes, Blue Sheets, NOTE WELL
+- 9:29  Side conversations on cipher suite negotiation and ALPN negotiation.
+- 9:30 Mark notes that we’ll start in 5 minutes to allow folks to make their way in (abou 5 folks still not present)
+- 9:31 White Blue sheets begin circulating.
+- 9:35: Mark goes through logistics.  Lunch at 12:00.  Drinks/Coffee available.
+- 9:37 Note Well
+- 9:40 Introductions
 
 Discussing the Agenda, chairs note that Transport/Loss issues will return on Thursday, so that some discussion today may be deferred to Friday when a deeper dive is required.  Parking lot issues will be assigned by chairs.
 

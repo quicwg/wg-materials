@@ -1,7 +1,7 @@
 # Minutes: QUIC Working Group 26-01-17
 
-Chairs: Mark Nottingham, Lars Eggert
-Scribes: Ted Hardie, Brian Trammell, Ian Swett, Patrick McManus
+* Chairs: Mark Nottingham, Lars Eggert
+* Scribes: Ted Hardie, Brian Trammell, Ian Swett, Patrick McManus
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -29,8 +29,8 @@ Scribes: Ted Hardie, Brian Trammell, Ian Swett, Patrick McManus
 
 ##Administrivia
 
-9:30 - Start (doors open at 9:00)
-Scribes, Blue Sheets, NOTE WELL
+- 9:30 - Start (doors open at 9:00)
+- Scribes, Blue Sheets, NOTE WELL
 
 ## Next Steps - getting to interop, implementation plans, editor plans, meeting planning
 
