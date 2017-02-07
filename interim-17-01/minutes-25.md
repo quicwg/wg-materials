@@ -1,25 +1,29 @@
+# Minutes: QUIC Working Group 25-01-17
+
 Chairs: Mark Nottingham, Lars Eggert
 Scribes: Ted Hardie, Brian Trammell
 
-Agenda
-9:30 - Start (doors open at 9:00)
-Scribes, Blue Sheets, NOTE WELL
-~30 minutes - TLS Draft Overview (Martin)
-TLS issue discussion
-
 Prior to starting the meeting, Brian attempts to convince the crowd that 62bit integers are the bomb.  Folks counter that putting the length indicator into the public flags instead, so that you can identify the offset from examining just one thing.  Rapidly, things devolve into a question of what gets encrypted.  Folks determine that with infinite memory, hpack and full encryption are trivial problems.  Ian suggests that we have a “bad idea fairy” bake off later in the day.
 
+## Administrivia
+
 9:31 starting with a review of the Note Well
+
 Starting the blue sheets around again.
+
 Brian takes scribe duties for the first afternoon session.
+
 Went back through introductions.
 
 Mark: yesterday was transport issues.  This morning is TLS, followed by HTTP. Martin will focus on TLS, Mike on HTTP. These sessions will let people know what is going on with those drafts, and then we can check the issues lists to see if there is low-hanging fruit.  After that, we will return to the transport issues in the afternoon.  Try not to rathole (understood that this will be difficult).
 
-Martin’s slides are at: 
-https://github.com/quicwg/wg-materials/blob/master/interim-17-01/keyphases.pdf
+## TLS Overview
 
-Martin:  one of the things we set out to do was to make sure there was no trial decryption, which is something that QUIC crypto does.  That doesn’t work in some TLS implementations.  We stole one of the bits that was being used for diversification and use it to indicate which key is in use.  This set of messages includes a certificate and thus the set tends to gets pretty big.  This is encryption in stream 1, but that is not visible to QUIC.  And now, the wrinkle:  because of reordering and retransmission, there are potentially three different versions of keys that might be sent from client to server.  (See slide 2)  Now you have a problem at the server, as you have one bit of information to distinguish among three things.  Suggestion to use version bit.  Mirja:  why do you need to acknowledgements prior to get the 1RTT key?  
+[Martin’s slides](https://github.com/quicwg/wg-materials/blob/master/interim-17-01/keyphases.pdf)
+
+Martin:  one of the things we set out to do was to make sure there was no trial decryption, which is something that QUIC crypto does.  That doesn’t work in some TLS implementations.  We stole one of the bits that was being used for diversification and use it to indicate which key is in use.  This set of messages includes a certificate and thus the set tends to gets pretty big.  This is encryption in stream 1, but that is not visible to QUIC.  And now, the wrinkle:  because of reordering and retransmission, there are potentially three different versions of keys that might be sent from client to server.  (See slide 2)  Now you have a problem at the server, as you have one bit of information to distinguish among three things.  Suggestion to use version bit.  
+
+Mirja:  why do you need to acknowledgements prior to get the 1RTT key?  
 
 Martin:  to allow the server to repair loss of server messages used to set up the connection (packets containing certificate etc.)  Jana: are the acks going back to the server encrypted?  
 
@@ -77,17 +81,30 @@ MartinD you could have a source address token.
 
 Ekr that would have to be in a cleartext section, which doesn’t currently exist.  Ian notes that this would likely work, but it wouldn’t really be worth it in the common case.  
 
-Brian:  I’m just trying to avoid the background radiation of UDP garbage from using up this space.  Ian/Jana: it’s totally okay for this pool to be small. 
+Brian:  I’m just trying to avoid the background radiation of UDP garbage from using up this space.  
+
+Ian/Jana: it’s totally okay for this pool to be small. 
 
 MartinD: do we want consensus call on this approach
 
 Jana: maybe not yet, until we have the 3 bits phase of the discussion.
 
-Shift to the TLS issues after Jana’s question, which sparks a discussion why we don't need AEAD data that includes the header.  Every time we add a flag bit, we will have to redo the analysis of whats in the public header.  Ian notes that if we have an extended discussion of the public header, then that may inform this.  Putting everything under AEAD would be simpler from a hardware crypto perspective (martinD).  Brian:  don’t see the value of being picky.  Jana:  if there is anything within this that we do want to authenticate, if so we should do everything.  Discussion about whether we should put everything under AEAD now, on the theory that later use is better protected  with that.  
+Shift to the TLS issues after Jana’s question, which sparks a discussion why we don't need AEAD data that includes the header.  Every time we add a flag bit, we will have to redo the analysis of whats in the public header.  
+
+Ian notes that if we have an extended discussion of the public header, then that may inform this.  
+
+Putting everything under AEAD would be simpler from a hardware crypto perspective (martinD).  
+
+Brian:  don’t see the value of being picky.  
+
+Jana:  if there is anything within this that we do want to authenticate, if so we should do everything.  Discussion about whether we should put everything under AEAD now, on the theory that later use is better protected  with that.  
 
 Jim points out that the unused flag bit might be better protected now if the AEAD covered it.  Before finalizing this, we’ll have the header format discussion.
 
-#167 (https://github.com/quicwg/base-drafts/issues/167)
+## TLS Issues
+
+### [Issue 167](https://github.com/quicwg/base-drafts/issues/167)
+
 This was originally used for eliminating corrupted traffic. 
  
 Ekr:  Three things are being detected here: quic/not quic; directionality; corruption detection.  QUIC/QUIS handles both of the first two.  Doesn’t believe that the final use case is worth this, as it is used only for random corruption before encryption is started.  Better to detect via UDP checksum and/or ClientHello failure.  This is also substantially slower to evaluate than magic pattern (QUIC/QUIS).  
@@ -128,7 +145,7 @@ Marked as ready for editorial action, with decision on hash function to follow.
 
 Next up:  confirm consensus issues  
 
-Issue #97: https://github.com/quicwg/base-drafts/issues/97 
+### [Issue 97](https://github.com/quicwg/base-drafts/issues/97)
 
 Mike reviews this; Martin says that the pull request we discussed yesterday reads on this.  The version negotiation has integrity protection on the handshake.  
 
@@ -140,12 +157,13 @@ Martin: theoretically, if you hadn’t done version negotiation, you could use A
 
 Marked editor ready, consensus will be assessed on the PR.
 
-Issue #87 (https://github.com/quicwg/base-drafts/issues/87)
+### [Issue 87](https://github.com/quicwg/base-drafts/issues/87)
+
 Deferred to HTTP discussion.
 
-Issue #12 https://github.com/quicwg/base-drafts/issues/12
-Same issue as #97, so closed as a dupe.
+### [Issue 12](https://github.com/quicwg/base-drafts/issues/12)
 
+Same issue as #97, so closed as a dupe.
 
 Martin:  currently the TLS document talks about TLS and what the transport provides to allow that to happen.  That should go into the transport document, so it will be moved into the transport document and the transport document will say “it’s the crypto’s responsibility to hand you the following keys” and then the TLS document will document how to generate them.  
 
@@ -165,7 +183,10 @@ Action item:  ekr will raise an issue and make a proposal.
 
 Closing the TLS discussion, moving to HTTP.
 
-Mike’s slides are at https://github.com/quicwg/wg-materials/blob/master/interim-17-01/HTTP.pdf
+
+## HTTP Overview
+
+[Mike’s slides](https://github.com/quicwg/wg-materials/blob/master/interim-17-01/HTTP.pdf)
 
 Reviewing the change in stream structure between 00 and 01.  3-connection control, request occupies two streams, message header control stream and unframed data stream.  No muxing in HTTP-layer framing, but there are still frame inside of frames; Martin’s point about needing terminology change to make this clearer.
 
@@ -180,7 +201,7 @@ Martin also suggestions that instead of using v=, we should use quic= (can’t u
 
 Victor: why not use base64 instead of hex?  
 
-Martin; doesn’t save much, and nothing else uses base64.  Optimize for the final version.
+Martin: doesn’t save much, and nothing else uses base64.  Optimize for the final version.
 
 Mike has a draft in httpbis that allowed for variable length settings using an extended-settings frame.  Feedback was not to bifurcate settings in h2, but take up in next rev.  This is taking that up.  Currently in the doc, optimized for boolean values.  
 
@@ -212,10 +233,7 @@ Jana:  this works outside of the 0RTT case.
 
 Buck:  If you have the code that says every time you create a pair of streams you must act on them in concert, this works (e.g. refuse both).  
 
-(Going to lunch at 12:05 JST)
-
-
-(back from lunch 13:12 JST - Brian Trammell scribing now)
+_Going to lunch at 12:05 JST; back from lunch 13:12 JST - Brian Trammell scribing now_
 
 Mark: It’s safe to say there’s general support for QPACK, we’d like to work on it a bit and see some proposals. Do we want to adopt now, or sit on it for a while?
 
@@ -257,9 +275,11 @@ Jana: Don’t have to rush into this, HPACK/QPACK is split out. I think QPACK wo
 
 Mike: Yep, it’s a separate doc unless it’s just framing around HPACK.
 
-(*) Mark: please open an issue on this. (#228 opened)
+Mark: please open an issue on this. (#228 opened)
 
-Issue #95 / #202 CONNECT:
+## HTTP Issues
+
+### Issue #95 / #202 - CONNECT
 
 Do we want CONNECT (largely from H2) or not? 
 
@@ -279,7 +299,7 @@ Lars: An alternative design would be to app-multiplex over QUIC.
 
 Mark: What harm is there in leaving it in? Maybe we can move on and find an concrete reason to kill it later. Close EKR’s #202, follow up on #95.
 
-Issue #165 Resetting Streams
+### Issue #165 - Resetting Streams
 
 Mike: Proposal: reset only affects sender’s side, REQUEST_RESET requests receiver to reset.
 
@@ -311,12 +331,13 @@ Ted: PR is no-retransmit, not no-transmit.
 
 Mike: General support for a separate frame type, there’s a PR to review. Martin T and Jana to discuss.
 
-15m break, 
-
-Transport Issues resumed
+_15m break_
 
 
-Issue 175:https://github.com/quicwg/base-drafts/issues/175
+## Transport Issues (resumed)
+
+
+### [Issue 175](https://github.com/quicwg/base-drafts/issues/175)
 
 This would make streams actually unidirectional, which would simplify the state machine.  Idle-->open-->closed would be the only states in the state machine.  You would then have to do other things to associate stream numbers to HTTP streams (e.g. push streams).  
 
@@ -390,7 +411,7 @@ Mike: This doesn’t make HTTP more complex, it turns into a set of stream assig
 
 Lars: Let’s close the discussion. Martin and Jana should go talk about this, Martin has enough to understand how much work to put into this, maybe not yet a PR.
 
-Issue #66: Remove STOP_WAITING
+### Issue 66: Remove STOP_WAITING
 
 Note discussion happened in #63. Now, STOP_WAITING says no longer send ACKs for packets less than X. If one is willing to track ACKs of ACKs, you know what your peer knows about your acknowledgment state; you only have to store one number to keep this.
 
@@ -402,7 +423,7 @@ Mirja: Do you ever send STOP_WAITING for something other than the left edge?
 
 Ian: Nope. I’ll write the PR.  Will solve the same time as #63 ack transmission.
 
-Issues #104 and #114 on Priority and Retransmission Priority
+### Issues 104 and 114 on Priority and Retransmission Priority
 
 Lucas: Nothing changes on the wire. It’s an implementation optimization question.
 
@@ -436,7 +457,7 @@ Kazuho: easy for existing H2 apps to…
 
 Decision: add advisory text, mark editor-ready.
 
-#115 Connection migration
+### Issue 115 Connection migration
 
 We need text that explains that this is possible, and the implications of doing it -- privacy impacts of using the same ID on many paths, routing considerations, consent to sent, how much congestion control state can be migrated, and state rebinding along the path.
 
