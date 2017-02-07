@@ -3,6 +3,27 @@
 Chairs: Mark Nottingham, Lars Eggert
 Scribes: Ted Hardie, Brian Trammell
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+  - [Administrivia](#administrivia)
+  - [TLS Overview](#tls-overview)
+  - [TLS Issues](#tls-issues)
+    - [Issue 167](#issue-167)
+    - [Issue 97](#issue-97)
+    - [Issue 87](#issue-87)
+    - [Issue 12](#issue-12)
+  - [HTTP Overview](#http-overview)
+  - [HTTP Issues](#http-issues)
+    - [Issue #95 / #202 - CONNECT](#issue-95--202---connect)
+    - [Issue #165 - Resetting Streams](#issue-165---resetting-streams)
+  - [Transport Issues (resumed)](#transport-issues-resumed)
+    - [Issue 175](#issue-175)
+    - [Issue 66: Remove STOP_WAITING](#issue-66-remove-stop_waiting)
+    - [Issues 104 and 114 on Priority and Retransmission Priority](#issues-104-and-114-on-priority-and-retransmission-priority)
+    - [Issue 115 Connection migration](#issue-115-connection-migration)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 Prior to starting the meeting, Brian attempts to convince the crowd that 62bit integers are the bomb.  Folks counter that putting the length indicator into the public flags instead, so that you can identify the offset from examining just one thing.  Rapidly, things devolve into a question of what gets encrypted.  Folks determine that with infinite memory, hpack and full encryption are trivial problems.  Ian suggests that we have a “bad idea fairy” bake off later in the day.
 
 ## Administrivia

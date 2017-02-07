@@ -3,6 +3,29 @@
 Chairs: Mark Nottingham, Lars Eggert
 Scribes: Ted Hardie, Brian Trammell, Ian Swett, Patrick McManus
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+    - [Next Steps - getting to interop, implementation plans, editor plans, meeting planning](#next-steps---getting-to-interop-implementation-plans-editor-plans-meeting-planning)
+  - [Transport / Loss issue discussion (cont'd)](#transport--loss-issue-discussion-contd)
+    - [Server-proposed connection ID #119](#server-proposed-connection-id-119)
+    - [Path MTU #64 / PR #106: PMTUD](#path-mtu-64--pr-106-pmtud)
+    - [Minimum Packet Size #64 / Minimum MTU #139](#minimum-packet-size-64--minimum-mtu-139)
+    - [Padding Handshake Packets #164](#padding-handshake-packets-164)
+    - [Issue 145](#issue-145)
+    - [Issue 204: Headers streams do not contribute to connection level flow control](#issue-204-headers-streams-do-not-contribute-to-connection-level-flow-control)
+    - [Issue 35 - starting packet number](#issue-35---starting-packet-number)
+    - [Issue 118 - source address token encoding](#issue-118---source-address-token-encoding)
+    - [Issue 136 - First client packet size](#issue-136---first-client-packet-size)
+    - [Issue 148](#issue-148)
+    - [Issue 56](#issue-56)
+    - [Issue 62 - Finding Frame lengths](#issue-62---finding-frame-lengths)
+    - [Issue 70](#issue-70)
+    - [time format #109](#time-format-109)
+    - [Interframe padding #158](#interframe-padding-158)
+    - [Issue 144](#issue-144)
+    - [Issue 169 response to loss handshake packets](#issue-169-response-to-loss-handshake-packets)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ##Administrivia
 
