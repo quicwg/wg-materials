@@ -5,7 +5,7 @@ Scribes: Ted Hardie, Brian Trammell, Ian Swett, Patrick McManus
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-    - [Next Steps - getting to interop, implementation plans, editor plans, meeting planning](#next-steps---getting-to-interop-implementation-plans-editor-plans-meeting-planning)
+  - [Next Steps - getting to interop, implementation plans, editor plans, meeting planning](#next-steps---getting-to-interop-implementation-plans-editor-plans-meeting-planning)
   - [Transport / Loss issue discussion (cont'd)](#transport--loss-issue-discussion-contd)
     - [Server-proposed connection ID #119](#server-proposed-connection-id-119)
     - [Path MTU #64 / PR #106: PMTUD](#path-mtu-64--pr-106-pmtud)
@@ -32,7 +32,7 @@ Scribes: Ted Hardie, Brian Trammell, Ian Swett, Patrick McManus
 9:30 - Start (doors open at 9:00)
 Scribes, Blue Sheets, NOTE WELL
 
-### Next Steps - getting to interop, implementation plans, editor plans, meeting planning
+## Next Steps - getting to interop, implementation plans, editor plans, meeting planning
 
 Mark: Notes that we’ve made pretty good progress in the last few days.  What are the next steps, it seems like it’s a bit premature for interop.  What does it look like as well?  HTTP over QUIC, PING over QUIC, etc.  Interims seem to work well, and having another before Prague seems like a good idea, likely in Europe.  First full week in June?
 
