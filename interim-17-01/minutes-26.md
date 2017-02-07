@@ -21,15 +21,15 @@ Lars: After Europe, likely to do North America.  Get an 02 draft out before Chic
 
 Lars + Mark: Implementations page exists(link).  Please add a link and detailed description to the page if you have an implementation or are starting to work on one.
 
-Lucas: QuicGo noted they don’t have time to implement the drafts as they stand, but will once others start to implement as well.  
+Lucas: QuicGo noted they don’t have time to implement the drafts as they stand, but will once others start to implement as well.
 
-Mark: Notes that in H2, a draft was nominated for implementers.  
+Mark: Notes that in H2, a draft was nominated for implementers.
 
 Ian: Suggests that Google will implement a draft, hopefully mid-year timeframe, and in the meantime, will inch towards the IETF version when consensus is reached on items.
 
 Lars: QUIC logo is being designed, sponsored by ISOC.  Mark notes this will not be a consensus call item on the logo.
 
-Mark: Contributing section(link) goes over the lifecycle of issues and what “Closed” means.  
+Mark: Contributing section(link) goes over the lifecycle of issues and what “Closed” means.
 
 ## Transport / Loss issue discussion (cont'd)
 
@@ -37,7 +37,7 @@ Mark: Contributing section(link) goes over the lifecycle of issues and what “C
 
 As a matter of principle, it’s better to have the connection ID picked by the server, since it can be used in routing etc by the load balancing infrastructure. Right now that infrastructure is stuck with whatever the client picks.
 
-Second, you don’t need the connection ID on initial handshake of an initial (non 0-rtt) state. Connection ID can be useful for 0-rtt since 0-rtt state might be on a particular instance. 
+Second, you don’t need the connection ID on initial handshake of an initial (non 0-rtt) state. Connection ID can be useful for 0-rtt since 0-rtt state might be on a particular instance.
 
 Three options:
 * Keep as is, let server suffer
@@ -46,23 +46,23 @@ Three options:
 
 Brian: Solve this at the same time as the connection ID migration; i.e. a frame for new-connection-ID on the control stream?
 
-How do we solve the initial problem?  Why do we need the client ID at all?  
+How do we solve the initial problem?  Why do we need the client ID at all?
 
 Jim: Connection ID was intended to be proposed by the client, and then the server may replace it.  (option 2)
 
-Jana and ? propose that option 3 seems better than option 2. 
+Jana and ? propose that option 3 seems better than option 2.
 
-MT and Ian and Jana note that you can (but don’t need to) bind STK to a connection ID.  
+MT and Ian and Jana note that you can (but don’t need to) bind STK to a connection ID.
 
 Subodh notes that you may want to use a STK multiple times with different connection IDs.
 
 Lucas: We can just change the semantics to have the client not send an ID in its first packet, and the server reply with one.
 
-Brian thinks this defeats client selection of connection ids for non-linkability.  Ian and Jana and others note that this is mostly orthogonal: the server can propose multiple connection IDs. 
+Brian thinks this defeats client selection of connection ids for non-linkability.  Ian and Jana and others note that this is mostly orthogonal: the server can propose multiple connection IDs.
 
-Kazuho: What happens in the case of a NAT rebind?   Ian thinks this isn’t a concern during the short period of time there isn’t a connection id, particularly because the inchoate case is only one packet, so NAT rebind is a non-issue.  
+Kazuho: What happens in the case of a NAT rebind?   Ian thinks this isn’t a concern during the short period of time there isn’t a connection id, particularly because the inchoate case is only one packet, so NAT rebind is a non-issue.
 
-Igor: Connection ID contains information to allow connection to reach the correct backend server.  
+Igor: Connection ID contains information to allow connection to reach the correct backend server.
 
 Jana notes you could omit the connection ID on every 0RTT request.  THis doesn’t work if the source address has changed since the last connection since STK verification will fail. Would be nice to enable rebinding with a new source address.
 
@@ -70,17 +70,17 @@ ekr: need a mechanism to send a few proposed connection IDs. this is a correctne
 
 Igor: For 99% of cases you only need 1 connection id, multiple seems like overkill.
 
-Ekr: Adds complexity and could cause connection failures, Jana notes that more likely it’s just cost a round trip.  If you’re ok with not using a connection ID as well, then you can just include STK and no connection ID.  
+Ekr: Adds complexity and could cause connection failures, Jana notes that more likely it’s just cost a round trip.  If you’re ok with not using a connection ID as well, then you can just include STK and no connection ID.
 
-MT: This is only useful if you need to store resumption information for 0RTT information.  Ian notes that it could also be used to prevent DDos style attacks potentially.  
+MT: This is only useful if you need to store resumption information for 0RTT information.  Ian notes that it could also be used to prevent DDos style attacks potentially.
 
 Jim: These are interesting problems that Google had to overcome. We weren’t sharing cryptographic states across the server complex. The trick was how do we route the next 0RTT request to the same server. Connection ID was a possible hint to come back toward the same server.
 
 Subodh: If you’re in Namibia and your 0RTT key is in the US...
 
-Ian: There’s another use case: you can prevent overuse of an STK by balancing on connection ID.  If a connection ID/IP is relatively stable, all 0RTT requests for a given STK would hit the same server, and it would reduce the possibility of overuse of a single STK.  If the connection ID didn’t match the one in the STK, you could force a 1RTT handshake.  
+Ian: There’s another use case: you can prevent overuse of an STK by balancing on connection ID.  If a connection ID/IP is relatively stable, all 0RTT requests for a given STK would hit the same server, and it would reduce the possibility of overuse of a single STK.  If the connection ID didn’t match the one in the STK, you could force a 1RTT handshake.
 
-ekr: no reason an STK can’t be used for an arbitrary number of connections, it’s only proof you have the address. 
+ekr: no reason an STK can’t be used for an arbitrary number of connections, it’s only proof you have the address.
 
 Subodh: with low connection idle time limit, you might want a new connection ID to conserve server state
 
@@ -88,11 +88,11 @@ Ekr: If you have a STK and get a handshake failure, then you could fall back and
 
 ?: If we believe connection IDs are long lived, this doesn’t matter too much.  But if we’re going to resume frequently, this seems more useful.
 
-Jana: Client has to decide whether to send a connection ID.   
+Jana: Client has to decide whether to send a connection ID.
 
-Ted: We’re dancing around an issue to avoid yesterday’s rathole: using connection IDs to work around ECMP problems on rebinding, as a routing token. If you don’t need that for your connection, then you can use a different connection ID every time. You can also have a batch of connection IDs that are equivalent, and you can change them periodically or base interface change. If we’re modeling them that way, as a destination routing token, then it’s very clearly the server and we should have server-proposed connection ID. And the rats in yesterday’s model get less numerous. #119: answer is yes, go for it. Consequences in particular deployment are 
+Ted: We’re dancing around an issue to avoid yesterday’s rathole: using connection IDs to work around ECMP problems on rebinding, as a routing token. If you don’t need that for your connection, then you can use a different connection ID every time. You can also have a batch of connection IDs that are equivalent, and you can change them periodically or base interface change. If we’re modeling them that way, as a destination routing token, then it’s very clearly the server and we should have server-proposed connection ID. And the rats in yesterday’s model get less numerous. #119: answer is yes, go for it. Consequences in particular deployment are
 
-Brian: Totally convinced by Ted.  But….  the server can make you trackable by only giving you one(ie: supercookie).  Now that would be visible by the path.  
+Brian: Totally convinced by Ted.  But….  the server can make you trackable by only giving you one(ie: supercookie).  Now that would be visible by the path.
 
 Ted: Agrees that is a potential problem if the path knows how connection ids are generated, but that creates a ton of other issues, so we’ve lost.
 
@@ -106,17 +106,17 @@ Proposal in github.
 
 ### Path MTU #64 / PR #106: PMTUD
 
-Retained text about default size captures what Google’s doing now, using loss as an MTU signal for PLPMTUD. 
+Retained text about default size captures what Google’s doing now, using loss as an MTU signal for PLPMTUD.
 
 Lars: The max default size is in direct conflict with RFC 5405 bis, which says 576. I expect the IESG will go about this.
 
-Jana: That’s the default. 
+Jana: That’s the default.
 
-Lars: Recommendation in 5405bis is don’t send UDP > 576 if you don’t know anything about the path. Second recommendation is don’t use ICMP-based PMTUD since it’s not reliable. Should not recommend to only use ICMP. Option one: reference 5405bis. If we really want to say the default packet size is > 576 there will be arguments. Ideally everyone implemente PLPMTUD. 
+Lars: Recommendation in 5405bis is don’t send UDP > 576 if you don’t know anything about the path. Second recommendation is don’t use ICMP-based PMTUD since it’s not reliable. Should not recommend to only use ICMP. Option one: reference 5405bis. If we really want to say the default packet size is > 576 there will be arguments. Ideally everyone implemente PLPMTUD.
 
 Jana: We always have the fallback case if PMTUD fails: TCP
 
-ekr: initial packet size is 1kB to reduce amplification factor. 
+ekr: initial packet size is 1kB to reduce amplification factor.
 
 Martin D: Lower constraint on minimum packet size: ClientHello size.
 
@@ -126,13 +126,13 @@ Lars: You can make an argument for QUIC that (1) TCP fallback and (2) 1280 v6 MT
 
 Martin Duke: Added the option to do do ICMP based Path MTU, as well as packet PLPMTUD.  Indicates that if you’re not doing PMTU, use a fixed size of 1350 bytes for v6 and 1370 as v4.
 
-Lars: Issue 1 is that 1350 is much larger than the IETF typically agrees to, and issue 2 is that we should not recommend we use ICMP based, because it has been found too unreliable.  
+Lars: Issue 1 is that 1350 is much larger than the IETF typically agrees to, and issue 2 is that we should not recommend we use ICMP based, because it has been found too unreliable.
 
 Jana: The alternate is we recommend a small packet size, and and everyone actually uses a much larger packet size.  (See RFC6919.)
 
-EKR: Initial packet is there to limit amplification attack, and if we make it 550, we increase our potential amplification attack quite a bit.  
+EKR: Initial packet is there to limit amplification attack, and if we make it 550, we increase our potential amplification attack quite a bit.
 
-Lars: Could make the argument for QUIC that assuming a IPv6 sized minimum is reasonable, given QUIC has a fallback.  RFC5405 has many SHOULDs, and at some point we need to document how we do or do not comply with 5405.  
+Lars: Could make the argument for QUIC that assuming a IPv6 sized minimum is reasonable, given QUIC has a fallback.  RFC5405 has many SHOULDs, and at some point we need to document how we do or do not comply with 5405.
 
 Martin Thomson: level of authentication you need is “sender for ICMP is on path”
 
@@ -146,7 +146,7 @@ Martin: will suggest provisional MTU reduction. And ignoring ICMP on that path. 
 
 Lars: Packetization path MTU may not really be that practical, because it’s been a while since it was written, and it’s never really been exercised.
 
-Craig Taylor: Heard ECMP mentioned for load balancing.  Are people aware that ICMP will balance differently from normal traffic, which can create a sort of blackhole.  
+Craig Taylor: Heard ECMP mentioned for load balancing.  Are people aware that ICMP will balance differently from normal traffic, which can create a sort of blackhole.
 
 Spencer: Why not MUST PLPMTUD?
 
@@ -158,7 +158,7 @@ Martin Duke can write language. Fallback to TCP if you can’t send 1280.
 
 ### Padding Handshake Packets #164
 
-Martin Duke: Favors “at least one” packet in each direction must be padded to the max packet size.  
+Martin Duke: Favors “at least one” packet in each direction must be padded to the max packet size.
 
 Lucas: What if an implementation doesn’t want to pad to the full packet size. 1280?
 
@@ -166,7 +166,7 @@ Ian: Suggested we add text that the initial packet is the max size until other p
 
 Lars: Two ways to phrase. #1 1280. #2 cache PMTU information. Restart at 1280 or at old value.
 
-Marten: Two issues. Avoiding amplification, PMTUD. 
+Marten: Two issues. Avoiding amplification, PMTUD.
 
 Lars: Yes, but you want to avoid early loss.
 
@@ -218,11 +218,11 @@ Lucas: Logical problem, if server never increments flow control window… should
 
 Ian: There is no advice for sending window update frames. A policy on that would allow a peer to make a more informed choice about flow control window utilization
 
-Lars: This is also a problem with TCP.  
+Lars: This is also a problem with TCP.
 
 Jana: This sends us down a rathole, because we don’t know how much data there is to send.
 
-Mike: There is language in the spec with lower case should about sending flow control updates frequently enough.  
+Mike: There is language in the spec with lower case should about sending flow control updates frequently enough.
 
 Lars: It would be nice to remove the special case.
 
@@ -235,7 +235,7 @@ Lars: There needs to be a separation here. You can’t tie up memory at the QUIC
 
 MT: H2 already has this problems: headers don’t contribute to FC window. We can call them “not consuming memory” because the entire set of headers has to arrive in order and at the same time (TCP handles this) and the header set can be decompressed and handed off to the next layer immediately.
 
-Mike Bishop: one of the differences between QPACK and Buck’s model is you can partially process headers. 
+Mike Bishop: one of the differences between QPACK and Buck’s model is you can partially process headers.
 
 MT: if you’re partially processing something, you’re actually expanding the memory commitment, due to decompression.  You probably can’t hand it off until you’ve got the full set.
 
@@ -249,7 +249,7 @@ Ian: There may be other solutions, and I re-arrived at a variant of Buck’s pro
 
 Lucas: Bigger issue…
 
-Jana: This may be an HTTP problem. Then let’s take it out of QUIC. 
+Jana: This may be an HTTP problem. Then let’s take it out of QUIC.
 
 Martin Duke: Whatever counts for FC should count for CC.
 
@@ -279,9 +279,9 @@ Many: it can!
 
 Ian: example where it can be deadlocked - enough 0rtt requests in conjunction with chelo then you can prevent (resend?)
 
-MT, if you send too fast you can’t finish the handshake, 
+MT, if you send too fast you can’t finish the handshake,
 
-Mt: debunks somehow (help too fast). 
+Mt: debunks somehow (help too fast).
 
 Ekr: server should be acking data
 
@@ -307,7 +307,7 @@ Mt: concerns about 0rtt scenario from above as applied to stream 0
 
 Jana: should stream [0,1] have stream-level flow control.
 
-Martin Duke: client hello is limited to 1280. 
+Martin Duke: client hello is limited to 1280.
 
 Marten: it’s a stream, I can send you gigabytes…
 
@@ -337,7 +337,7 @@ Martin D - concerns about AEAD - satisfied its not a problem
 
 Review of PR 120
 
-120 refers to TLS for STK. 
+120 refers to TLS for STK.
 
 Ian: Both STK and resumption ticket can be used for the validation, correct?
 
@@ -393,7 +393,7 @@ Mt: yep. That’s the cost of the abstraction
 
 MD: back to the opaque blob without a specific format.
 
-Mt: transport may ask for unconditional stateless reject. 
+Mt: transport may ask for unconditional stateless reject.
 
 Ian: can you end up with a small window if validation fails? To control amplification but complete the crypto
 
@@ -503,35 +503,35 @@ _BREAK!_
 
 ###Issue 40 - [Variable Length Fields](https://github.com/quicwg/base-drafts/issues/40)
 
-Jana:  In favor of reduction, but we should not be afraid of this; we can simplify this. 
+Jana:  In favor of reduction, but we should not be afraid of this; we can simplify this.
 
-Ian, but we need to find a balance, since fixed length fields will consume small percentages of total Internet traffic over time.  
+Ian, but we need to find a balance, since fixed length fields will consume small percentages of total Internet traffic over time.
 
-Brian is suggesting that we shift to a single or a small number of variable-length integer encoding.  
+Brian is suggesting that we shift to a single or a small number of variable-length integer encoding.
 
-Ian: we have had zero bugs about that particular issue.  Lots of other dragons (QPACK, flow control etc.) that produced bugs, but this did not, so maybe we shouldn’t be that scared of it.  
+Ian: we have had zero bugs about that particular issue.  Lots of other dragons (QPACK, flow control etc.) that produced bugs, but this did not, so maybe we shouldn’t be that scared of it.
 
-Mirja: hardware offloading would be easier with fixed-offset encoding.  
+Mirja: hardware offloading would be easier with fixed-offset encoding.
 
-Ian:  note that the Brian/ekr encoding is probably very hardware-unfriendly.  
+Ian:  note that the Brian/ekr encoding is probably very hardware-unfriendly.
 
 Lars:  two distinct issues:  1) are we in favor of variable length encoding and then 2) if so, what do we want to support.  We need to simplify for the easy cases.
 
-Lucas:  we already have this problem with stream offset.  
+Lucas:  we already have this problem with stream offset.
 
-Martin:  we also have this issue with stream IDs.  
+Martin:  we also have this issue with stream IDs.
 
-Lucas, I’m not sure that is the same.  
+Lucas, I’m not sure that is the same.
 
-Ekr:  there are a number of things that are difficult about the current system.  There are a lot of different lengths for individual items and a very large universe of potential interactions.  0,2,3,4,5,7,8 for stream offset, for example.  
+Ekr:  there are a number of things that are difficult about the current system.  There are a lot of different lengths for individual items and a very large universe of potential interactions.  0,2,3,4,5,7,8 for stream offset, for example.
 
-Jana: we could take a shot at simplifying this and see what comes out.  
+Jana: we could take a shot at simplifying this and see what comes out.
 
-Ekr:  another issue is the distance between the control flags and what they control.  There are some unfortunate splits in the current system. You need a path to look at the common header before looking at the later section about what they control.  
+Ekr:  another issue is the distance between the control flags and what they control.  There are some unfortunate splits in the current system. You need a path to look at the common header before looking at the later section about what they control.
 
-Jana:  there are a few packet types, and those map to what parsing you need.  
+Jana:  there are a few packet types, and those map to what parsing you need.
 
-Ekr:  the implementation type may have different damage from this; BSD styles wouldn’t have that much trouble, but a subroutine/parses mechanism wouldn’t be that easier.  
+Ekr:  the implementation type may have different damage from this; BSD styles wouldn’t have that much trouble, but a subroutine/parses mechanism wouldn’t be that easier.
 
 Jana:  some of these are part of things that we don’t have yet (like hardware offload), so let’s be careful about presuming that those would exist or how they would be built.
 
@@ -539,42 +539,42 @@ Lars: There clearly are hardware offload in TCP, and we can presume they would a
 
 MT: I think that we can reduce this to two problems: how packets are constructed before we have a connection and how packets are constructed once we have a connection.
 
-Lars:  a principle could be that the packets are self-describing for this. 
+Lars:  a principle could be that the packets are self-describing for this.
 
- MartinD:  common encoding would also be useful, so that if you have a 2 bit integer it is always represented the same way.  
- 
- Lucas:  I disagree a bit with this.  Different parts of the protocol would have different conventions (like packet numbers).  
+ MartinD:  common encoding would also be useful, so that if you have a 2 bit integer it is always represented the same way.
 
-MT: your point is well-made, and that there are different constraints in different parts of the protocol (you wouldn’t have a 6-byte packet number).  Reducing the options is basically a good idea. 
+ Lucas:  I disagree a bit with this.  Different parts of the protocol would have different conventions (like packet numbers).
 
-Clarifying question:  are we trying to unify these with the using protocol (like HTTP stream identifiers).  Not the scope of this discussion, which is transport-y bits of QUIC.  Can be considered.  
+MT: your point is well-made, and that there are different constraints in different parts of the protocol (you wouldn’t have a 6-byte packet number).  Reducing the options is basically a good idea.
 
-Marten:  there is no complexity in having different representation; we might collapse into a single representation, but it shouldn’t be a guiding principle.  
+Clarifying question:  are we trying to unify these with the using protocol (like HTTP stream identifiers).  Not the scope of this discussion, which is transport-y bits of QUIC.  Can be considered.
 
-Lucas: can we make a list first, we might not have that many to consider and coalesce. Jana: that would be a good exercise.   
+Marten:  there is no complexity in having different representation; we might collapse into a single representation, but it shouldn’t be a guiding principle.
 
-Lucas:  can we do this editorially?  Can the editors just reduce this and we look at it again at the next meeting?  
+Lucas: can we make a list first, we might not have that many to consider and coalesce. Jana: that would be a good exercise.
 
-Jana: the editors can propose something and based on some of these principles.  
+Lucas:  can we do this editorially?  Can the editors just reduce this and we look at it again at the next meeting?
+
+Jana: the editors can propose something and based on some of these principles.
 
 Jana: I am surprised no one brought up timestamps (several: we were being nice to you).
 
-Ekr:  This isn’t variable length, but there are two bits in the public header that are never used (version, public_reset).  We might be better off with either having a placeholder fingerprint or an {unusual bit} followed by a type.  
+Ekr:  This isn’t variable length, but there are two bits in the public header that are never used (version, public_reset).  We might be better off with either having a placeholder fingerprint or an {unusual bit} followed by a type.
 
-Martin: why don’t we separate out handshake/special from normal packets and treat them independently.  
+Martin: why don’t we separate out handshake/special from normal packets and treat them independently.
 
-Ekr: that would simplify the handling for it.  
+Ekr: that would simplify the handling for it.
 
-Brian: now you have one bit, and you could steal that from 
+Brian: now you have one bit, and you could steal that from
 
-Ekr: or you could have a special packet pattern, like a 64 bit string.  You can scrub for it.  
+Ekr: or you could have a special packet pattern, like a 64 bit string.  You can scrub for it.
 
-Lucas: that feels like over-engineering.  
+Lucas: that feels like over-engineering.
 
-Martin: we are already spending bits on packet number, key, connection id bit, etc. 
+Martin: we are already spending bits on packet number, key, connection id bit, etc.
 
 Ekr: we have plenty of spare bits, yes, but that it is not really the issue.
-Divergence into signalling whether connection-id is present in all packets or not.  
+Divergence into signalling whether connection-id is present in all packets or not.
 
 Martin: that’s a micro-optimization.  If you have a special packet split, then you can avoid the optimizations for very unusual packet types.  Version number is present on special packets.
 Jana: we need text.
@@ -587,43 +587,43 @@ Brian/Ian: I think we should write something up, as there are a lot of ways to p
 
 Jana: I would like to consider Ekr’s proposal *and* the simplification PR so we can compare them.
 
-### [Issue 148](https://github.com/quicwg/base-drafts/issues/148) 
+### [Issue 148](https://github.com/quicwg/base-drafts/issues/148)
 
 ... is closely related; it is a dupe of the thing the Ekr just opened. (It’s getting late; ekr opened it as a TLS issue]) Instead ekr will copy into it.
 
-### [Issue 56](https://github.com/quicwg/base-drafts/issues/56 ) 
+### [Issue 56](https://github.com/quicwg/base-drafts/issues/56 )
 
-We need an escape valve for extended flags, is that a version number or something else that extends public flags?  Given that extended flags are after version, version seems to be enough.  
+We need an escape valve for extended flags, is that a version number or something else that extends public flags?  Given that extended flags are after version, version seems to be enough.
 
-MartinD: we could have N flag bytes.  
+MartinD: we could have N flag bytes.
 
-Ian: we are going to get middlebox fixing on this, at some point, so we need to get this defined sooner rather than later.  
+Ian: we are going to get middlebox fixing on this, at some point, so we need to get this defined sooner rather than later.
 
-MartinD:  in accordance with my preference to keep these together, I’d rather have these be sequential, but I can see it as possible to have them buried back there.  Signal bit would enable the Google implementation to pick that.  
+MartinD:  in accordance with my preference to keep these together, I’d rather have these be sequential, but I can see it as possible to have them buried back there.  Signal bit would enable the Google implementation to pick that.
 
-Mirja: if you don’t have the version on every packet, the middleboxes will have trouble believing in multiple version and may ossify early.  
+Mirja: if you don’t have the version on every packet, the middleboxes will have trouble believing in multiple version and may ossify early.
 
-Jana: the existing flag byte already atrophied  
+Jana: the existing flag byte already atrophied
 
 Jana tells a war story of middlebox that was classifying by using just the flags byte.  Allowed the signalling to complete, but then the data traffic was dropped.
 
-MartinD: I didn’t hear a ton of pushback on declaring the extra byte bit now and move it to the front.  (Acclaim) 
+MartinD: I didn’t hear a ton of pushback on declaring the extra byte bit now and move it to the front.  (Acclaim)
 
-Lucas suggests we use it randomly to avoid atrophy.  
+Lucas suggests we use it randomly to avoid atrophy.
 
-Ekr: is the rule that it is set to 1 for all but the last flags byte? 
+Ekr: is the rule that it is set to 1 for all but the last flags byte?
 
-Ian: that makes the quic header unparseable.  
+Ian: that makes the quic header unparseable.
 
 (Descent into possibility of abuse, using this for backchannel public data).
 
-MT: what do we want to put into the public header?  Ian: nothing.  
+MT: what do we want to put into the public header?  Ian: nothing.
 
-EKR: we need everything required to set up the cryptographic context.  
+EKR: we need everything required to set up the cryptographic context.
 
-Brian: moving to special packets prior to cryptographic context may reduce what you need.  
+Brian: moving to special packets prior to cryptographic context may reduce what you need.
 
-Ekr: routing information and crypto bootstrap is required, and nothing else.  
+Ekr: routing information and crypto bootstrap is required, and nothing else.
 
 Jana: we haven’t demonstrated we don’t need more flags, just that ways exist without them
 
@@ -637,7 +637,7 @@ Lars: what do we put in the box?
 
 MartinD: we have a dueling proposal thing going on at the moment.
 
-Ian/Ekr Not sure it is dueling, as we will likely do both.  We do need to see a proposal for special packets.  
+Ian/Ekr Not sure it is dueling, as we will likely do both.  We do need to see a proposal for special packets.
 
 ian: I think we’ll see two proposals for special packets
 
@@ -654,7 +654,7 @@ MartinD:  calculate length by IP packet length or the UDP header length field.  
 
 ### [Issue 70](https://github.com/quicwg/base-drafts/issues/70)
 
-Lucas: there are a few frames that don’t make sense more than once in a packet. 
+Lucas: there are a few frames that don’t make sense more than once in a packet.
 
 Mirja: i thought you could have per-stream and per-connection information
 
@@ -664,7 +664,7 @@ MT: you can save some space by doing this
 
 Jana: here’s what it’ll look like. packet header, public part and private part. pieces are varlen and can be turned on/off with flags.
 
-ekr: maybe if there’s enough stuff that’s common in every packet, then frame encoding is bad. that’s the intuition behind the common header. you could also have just a private header frame. 
+ekr: maybe if there’s enough stuff that’s common in every packet, then frame encoding is bad. that’s the intuition behind the common header. you could also have just a private header frame.
 
 Jana: difference is the private header appears in the top of the packet
 
@@ -680,7 +680,7 @@ Jana: if you’re reading a frame and you can’t parse the frame, lengths help.
 
 ekr: do you have to consent to me sending you new frame types?
 
-Lucas: if we want to introduce a new frame that’s connection-wide, we’d have to put it in the extensible 
+Lucas: if we want to introduce a new frame that’s connection-wide, we’d have to put it in the extensible
 
 Igor: private header with fixed structure… ?
 
@@ -700,7 +700,7 @@ ekr: write up the sending patterns so we can understand the design constraints
 
 Lucas: why do this?
 
-Ted: Let’s use audio as an example. Codecs break into short chunks, say 20ms. Each of those 20ms things, if it drops, i don’t care. You could design something where you have one stream per frame, frames sent independently. 
+Ted: Let’s use audio as an example. Codecs break into short chunks, say 20ms. Each of those 20ms things, if it drops, i don’t care. You could design something where you have one stream per frame, frames sent independently.
 
 Lucas: Why do you want to do that without in-order reliability...why are you using QUIC then?
 
@@ -720,9 +720,9 @@ ekr, mt: no
 
 ### time format #109
 
-there’s code for uf16 in the issue. proposal is scaled integer. Marten notes that some things are delayed more than 65ms on host. we’re wasting bits with a linear format, don’t need microseconds to express “slow”. an exponential format makes sense here. 
+there’s code for uf16 in the issue. proposal is scaled integer. Marten notes that some things are delayed more than 65ms on host. we’re wasting bits with a linear format, don’t need microseconds to express “slow”. an exponential format makes sense here.
 
-Ian: scaled integers are reasonable. no strong opinion. 
+Ian: scaled integers are reasonable. no strong opinion.
 
 Lars: for TCP, we have microseconds now because scaled ints don’t work in datacenters. we might have a similar problem.
 
@@ -732,7 +732,7 @@ Marten: 2 sec RTT on mobile?
 
 Lucas: Ack delay, doesn’t depend on RTT.
 
-Jana: you can scale to 10ms units, then you get 655ms. 
+Jana: you can scale to 10ms units, then you get 655ms.
 
 Ian: If we’re going to fix this for all time, then I’d rather use u16.
 
@@ -768,7 +768,7 @@ resolution: zero byte in packet context -> padding.
 
 _ekr moves to adjourn_
 
-###  Issue 144 
+###  Issue 144
 
 ... was marked as editorial
 
