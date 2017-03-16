@@ -22,6 +22,19 @@ _~5 minutes_
 Brief status report on the Working Group, Tokyo Interim, and upcoming meeting planning.
 
 
+### QUIC Applicability and Manageability Statement
+
+_~15 minutes_
+
+Discussion of our charter deliverable for an Applicability and Manageability Statement.
+
+Proposals to consider for adoption:
+* [Applicability of the QUIC Transport Protocol](https://tools.ietf.org/html/draft-kuehlewind-quic-applicability-00)
+* [Manageability of the QUIC Transport Protocol](https://tools.ietf.org/html/draft-kuehlewind-quic-manageability-00)
+
+Presentation by Mirja Kuehlewind.
+
+
 ### Working Group Drafts
 
 _~60 minutes_
@@ -39,7 +52,7 @@ their current state.
 
 ### Open Issues
 
-_~80 minutes_
+_~60 minutes_
 
 Discussion of open issues, list forthcoming.
 
@@ -47,4 +60,6 @@ Discussion of open issues, list forthcoming.
 
 ### Parking Lot ("if time permits")
 
-_TBD. If you would like to present something (on a time permitting basis), please contact the Chairs._
+_If you would like to present something (on a time permitting basis), please contact the Chairs._
+
+* [ECN Support in QUIC](https://tools.ietf.org/html/draft-johansson-quic-ecn-01) - Ingemar Johansson
