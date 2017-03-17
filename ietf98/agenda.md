@@ -62,4 +62,6 @@ Discussion of open issues, list forthcoming.
 
 _If you would like to present something (on a time permitting basis), please contact the Chairs._
 
+* [QPACK](https://tools.ietf.org/html/draft-bishop-quic-http-and-qpack-02) - Mike Bishop
 * [ECN Support in QUIC](https://tools.ietf.org/html/draft-johansson-quic-ecn-01) - Ingemar Johansson
+* Encrypting the header - Eric Rescorla
