@@ -54,7 +54,43 @@ their current state.
 
 _~60 minutes_
 
-Discussion of open issues, list forthcoming.
+Discussion of open issues.
+
+#### Crypto
+
+* [167](https://github.com/quicwg/base-drafts/issues/167) - Hash for unencrypted packets
+* [227](https://github.com/quicwg/base-drafts/issues/227) - Encrypt the initial cleartext packets with a deterministic key
+
+* [45](https://github.com/quicwg/base-drafts/issues/45) - Handshake protocol selection
+
+#### Shutdown/Close
+
+* [61](https://github.com/quicwg/base-drafts/issues/61) - Silent close
+* [330](https://github.com/quicwg/base-drafts/issues/330) - Clarify meaning of CONNECTION_CLOSE
+
+#### HTTP
+
+* [348](https://github.com/quicwg/base-drafts/pull/348) - Define "httpq"
+
+* [81](https://github.com/quicwg/base-drafts/issues/81) - Split from HTTP/2 framing?
+* [376](https://github.com/quicwg/base-drafts/pull/376) - Separate IANA registries
+
+* [128](https://github.com/quicwg/base-drafts/issues/128) - We have two things called "frame"
+
+#### Misc
+
+* [248](https://github.com/quicwg/base-drafts/issues/248) - Exemption from congestion control
+* [384](https://github.com/quicwg/base-drafts/pull/384) - Stream1 is not that special
+
+* [267](https://github.com/quicwg/base-drafts/issues/267) - Server enforcement of 1280 octet packet size
+
+#### Not-Crypto
+
+* [391](https://github.com/quicwg/base-drafts/pull/391) - Packet number echo with variable-length numbering
+* [393](https://github.com/quicwg/base-drafts/pull/393) - Packet number echo with fixed-length, 32-bit packet and echo numbers  
+* [269](https://github.com/quicwg/base-drafts/issues/269) - Packet Number Echo in Public Header
+* [279](https://github.com/quicwg/base-drafts/issues/279) - Public Flags to Aid Troubleshooting
+
 
 
 
