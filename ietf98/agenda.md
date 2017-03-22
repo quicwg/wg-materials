@@ -70,19 +70,8 @@ Discussion of open issues.
 
 #### HTTP
 
-* [348](https://github.com/quicwg/base-drafts/pull/348) - Define "httpq"
-
 * [81](https://github.com/quicwg/base-drafts/issues/81) - Split from HTTP/2 framing?
 * [376](https://github.com/quicwg/base-drafts/pull/376) - Separate IANA registries
-
-* [128](https://github.com/quicwg/base-drafts/issues/128) - We have two things called "frame"
-
-#### Misc
-
-* [248](https://github.com/quicwg/base-drafts/issues/248) - Exemption from congestion control
-* [384](https://github.com/quicwg/base-drafts/pull/384) - Stream1 is not that special
-
-* [267](https://github.com/quicwg/base-drafts/issues/267) - Server enforcement of 1280 octet packet size
 
 #### Not-Crypto
 
@@ -91,7 +80,22 @@ Discussion of open issues.
 * [269](https://github.com/quicwg/base-drafts/issues/269) - Packet Number Echo in Public Header
 * [279](https://github.com/quicwg/base-drafts/issues/279) - Public Flags to Aid Troubleshooting
 
+#### Misc
 
+Time permitting only.
+
+* [348](https://github.com/quicwg/base-drafts/pull/348) - Define "httpq"
+
+* [248](https://github.com/quicwg/base-drafts/issues/248) - Exemption from congestion control
+* [384](https://github.com/quicwg/base-drafts/pull/384) - Stream1 is not that special
+
+* [267](https://github.com/quicwg/base-drafts/issues/267) - Server enforcement of 1280 octet packet size
+
+* [128](https://github.com/quicwg/base-drafts/issues/128) - We have two things called "frame"
+
+#### Connection ID
+
+Discuss privacy issues.
 
 
 ### Parking Lot ("if time permits")
