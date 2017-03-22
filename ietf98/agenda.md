@@ -1,7 +1,7 @@
 # QUIC Working Group Agenda - IETF 98
 
 * [Meeting chat](xmpp:quic@jabber.ietf.org?join)
-* [Meetecho](http://www.meetecho.com/ietf97/quic) remote participation
+* [Meetecho](http://www.meetecho.com/ietf98/quic) remote participation
 * [Minutes](http://etherpad.tools.ietf.org:9000/p/notes-ietf-98-quic)
 
 
