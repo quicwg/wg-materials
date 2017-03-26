@@ -44,7 +44,7 @@ Discuss the recently published -02 WG drafts:
 * [Transport](https://tools.ietf.org/html/draft-ietf-quic-transport-02) ([presentation](https://docs.google.com/presentation/d/1m72Z0Vt2Ruxxkq4DIzUr84Slv-cSosZA9ANSV1HAjFk/))
 * [Recovery](https://tools.ietf.org/html/draft-ietf-quic-recovery-02)
 * [TLS](https://tools.ietf.org/html/draft-ietf-quic-tls-02) ([presentation](https://docs.google.com/presentation/d/18ybWD1oHvcrGTuEWKbxiFf4oHwr6qRSnuXsn1VPPthg/))
-* [HTTP](https://tools.ietf.org/html/draft-ietf-quic-http-02)
+* [HTTP](https://tools.ietf.org/html/draft-ietf-quic-http-02) ([presentation](HTTP-QUIC.PDF))
 
 ... including the issues they attempt to address. The editors will give presentations summarising
 their current state.
@@ -102,5 +102,5 @@ Discuss privacy issues.
 
 _If you would like to present something (on a time permitting basis), please contact the Chairs._
 
-* [QPACK](https://tools.ietf.org/html/draft-bishop-quic-http-and-qpack-02) - Mike Bishop
+* [QPACK](https://tools.ietf.org/html/draft-bishop-quic-http-and-qpack-02) - Mike Bishop ([presentation](QPACK.PDF))
 * [ECN Support in QUIC](https://tools.ietf.org/html/draft-johansson-quic-ecn-01) - Ingemar Johansson ([presentation](ECN.pdf))
