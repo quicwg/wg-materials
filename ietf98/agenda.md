@@ -32,7 +32,7 @@ Proposals to consider for adoption:
 * [Applicability of the QUIC Transport Protocol](https://tools.ietf.org/html/draft-kuehlewind-quic-applicability-00)
 * [Manageability of the QUIC Transport Protocol](https://tools.ietf.org/html/draft-kuehlewind-quic-manageability-00)
 
-Presentation by Mirja Kuehlewind.
+[Presentation](appman.pdf) by Mirja Kuehlewind.
 
 
 ### Working Group Drafts
