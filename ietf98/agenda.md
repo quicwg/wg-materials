@@ -42,7 +42,7 @@ _~60 minutes_
 Discuss the recently published -02 WG drafts:
 
 * [Transport](https://tools.ietf.org/html/draft-ietf-quic-transport-02) ([presentation](https://docs.google.com/presentation/d/1m72Z0Vt2Ruxxkq4DIzUr84Slv-cSosZA9ANSV1HAjFk/))
-* [Recovery](https://tools.ietf.org/html/draft-ietf-quic-recovery-02)
+* [Recovery](https://tools.ietf.org/html/draft-ietf-quic-recovery-02) ([presentation](https://docs.google.com/presentation/d/1U6wtqLUdd7jamXug_wMpjppU08-iuG-5TLXNtDpHeOo/))
 * [TLS](https://tools.ietf.org/html/draft-ietf-quic-tls-02) ([presentation](https://docs.google.com/presentation/d/18ybWD1oHvcrGTuEWKbxiFf4oHwr6qRSnuXsn1VPPthg/))
 * [HTTP](https://tools.ietf.org/html/draft-ietf-quic-http-02) ([presentation](HTTP-QUIC.PDF))
 
