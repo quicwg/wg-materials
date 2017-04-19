@@ -1,5 +1,24 @@
 # QUIC WG Meeting Minutes: IETF 98
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Administrivia](#administrivia)
+- [Chairs' Overview](#chairs-overview)
+- [QUIC Applicability and Manageability Statement](#quic-applicability-and-manageability-statement)
+- [Working Group Drafts](#working-group-drafts)
+  - [Transport (presentation)](#transport-presentation)
+  - [TLS (presentation)](#tls-presentation)
+  - [Recovery (presentation)](#recovery-presentation)
+  - [HTTP (presentation)](#http-presentation)
+- [Open Issues](#open-issues)
+  - [167 - Hash for unencrypted packets](#167---hash-for-unencrypted-packets)
+  - [45 - Handshake protocol selection](#45---handshake-protocol-selection)
+  - [61 - Silent close](#61---silent-close)
+  - [391 - Packet number echo with variable-length numbering](#391---packet-number-echo-with-variable-length-numbering)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 ## Administrivia
 
