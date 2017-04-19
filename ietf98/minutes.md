@@ -25,7 +25,7 @@ being possible to implement. Jana Iyengar asked how those will be determined. Pr
 special tag "Blocks Implementation" in GitHub.
 
 
-##QUIC Applicability and Manageability Statement
+## QUIC Applicability and Manageability Statement
 
 Proposals to consider for adoption:
 
