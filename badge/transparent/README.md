@@ -3,5 +3,4 @@ These SVG files where created by importing the original EPS artwork by
 
 * ungrouping it
 * removing the white background rectangle
-* resizing the canvas to crop any empty space
 * exporting as SVG
