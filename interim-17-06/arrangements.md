@@ -6,10 +6,7 @@ hosted by Mozilla in Paris, France.
 
 ### Register
 
-Please [fill out the registration form](https://doodle.com/poll/ygytx3neykpg5czp) to attend
-in-person or remotely (using WebEx).
-
-Registration closes on **9 May 2017**.
+Registration is closed.
 
 Remote participants will be e-mailed meeting details beforehand; if you have not participated on
 the mailing list, please send an e-mail to [mnot@mnot.net](mailto:mnot@mnot.net) so we can send
