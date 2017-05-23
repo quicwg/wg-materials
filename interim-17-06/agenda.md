@@ -1,40 +1,25 @@
-# IETF QUIC Working Group Interim Meeting Agenda
+# IETF QUIC Working Group Interim Meeting
 
 * [Meeting arrangements](https://github.com/quicwg/wg-materials/blob/master/interim-17-06/arrangements.md)
 * [Issues List](https://github.com/quicwg/base-drafts/issues)
 * [Drafts](https://github.com/quicwg/base-drafts)
 
-## Tuesday, 6 June
 
-9:30 - Start (doors open at 9:00)
+## Daily Schedule
 
-* Welcome, Introductions
-* Scribes, Blue Sheets, NOTE WELL
+_6-8 June_
 
-1pm-2:15 - Lunch
+* 9:30 - Start (doors open at 9:00)
+  * Scribes, Blue Sheets, NOTE WELL
+* 12:15-1:30 - Lunch
+* ~5:00 - End
 
-~5:00 - End
+## Agenda
 
-
-## Wednesday, 7 June
-
-9:30 - Start (doors open at 9:00)
-
-* Scribes, Blue Sheets, NOTE WELL
-
-12:15-1:30 - Lunch
-
-~5:00 - End
-
-
-## Thursday, 8 June
-
-9:30 - Start (doors open at 9:00)
-
-* Scribes, Blue Sheets, NOTE WELL
-
-12:15-1:30 - Lunch
-
-* Parking Lot (any other business)
-
-~5:00 - End
+1. Welcome, Introductions
+2. Review the [First Implementation Draft](https://github.com/quicwg/base-drafts/wiki/First-Implementation-Draft) plan
+3. Discuss any [issues brought up regarding the -03 drafts](https://github.com/quicwg/base-drafts/milestone/1), with an aim to either resolving them, or determining that they don't block initial implementation
+4. Discuss any [remaining issues](https://github.com/quicwg/base-drafts/milestone/1) against the First Implementation Draft
+4. Talk about next steps (publishing First Implementation Draft, coordinating interop)
+5. Discuss [remaining issues](https://github.com/quicwg/base-drafts/projects/2) as time permits
+6. Parking Lot
