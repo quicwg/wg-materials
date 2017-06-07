@@ -3,7 +3,7 @@
 * [Meeting arrangements](https://github.com/quicwg/wg-materials/blob/master/interim-17-06/arrangements.md)
 * [Issues List](https://github.com/quicwg/base-drafts/issues)
 * [Drafts](https://github.com/quicwg/base-drafts)
-
+* [Minutes](https://docs.google.com/document/d/1Vm7vqMPxlCEuPnbrzIeE4Div9l3H1-rYxQqGX6A7MiI/edit?usp=sharing)
 
 ## Daily Schedule
 
