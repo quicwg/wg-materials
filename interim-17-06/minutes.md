@@ -1,4 +1,4 @@
-#QUIC Interim Meeting
+# QUIC Interim Meeting
 
 * Chairs: Mark Nottingham, Lars Eggert
 * Agenda: https://github.com/quicwg/wg-materials/blob/master/interim-17-06/agenda.md
