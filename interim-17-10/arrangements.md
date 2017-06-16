@@ -22,7 +22,7 @@ See [the agenda](agenda.md) for full details.
     F5 Networks Headquarters
     351 Elliott Ave Seattle, WA 98119
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.194451224538!2d-122.36548868376238!3d47.62235129488202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490155cc1f357f3%3A0x2c1714cfca67fc0f!2sF5+Networks!5e0!3m2!1sen!2sau!4v1497581103733" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+[map](https://goo.gl/maps/1qZuhLcjC2o)
 
 #### When you arrive
 
