@@ -1,8 +1,40 @@
+
 # QUIC Interim Meeting
 
 * Chairs: Mark Nottingham, Lars Eggert
 * Agenda: https://github.com/quicwg/wg-materials/blob/master/interim-17-06/agenda.md
 * Issues List: https://github.com/quicwg/base-drafts/issues
+
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [June 6, 2017](#june-6-2017)
+  - [Agenda review.](#agenda-review)
+  - [Review of First Implementation Draft](#review-of-first-implementation-draft)
+  - [Slides:  Server chosen Connection ID.](#slides--server-chosen-connection-id)
+  - [Issue #58 Frame Type Extensions](#issue-58-frame-type-extensions)
+  - [Issue #588 Pull Request (CSID/SCID)](#issue-588-pull-request-csidscid)
+  - [Issue 568: Consider making Cleartext integrity version independent](#issue-568-consider-making-cleartext-integrity-version-independent)
+  - [Issue 383: maximum packet size](#issue-383-maximum-packet-size)
+  - [Issue #426 Hdr format/multiplexing](#issue-426-hdr-formatmultiplexing)
+  - [Issue #311: grease the packet type octet](#issue-311-grease-the-packet-type-octet)
+- [Day 2](#day-2)
+  - [Issue #215: Design Public Reset (aka Stateless Reset)](#issue-215-design-public-reset-aka-stateless-reset)
+  - [Issue #353 Replace Connection Close with Public Reset](#issue-353-replace-connection-close-with-public-reset)
+  - [Prune transport error codes #467](#prune-transport-error-codes-467)
+  - [Packet Number Echo PR#269](#packet-number-echo-pr269)
+- [Day 3](#day-3)
+  - [1-bit Path Information](#1-bit-path-information)
+  - [Unidirectional Streams](#unidirectional-streams)
+  - [Encrypted MetaData](#encrypted-metadata)
+  - [Discussion of hackathon mechanics and funding.](#discussion-of-hackathon-mechanics-and-funding)
+  - [Hpack](#hpack)
+  - [Ack Spoofing.](#ack-spoofing)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 ## June 6, 2017
 
