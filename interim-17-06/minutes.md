@@ -10,7 +10,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
-- [June 6, 2017](#june-6-2017)
+- [7 June 2017](#7-june-2017)
   - [Agenda review.](#agenda-review)
   - [Review of First Implementation Draft](#review-of-first-implementation-draft)
   - [Slides:  Server chosen Connection ID.](#slides--server-chosen-connection-id)
@@ -20,12 +20,12 @@
   - [Issue 383: maximum packet size](#issue-383-maximum-packet-size)
   - [Issue #426 Hdr format/multiplexing](#issue-426-hdr-formatmultiplexing)
   - [Issue #311: grease the packet type octet](#issue-311-grease-the-packet-type-octet)
-- [Day 2](#day-2)
+- [7 June 2017](#7-june-2017-1)
   - [Issue #215: Design Public Reset (aka Stateless Reset)](#issue-215-design-public-reset-aka-stateless-reset)
   - [Issue #353 Replace Connection Close with Public Reset](#issue-353-replace-connection-close-with-public-reset)
   - [Prune transport error codes #467](#prune-transport-error-codes-467)
   - [Packet Number Echo PR#269](#packet-number-echo-pr269)
-- [Day 3](#day-3)
+- [8 June 2017](#8-june-2017)
   - [1-bit Path Information](#1-bit-path-information)
   - [Unidirectional Streams](#unidirectional-streams)
   - [Encrypted MetaData](#encrypted-metadata)
@@ -36,7 +36,7 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
-## June 6, 2017
+## 7 June 2017
 
 Ekr gives a summary of local logistics.
 
@@ -634,7 +634,7 @@ Lars: this is less true than before
 
 Martin T: if long header, the connection id is definitely there. For short headers, this is a problem. Load balancers can demand that conn id is always there.
 
-## Day 2
+## 7 June 2017
 
 ### Issue #215: Design Public Reset (aka Stateless Reset)
 
@@ -1172,7 +1172,7 @@ May use red/blue packet idea (we’ll coin the packet tuple “Neo”)
 
 
 
-## Day 3
+## 8 June 2017
 
 Mark:  Based on feedback from previous days, we need to time-box the discussions.  The conversations have been good, but to make progress we need to actually close.  Discusses queued presentations.
 
