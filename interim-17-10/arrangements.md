@@ -6,6 +6,7 @@ hosted by F5 Networks in Seattle, WA, USA.
 
 ### Register
 
+In-person and remote participants MUST register using [this form](https://goo.gl/forms/sWVg15TM4IIuUq1U2). Registration closes on 3 September 2017.
 
 
 ### Schedule and Agenda
