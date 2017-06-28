@@ -47,6 +47,11 @@ _Morning session I, 9:30-11:30, Grand Hilton Ballroom_
 
 ### Issue Discussion
 
-*balance of time*
+*85 min*
 
 See the [QUIC Project Board](https://github.com/quicwg/base-drafts/projects/2).
+
+### Related Work
+
+* 15 min - QUIC ECN
+* 15 min - QUIC Multipath Experiments
