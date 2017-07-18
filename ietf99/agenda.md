@@ -33,7 +33,12 @@ _Afternoon session II, 15:50-17:50, Grand Hilton Ballroom_
 
 *balance of time*
 
-See the [QUIC Project Board](https://github.com/quicwg/base-drafts/projects/2).
+- RTT measurement / packet number echo (Ian Swett)
+- QUIC Invariants (Martin Thomson)
+- Unidirectional Streams
+- Connection close / shutdown (Jana Iyengar)
+
+See also the [QUIC Project Board](https://github.com/quicwg/base-drafts/projects/2).
 
 
 ## Friday, 21 July 2017
@@ -53,5 +58,5 @@ See the [QUIC Project Board](https://github.com/quicwg/base-drafts/projects/2).
 
 ### Related Work
 
-* 15 min - QUIC ECN
+* 15 min - QUIC ECN (Ingemar Johansson)
 * 15 min - QUIC Multipath Experiments
