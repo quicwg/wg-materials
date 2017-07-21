@@ -1,14 +1,20 @@
-QUIC Session I
+# QUIC Working Group Minutes - IETF99
+
+## Session I
+
 Thursday 15:50 - 16:xx, Grand Ballroom
+
 Notetakers: Brian Trammell and Ted Hardie
 
 Note Well and pointer to Ombudsteam given.
-Blue sheets are being circulated.
-Mark notes the Interim coming up in Seattle; there is a deadline for registration.  Please see details at https://quicwg.github.io .
-Agenda bash:  add hackathon and first implmentation draft.
 
-Hackathon / Interop Report
-==========================
+Blue sheets are being circulated.
+
+Mark notes the Interim coming up in Seattle; there is a deadline for registration.  Please see details at https://quicwg.github.io .
+
+Agenda bash: add hackathon and first implementation draft.
+
+### Hackathon / Interop Report
 
 Mark: Five implementations. Outcome pretty good.
 
@@ -26,16 +32,14 @@ No questions about the hackathon.
 
 
 
-First Implementation Draft Status
-=================================
+### First Implementation Draft Status
 
 -04 was designated, but everyone implemented -05 instead. 
 
 What did we learn from that implementation experience?  Moved to -05.  Possibly time for a second implementation draft now, according to Martin Duke.  He clarifies that the 2nd draft would be a feature set that comes yet, rather than a single successor draft (there might be multiple drafts in this round of iterations).  
 
 
-Second Implementation Draft
-===========================
+### Second Implementation Draft
 
 Martin Duke: want to clarify what the second draft is and isn’t. It’s a feature set that comes after what we’re doing today. Continuous iterative process with multiple features, centered around the handshake. We want to focus on the stream. Key updates, post-handshake CID, and PMTU go into a subsequent draft. See https://github.com/quicwg/base-drafts/wiki/Second-Implementation-Draft 
 
@@ -86,13 +90,14 @@ Mark: Can you take a go at modifying the wiki tonight, to discuss tomorrow.
 
 Ted via Jabber: Let’s implement Gopher.
 
-Issue Discussion
-=================================
+### Issue Discussion
+
 https://github.com/quicwg/base-drafts/issues
 
-Passive RTT measurement in QUIC - Ian Swett
-------------------------------------------
+#### Passive RTT measurement in QUIC - Ian Swett
+
 https://www.ietf.org/proceedings/99/slides/slides-99-quic-sessa-quic-passive-rtt-measurements-00.pdf
+
 https://github.com/quicwg/base-drafts/issues/631
 
 
@@ -177,7 +182,7 @@ Jana: Valuable to have a long discussion right now, but we do have an existence 
 
 Colin Perkins: Two points. If likely to be problematic, we should have heard that the technique is problematic (1-3), then we would know that. Some people have said that there are hypothetical problems  - we should document these problems if they are real.
 
-Measuring once per RTT is an isuse. A lot of why you want to measure is during times where there is a problem. RTT clocked signals are dynamic.
+Measuring once per RTT is an issue. A lot of why you want to measure is during times where there is a problem. RTT clocked signals are dynamic.
 
 Ted: Having done network planning on lots of networks, RTT change is a pretty basic form of analysis. While I certainly have a concern, I have a related concern that this may make networks less easy to operate and that may have impacts on how this is finally used.
 
@@ -225,11 +230,11 @@ Spencer: Could I ask some show of hands questions. How many people understand th
 
 Martin: With this much competition, I would starve.
 
-[How many hands?]
+*How many hands?*
 
 Spencer: How many people would like to know more about this?
 
-[Fewer hands than experts]
+*Fewer hands than experts*
 
 Spencer: At the retreat in Montreal, the IAB and IESG talked about this. Then the IESG talked about this again. Then the IESG talked about this again. ekr gave an excellent presentation helping the IESG understanding these issues better. It seems to me that if that got a broader audience, that might be helpful. 
 
@@ -275,16 +280,16 @@ Mark: Two questions: should a concrete privacy/security violation be identified 
 
 Ted: I present two postulates: 1 there is no chance we’re doing this for the next implementation draft, and we already know that people want to share information about this issue, we have already established that the WG has less information than it wants. 
 
---- Day 2
+## Session II
 
 Friday 9:30-11:30
-Bad Note Taker: Wes Hardaker
+
+*Bad Note Taker: Wes Hardaker*
 
 Agenda discussion, including related work such as Multipath
 
 
-Second Implementation Draft
----
+### Second Implementation Draft
 
 Martin updated it overnight
 - tried to synthesize the comments and getting wire and handshake right
@@ -292,36 +297,57 @@ Martin updated it overnight
 - Did not address 5 things (key updates, post handshake, loss recovery, congestion control, http/2 mapping)
 - Changed a lot of things based on consensus
 
-[missed something due to confilcts]
+*missed something due to conflicts*
+
 Suggested we do http 0.9, simpliest thing is to do string matching on get.  otherwise i think this is pretty reasonable and let's leave the debatable stuff out; if you do more than what we agree to then that's cool
+
 We should just do http.9 and we don't need to support all the primatives.  We already have 2 streams, so maybe it's already multistream and I'd be fine with not including multiple streams
 you can multiplex multiple requests
+
 what is stateless reset?
+
 Martin: I thought we changed the term.  
+
 Brian: http 0.9 get multiple seems perfect
+
 ?: support removing go away and http.9 get
+
 DKG: if you want to do a multi-stream protocol you could just do ftp (there was a boo)
+
 ekr: agrees further -- resumption and 0rtt
+
 martin will do a few more tweaks and then take it to the list; we're converging 
 
-------
-Quic Invariants
-Martin Tompson
+
+### Quic Invariants
+
+*Martin Thomson*
 
 issue 645
-constraints on the handshake:
-    - one point of clarification: what's the scope of handshake?  until version is complete? until 0rtt is done?
-    no, until handshake is complete. Maybe we share clarify that to not include the client's second flight.  the point at which you start packet protcecting is the point at which the handshake is done
-    - that was true in the previous point of the draft; we could now allow the ip address to change after that (src).
-    I'm suggesting a change of language: until a server is available from the client, client can't change src addr
-    there are other things that require the handshake be complete
-    martin duke: is that a security limitation?
-    it's connection id arrangement to get a connection ID
-    if the client hand multiple IP addresses, and maintained connection then you need to associate the connection id as the server
-    martin: we need to take some steps to simplify this
-    that does create a whole host of complications like off path attakers -- it's possible they're solvable but we should agree upon this now.
+
+constraints on the handshake
+
+One point of clarification: what's the scope of handshake?  until version is complete? until 0rtt is done?
+
+no, until handshake is complete. Maybe we share clarify that to not include the client's second flight.  the point at which you start packet protcecting is the point at which the handshake is done
+
+That was true in the previous point of the draft; we could now allow the ip address to change after that (src).
+
+I'm suggesting a change of language: until a server is available from the client, client can't change src addr
+
+there are other things that require the handshake be complete
+
+martin duke: is that a security limitation?
+
+it's connection id arrangement to get a connection ID
+
+if the client hand multiple IP addresses, and maintained connection then you need to associate the connection id as the server
+
+martin: we need to take some steps to simplify this
+
+that does create a whole host of complications like off path attakers -- it's possible they're solvable but we should agree upon this now.
       
-what can someone do to keep the handshake from completing?
+What can someone do to keep the handshake from completing?
 
 Ian Swett: Cleartext packets should be encrypted using the connection ID plus some other constant that changes with each new QUIC version. That way, when the QUIC version changes, a middlebox cannot snoop on the new packets until it’s updated to understand the new QUIC version.
 
@@ -330,9 +356,10 @@ Martin Thomson asked for agreement on broad guiding principles:
 - Redundant packets (unnecessary retransmissions) are ignored
 - Bad packets cause the connection to be closed
 
-------
-Unidirectional Streams
-Ian Swett
+
+### Unidirectional Streams
+
+*Ian Swett*
 
 Three basic options:
 - Support bidirectional streams, with a bit to signal that the one direction is unused
@@ -364,9 +391,10 @@ Chairs called for hum to get a sense of the opinion in the room:
 
 Chairs asked if anyone is advocating the strict BYOB (Bring Your Own Bidirectionality) model. No one spoke up.
 
-------
-ECN support in QUIC
-Ingemar Johansson
+
+### ECN support in QUIC
+
+*Ingemar Johansson*
 
 Gorry Fairhurst: Let's make sure we specify the basics
 
