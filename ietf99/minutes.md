@@ -1,5 +1,22 @@
 # QUIC Working Group Minutes - IETF99
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+  - [Session I](#session-i)
+    - [Hackathon / Interop Report](#hackathon--interop-report)
+    - [First Implementation Draft Status](#first-implementation-draft-status)
+    - [Second Implementation Draft](#second-implementation-draft)
+    - [Issue Discussion](#issue-discussion)
+      - [Passive RTT measurement in QUIC - Ian Swett](#passive-rtt-measurement-in-quic---ian-swett)
+  - [Session II](#session-ii)
+    - [Second Implementation Draft](#second-implementation-draft-1)
+    - [Quic Invariants](#quic-invariants)
+    - [Unidirectional Streams](#unidirectional-streams)
+    - [ECN support in QUIC](#ecn-support-in-quic)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Session I
 
 Thursday 15:50 - 16:xx, Grand Ballroom
