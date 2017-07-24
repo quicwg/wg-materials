@@ -285,7 +285,7 @@ Lars as individual: dkg would say...
 
 dkg: You said my name three times and I appeared at the mic. What Mirja said is that one gives you pervasive passive RTT surveillance and one gives you targeted RTT surveillance.
 
-Mirja: No, what I said was… [mirja please fill in]
+Mirja: No, what I said was… it's a different signal if you have RTT (changes) over time or just some samples.
 
 Andrew: Whether or not you do this, you still have to take active measures to hide your RTT. 
 
