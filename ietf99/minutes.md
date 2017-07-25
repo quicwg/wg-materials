@@ -271,7 +271,7 @@ Ted: Spencer made a parallel between this proposal and PLUS. PLUS was considerab
 
 Jana: Example of past transports is a poor way to discuss this. QUIC deliberately not TCP. The fact that operators have used TCP headers in the past was because TCP didn’t know better. Now we know better. We know that GUIC has already been ossified. We try to change TCP and we can’t. That’s not good. Second, on soluable privacy concerns… We are in a position to say what information we expose and what we do not. Ian and I have spoken to operators over the past two years about what they might need, and the answers have been vague and lukewarm to yeah we’d like it but we don’t need it. Not sure we can make this 
 
-Dirk: We agree that RTT is useful for network planning and performance management. Mixing up utility and requirements. I don’t think we can decide on privacy risks without evidence. I don’t think we can decide on this without understanding more.
+Dirk: We agree that RTT is useful for network planning and performance management. Mixing up utility and requirements. Given the demonstrated privacy risks, I don’t think we can decide on adding info for RTT measurements without evidence that it is actually required. I don’t think we can decide on this without understanding more.
 
 Sanjay: There certainly is a need for network management for level of accountability on how QUIC is performing. This solution  Let’s go back and look at the charter.
 
