@@ -35,8 +35,7 @@ Agenda bash: add hackathon and first implementation draft.
 
 Mark: Five implementations. Outcome pretty good.
 
-Patrick: Yep five. None had achieved interop of -05 before. Issues: settling on ALPN/TLS versions. 
-[link to compat matrix goes here]
+Patrick: Yep five. None had achieved interop of -05 before. Issues: settling on ALPN/TLS versions. See the [compatibility matrix](https://docs.google.com/spreadsheets/d/1D0tW89vOoaScs3IY9RGC0UesWGAwE6xyLk0l4JtvTVg/edit#gid=0).
 No fundamental problems found. Editorial nits. A couple open to consideration. What the WG meant to write down is what was understood...
 
 Mark: Important milestone; we can start discussion on running code.
