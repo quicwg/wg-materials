@@ -20,3 +20,8 @@ _4-5 October_
 
 ## Agenda
 
+* _30 min_ - Summary of Interop
+* _2 hours_ - [Draft -06 Discussion]() 
+* _2 hours_ - [Undirectional Streams](https://github.com/quicwg/base-drafts/issues/175)
+* _remaining time_ - Transport/TLS/Recovery issues, as prioritised on the [project board](https://github.com/quicwg/base-drafts/projects/2?)
+* _final 30 min_ - Wrap up / next steps
