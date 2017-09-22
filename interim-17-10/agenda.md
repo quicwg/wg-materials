@@ -3,7 +3,8 @@
 * [Meeting arrangements](https://github.com/quicwg/wg-materials/blob/master/interim-17-10/arrangements.md)
 * [Issues List](https://github.com/quicwg/base-drafts/issues)
 * [Drafts](https://github.com/quicwg/base-drafts)
-* [Minutes]()
+* [Minutes](http://etherpad.tools.ietf.org:9000/p/notes-interim-17-10-quic)
+* [Chat](xmpp:quic@jabber.ietf.org?join)
 
 ## Daily Schedule
 
