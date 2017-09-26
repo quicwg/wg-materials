@@ -22,7 +22,7 @@ _4-5 October_
 ## Agenda
 
 * _30 min_ - Summary of interop meeting
-* _2 hours_ - [Draft -06 discussion]() 
+* _2 hours_ - Draft -06 discussion
 * _2 hours_ - [Undirectional streams](https://github.com/quicwg/base-drafts/issues/175)
 * _balance of time_ - Transport/TLS/Recovery issues, as prioritised on the [project board](https://github.com/quicwg/base-drafts/projects/2?)
 * _45 min_ - [QPACK, QCRAM Update](header-compression.pdf)
