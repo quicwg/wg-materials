@@ -21,9 +21,20 @@ _4-5 October_
 
 ## Agenda
 
+### Wednesday
+
 * _30 min_ - Summary of interop meeting
-* _2 hours_ - Draft -06 discussion
-* _2 hours_ - [Undirectional streams](https://github.com/quicwg/base-drafts/issues/175)
+* _1 hour_ - Draft -06 discussion (as necessary)
+* Architectural issues:
+  * [Silent close](https://github.com/quicwg/base-drafts/issues/61) - Jana Iyengar
+  * [QUIC streams abstraction](https://github.com/quicwg/base-drafts/issues/783) / [Stream cancellation by transport](https://github.com/quicwg/base-drafts/issues/485) - Mike Bishop
+  * [Stream closed state and acknowledgements](https://github.com/quicwg/base-drafts/issues/743) - Jana Iyengar
+  * [Unidirectional Streams](https://github.com/quicwg/base-drafts/issues/175) - Martin
+  * [ACK frame](https://github.com/quicwg/base-drafts/issues/644) - Ian Swett
+
+### Thursday
+
+* Architectural issues (continued)
+* _1 hour_ - [HTTP header compression](https://github.com/quicwg/wg-materials/blob/master/interim-17-10/header-compresion.pdf) - Mike Bishop and Buck Krasic
 * _balance of time_ - Transport/TLS/Recovery issues, as prioritised on the [project board](https://github.com/quicwg/base-drafts/projects/2?)
-* _45 min_ - [QPACK, QCRAM Update](header-compression.pdf)
 * _final 30 min_ - Wrap up / next steps
