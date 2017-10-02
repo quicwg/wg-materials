@@ -29,8 +29,8 @@ _4-5 October_
   * [Silent close](https://github.com/quicwg/base-drafts/issues/61) - Jana Iyengar
   * [QUIC streams abstraction](https://github.com/quicwg/base-drafts/issues/783) / [Stream cancellation by transport](https://github.com/quicwg/base-drafts/issues/485) - Mike Bishop
   * [Stream closed state and acknowledgements](https://github.com/quicwg/base-drafts/issues/743) - Jana Iyengar
-  * [Unidirectional Streams](https://github.com/quicwg/base-drafts/issues/175) - Martin
-  * [ACK frame](https://github.com/quicwg/base-drafts/issues/644) - Ian Swett
+  * [Unidirectional Streams](https://github.com/quicwg/base-drafts/issues/175) - Martin/EKR ([presentation](https://github.com/quicwg/wg-materials/blob/master/interim-17-10/unidirectional.pdf))
+  * [ACK frame](https://github.com/quicwg/base-drafts/issues/644) - Ian Swett ([presentation](https://github.com/quicwg/wg-materials/blob/master/interim-17-10/ack-recovery.pdf))
 
 ### Thursday
 
