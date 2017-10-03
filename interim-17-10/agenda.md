@@ -27,8 +27,7 @@ _4-5 October_
 * _1 hour_ - Draft -06 discussion (as necessary)
 * Architectural issues:
   * [Silent close](https://github.com/quicwg/base-drafts/issues/61) - Jana Iyengar ([presentation](https://github.com/quicwg/wg-materials/blob/master/interim-17-10/connection-close.pdf))
-  * [QUIC streams abstraction](https://github.com/quicwg/base-drafts/issues/783) / [Stream cancellation by transport](https://github.com/quicwg/base-drafts/issues/485) - Mike Bishop ([presentation](https://github.com/quicwg/wg-materials/blob/master/interim-17-10/stream-abstraction.pdf))
-  * [Stream closed state and acknowledgements](https://github.com/quicwg/base-drafts/issues/743) - Jana Iyengar
+  * [QUIC streams abstraction](https://github.com/quicwg/base-drafts/issues/783) / [Stream cancellation by transport](https://github.com/quicwg/base-drafts/issues/485) / [Stream closed state and acknowledgements](https://github.com/quicwg/base-drafts/issues/743) - Mike Bishop ([presentation](https://github.com/quicwg/wg-materials/blob/master/interim-17-10/stream-abstraction.pdf))
   * [Unidirectional Streams](https://github.com/quicwg/base-drafts/issues/175) - Martin/EKR ([presentation](https://github.com/quicwg/wg-materials/blob/master/interim-17-10/unidirectional.pdf))
   * [ACK frame](https://github.com/quicwg/base-drafts/issues/644) - Ian Swett ([presentation](https://github.com/quicwg/wg-materials/blob/master/interim-17-10/ack-recovery.pdf))
 
