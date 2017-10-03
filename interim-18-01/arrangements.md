@@ -55,8 +55,11 @@ A few of the many hotels within walking distance include:
 * [St Jerome's](http://www.stjeromesthehotel.com.au/) - urban glamping
 * [Jasper Hotel](http://www.jasperhotel.com.au)
 * [Adelphi Hotel](http://www.adelphi.com.au)
+* [The Langham](http://www.langhamhotels.com/en/the-langham/melbourne/)
 
-There are also a variety of hotels within reach of public transport; the venue can be reached by taking any of the trams that travel on Swanston Street (most of the tram lines in Melbourne), or by train to Melbourne Central station.
+There are also a variety of hotels within reach of public transport; the venue can be reached by taking any of the trams that travel on Swanston Street (most of the tram lines in Melbourne), or by train to Melbourne Central station. For example:
+
+* [The Blackman](http://www.artserieshotels.com.au/blackman/) - on St Kilda Road, short tram ride away
 
 
 ## Other Considerations
