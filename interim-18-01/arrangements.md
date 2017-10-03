@@ -10,7 +10,7 @@ To attend, fill out the [registration form](https://goo.gl/forms/yhtgEBt1R25TJGF
 
 Remote participation will be available, but requires registration.
 
-Registration will close on 8 December, 2017.
+**Registration will close on 8 December, 2017.**
 
 
 ## Schedule and Agenda
