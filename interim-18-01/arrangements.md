@@ -3,6 +3,8 @@
 This is the arrangements page for the QUIC Working Group's fourth Interim Face-to-Face meeting,
 hosted by [RMIT University](http://rmit.edu.au) in Melbourne, Australia.
 
+Attendees are expected to be familiar with Working Group drafts and related issues, and to take active part in discussion. All participation takes place under the terms of the IETF [NOTE WELL](https://www.ietf.org/about/note-well.html) statement. See our [contribution guidelines](https://github.com/quicwg/base-drafts/blob/master/CONTRIBUTING.md) for more information about participating in QUIC.
+
 
 ## Register
 
