@@ -666,7 +666,9 @@ ACTION ITEM: Martin will generate a PR reflecting Victor's idea.
 
 Mark: we seem to be bouncing back and forth between API and protocol details.  He believes that a short document that describes the transport abstractions and guarantees.  He has asked a couple of folks to form a design team to produce that, as way of distilling the material for discussion.  Roberto and Jeff have taken the token for that.  May not be done for Singapore, but should be in time for Melbourne.  This will be a closed design team, but they may ask others for help (as a reminder, design teams have no special status in IETF process).
 
-Lars looks back at yesterday and notes that we have 50 people in the room, but about half did not speak during the meeting.  Good break discussions, but we need more involvement from implementors--jump in when you need help removing a block.  Volunteer to write something up that describes the problem or a solution.  The effort on the implementations is great--we're up to 10 implementations.  But that isn't enough; you need to help write spec and write code.  Note that in an open process, we don't want to limit attendance.  But we do note that getting large venues is difficult and that having folks who are not talking in the sessions is worrisome for flow and impact.  We need to have more participation.  Mark highligts as well that we are missing some diversity as well--there are zero women in this room.  If you have colleagues who can come to Singapore or Melbourne, please bring them along.
+Lars looks back at yesterday and notes that we have 50 people in the room, but about half did not speak during the meeting.  Good break discussions, but we need more involvement from implementors--jump in when you need help removing a block.  Volunteer to write something up that describes the problem or a solution.  The effort on the implementations is great--we're up to 10 implementations.  But that isn't enough; you need to help write spec and write code.  Note that in an open process, we don't want to limit attendance.  But we do note that getting large venues is difficult and that having folks who are not talking in the sessions is worrisome for flow and impact.  We need to have more participation.  
+
+Mark highligts as well that we are missing some diversity as well--there are zero women in this room.  If you have colleagues who can come to Singapore or Melbourne, please bring them along.
 
 Jana: the editors are also happy to take information from implementors as issues and PRs in github; they can help guide the editors on what to work on next.
 
@@ -678,7 +680,11 @@ Jana: the editors are also happy to take information from implementors as issues
 
 Ian Swett presents.
 
-The goal of the presentation is to first review things we agree on (4-5 slides) and then get feedback on formulation and open issues for anything that we do not agree on.  The last bit is an issue on timescript and ECN.  Reviewing slide 1, QUIC Ack Principles.  Jana notes on bullet one that this is different from TCP, and that the distinction needs to be kept in mind.  On bullet two, suggested replacement text is that Frames are not required to be retransmitted verbatim, but the information within them is retransmitted.  (Pure verbatim recapitulation will not work because of timestamp data).
+The goal of the presentation is to first review things we agree on (4-5 slides) and then get feedback on formulation and open issues for anything that we do not agree on.  The last bit is an issue on timescript and ECN.  
+
+Reviewing slide 1, QUIC Ack Principles.  
+
+Jana notes on bullet one that this is different from TCP, and that the distinction needs to be kept in mind.  On bullet two, suggested replacement text is that Frames are not required to be retransmitted verbatim, but the information within them is retransmitted.  (Pure verbatim recapitulation will not work because of timestamp data).
 
 Marteen asks about handshake retransmission and notes that he is concerned about the text about ACK frames.  He suggests either removing ACKs from the handshake retransmission and sending a new retransmission.
 
