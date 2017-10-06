@@ -538,7 +538,7 @@ room: yes, write it up
 
 result: We will discuss Roberto's issue offline
 
-#### UNIDIRECTIONAL STREAMS (EKR)
+#### Unidirectional Streams
 
 Others proposed, EKR tried to implement
 
