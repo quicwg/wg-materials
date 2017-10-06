@@ -42,7 +42,7 @@ mnot: We'll talk tomorrow about that.
 
 A set of test cases would help.
 
-Christrian: HTTP/0.9 was the default test, but it would be nice to have a list of files to be expected.
+Christian: HTTP/0.9 was the default test, but it would be nice to have a list of files to be expected.
 
 mnot: Need somebody to write that down and then use it.  Volunteer!!
 
@@ -79,7 +79,7 @@ Christian: When writing the tests, developed an API that asked is there somethin
 
 Jana: This is the other model.
 
-ekr: How the transport behaves different in the existing scenario.  Imagine we didn't have the functinoality we'd still have two of 'em so we're just adding an error or it's discarded.
+ekr: How the transport behaves different in the existing scenario.  Imagine we didn't have the functionality we'd still have two of 'em so we're just adding an error or it's discarded.
 
 Christian: At the transport layer it's ambiguous whether it's new data or a retransmit.
 
@@ -116,19 +116,19 @@ Martin: During the break, we came to some conclusions: in the application close 
 
 Jana: Likes it - yeah!  Christian's point is maybe a way to model this.  If we're having the application negotiating anyway then they can negotiate fully.
 
-Martin: Is not sure that it's not as important to standardize as some people think because it's a division of labor thing that's not visable on the wire.
+Martin: Is not sure that it's not as important to standardize as some people think because it's a division of labor thing that's not visible on the wire.
 
 ekr: The point Roberto made is that it's not nice to the middlebox when things just stop.  One way is to have a message that says I'm in draining another way is to have a message that says it's fine but I'm done.
 
-Alan: One question: Can you gracefully terminate that streams that send no explicit singnal.  yes
+Alan: One question: Can you gracefully terminate that streams that send no explicit signal.  yes
 
 Alan: Please don't legislate the API - ie, agrees with Martin.
 
 Peter: Agree with MT that most of the discussion has been about the division of labor is.  Better if we don't have to specify it.  But, the question is whether we need some extra message or whether we are changing the semantics of connection close.  Am I right in that assesment? Partially right.  If we pick a new state we need a message to signal the state change.
 
-Victor: Confused about whether it's an API issue.  The API cquestion is whether it blocks.
+Victor: Confused about whether it's an API issue.  The API question is whether it blocks.
 
-MB: Do we need an explict signal.  Thinks Roberto's use case was pretty compelling. Do we have consensus on that.
+MB: Do we need an explicit signal.  Thinks Roberto's use case was pretty compelling. Do we have consensus on that.
 
 Pinder: We need the state - no clear that we need a message.
 
@@ -199,12 +199,12 @@ Martin Duke: Don't I want to run a timer from the last packet I've sent
 
 Jana: Depends. Path timer should be in play when data is in flight, else idle timeout.
 
-Krasic: Counter-intuitive that this happens for ?
+Krasic: Counter-intuitive that this happens for?
 
 Thomson: Bad to have stream specific things for generic transport, perhaps other than stream 0
 Restate principle driving this: Idle from the point that the app tries to use the conn. So, app wants to send, recv, or is doing ping.
 
-Jana: valuable if these don't cover all usecases, if people send notes saying what is missing.
+Jana: valuable if these don't cover all use cases, if people send notes saying what is missing.
 
 Igor: not sure about not running idle timer when path timer is running (or vice versa)
 
@@ -227,7 +227,7 @@ Jana: There are also nat timeouts to deal with.
 
 Dmitri: connections in TCP can last forever
 
-Roberto: Most impls tell you when the conn closes
+Roberto: Most implementations tell you when the conn closes
 
 Christian: Nat timeouts differ for TCP.
 
@@ -288,7 +288,7 @@ Buck: If you care about the control stream fo rH2 you could close it/reopen. Not
 
 Igor: Main point of the idle thing: Determine if other endpoint has gone away. Otherwise you could have an app that could send a ping and verify that the other side has went away, but this is possible problem for mobile.
 
-If you fail to verify that the other side has gone away without sending a ping. Is this the only usecase for app idle?
+If you fail to verify that the other side has gone away without sending a ping. Is this the only use case for app idle?
 
 Mike: it isn't the other side going away it is about if the app is doing something or not.
 
@@ -296,11 +296,11 @@ Igor: This is up to the app. If not doing anything, it could close().
 
 Jana: The reason to not move all of this up to the application is that you want to be careful about precise packet time.
 
-Igor: Seems like the uscase is to not wake up cell radio.
+Igor: Seems like the use case is to not wake up cell radio.
 
 Thomson: Ignore other uses, for the application: It is a clear signal to the transport that it wants to use the connection. The reason we have ping now, without pending pull request, is for an explicit signal by the app to keep the connection alive.
 
-Jana: If imple,entation says if you have streams open other than zero or one, then I'll send a ping is reasonable
+Jana: If implementation says if you have streams open other than zero or one, then I'll send a ping is reasonable
 
 Christian: Plenty of reasons to send ping outside of transport, e.g. tail-loss probe (TLP)
 
@@ -364,7 +364,7 @@ Buck: If you care about latency, you don't have that granularity.
 
 Roberto: Disagree, but we'll take it offline
 
-Jana: We should consdier other use cases, yes
+Jana: We should consider other use cases, yes
 
 Bishop: Previously, there was a special error code for STOP_SENDING
 
@@ -439,7 +439,7 @@ duke: the only quadrant we haven't covered is demanding a fin from the peer? is 
 
 bishop: we think so, but will talk about it.
 
-bishop: api for streams would probably allow shutdown of read, write, or both, like file descriptotrs
+bishop: api for streams would probably allow shutdown of read, write, or both, like file descriptors
 
 bishop: when is closed not "closed"?
 
@@ -453,7 +453,7 @@ ekr: could also declare closed when exiting stream flow control
 
 christian: what if i receive a stream frame for a closed stream
 
-receiver states: open, knows final offset, received all data, delivered all data, reset received, deliverd reset to app
+receiver states: open, knows final offset, received all data, delivered all data, reset received, delivered reset to app
 
 christian: point of closed is to get rid of stream state
 
@@ -491,7 +491,7 @@ jana: consider http use case. if this is a real use case, we can support it. thi
 
 christian: how does this interact with the FIN?
 
-bishop: we could have an alternate FIN where the max offset is below the actualy max offset.
+bishop: we could have an alternate FIN where the max offset is below the actually max offset.
 
 victor: streams are kinda like messages. we shouldn't support this because peer can alter semantics of sender's stuff.
 
@@ -575,7 +575,7 @@ victor: bidirectional state machine is product of unidirectional states. so what
 
 Duke: When there is a receive stream you create a phantom stream for that. Why is it necessary?
 
-ekr: Only necessary when doing bidirectional streams. Asumming if you use the bidi API you want to do that.
+ekr: Only necessary when doing bidirectional streams. Assuming if you use the bidi API you want to do that.
 
 praveen: can we have a collision of streams with simultaneous open?
 
@@ -623,9 +623,9 @@ ekr: a little early to ossify based on early implementations
 
 eric: agree with eric, but should look at pros and cons. we have a 1:n use case. endpoint negotiates further comms on one stream, then transfer happens on extra stream. but i don't see how to do that in quic rather than the app.
 
-bishop: i disagreee with jeff. websockets and other message-oriented protocols will be here.
+bishop: i disagrees with jeff. websockets and other message-oriented protocols will be here.
 
-kazuho: in -05 the state machine is the same either way. keep current design. ian's proposla is most balanced.
+kazuho: in -05 the state machine is the same either way. keep current design. ian's proposal is most balanced.
 
 jim: Ted + 1. wait for pressing use case to change stuff.
 
@@ -647,7 +647,7 @@ thomson: i am shocked at how this developed. just trying to solve a few bugs, wh
 
 thomson: stream 1 is currently broken in http if server speaks first
 
-christian: would like to resolve uncertainities in protocol. can we handle this with version numbers to test ekr's stuff?
+christian: would like to resolve uncertainties in protocol. can we handle this with version numbers to test ekr's stuff?
 
 Roni: unidirectional needed for multicast
 
@@ -740,7 +740,7 @@ Jana agrees that there are places where TCP is already deviating from once every
 
 Jeff notes that the transport draft has some of this text, but that the congestion draft is very incomplete.
 
-Jeff suggests that we have MUST-level prohibitions should be in the transport draft, but that SHOULDs and implemention advice should be in the recovery draft.
+Jeff suggests that we have MUST-level prohibitions should be in the transport draft, but that SHOULDs and implementation advice should be in the recovery draft.
 
 Ian asks if this an okay split?
 
@@ -828,13 +828,13 @@ Roni--for ECN, we need to know whether we are going to require support for this 
 
 Jana notes that some kernels may not pass this up to the UDP layer or above.
 
-Martin Duke would like to get the temperature of the room of the room for timestamps--is this vestigial or are thre people who want it.
+Martin Duke would like to get the temperature of the room of the room for timestamps--is this vestigial or are there people who want it.
 
-Roberto on negotiation was initially thinking you may need a new connection, but given that may result in new ECMP placement, we may need to actually making that negotiation remain on the exisitng connection.
+Roberto on negotiation was initially thinking you may need a new connection, but given that may result in new ECMP placement, we may need to actually making that negotiation remain on the existing connection.
 
 Mike B. notes that he is not "fired up", but there are multiple congestion controllers that are delay based, and timestamps are useful, even though the current floating point format is not great.
 
-Lars ntoes that the proposal is to remove the current timestamp format, and to ask those who want timestamps to propose something.
+Lars notes that the proposal is to remove the current timestamp format, and to ask those who want timestamps to propose something.
 
 Jeff:  if anything you have is connected to connection, will you need to renegotiate if you move the connection to a different network.
 
@@ -879,7 +879,7 @@ Christian notes that you can do delay-based congestion control using ack delay, 
 
 [Presentation](https://github.com/quicwg/wg-materials/blob/master/interim-17-10/header-compresion.pdf)
 
-Alien baby slide illicits laughs.
+Alien baby slide elicits laughs.
 
 Mike is concerned that we are in analysis paralysis.
 
@@ -897,7 +897,7 @@ Ian notes that there are other applications where having an ability to get a cal
 
 Jeff says that this is separate from the level of intelligence in the decoder
 
-Ian agress, these are orthoganal.
+Ian agrees, these are orthogonal.
 
 Jana agrees that this callback would be incredibly useful.  He also notes that the explicit deletion requires work.  If there is complex code that gets exercises rarely, that makes him concerned.
 
@@ -915,7 +915,7 @@ Alan notes that this can be valuable in the web as well, so that some headers (e
 
 Jeff, there are hop-by-hop changes (that is, a proxy may have its own sense of required headers etc.).  Mike notes that there is a mitigation for the roll-off case by adding a new one to the front.  The old one rolls off, but the new one is there to replace it.
 
-Back to stream reset.  There is a possiblilty of the data loss in request streams in QUIC.  To avoid that data loss causing a loss of shared compression state, you might have a way to handle a "blessed stream" that handles data manipulation or you may correct that using recovering the control stream.
+Back to stream reset.  There is a possibility of the data loss in request streams in QUIC.  To avoid that data loss causing a loss of shared compression state, you might have a way to handle a "blessed stream" that handles data manipulation or you may correct that using recovering the control stream.
 
 Jeff notes that push may mean that stream reset is not that rare (and there was then discussion of when and how resets occur, but the upshot remained:  streams may get reset).
 
@@ -929,7 +929,7 @@ Buck notes that the QUIC implementation at Google put all headers in a single st
 
 Mike: we have convergence that we want the encoder to decide when to a delete.  Note hearing a lot of convergence on the second point.  Jeff, do we have a direction, even if not convergence?  Alan and Mike disagree with Buck, with not a lot of other strong positions.  Roberto may have a clever tweak to improve the HOL, though not mitigate the issue entirely.
 
-Discussion of value of retaining HPACK wire encoding elements into the follow-on wire encoding.  QCRAM augmeents the existing mechnaism, but QPACK is a redefinition.  Buck explains that his choice was because there will continue to be fallback to h2 over tls.  Jeff says that the pretty unicorn here is that shifting to QCRAM style augmentation with QPACK's stream approach; that would let you use a single encoder across both h2 and quic.  Mike notes that HPACK has some optimization to avoid commands that cannot be used in some contexts.  Alan notes that they may be where they end up, but for his implementation he simply started over.
+Discussion of value of retaining HPACK wire encoding elements into the follow-on wire encoding.  QCRAM augments the existing mechanism, but QPACK is a redefinition.  Buck explains that his choice was because there will continue to be fallback to h2 over tls.  Jeff says that the pretty unicorn here is that shifting to QCRAM style augmentation with QPACK's stream approach; that would let you use a single encoder across both h2 and quic.  Mike notes that HPACK has some optimizations to avoid commands that cannot be used in some contexts.  Alan notes that they may be where they end up, but for his implementation he simply started over.
 
 Mike: can we overcome our distaste and pick one already?
 
@@ -975,7 +975,7 @@ Buck:  In-network buffer bloat is a bigger problem; falling off the end of a que
 
 Patrick:  Are search and YT representative?
 
-Buck/Ian:  Google not as condusive to connection pooling as it could be; web at large has more requests per connection.
+Buck/Ian:  Google not as conducive to connection pooling as it could be; web at large has more requests per connection.
 
 Jana:  The total wins of QUIC versus TCP are substantial enough, it can be expected to transfer reasonably well to the rest of the web.
 
@@ -1074,5 +1074,5 @@ Martin D.:  Are there ECN or Timestamp design teams?
 
 Mark:  Not yet, but please inform them about our discussion and steer them into starting one.
 
-Adjorned -- thanks to F5 for hosting!
+Adjourned -- thanks to F5 for hosting!
 
