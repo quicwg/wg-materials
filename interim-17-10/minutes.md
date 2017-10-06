@@ -6,6 +6,30 @@
 * Chairs: Lars & Mark
 * Attendance: 49 registered locally, 15 remotely
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [4 October 2017](#4-october-2017)
+  - [Interop Summary](#interop-summary)
+  - [Architectural Issues](#architectural-issues)
+    - [Silent Close](#silent-close)
+    - [Connection close discussion](#connection-close-discussion)
+    - [Idle timeout discussion](#idle-timeout-discussion)
+    - [Stream Abstraction](#stream-abstraction)
+      - [How to kill streams](#how-to-kill-streams)
+    - [Unidirectional Streams](#unidirectional-streams)
+- [5 October 2017](#5-october-2017)
+  - [Architectural Issues (cont'd)](#architectural-issues-contd)
+    - [ACK Frame](#ack-frame)
+  - [Header Compression](#header-compression)
+    - [Data on HOLB](#data-on-holb)
+  - [Issue 693, AEAD Protection of Cleartext Packets](#issue-693-aead-protection-of-cleartext-packets)
+  - [Next Steps](#next-steps)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 ## 4 October 2017
 
 Adminsitrivia: Welcome, Blue Sheets (white today), Scribes, Note Well, and Agenda Bash as well as wifi pwds
@@ -58,7 +82,7 @@ ACTION: 2 weeks to review the list.
 
 ### Architectural Issues
 
-#### Silent Close - Jana
+#### Silent Close
 
 [Slides](https://github.com/quicwg/wg-materials/blob/master/interim-17-10/connection-close.pdf)
 
@@ -318,11 +342,11 @@ Praveen: One thing we're ignoring is that a long-running connection has opened i
 
 Martin,Jana: Yes.
 
-### Stream Abstraction
+#### Stream Abstraction
 
 [Presentation](https://github.com/quicwg/wg-materials/blob/master/interim-17-10/stream-abstraction.pdf)
 
-#### How to kill streams
+##### How to kill streams
 
 Stream contains 2 data channels in opposite directions. Both sides FIN
 
@@ -672,7 +696,9 @@ Mark highligts as well that we are missing some diversity as well--there are zer
 
 Jana: the editors are also happy to take information from implementors as issues and PRs in github; they can help guide the editors on what to work on next.
 
-### ACK Frame
+### Architectural Issues (cont'd)
+
+#### ACK Frame
 
 * [Issue](https://github.com/quicwg/base-drafts/issues/644)
 * [Presentation](https://github.com/quicwg/wg-materials/blob/master/interim-17-10/ack-recovery.pdf)
