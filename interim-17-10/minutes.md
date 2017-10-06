@@ -923,13 +923,63 @@ Roy asks what the current table size is.  4k was common, then went to 16k and 64
 
 Alan notes that the overhead per entry is different in the two approaches, and that means that the number of entries per a 64k table is different.
 
-Alan wonders whether delete could be made optional, so that some folks could build naive implementations if you wanted.  If you ignore deletes qpack no longer has to worry about loss on control streams; that's not the same in qcram.  Jeff--don't follow.  If there is no delete, and the table is thus append-only, why isn't that same?  Jeff notes that this is pretty complex.  It may be concentrated in the encoder, but it won't be simple.  Roberto believes that tying this to a single stream may be fine, but that having an arbitrary set of streams could also work. That would be useful if you want multiple compression contexts.  Mike notes that if you want to do that you need to have a way to reference that context, but that this is otherwise possible.  Jeff notes that if you have different contexts, you can have resets restart with a new context.  Buck asks if things like push streams might be in different contexts.  Jeff agrees.  Roberto believes that the one stream or multiple streams is a bike shed.  Mike believes that this may be a bike shed, but the "unkillable" nature is likely not.  Roberto notes that this is not quite true, it simply means that the streams which refer to it must die.  Roberto also notes that HPACK chose a circular approach because it was simpler than delta encoding.  Mike is that ring buffer property considered useful enough to make deletion of specific items more complex.  Buck notes that the question of having one stream or multiple streams for the updates has some subtle effects--if one, you can get HOL, but if many, you can get real complexity of interleaving them.  Buck feels like the move to a single stream for updates was a useful simplification.  Alan notes that the headers block and the frame for the insert will go out together.  Roberto still believes that this is bikeshedding. So long as the sender is saying he is sending bytes in order, if the receiver sees a byte at an offset, they can choose to ack if they didn't care about those bytes.
+Alan wonders whether delete could be made optional, so that some folks could build naive implementations if you wanted.  If you ignore deletes qpack no longer has to worry about loss on control streams; that's not the same in qcram.
 
-Buck notes that the QUIC implementation at Google put all headers in a single stream and it was painful; we have skipped that presentation, but the pain is real.  Alan notes that this is a different issue, since it is only table updates, not all headers.  Buck agrees that this is different. Alan and Jeff then discussed whether the proxies need to have the same set of updates to their tables and conclude that it is "it's complicated".
+Jeff--don't follow.  If there is no delete, and the table is thus append-only, why isn't that same?
 
-Mike: we have convergence that we want the encoder to decide when to a delete.  Note hearing a lot of convergence on the second point.  Jeff, do we have a direction, even if not convergence?  Alan and Mike disagree with Buck, with not a lot of other strong positions.  Roberto may have a clever tweak to improve the HOL, though not mitigate the issue entirely.
+Jeff notes that this is pretty complex.  It may be concentrated in the encoder, but it won't be simple.
 
-Discussion of value of retaining HPACK wire encoding elements into the follow-on wire encoding.  QCRAM augments the existing mechanism, but QPACK is a redefinition.  Buck explains that his choice was because there will continue to be fallback to h2 over tls.  Jeff says that the pretty unicorn here is that shifting to QCRAM style augmentation with QPACK's stream approach; that would let you use a single encoder across both h2 and quic.  Mike notes that HPACK has some optimizations to avoid commands that cannot be used in some contexts.  Alan notes that they may be where they end up, but for his implementation he simply started over.
+Roberto believes that tying this to a single stream may be fine, but that having an arbitrary set of streams could also work. That would be useful if you want multiple compression contexts.
+
+Mike notes that if you want to do that you need to have a way to reference that context, but that this is otherwise possible.
+
+Jeff notes that if you have different contexts, you can have resets restart with a new context.
+
+Buck asks if things like push streams might be in different contexts.
+
+Jeff agrees.
+
+Roberto believes that the one stream or multiple streams is a bike shed.
+
+Mike believes that this may be a bike shed, but the "unkillable" nature is likely not.
+
+Roberto notes that this is not quite true, it simply means that the streams which refer to it must die.
+
+Roberto also notes that HPACK chose a circular approach because it was simpler than delta encoding.
+
+Mike is that ring buffer property considered useful enough to make deletion of specific items more complex.
+
+Buck notes that the question of having one stream or multiple streams for the updates has some subtle effects--if one, you can get HOL, but if many, you can get real complexity of interleaving them.
+
+Buck feels like the move to a single stream for updates was a useful simplification.  Alan notes that the headers block and the frame for the insert will go out together.
+
+Roberto still believes that this is bikeshedding. So long as the sender is saying he is sending bytes in order, if the receiver sees a byte at an offset, they can choose to ack if they didn't care about those bytes.
+
+Buck notes that the QUIC implementation at Google put all headers in a single stream and it was painful; we have skipped that presentation, but the pain is real.
+
+Alan notes that this is a different issue, since it is only table updates, not all headers.
+
+Buck agrees that this is different.
+
+Alan and Jeff then discussed whether the proxies need to have the same set of updates to their tables and conclude that it is "it's complicated".
+
+Mike: we have convergence that we want the encoder to decide when to a delete.  Note hearing a lot of convergence on the second point.
+
+Jeff, do we have a direction, even if not convergence?
+
+Alan and Mike disagree with Buck, with not a lot of other strong positions.
+
+Roberto may have a clever tweak to improve the HOL, though not mitigate the issue entirely.
+
+Discussion of value of retaining HPACK wire encoding elements into the follow-on wire encoding.  QCRAM augments the existing mechanism, but QPACK is a redefinition.
+
+Buck explains that his choice was because there will continue to be fallback to h2 over tls.
+
+Jeff says that the pretty unicorn here is that shifting to QCRAM style augmentation with QPACK's stream approach; that would let you use a single encoder across both h2 and quic.
+
+Mike notes that HPACK has some optimizations to avoid commands that cannot be used in some contexts.
+
+Alan notes that they may be where they end up, but for his implementation he simply started over.
 
 Mike: can we overcome our distaste and pick one already?
 
