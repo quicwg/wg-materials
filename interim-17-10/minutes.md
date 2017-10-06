@@ -27,14 +27,14 @@ Things that were issues:
 * Where the ACKs go for client clear text?
 * Difficult to test some of the reject cases.  Need some wiki document to explain which port does what.
 * There's a problem with the HTTP/0.9 specification. After the get is it a FIN or not?
-* Working out the best way to float the logs around.  Lars and ekr offer web servers that allow the logs to be returned.
+* Working out the best way to float the logs around.  Lars and EKR offer web servers that allow the logs to be returned.
 * HRR logic is maybe not what you think it is.
 
-We started a slack it's not under note well.  It's just for talking about getting interop.  Issues need to be on the ietf mailing list.  If you'd like an invite ask anybody for one (e.g., chairs, ekr, mcmanus, etc.).
+We started a slack it's not under note well.  It's just for talking about getting interop.  Issues need to be on the ietf mailing list.  If you'd like an invite ask anybody for one (e.g., chairs, EKR, mcmanus, etc.).
 
 We're also starting to work on flow control, but we're not sure how to test it.
 
-Toying with the idea of setting up some CI of all the implementations.  If you're interested contacted ekr.
+Toying with the idea of setting up some CI of all the implementations.  If you're interested contacted EKR.
 
 Patrick: What's implementation draft02 targeted at for Singapore?
 
@@ -79,11 +79,11 @@ Christian: When writing the tests, developed an API that asked is there somethin
 
 Jana: This is the other model.
 
-ekr: How the transport behaves different in the existing scenario.  Imagine we didn't have the functionality we'd still have two of 'em so we're just adding an error or it's discarded.
+EKR: How the transport behaves different in the existing scenario.  Imagine we didn't have the functionality we'd still have two of 'em so we're just adding an error or it's discarded.
 
 Christian: At the transport layer it's ambiguous whether it's new data or a retransmit.
 
-ekr: These's some queue from the application the transport that I'm done.
+EKR: These's some queue from the application the transport that I'm done.
 
 roni: There is a message between the applications and is there a transport message as well?
 Jana: no
@@ -118,7 +118,7 @@ Jana: Likes it - yeah!  Christian's point is maybe a way to model this.  If we'r
 
 Martin: Is not sure that it's not as important to standardize as some people think because it's a division of labor thing that's not visible on the wire.
 
-ekr: The point Roberto made is that it's not nice to the middlebox when things just stop.  One way is to have a message that says I'm in draining another way is to have a message that says it's fine but I'm done.
+EKR: The point Roberto made is that it's not nice to the middlebox when things just stop.  One way is to have a message that says I'm in draining another way is to have a message that says it's fine but I'm done.
 
 Alan: One question: Can you gracefully terminate that streams that send no explicit signal.  yes
 
@@ -383,164 +383,164 @@ Jana: Should we support more than the GQUIC use case/functionality?
 Option: take STOP_SENDING to application layer, RST_STREAM is unidirectional
 (but app signal has to be reliable (in a different stream))
 
-ekr: this is an API issue
+EKR: this is an API issue
 
 Jeff: no you need stream id credit from the peer
 
-roberto: there are two desirable behaviors apps may want. does this require two transport concepts?
+Roberto: there are two desirable behaviors apps may want. does this require two transport concepts?
 
 Without negative flow control credit, no.
 
 Bishop: Demanding the FIN is probably an app issue
 
-fernando: but apps don't have that channel!
+Fernando: but apps don't have that channel!
 
-igor: suppose app encodes 2 giant streams and closes. rcvr wants to stop one, but the peer app is gone.
+Igor: suppose app encodes 2 giant streams and closes. rcvr wants to stop one, but the peer app is gone.
 
 Mike B.: that's a good case to have a transport-layer semantic.
 
-bishop: rename to CANCEL_WRITE and CANCEL_READ. Maybe CANCEL_BOTH too? Word "reset" has too much TCP/HTTP baggage.
+Bishop: rename to CANCEL_WRITE and CANCEL_READ. Maybe CANCEL_BOTH too? Word "reset" has too much TCP/HTTP baggage.
 
-duke; is this flush or fin?
+Duke; is this flush or fin?
 
-mike bishop: dropping all queues on the floor (flush) ?
+Mike Bishop: dropping all queues on the floor (flush) ?
 
-jana; there are ways to support the non-flush version
+Jana; there are ways to support the non-flush version
 
-ekr: are these the appropriate semantics?
+EKR: are these the appropriate semantics?
 
-bishop: we need to handle directions separately; reliability is an open issue. but this might be an API issue?
+Bishop: we need to handle directions separately; reliability is an open issue. but this might be an API issue?
 
-ekr: as sender, we have RST and FIN. as rcvr: throw it all away.
+EKR: as sender, we have RST and FIN. as rcvr: throw it all away.
 
-thompson: also as rcvr: please finish stream ASAP
+Thomson: also as rcvr: please finish stream ASAP
 
-duke: does this address the actual objections?
+Duke: does this address the actual objections?
 
-bishop: this makes everyone equally unhappy. victory!
+Bishop: this makes everyone equally unhappy. Victory!
 
-ian: i agree with Mike that the status quo is good enough.
+Ian: i agree with Mike that the status quo is good enough.
 
-duke: what is change from status quo?
+Duke: what is change from status quo?
 
-bishop: we want to keep in the same for now.
+Bishop: we want to keep in the same for now.
 
-jana: i would like to have CANCEL_BOTH
+Jana: i would like to have CANCEL_BOTH
 
-ian: status quo -05 is cancel_both = stop_sending + rst_stream + return of rst_stream
+Ian: status quo -05 is cancel_both = stop_sending + rst_stream + return of rst_stream
 
-ian: -04 and before: rst_stream + rst_stream
+Ian: -04 and before: rst_stream + rst_stream
 
-jana: actually i don't want cancel both
+Jana: actually i don't want cancel both
 
-bishop: rst_stream is an app decision to respond or not. better send stop_sending if you don't want the data.
+Bishop: rst_stream is an app decision to respond or not. better send stop_sending if you don't want the data.
 
-duke: the only quadrant we haven't covered is demanding a fin from the peer? is that OK?
+Duke: the only quadrant we haven't covered is demanding a fin from the peer? is that OK?
 
-bishop: we think so, but will talk about it.
+Bishop: we think so, but will talk about it.
 
-bishop: api for streams would probably allow shutdown of read, write, or both, like file descriptors
+Bishop: api for streams would probably allow shutdown of read, write, or both, like file descriptors
 
-bishop: when is closed not "closed"?
+Bishop: when is closed not "closed"?
 
 in good case with two FINs and acks: what does closed mean? what state of delivery certainty is implied?
 
-ekr: spec says when fin is sent
+EKR: spec says when fin is sent
 
 sender state machine: open, app finsihed, all data sent, all data acked + reset sent & acked
 
-ekr: could also declare closed when exiting stream flow control
+EKR: could also declare closed when exiting stream flow control
 
-christian: what if i receive a stream frame for a closed stream
+Christian: what if i receive a stream frame for a closed stream
 
-receiver states: open, knows final offset, received all data, delivered all data, reset received, delivered reset to app
+Receiver states: open, knows final offset, received all data, delivered all data, reset received, delivered reset to app
 
-christian: point of closed is to get rid of stream state
+Christian: point of closed is to get rid of stream state
 
-jeff: do proxies have to deliver all acked data before tearing down due to reset?
+Jeff: do proxies have to deliver all acked data before tearing down due to reset?
 
-christian: rcvr also has step where all acks have been acked
+Christian: rcvr also has step where all acks have been acked
 
-jana: have to be careful about resets to keep flow control right.
+Jana: have to be careful about resets to keep flow control right.
 
-igor: for proxies: ack does not guarantee delivery to sender.
+Igor: for proxies: ack does not guarantee delivery to sender.
 
-jeff: what about proxies across protocols? http1 over tcp fin must map to the right stream semantic.
+Jeff: what about proxies across protocols? http1 over tcp fin must map to the right stream semantic.
 
-duke: the issue is app may send rst_stream indicating that acked data is good but rest is unneeded. proxy may be elsewhere
+Duke: the issue is app may send rst_stream indicating that acked data is good but rest is unneeded. proxy may be elsewhere
 
-igor: same issue may arise if endpoint hasn't delivered to app
+Igor: same issue may arise if endpoint hasn't delivered to app
 
-jeff: must deliver the stream of bytes.
+Jeff: must deliver the stream of bytes.
 
-buck: some protocols break large uploads into smaller chunks to avoid these issues. giant files should be discouraged.
+Buck: some protocols break large uploads into smaller chunks to avoid these issues. giant files should be discouraged.
 
-jeff: need to deal with legacy clients (e.g. http over tcp) -- semantics need to map
+Jeff: need to deal with legacy clients (e.g. http over tcp) -- semantics need to map
 
-victor: consider 1-direction stream - 3 states: open, finished, dead. are there other transitions?
+Victor: consider 1-direction stream - 3 states: open, finished, dead. are there other transitions?
 
-bishop: it fits in with my state machine
+Bishop: it fits in with my state machine
 
-thompson: what jeff wants is a bad idea, but i can accommodate it. if we allow stream frames sent after reset, it works
+Thompson: what Jeff wants is a bad idea, but i can accommodate it. if we allow stream frames sent after reset, it works
 
-ian: that's fine if there is another reset type
+Ian: that's fine if there is another reset type
 
-ian: we shouldn't have reset acked. that can be taken out of the stream state and in the transport.
+Ian: we shouldn't have reset acked. that can be taken out of the stream state and in the transport.
 
-jana: consider http use case. if this is a real use case, we can support it. this state machine doesn't require anything of implementations but is useful in the abstract.
+Jana: consider http use case. if this is a real use case, we can support it. this state machine doesn't require anything of implementations but is useful in the abstract.
 
-christian: how does this interact with the FIN?
+Christian: how does this interact with the FIN?
 
-bishop: we could have an alternate FIN where the max offset is below the actually max offset.
+Bishop: we could have an alternate FIN where the max offset is below the actually max offset.
 
-victor: streams are kinda like messages. we shouldn't support this because peer can alter semantics of sender's stuff.
+Victor: streams are kinda like messages. we shouldn't support this because peer can alter semantics of sender's stuff.
 
 
 *break*
 
 Roberto: Progressive video is bad for live. Even small segments -> latency. instead increase sizes of segments. mechanisms are over http. longer segments -> better latency and/or quality.
 
-but we need to have adaptive bit rate with short reaction time.
+But we need to have adaptive bit rate with short reaction time.
 
 at certain boundaries we need to stop, but deliver earlier stuff reliably
 
-igor: can app signal this need to transport?
+Igor: can app signal this need to transport?
 
-roberto: can mess up caching, etc.
+Roberto: can mess up caching, etc.
 
-buck: why can't the chunks be separate resources?
+Buck: why can't the chunks be separate resources?
 
-roberto: live stuff: don't want to have dynamic manifest
+Roberto: live stuff: don't want to have dynamic manifest
 
-buck: why can't you just ask for each chunk
+Buck: why can't you just ask for each chunk
 
-roberto: that's not http
+Roberto: that's not http
 
-victor: can this be the http-over-quic mapping? problem that we don't know exact offsets.
+Victor: can this be the http-over-quic mapping? problem that we don't know exact offsets.
 
-roberto: not access to OOO data!
+Roberto: not access to OOO data!
 
-victor: we can't partially close because of variable length
+Victor: we can't partially close because of variable length
 
 mnot: we're ratholing. take offline.
 
 Ted: this may not be generalizable.
 
-bishop: more expanded set of stream states useful as a concept in the doc?
+Bishop: more expanded set of stream states useful as a concept in the doc?
 
 room: yes
 
-bishop: close enough that I should write it up?
+Bishop: close enough that I should write it up?
 
-victor: separate api and wire concepts
+Victor: separate api and wire concepts
 
 room: yes, write it up
 
 result: We will discuss Roberto's issue offline
 
-#### UNIDIRECTIONAL STREAMS (ekr)
+#### UNIDIRECTIONAL STREAMS (EKR)
 
-others proposed, ekr tried to implement
+Others proposed, EKR tried to implement
 
 took about 16 hrs to implement under bad conditions (not a lot of work)
 
@@ -548,14 +548,14 @@ exists in minq branch
 
 recap: streams are initiated by sender; simple state machine; no odd/even semantics; can declare stream relationships (1:N)
 
-data structures are kinda similar
+Data structures are kinda similar
 
-streams hold a ptr to their related stream
+Streams hold a ptr to their related stream
 this relationship is reported to the application but otherwise doesn't matter
 
-his API doesn't work with many-to-one
+His API doesn't work with many-to-one
 
-disadvantages: a little more work for bidirectional protocols
+Disadvantages: a little more work for bidirectional protocols
 
 closure semantics unclear
 
@@ -565,99 +565,99 @@ mapping could get out of sync
 
 Advantages: easier to implement, clearer semantics around creation, more flexible semantics
 
-jana: problem with max_stream_id but can't articulate
+Jana: problem with max_stream_id but can't articulate
 
-ekr: i haven't done max_stream_id yet, so maybe
+EKR: i haven't done max_stream_id yet, so maybe
 
-dkg: I have to keep outgoing stream even though it's done, to understand the response
+DKG: I have to keep outgoing stream even though it's done, to understand the response
 
-victor: bidirectional state machine is product of unidirectional states. so what's the point?
+Victor: bidirectional state machine is product of unidirectional states. so what's the point?
 
 Duke: When there is a receive stream you create a phantom stream for that. Why is it necessary?
 
-ekr: Only necessary when doing bidirectional streams. Assuming if you use the bidi API you want to do that.
+EKR: Only necessary when doing bidirectional streams. Assuming if you use the bidi API you want to do that.
 
-praveen: can we have a collision of streams with simultaneous open?
+Praveen: can we have a collision of streams with simultaneous open?
 
-ekr: no. stream id space is distinct.
+EKR: no. stream id space is distinct.
 
-kazuho: is the only difference if they have distinct stream ids?
+Kazuho: is the only difference if they have distinct stream ids?
 
-ekr: pretty much
+EKR: pretty much
 
-dkg: main difference is flexible semantics. Is this valuable or not?
+DKG: main difference is flexible semantics. Is this valuable or not?
 
-peter: i agree with dkg: 1:1 and unpaired are cool; 1:N is horrifying
+Peter: i agree with dkg: 1:1 and unpaired are cool; 1:N is horrifying
 
-ian: i agree with peter
+Ian: i agree with peter
 
-jana: what is common case? we should optimize for that.
+Jana: what is common case? we should optimize for that.
 
-eric: not just if it's useful. can implement on top of anything. what is the common case?
+Eric: not just if it's useful. can implement on top of anything. what is the common case?
 
-tommy: bidirectional API talking to uni API: must work. how to represent 1:N to a bidirectional API?
+Tommy: bidirectional API talking to uni API: must work. how to represent 1:N to a bidirectional API?
 
-ekr: that's incoherent. stomp the receive stream and graft together, or reject it. application error?
+EKR: that's incoherent. stomp the receive stream and graft together, or reject it. application error?
 
-victor: 1:N not popular
+Victor: 1:N not popular
 
-ted: explicitly signal over the wire if stream is uni or bidirectional. concrete non-bidirectional use case will help us figure out the details on how to do this, defer for now.
+Ted: explicitly signal over the wire if stream is uni or bidirectional. concrete non-bidirectional use case will help us figure out the details on how to do this, defer for now.
 
-let's not rewrite all the code now without a spur.
+Let's not rewrite all the code now without a spur.
 
-bishop: 1:N is interesting for pub/sub. Request/response/push relationships in HTTP might allow all this stuff to move up to the application.
+Bishop: 1:N is interesting for pub/sub. Request/response/push relationships in HTTP might allow all this stuff to move up to the application.
 
 TCP apps -> bidirectional; UDP apps -> unidirectional
 
 Jeff: common case is bidirectional. udp apps are unreliable and won't go to quic anyway.
 
-jana: effect on push streams?
+Jana: effect on push streams?
 
-bishop: promises are in a different id space so that these can be limited.
+Bishop: promises are in a different id space so that these can be limited.
 
-praveen: harder for implementations to step back
+Praveen: harder for implementations to step back
 
-roberto: 1:n stuff is totally orthogonal
+Roberto: 1:n stuff is totally orthogonal
 
-ekr: a little early to ossify based on early implementations
+EKR: a little early to ossify based on early implementations
 
 eric: agree with eric, but should look at pros and cons. we have a 1:n use case. endpoint negotiates further comms on one stream, then transfer happens on extra stream. but i don't see how to do that in quic rather than the app.
 
-bishop: i disagrees with jeff. websockets and other message-oriented protocols will be here.
+Bishop: i disagrees with Jeff. websockets and other message-oriented protocols will be here.
 
-kazuho: in -05 the state machine is the same either way. keep current design. ian's proposal is most balanced.
+Kazuho: in -05 the state machine is the same either way. keep current design. ian's proposal is most balanced.
 
-jim: Ted + 1. wait for pressing use case to change stuff.
+Jim: Ted + 1. wait for pressing use case to change stuff.
 
-victor: unidirectional apps would benefit from this. e.g. mosh to QUIC
+Victor: unidirectional apps would benefit from this. e.g. mosh to QUIC
 
-ted: ekr is right, stuff will change. supporting the use case is great, but we shouldn't blow away the current framework.
+Ted: EKR is right, stuff will change. supporting the use case is great, but we shouldn't blow away the current framework.
 
-jana: ted+1. Kazuho+1, Praveen+1. existing implementations matter, will speed adoption.
+Jana: ted+1. Kazuho+1, Praveen+1. existing implementations matter, will speed adoption.
 
-alan: can have imbalance between # of allowed request and response streams.
+Alan: can have imbalance between # of allowed request and response streams.
 
 Jeff: we can do it all using current features, no need for more
 
-ian: my proposal that people are talking about: take a bit in stream frame that peer should immediately move to half-closed. making this explicit is nicer for proxies.
+Ian: my proposal that people are talking about: take a bit in stream frame that peer should immediately move to half-closed. making this explicit is nicer for proxies.
 
-peter: bishop+1. ted+1 (why not both?). i am building a message protocol with lots of streams. proposed in w3c as part of the web api. avoiding even/odd recovers half the stream space. (any link to the proposal available?).
+peter: Bishop+1. ted+1 (why not both?). i am building a message protocol with lots of streams. proposed in w3c as part of the web api. avoiding even/odd recovers half the stream space. (any link to the proposal available?).
 
-thomson: i am shocked at how this developed. just trying to solve a few bugs, which are not addressed in this discussion. real quic apps won't need bidirectionality. differences between ekr and ian are minor, just how we identify return half. ian+1
+Thomson: i am shocked at how this developed. just trying to solve a few bugs, which are not addressed in this discussion. real quic apps won't need bidirectionality. differences between EKR and ian are minor, just how we identify return half. ian+1
 
-thomson: stream 1 is currently broken in http if server speaks first
+Thomson: stream 1 is currently broken in http if server speaks first
 
-christian: would like to resolve uncertainties in protocol. can we handle this with version numbers to test ekr's stuff?
+Christian: would like to resolve uncertainties in protocol. can we handle this with version numbers to test EKR's stuff?
 
 Roni: unidirectional needed for multicast
 
-victor: we kind of want both. might be an implementation detail.ian's proposal might not work if we don't get the first frame first. makes proposal (see thomson below)
+Victor: we kind of want both. might be an implementation detail.ian's proposal might not work if we don't get the first frame first. makes proposal (see Thomson below)
 
-thomson: victor+1. 3 types of stream frames: unidirectional streams, streams that expect a response, streams that are a response. Each has its own number space.
+Thomson: Victor+1. 3 types of stream frames: unidirectional streams, streams that expect a response, streams that are a response. Each has its own number space.
 
-roberto: I am happy with that.
+Roberto: I am happy with that.
 
-ekr: must expose bidirectional API. Victor's proposal is fine. editors can work out details. must resolve issues of implicit stream creation. victor solves this problem. i can do a new version as christian says, but if people like victor's idea let's go with that.
+EKR: must expose bidirectional API. Victor's proposal is fine. editors can work out details. must resolve issues of implicit stream creation. Victor solves this problem. i can do a new version as Christian says, but if people like Victor's idea let's go with that.
 
 ACTION ITEM: Martin will generate a PR reflecting Victor's idea.
 
@@ -716,7 +716,7 @@ MT: the delay in allocating memory is okay, as long as you have not ack'ed to sa
 
 Ian: you must protect ACK frames with protection equal or greater to the packets they acknowledge.
 
-ekr asks about the possibility of promoting from cleartext to 1RTT key protection (or similar).  Should that be a should?  Definitely seems possible, but not clear how important promotion will be.
+EKR asks about the possibility of promoting from cleartext to 1RTT key protection (or similar).  Should that be a should?  Definitely seems possible, but not clear how important promotion will be.
 
 Jeff: the spec used to call this negative acknowledgement, but the language isn't clear on what to do.
 
@@ -758,11 +758,11 @@ Ian: this came from an experience with a very high loss datalink.
 
 Clarification that the example implies you have not received 9, rather than describing behavior on receiving 9.
 
-Ekr suggests that the PING frame elicitation is a bit of hack, given how early we are.  Possibly we should have a more dedicated method.
+EKR suggests that the PING frame elicitation is a bit of hack, given how early we are.  Possibly we should have a more dedicated method.
 
 Ian asks him to open an issue to create a flag or similar method, so that an ACK frame requests acknowledgement without including transmissible data.
 
-ekr agrees.
+EKR agrees.
 
 Igor asks whether gap frame are not acknowledgeable.
 
@@ -780,7 +780,7 @@ Ian agrees, but notes that congestion control for ack frames is under active res
 
 Mike asks if we could weaken MUST to MUST NOT send an ACK to every ACK only packet.
 
-dkg: this will result in corner cases where every millionth packet isn't ACKed.
+DKG: this will result in corner cases where every millionth packet isn't ACKed.
 
 Roni: it is easy enough to include PAD or PING to solicit ACKs where they are wanted.
 
@@ -810,11 +810,11 @@ Issues: Timestamps and ECN (Issues #774, #804, #698).
 
 Growing consensus that these should be negotiated extension to the ACK frame.  BASIC ACK (ack blocks); ACK + TS (Status quo); ACK + ECN are different frame types.
 
-Ekr, the default would be BASIC ACK, and once negotiated, we don't need bits to describe whats being done because it is consistent?
+EKR, the default would be BASIC ACK, and once negotiated, we don't need bits to describe whats being done because it is consistent?
 
 Ian, yes.
 
-ekr: we don't have a method for doing the negotiation right now?
+EKR: we don't have a method for doing the negotiation right now?
 
 Ian there is some design freedom around this--that is client requested and must support by responder, or full negotiation.
 
@@ -852,7 +852,7 @@ Daniel Havey notes that folks from timestamps and ECN camps are not expected to 
 
 Martin Duke asks about the text on the slide about "status quo"-- basic ack has no timestamp, but ack delay is retained.
 
-ekr: would we also repair the ack delay format?  Not at the moment, but possibly future.
+EKR: would we also repair the ack delay format?  Not at the moment, but possibly future.
 
 Martin, Jana, Christian briefly discuss what ack delay means here--while they are different from TCP timestamps and ack delay seems to be RTT calculation.  The QUIC timestamps are different.
 
@@ -1037,9 +1037,9 @@ Buck: Yes, this is conservative.
 
 ### Issue 693, AEAD Protection of Cleartext Packets
 
-Concern about off-path injection of packets; ekr proposed using AEAD encryption with a Connection ID-derived key.  People didn't want to bake a single algorithm into QUIC for all time, but VN and SR are version-independent.
+Concern about off-path injection of packets; EKR proposed using AEAD encryption with a Connection ID-derived key.  People didn't want to bake a single algorithm into QUIC for all time, but VN and SR are version-independent.
 
-Ekr: Didn't we already agree on this?
+EKR: Didn't we already agree on this?
 
 Christian: You're exposed to injection attacks until you have some shared key.
 
@@ -1049,11 +1049,11 @@ Jana: This gets rid of off-path attackers.
 
 Jeff: Section that describes Cleartext points to TLS; will replace description of hash.
 
-Jeff, Ekr:  Use different keys for client and server, have fewer Cleartext
+Jeff, EKR:  Use different keys for client and server, have fewer Cleartext
 
 Martin: Feed a client/server tag into the key generation, along with the version.
 
-Ekr to submit PR.
+EKR to submit PR.
 
 *break*
 
@@ -1066,13 +1066,13 @@ Christian: That's either aggressive or limiting.
 
 Mark: Have we finished with the second target?
 
-Ekr: Clearly not.
+EKR: Clearly not.
 
 *Discussion of the differences between -05 and -06, mostly not affecting the current targets.*
 
 Mark: Would it be useful to discuss what we need to want to test next?
 
-Ekr: Only a few implementations are caught up already, let's not get further behind.  Keep the same scope and either stay on -05, or same features on a quickly-shipped -07.
+EKR: Only a few implementations are caught up already, let's not get further behind.  Keep the same scope and either stay on -05, or same features on a quickly-shipped -07.
 
 Several, including Patrick:  -07.
 
@@ -1086,13 +1086,13 @@ Mark: Please summarize what will be changing in -07 -- assign issues to a milest
 
 Martin D.:  What do people currently not have?
 
-Ekr: Stateless retry.
+EKR: Stateless retry.
 
 Jeff: Should add 0-RTT.
 
 Christian: What happens if someone proposes an old version?
 
-Ekr/Martins:  Whatever you pick.  Are you a dual-version implementation, or will you do VN and fail if you don't have a mutual version?
+EKR/Martins:  Whatever you pick.  Are you a dual-version implementation, or will you do VN and fail if you don't have a mutual version?
 
 Patrick: I'll probably leave my -05 endpoint available if people want to keep testing.
 
@@ -1114,7 +1114,7 @@ Mark: A hero will emerge.  Assume there's a wiki -- everyone dump your test case
 
 Will revisit a refined second implementation milestone, but using draft -07.  We'll be more aggressive for Melbourne.
 
-Ekr: In TLS, there's a "max early data" value in the session ticket, and most implementations won't do 0-RTT if it's not indicated.
+EKR: In TLS, there's a "max early data" value in the session ticket, and most implementations won't do 0-RTT if it's not indicated.
 
 Martin: Use QUIC's MAX_STREAM_DATA to control this for real, but need to mandate that it's included in the ticket to make general-purpose implementations happy.
 
