@@ -268,7 +268,7 @@ Christian: Ping is primarily for transport.
 
 Jeff: As written, ping is transport with guidance from application.
 
-Christian:  can see sending ping for variety of reasons: Keep alive or other reasons. Appears to be transport machinery.
+Christian: can see sending ping for variety of reasons: Keep alive or other reasons. Appears to be transport machinery.
 
 Jana: Also for connection migration/liveness checking
 
@@ -664,11 +664,11 @@ ACTION ITEM: Martin will generate a PR reflecting Victor's idea.
 
 ## 5 October 2017
 
-Mark notes that we seem to be bouncing back and forth between API and protocol details.  He believes that a short document that describes the transport abstractions and guarantees.  He has asked a couple of folks to form a design team to produce that, as way of distilling the material for discussion.  Roberto and Jeff have taken the token for that.  May not be done for Singapore, but should be in time for Melbourne.  This will be a closed design team, but they may ask others for help (as a reminder, design teams have no special status in IETF process).
+Mark: we seem to be bouncing back and forth between API and protocol details.  He believes that a short document that describes the transport abstractions and guarantees.  He has asked a couple of folks to form a design team to produce that, as way of distilling the material for discussion.  Roberto and Jeff have taken the token for that.  May not be done for Singapore, but should be in time for Melbourne.  This will be a closed design team, but they may ask others for help (as a reminder, design teams have no special status in IETF process).
 
 Lars looks back at yesterday and notes that we have 50 people in the room, but about half did not speak during the meeting.  Good break discussions, but we need more involvement from implementors--jump in when you need help removing a block.  Volunteer to write something up that describes the problem or a solution.  The effort on the implementations is great--we're up to 10 implementations.  But that isn't enough; you need to help write spec and write code.  Note that in an open process, we don't want to limit attendance.  But we do note that getting large venues is difficult and that having folks who are not talking in the sessions is worrisome for flow and impact.  We need to have more participation.  Mark highligts as well that we are missing some diversity as well--there are zero women in this room.  If you have colleagues who can come to Singapore or Melbourne, please bring them along.
 
-Jana notes that the editors are also happy to take information from implementors as issues and PRs in github; they can help guide the editors on what to work on next.
+Jana: the editors are also happy to take information from implementors as issues and PRs in github; they can help guide the editors on what to work on next.
 
 ### ACK Frame
 
@@ -682,9 +682,9 @@ The goal of the presentation is to first review things we agree on (4-5 slides) 
 
 Marteen asks about handshake retransmission and notes that he is concerned about the text about ACK frames.  He suggests either removing ACKs from the handshake retransmission and sending a new retransmission.
 
-Ian notes that this is the intention.
+Ian: this is the intention.
 
-Jeff notes that we may wish to highlight that retransmitting is generally the wrong formulation, except for the handshake.
+Jeff: we may wish to highlight that retransmitting is generally the wrong formulation, except for the handshake.
 
 Ian and MT are going through the document trying to remove the language around "retransmission" where the text needs to be rephrased.
 
@@ -694,17 +694,17 @@ On bullet 4, Jim asks what "processed" means in "received, decrypted, and proces
 
 Jim asks why you aren't done after authentication?
 
-MT says that if you have received something malformed, you would have to send a connection closed; that's part of the processing.
+MT: if you have received something malformed, you would have to send a connection closed; that's part of the processing.
 
-Christian notes that if you send an ACK for the MAX Data, you know it has been received.  That's what you want to achieve.
+Christian: if you send an ACK for the MAX Data, you know it has been received.  That's what you want to achieve.
 
-Jim notes this is a bit slower than optimal, since you can't ACK until you've done processing.
+Jim: this is a bit slower than optimal, since you can't ACK until you've done processing.
 
-Jana notes that you can't know whether you will be generating an ACK until you've parsed the transport-level information (since we don't ACK ACKS).  So processing is "transport-specific processing", not processing of stream data.
+Jana: you can't know whether you will be generating an ACK until you've parsed the transport-level information (since we don't ACK ACKS).  So processing is "transport-specific processing", not processing of stream data.
 
-Jana notes that if you have sent an ACK and can't buffer the data, then you have no way to tell the peer that you need the peer to resend, so you should not send them until you have reached the point of buffering them.  You would have to reset the stream in that case, because you are otherwise not synchronized.
+Jana: if you have sent an ACK and can't buffer the data, then you have no way to tell the peer that you need the peer to resend, so you should not send them until you have reached the point of buffering them.  You would have to reset the stream in that case, because you are otherwise not synchronized.
 
-Jeff notes that there is a corner case when you have a half-closed connection; Ian notes that the processing is different in that case, but it is still transport-level processing complete.
+Jeff: there is a corner case when you have a half-closed connection; Ian notes that the processing is different in that case, but it is still transport-level processing complete.
 
 Roni asks if you can send a connection close rather than an ACK.
 
@@ -712,13 +712,13 @@ Ian answers that connection close is always terminal, so you can send that witho
 
 Bryan then noted that there are cases where you might have scheduling delay or busy processing.  We'll need more description of "processing" to avoid states where you violate the contract.
 
-MT notes that the delay in allocating memory is okay, as long as you have not ack'ed to say that this has processing.  Essentially, if you fail to process and ACK, you are violating the contract and likely to get fatal errors.
+MT: the delay in allocating memory is okay, as long as you have not ack'ed to say that this has processing.  Essentially, if you fail to process and ACK, you are violating the contract and likely to get fatal errors.
 
-Ian notes that you must protect ACK frames with protection equal or greater to the packets they acknowledge.
+Ian: you must protect ACK frames with protection equal or greater to the packets they acknowledge.
 
 ekr asks about the possibility of promoting from cleartext to 1RTT key protection (or similar).  Should that be a should?  Definitely seems possible, but not clear how important promotion will be.
 
-Jeff notes that the spec used to call this negative acknowledgement, but the language isn't clear on what to do.
+Jeff: the spec used to call this negative acknowledgement, but the language isn't clear on what to do.
 
 Ian asks about whether an overview of the process would be useful.
 
@@ -730,15 +730,15 @@ Christian believes that bullet 3 is a fine goal, but given that some networks do
 
 Ian, that's why this is "sooner", but not immediately.  (Note that this goal is not in the draft currently, so text is needed to describe).
 
-Jeff says that there are some things implied in the document (e.g. the 3 packets after a gap language)--there are a couple of pieces of suggested behavior that imply this, in other words, but not explicit text.
+Jeff: there are some things implied in the document (e.g. the 3 packets after a gap language)--there are a couple of pieces of suggested behavior that imply this, in other words, but not explicit text.
 
-Ian notes that particular example is an interesting one, as the scheduling of ACK creation is still not easy to follow.
+Ian: particular example is an interesting one, as the scheduling of ACK creation is still not easy to follow.
 
 Praveen believes that we need to specify why we are deviating from TCP's behavior.  In some cases (high bandwidth cases), TCP is already deviating from the common case, so we can deviate when we have a reason.
 
 Jana agrees that there are places where TCP is already deviating from once every two packets.  The gap behavior in TCP is already a SHOULD, so there are cases where it is already okay not to send immediately on seeing a gap.
 
-Jeff notes that the transport draft has some of this text, but that the congestion draft is very incomplete.
+Jeff: the transport draft has some of this text, but that the congestion draft is very incomplete.
 
 Jeff suggests that we have MUST-level prohibitions should be in the transport draft, but that SHOULDs and implementation advice should be in the recovery draft.
 
@@ -748,13 +748,13 @@ Jana and MT agree that this is a good split, and Jana notes that this how it is 
 
 Jim wonders whether asking one side or the other to send ACKs of ACKs (both sides doing it is obviously bad).
 
-Christian notes that ACKing ACKs serves to prune acknowledgement blocks.
+Christian: ACKing ACKs serves to prune acknowledgement blocks.
 
-Ian notes that the document currently recommends sending retransmissable data (e.g. a PING frame) to elicit an acknowledgement; this will allow you to prune.
+Ian: the document currently recommends sending retransmissable data (e.g. a PING frame) to elicit an acknowledgement; this will allow you to prune.
 
 Jim asks to review the example.
 
-Ian notes that this came from an experience with a very high loss datalink.
+Ian: this came from an experience with a very high loss datalink.
 
 Clarification that the example implies you have not received 9, rather than describing behavior on receiving 9.
 
@@ -768,29 +768,29 @@ Igor asks whether gap frame are not acknowledgeable.
 
 MT and Jana notes that this can result to parrot frames.
 
-Marteen notes that excluding ack frames are not including bytes in flow for the purposes of congestion control or flow control, and that this results in a strange situation: ack frame of 500 bytes is counted as zero bytes.  One with a ping frame attached is 501 bytes.
+Marteen: excluding ack frames are not including bytes in flow for the purposes of congestion control or flow control, and that this results in a strange situation: ack frame of 500 bytes is counted as zero bytes.  One with a ping frame attached is 501 bytes.
 
 Ian agrees, but notes that this is needed to keep flow control or congestion control from preventing the sending of an ACK.
 
-Jim notes that the MUST NOT also means that you can't pad ACK frames in that case, which might be needed to avoid traffic analysis.  ACKing ACKs at some rate also helps hide which are ACKs.
+Jim: the MUST NOT also means that you can't pad ACK frames in that case, which might be needed to avoid traffic analysis.  ACKing ACKs at some rate also helps hide which are ACKs.
 
-Christian notes that there are cases where a congested link should still get some ACKs.
+Christian: there are cases where a congested link should still get some ACKs.
 
 Ian agrees, but notes that congestion control for ack frames is under active research in TCPM, and we should track that rather than invent something here.
 
 Mike asks if we could weaken MUST to MUST NOT send an ACK to every ACK only packet.
 
-dkg notes that this will result in corner cases where every millionth packet isn't ACKed.
+dkg: this will result in corner cases where every millionth packet isn't ACKed.
 
-Roni notes that it is easy enough to include PAD or PING to solicit ACKs where they are wanted.
+Roni: it is easy enough to include PAD or PING to solicit ACKs where they are wanted.
 
 Moved on to slide 4: When to stop sending old Acknowledgements
 
 Notes two alternatives which may work better in other environments.
 
-MT notes that the first alternative (Send each ACK block for an RTT) may not work in a sparse send situation.
+MT: the first alternative (Send each ACK block for an RTT) may not work in a sparse send situation.
 
-Jeff notes that he has implemented the second (fixed number of blocks) and that it appears to work, but he hasn't tested in high loss environments.
+Jeff: I have implemented the second (fixed number of blocks) and that it appears to work, but he hasn't tested in high loss environments.
 
 Moved on to slide 5: Recovery principles.
 
@@ -802,11 +802,11 @@ Jeff asks whether this is related to the text on stream 0, Jana notes that strea
 
 Jeff asks if there is text that allows you to send the same data in multiple frames, so you could get something like a simple FEC.
 
-Ian says that this is legal, but there is no text on this either way.
+Ian: this is legal, but there is no text on this either way.
 
 Roni asks about the RESET STREAM, Ian notes that you don't try to resend data when a stream has been reset.
 
-Issues:  Timestamps and ECN (Issues #774, #804, #698).
+Issues: Timestamps and ECN (Issues #774, #804, #698).
 
 Growing consensus that these should be negotiated extension to the ACK frame.  BASIC ACK (ack blocks); ACK + TS (Status quo); ACK + ECN are different frame types.
 
@@ -814,19 +814,19 @@ Ekr, the default would be BASIC ACK, and once negotiated, we don't need bits to 
 
 Ian, yes.
 
-ekr--we don't have a method for doing the negotiation right now?
+ekr: we don't have a method for doing the negotiation right now?
 
 Ian there is some design freedom around this--that is client requested and must support by responder, or full negotiation.
 
-Mike notes that each side might want different things.  Ian, we would need to negotiate in each direction.
+Mike: each side might want different things.  Ian, we would need to negotiate in each direction.
 
-Jim-you may not know the nature of the network at handshake.
+Jim: you may not know the nature of the network at handshake.
 
-Jeff--would it be the case you want different things during transition?
+Jeff: would it be the case you want different things during transition?
 
-Roni--for ECN, we need to know whether we are going to require support for this in the transport--if we don't do this, we need some other mechanism.
+Roni: for ECN, we need to know whether we are going to require support for this in the transport--if we don't do this, we need some other mechanism.
 
-Jana notes that some kernels may not pass this up to the UDP layer or above.
+Jana: some kernels may not pass this up to the UDP layer or above.
 
 Martin Duke would like to get the temperature of the room of the room for timestamps--is this vestigial or are there people who want it.
 
@@ -834,9 +834,9 @@ Roberto on negotiation was initially thinking you may need a new connection, but
 
 Mike B. notes that he is not "fired up", but there are multiple congestion controllers that are delay based, and timestamps are useful, even though the current floating point format is not great.
 
-Lars notes that the proposal is to remove the current timestamp format, and to ask those who want timestamps to propose something.
+Lars: the proposal is to remove the current timestamp format, and to ask those who want timestamps to propose something.
 
-Jeff:  if anything you have is connected to connection, will you need to renegotiate if you move the connection to a different network.
+Jeff: if anything you have is connected to connection, will you need to renegotiate if you move the connection to a different network.
 
 Lars: not for timestamps, since it is internal to QUIC; ECN needs to be negotiated at the IP level negotiation as well, so it is trickier.
 
@@ -846,13 +846,13 @@ Jeff adds a 4th to talk about how this works with connection migration.
 
 Leif and Eric can work on a proposal for ECN.
 
-Eric notes that he uses TCP timestamps heavily, so we would be interested in knowing what that would mean for QUIC.
+Eric: I use TCP timestamps heavily, so we would be interested in knowing what that would mean for QUIC.
 
 Daniel Havey notes that folks from timestamps and ECN camps are not expected to be the same.
 
 Martin Duke asks about the text on the slide about "status quo"-- basic ack has no timestamp, but ack delay is retained.
 
-ekr--would we also repair the ack delay format?  Not at the moment, but possibly future.
+ekr: would we also repair the ack delay format?  Not at the moment, but possibly future.
 
 Martin, Jana, Christian briefly discuss what ack delay means here--while they are different from TCP timestamps and ack delay seems to be RTT calculation.  The QUIC timestamps are different.
 
@@ -862,48 +862,48 @@ Jeff do you have to propose a time format?
 
 MT expresses a proposal to replace the wording around ack delay time format.
 
-Jana notes it has actually been on the plate for a long time, but he has been hoping for a format change, which would make it OBE.
+Jana: it has actually been on the plate for a long time, but he has been hoping for a format change, which would make it OBE.
 
-Jana notes that he believes that the timestamp format will be valuable in high traffic conditions, so he is willing to work on it, even as he is willing to let them drop for now.
+Jana: I believe that the timestamp format will be valuable in high traffic conditions, so he is willing to work on it, even as he is willing to let them drop for now.
 
-Lars:  is there a proposal now for ACK frame extensibility?
+Lars: is there a proposal now for ACK frame extensibility?
 
 MT not yet, and it requires going off and thinking about what the format should be.
 
-Roni notes that there is text about congestion control that reference timestamps, and these need to be adjusted as well.
+Roni: there is text about congestion control that reference timestamps, and these need to be adjusted as well.
 
-Christian notes that you can do delay-based congestion control using ack delay, but it does not have half-connection measures.  To get that you need synchronization.
+Christian: you can do delay-based congestion control using ack delay, but it does not have half-connection measures.  To get that you need synchronization.
 
 
 ### Header Compression
 
 [Presentation](https://github.com/quicwg/wg-materials/blob/master/interim-17-10/header-compresion.pdf)
 
-Alien baby slide elicits laughs.
+*Alien baby slide elicits laughs.*
 
 Mike is concerned that we are in analysis paralysis.
 
-Mike says each has learned from the other; there are a small number of ways in which the drafts are different.  If we can resolve those, we may be able to merge them and move them.  First major difference:  how you handle deletes (slide 3).
+Mike: each has learned from the other; there are a small number of ways in which the drafts are different.  If we can resolve those, we may be able to merge them and move them.  First major difference:  how you handle deletes (slide 3).
 
 Jeff asks for confirmation that the decoder was very limited, the encoder had all the complexity.  qcram is closer to that.
 
-Jeff says that this is a nice property, if you don't have to validate at the http layer.  QCRAM could be changed to avoid that layer violation.
+Jeff: this is a nice property, if you don't have to validate at the http layer.  QCRAM could be changed to avoid that layer violation.
 
-Buck notes that he believes that the contract between the transport and the mapping layer is a bit stronger than with the application.  The explicit acks could even be negotiation.
+Buck: I believe that the contract between the transport and the mapping layer is a bit stronger than with the application.  The explicit acks could even be negotiation.
 
-Alan asks what pieces of qpack actually violate that contract.
+Alan: what pieces of qpack actually violate that contract?
 
-Ian notes that there are other applications where having an ability to get a callback that says when something has been delivered.
+Ian: there are other applications where having an ability to get a callback that says when something has been delivered.
 
-Jeff says that this is separate from the level of intelligence in the decoder
+Jeff: this is separate from the level of intelligence in the decoder
 
 Ian agrees, these are orthogonal.
 
-Jana agrees that this callback would be incredibly useful.  He also notes that the explicit deletion requires work.  If there is complex code that gets exercises rarely, that makes him concerned.
+Jana: agrees that this callback would be incredibly useful.  He also notes that the explicit deletion requires work.  If there is complex code that gets exercises rarely, that makes him concerned.
 
-Jeff says that it actually gets used fairly frequent, as things move into and out of the table; eviction is frequent.
+Jeff: it actually gets used fairly frequent, as things move into and out of the table; eviction is frequent.
 
-Speaker notes that acknowledging a range of bytes means that there is a degenerate case in which you might have to track each byte.
+Speaker: acknowledging a range of bytes means that there is a degenerate case in which you might have to track each byte.
 
 Jeff asks what the second disagreement is?  Stream reset is mitigated. (Jana notes that eviction may be less common for single server cases)
 
@@ -911,29 +911,29 @@ Buck asks if there is a lot of variability in table size--64k seems very common.
 
 Jeff responds that there are a couple of common patterns.  For the case where you have a non-web client, you can have the special headers that are always in the table (they are never evicted).
 
-Alan notes that this can be valuable in the web as well, so that some headers (e.g. user-agent) are never deleted.  Alan says that the core model difference:  do we have the encoder control this, or is this a circular eviction scheme.
+Alan: this can be valuable in the web as well, so that some headers (e.g. user-agent) are never deleted.  Alan says that the core model difference:  do we have the encoder control this, or is this a circular eviction scheme.
 
 Jeff, there are hop-by-hop changes (that is, a proxy may have its own sense of required headers etc.).  Mike notes that there is a mitigation for the roll-off case by adding a new one to the front.  The old one rolls off, but the new one is there to replace it.
 
 Back to stream reset.  There is a possibility of the data loss in request streams in QUIC.  To avoid that data loss causing a loss of shared compression state, you might have a way to handle a "blessed stream" that handles data manipulation or you may correct that using recovering the control stream.
 
-Jeff notes that push may mean that stream reset is not that rare (and there was then discussion of when and how resets occur, but the upshot remained:  streams may get reset).
+Jeff: push may mean that stream reset is not that rare (and there was then discussion of when and how resets occur, but the upshot remained:  streams may get reset).
 
 Roy asks what the current table size is.  4k was common, then went to 16k and 64k very promptly.
 
-Alan notes that the overhead per entry is different in the two approaches, and that means that the number of entries per a 64k table is different.
+Alan: the overhead per entry is different in the two approaches, and that means that the number of entries per a 64k table is different.
 
 Alan wonders whether delete could be made optional, so that some folks could build naive implementations if you wanted.  If you ignore deletes qpack no longer has to worry about loss on control streams; that's not the same in qcram.
 
-Jeff--don't follow.  If there is no delete, and the table is thus append-only, why isn't that same?
+Jeff: don't follow.  If there is no delete, and the table is thus append-only, why isn't that same?
 
-Jeff notes that this is pretty complex.  It may be concentrated in the encoder, but it won't be simple.
+Jeff: this is pretty complex.  It may be concentrated in the encoder, but it won't be simple.
 
 Roberto believes that tying this to a single stream may be fine, but that having an arbitrary set of streams could also work. That would be useful if you want multiple compression contexts.
 
-Mike notes that if you want to do that you need to have a way to reference that context, but that this is otherwise possible.
+Mike: if you want to do that you need to have a way to reference that context, but that this is otherwise possible.
 
-Jeff notes that if you have different contexts, you can have resets restart with a new context.
+Jeff: if you have different contexts, you can have resets restart with a new context.
 
 Buck asks if things like push streams might be in different contexts.
 
@@ -943,21 +943,21 @@ Roberto believes that the one stream or multiple streams is a bike shed.
 
 Mike believes that this may be a bike shed, but the "unkillable" nature is likely not.
 
-Roberto notes that this is not quite true, it simply means that the streams which refer to it must die.
+Roberto: this is not quite true, it simply means that the streams which refer to it must die.
 
 Roberto also notes that HPACK chose a circular approach because it was simpler than delta encoding.
 
 Mike is that ring buffer property considered useful enough to make deletion of specific items more complex.
 
-Buck notes that the question of having one stream or multiple streams for the updates has some subtle effects--if one, you can get HOL, but if many, you can get real complexity of interleaving them.
+Buck: the question of having one stream or multiple streams for the updates has some subtle effects--if one, you can get HOL, but if many, you can get real complexity of interleaving them.
 
 Buck feels like the move to a single stream for updates was a useful simplification.  Alan notes that the headers block and the frame for the insert will go out together.
 
 Roberto still believes that this is bikeshedding. So long as the sender is saying he is sending bytes in order, if the receiver sees a byte at an offset, they can choose to ack if they didn't care about those bytes.
 
-Buck notes that the QUIC implementation at Google put all headers in a single stream and it was painful; we have skipped that presentation, but the pain is real.
+Buck: the QUIC implementation at Google put all headers in a single stream and it was painful; we have skipped that presentation, but the pain is real.
 
-Alan notes that this is a different issue, since it is only table updates, not all headers.
+Alan: this is a different issue, since it is only table updates, not all headers.
 
 Buck agrees that this is different.
 
@@ -975,11 +975,11 @@ Discussion of value of retaining HPACK wire encoding elements into the follow-on
 
 Buck explains that his choice was because there will continue to be fallback to h2 over tls.
 
-Jeff says that the pretty unicorn here is that shifting to QCRAM style augmentation with QPACK's stream approach; that would let you use a single encoder across both h2 and quic.
+Jeff: the pretty unicorn here is that shifting to QCRAM style augmentation with QPACK's stream approach; that would let you use a single encoder across both h2 and quic.
 
-Mike notes that HPACK has some optimizations to avoid commands that cannot be used in some contexts.
+Mike: HPACK has some optimizations to avoid commands that cannot be used in some contexts.
 
-Alan notes that they may be where they end up, but for his implementation he simply started over.
+Alan: they may be where they end up, but for his implementation he simply started over.
 
 Mike: can we overcome our distaste and pick one already?
 
@@ -991,15 +991,15 @@ Sense of the room on wire compatible for HPACK: stronger hum for willing to dive
 
 *Lunch*
 
-Mark:  Not feeling much urgency here, but are people coalescing?  Sounds like a Buck-and-Mike design team.
+Mark: Not feeling much urgency here, but are people coalescing?  Sounds like a Buck-and-Mike design team.
 
-Martin:  Let's set a deadline and pick something people can start implementing.  We're getting interop in a bunch of things; we need to start using HTTP/QUIC.  Even something short-term, like leave out deletes and add them later, would let us make progress.  That's more important.
+Martin: Let's set a deadline and pick something people can start implementing.  We're getting interop in a bunch of things; we need to start using HTTP/QUIC.  Even something short-term, like leave out deletes and add them later, would let us make progress.  That's more important.
 
-Jana:  There's already a temporary solution -- use the static table only.
+Jana: There's already a temporary solution -- use the static table only.
 
-Martin:  That can work.  So this is less urgent.
+Martin: That can work.  So this is less urgent.
 
-Mark:  Then we'll announce a design team.
+Mark: Then we'll announce a design team.
 
 #### Data on HOLB
 
@@ -1013,25 +1013,25 @@ Difference between Windows & Android, believed due to hanging GETs artificially 
 
 Experience latency:  0.16% slower search results at the mean.  Looks small, but is a noticeable move at Google scale.  Large moves on YouTube.
 
-Roberto:  Remember that there's survivorship bias.  The tail may dominate, but this is the tail of people who kept watching anyway.  The people who gave up didn't get measured.  Studies have shown that predictable experience is more important than raw performance.
+Roberto: Remember that there's survivorship bias.  The tail may dominate, but this is the tail of people who kept watching anyway.  The people who gave up didn't get measured.  Studies have shown that predictable experience is more important than raw performance.
 
-Jeff:  Reducing variance is important.
+Jeff: Reducing variance is important.
 
-Buck:  HOLB negligible at mean, 1-3% at the tail.  Maximum HOLB on the headers frame is 157ms delay at median, 2.6 seconds at 95th Percentile.
+Buck: HOLB negligible at mean, 1-3% at the tail.  Maximum HOLB on the headers frame is 157ms delay at median, 2.6 seconds at 95th Percentile.
 
-Jim:  When the channel is saturated, you have to have prioritization to improve this.
+Jim: When the channel is saturated, you have to have prioritization to improve this.
 
-Buck:  In-network buffer bloat is a bigger problem; falling off the end of a queue hurts a lot.
+Buck: In-network buffer bloat is a bigger problem; falling off the end of a queue hurts a lot.
 
-Patrick:  Are search and YT representative?
+Patrick: Are search and YT representative?
 
 Buck/Ian:  Google not as conducive to connection pooling as it could be; web at large has more requests per connection.
 
-Jana:  The total wins of QUIC versus TCP are substantial enough, it can be expected to transfer reasonably well to the rest of the web.
+Jana: The total wins of QUIC versus TCP are substantial enough, it can be expected to transfer reasonably well to the rest of the web.
 
-Patrick:  Google represents a really well-connected CDN; the rest of the web is likely worse.
+Patrick: Google represents a really well-connected CDN; the rest of the web is likely worse.
 
-Buck:  Yes, this is conservative.
+Buck: Yes, this is conservative.
 
 
 
@@ -1039,19 +1039,19 @@ Buck:  Yes, this is conservative.
 
 Concern about off-path injection of packets; ekr proposed using AEAD encryption with a Connection ID-derived key.  People didn't want to bake a single algorithm into QUIC for all time, but VN and SR are version-independent.
 
-Ekr:  Didn't we already agree on this?
+Ekr: Didn't we already agree on this?
 
-Christian:  You're exposed to injection attacks until you have some shared key.
+Christian: You're exposed to injection attacks until you have some shared key.
 
-Jana:  This gets rid of off-path attackers.
+Jana: This gets rid of off-path attackers.
 
 (Brief confusion between Stateless Retry and Stateless Reset.  Something needs a name change.)
 
-Jeff:  Section that describes Cleartext points to TLS; will replace description of hash.
+Jeff: Section that describes Cleartext points to TLS; will replace description of hash.
 
 Jeff, Ekr:  Use different keys for client and server, have fewer Cleartext
 
-Martin:  Feed a client/server tag into the key generation, along with the version.
+Martin: Feed a client/server tag into the key generation, along with the version.
 
 Ekr to submit PR.
 
@@ -1060,69 +1060,69 @@ Ekr to submit PR.
 
 ### Next Steps
 
-Mark:  Start to define a third implementation target as the basis of Singapore.
+Mark: Start to define a third implementation target as the basis of Singapore.
 
-Christian:  That's either aggressive or limiting.
+Christian: That's either aggressive or limiting.
 
-Mark:  Have we finished with the second target?
+Mark: Have we finished with the second target?
 
-Ekr:  Clearly not.
+Ekr: Clearly not.
 
 *Discussion of the differences between -05 and -06, mostly not affecting the current targets.*
 
-Mark:  Would it be useful to discuss what we need to want to test next?
+Mark: Would it be useful to discuss what we need to want to test next?
 
-Ekr:  Only a few implementations are caught up already, let's not get further behind.  Keep the same scope and either stay on -05, or same features on a quickly-shipped -07.
+Ekr: Only a few implementations are caught up already, let's not get further behind.  Keep the same scope and either stay on -05, or same features on a quickly-shipped -07.
 
 Several, including Patrick:  -07.
 
-Martin:  Largest -07 changes are landing in the next week (some now); people can track the Editor's Draft until we publish.
+Martin: Largest -07 changes are landing in the next week (some now); people can track the Editor's Draft until we publish.
 
-Jeff:  Will that include the ACK changes?
+Jeff: Will that include the ACK changes?
 
-Ian:  The removal of timestamps yes; ACK guidance probably not.
+Ian: The removal of timestamps yes; ACK guidance probably not.
 
-Mark:  Please summarize what will be changing in -07 -- assign issues to a milestone.
+Mark: Please summarize what will be changing in -07 -- assign issues to a milestone.
 
 Martin D.:  What do people currently not have?
 
-Ekr:  Stateless retry.
+Ekr: Stateless retry.
 
-Jeff:  Should add 0-RTT.
+Jeff: Should add 0-RTT.
 
-Christian:  What happens if someone proposes an old version?
+Christian: What happens if someone proposes an old version?
 
 Ekr/Martins:  Whatever you pick.  Are you a dual-version implementation, or will you do VN and fail if you don't have a mutual version?
 
-Patrick:  I'll probably leave my -05 endpoint available if people want to keep testing.
+Patrick: I'll probably leave my -05 endpoint available if people want to keep testing.
 
-Jeff:  Let's also try changing the connection ID.
+Jeff: Let's also try changing the connection ID.
 
-Patrick:  Let's pick an ALPN token for http/0.9 and keep it fixed.
+Patrick: Let's pick an ALPN token for http/0.9 and keep it fixed.
 
-Mark:  Not "http/0.9" -- want something ugly no one will actually try in the wild.
+Mark: Not "http/0.9" -- want something ugly no one will actually try in the wild.
 
-Jeff:  URL of the HTTP/0.9 spec?  "418"?
+Jeff: URL of the HTTP/0.9 spec?  "418"?
 
 Other suggestions:  hq-05, bikeshed
 
-Mark:  Poll on Slack.  Move on.  We're using the same Wiki page for the second milestone; who's going to update the page to have more granularity?
+Mark: Poll on Slack.  Move on.  We're using the same Wiki page for the second milestone; who's going to update the page to have more granularity?
 
-Jeff:  Test cases would be useful.  Would love to contribute a test client, but that's more complicated.
+Jeff: Test cases would be useful.  Would love to contribute a test client, but that's more complicated.
 
-Mark:  A hero will emerge.  Assume there's a wiki -- everyone dump your test cases there for others to leverage.
+Mark: A hero will emerge.  Assume there's a wiki -- everyone dump your test cases there for others to leverage.
 
 Will revisit a refined second implementation milestone, but using draft -07.  We'll be more aggressive for Melbourne.
 
-Ekr:  In TLS, there's a "max early data" value in the session ticket, and most implementations won't do 0-RTT if it's not indicated.
+Ekr: In TLS, there's a "max early data" value in the session ticket, and most implementations won't do 0-RTT if it's not indicated.
 
-Martin:  Use QUIC's MAX_STREAM_DATA to control this for real, but need to mandate that it's included in the ticket to make general-purpose implementations happy.
+Martin: Use QUIC's MAX_STREAM_DATA to control this for real, but need to mandate that it's included in the ticket to make general-purpose implementations happy.
 
 Mark: In Singapore, two sessions; one devoted to middleboxes.  Report from interop, more architectural issues to discuss.  Reports from design teams (middleboxes, abstractions, and header compression), though may not be done by then.
 
 Martin D.:  Are there ECN or Timestamp design teams?
 
-Mark:  Not yet, but please inform them about our discussion and steer them into starting one.
+Mark: Not yet, but please inform them about our discussion and steer them into starting one.
 
-Adjourned -- thanks to F5 for hosting!
+Adjourned: thanks to F5 for hosting!
 
