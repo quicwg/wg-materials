@@ -19,13 +19,17 @@ _13:30-15:30	Afternoon session I, Padang_
 
 * 10 min - Discussion of what QUIC implementers learned at the hackathon.
 
+### Working Group Status
+
+* 15 min - Discussion of the status of our work, scope and timelines.
+
 ### Implementation Drafts
 
 * 15 min - Review of 1st implementation draft
 
 ### Middlebox Latency Measurement Design Team Report
 
-* 60 min - 
+* 15 min - 
 
 ### Loss Recovery
 
