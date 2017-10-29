@@ -25,15 +25,15 @@ _13:30-15:30	Afternoon session I, Padang_ - [in other time zones](https://www.ti
 
 ### Implementation Drafts
 
-* 15 min - Review of 1st implementation draft
+* 15 min - Review of 1st implementation draft.
 
 ### Middlebox Latency Measurement Design Team Report
 
-* 15 min - 
+* 15 min - *Ted Hardie*
 
 ### Loss Recovery
 
-* 60 min - 
+* 60 min - *Ian Swett*
 
 
 
@@ -51,6 +51,4 @@ _9:30-12:00	Morning session I, Collyer_ - [in other time zones](https://www.time
 *balance of time*
 
 See the [QUIC Project Board](https://github.com/quicwg/base-drafts/projects/2).
-
-### Related Work
 
