@@ -8,7 +8,7 @@
 
 ## Tuesday, 14 November 2017
 
-_13:30-15:30	Afternoon session I, Padang_
+_13:30-15:30	Afternoon session I, Padang_ - [in other time zones](https://www.timeanddate.com/worldclock/fixedtime.html?msg=IETF+100+QUIC+WG+-+First+Session&iso=20171114T1330&p1=236&ah=2)
 
 ### Administrivia
 
@@ -39,7 +39,7 @@ _13:30-15:30	Afternoon session I, Padang_
 
 ## Wednesday, 15 November 2017
 
-_9:30-12:00	Morning session I, Collyer_
+_9:30-12:00	Morning session I, Collyer_ - [in other time zones](https://www.timeanddate.com/worldclock/fixedtime.html?msg=IETF+100+QUIC+WG+-+Second+Session&iso=20171115T0930&p1=236&ah=2&am=30)
 
 ### Administrivia
 
