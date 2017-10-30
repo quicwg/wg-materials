@@ -935,7 +935,7 @@ Jana: agrees that this callback would be incredibly useful.  He also notes that 
 
 Jeff: it actually gets used fairly frequent, as things move into and out of the table; eviction is frequent.
 
-Speaker: acknowledging a range of bytes means that there is a degenerate case in which you might have to track each byte.
+Dmitri: acknowledging a range of bytes means that there is a degenerate case in which you might have to track each byte as data may be reframed during retransmission.  This is too much to ask of a generic transport protocol just to support one use case (HTTP).
 
 Jeff asks what the second disagreement is?  Stream reset is mitigated. (Jana notes that eviction may be less common for single server cases)
 
