@@ -27,7 +27,7 @@ _13:30-15:30	Afternoon session I, Padang_ - [in other time zones](https://www.ti
 
 * 15 min - Review of 1st implementation draft.
 
-### Middlebox Latency Measurement Design Team Report
+### Spin-Bit Evaluation Design Team Report
 
 * 15 min - *Ted Hardie*
 
