@@ -19,21 +19,25 @@ _13:30-15:30	Afternoon session I, Padang_ - [in other time zones](https://www.ti
 
 * 10 min - Discussion of what QUIC implementers learned at the hackathon.
 
+### Third Implementation Draft
+
+* 20 min - 
+
 ### Working Group Status
 
 * 15 min - Discussion of the status of our work, scope and timelines.
 
-### Implementation Drafts
+### QUIC Invariants
 
-* 15 min - Review of 1st implementation draft.
+* 10 min - *Martin Thomson*
+
+### Editors' Update
+
+* 15 min - Review of Recent changes (Martin Thomson)
 
 ### Spin-Bit Evaluation Design Team Report
 
-* 15 min - *Ted Hardie*
-
-### Loss Recovery
-
-* 60 min - *Ian Swett*
+* 30 min - *Ted Hardie*
 
 
 
@@ -45,6 +49,15 @@ _9:30-12:00	Morning session I, Collyer_ - [in other time zones](https://www.time
 
 * 2 min - Blue sheets / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well.html)
 * 3 min - Agenda bashing
+
+### Loss Recovery
+
+* 45 min - *Ian Swett*
+
+### Connection Migration
+
+* 45 min - *Jana Iyengar*
+
 
 ### Issue Discussion
 
