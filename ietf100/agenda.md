@@ -37,7 +37,7 @@ _13:30-15:30	Afternoon session I, Padang_ - [in other time zones](https://www.ti
 
 ### Spin-Bit Evaluation Design Team Report
 
-* 30 min - *Ted Hardie*
+* 30 min - *Ted Hardie* - [presentation](https://datatracker.ietf.org/meeting/100/materials/slides-100-quic-sessa-spin-bit-evaluation-design-team-report/)
 
 
 
