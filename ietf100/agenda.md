@@ -19,17 +19,17 @@ _13:30-15:30	Afternoon session I, Padang_ - [in other time zones](https://www.ti
 
 * 10 min - Discussion of what QUIC implementers learned at the hackathon.
 
-### Third Implementation Draft
-
-* 20 min - 
-
 ### QUIC Invariants
 
-* 10 min - *Martin Thomson*
+* 30 min - *Martin Thomson*
 
-### Working Group Status
+Includes:
+* [QUIC Multiplexing](https://github.com/quicwg/base-drafts/issues/426)
+* [draft-aboba-avtcore-quic-multiplexing](https://datatracker.ietf.org/doc/draft-aboba-avtcore-quic-multiplexing/)
 
-* 15 min - Discussion of the status of our work, scope and timelines.
+### Working Group Status and Scope
+
+* 20 min - Discussion of the status of our work, scope and timelines.
 
 ### Editors' Update
 
@@ -38,7 +38,6 @@ _13:30-15:30	Afternoon session I, Padang_ - [in other time zones](https://www.ti
 ### Spin-Bit Evaluation Design Team Report
 
 * 30 min - *Ted Hardie* - [presentation](https://datatracker.ietf.org/meeting/100/materials/slides-100-quic-sessa-spin-bit-evaluation-design-team-report/)
-
 
 
 ## Wednesday, 15 November 2017
@@ -58,6 +57,9 @@ _9:30-12:00	Morning session I, Collyer_ - [in other time zones](https://www.time
 
 * 45 min - *Jana Iyengar*
 
+### Third Implementation Draft
+
+* 25 min - Discussion of what should be in the third implementation draft, timeline, etc.
 
 ### Issue Discussion
 
