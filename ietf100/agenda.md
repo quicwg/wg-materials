@@ -23,13 +23,13 @@ _13:30-15:30	Afternoon session I, Padang_ - [in other time zones](https://www.ti
 
 * 20 min - 
 
-### Working Group Status
-
-* 15 min - Discussion of the status of our work, scope and timelines.
-
 ### QUIC Invariants
 
 * 10 min - *Martin Thomson*
+
+### Working Group Status
+
+* 15 min - Discussion of the status of our work, scope and timelines.
 
 ### Editors' Update
 
