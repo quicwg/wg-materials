@@ -33,7 +33,7 @@ _13:30-15:30	Afternoon session I, Padang_ - [in other time zones](https://www.ti
 
 ### Editors' Update
 
-* 15 min - Review of Recent changes (Martin Thomson)
+* 15 min - Review of Recent changes (Martin Thomson) - [presentation](https://datatracker.ietf.org/meeting/100/materials/slides-100-quic-sessa-editors-change-summary/)
 
 ### Spin-Bit Evaluation Design Team Report
 
