@@ -51,7 +51,7 @@ _9:30-12:00	Morning session I, Collyer_ - [in other time zones](https://www.time
 
 ### Loss Recovery
 
-* 45 min - *Ian Swett*
+* 45 min - *Ian Swett*  - [presentation](https://datatracker.ietf.org/meeting/100/materials/slides-100-quic-sessb-quic-recovery-and-congestion-control/)
 
 ### Connection Migration
 
