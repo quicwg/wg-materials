@@ -21,7 +21,7 @@ _13:30-15:30	Afternoon session I, Padang_ - [in other time zones](https://www.ti
 
 ### QUIC Invariants
 
-* 30 min - *Martin Thomson*
+* 30 min - *Martin Thomson* -  [presentation](https://datatracker.ietf.org/meeting/100/materials/slides-100-quic-sessa-invariants/)
 
 Includes:
 * [QUIC Multiplexing](https://github.com/quicwg/base-drafts/issues/426)
