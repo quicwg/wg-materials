@@ -55,7 +55,7 @@ _9:30-12:00	Morning session I, Collyer_ - [in other time zones](https://www.time
 
 ### Connection Migration
 
-* 45 min - *Jana Iyengar*
+* 45 min - *Jana Iyengar*  - [presentation](https://datatracker.ietf.org/meeting/100/materials/slides-100-quic-sessb-connection-migration/)
 
 ### Third Implementation Draft
 
