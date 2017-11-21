@@ -3,16 +3,17 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-  - [Tuesday, 14 November 2017](#tuesday-14-november-2017)
-    - [Hackathon / Interop Report](#hackathon--interop-report)
-    - [QUIC Invariants](#quic-invariants)
-    - [Working Group Status and Scope](#working-group-status-and-scope)
-    - [Spin-Bit Evaluation Design Team Report](#spin-bit-evaluation-design-team-report)
-  - [Wednesday, 15 November 2017](#wednesday-15-november-2017)
-    - [Editors' Update](#editors-update)
-    - [Loss Recovery](#loss-recovery)
-    - [Connection Migration](#connection-migration)
-      - [Third Implementation Draft](#third-implementation-draft)
+
+- [Tuesday, 14 November 2017](#tuesday-14-november-2017)
+  - [Hackathon / Interop Report](#hackathon--interop-report)
+  - [QUIC Invariants](#quic-invariants)
+  - [Working Group Status and Scope](#working-group-status-and-scope)
+  - [Spin-Bit Evaluation Design Team Report](#spin-bit-evaluation-design-team-report)
+- [Wednesday, 15 November 2017](#wednesday-15-november-2017)
+  - [Editors' Update](#editors-update)
+  - [Loss Recovery](#loss-recovery)
+  - [Connection Migration](#connection-migration)
+  - [Third Implementation Draft](#third-implementation-draft)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -785,7 +786,7 @@ Jana:  I want to push back against that, because I don't want this to be a speci
 
 Lars: Need nat rebinding and some migration for V1
 
-#### Third Implementation Draft
+### Third Implementation Draft
 
 Mark: Full day interop in Melbourne, this is the target for this draft. Assumption is we're done with second impl. Is this true? Implementers?
 
