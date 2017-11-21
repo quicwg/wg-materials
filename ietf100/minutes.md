@@ -1,5 +1,22 @@
 # QUIC WG Meeting Minutes - IETF 100 Singapore
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+  - [Tuesday, 14 November 2017](#tuesday-14-november-2017)
+    - [Hackathon / Interop Report](#hackathon--interop-report)
+    - [QUIC Invariants](#quic-invariants)
+    - [Working Group Status and Scope](#working-group-status-and-scope)
+    - [Spin-Bit Evaluation Design Team Report](#spin-bit-evaluation-design-team-report)
+  - [Wednesday, 15 November 2017](#wednesday-15-november-2017)
+    - [Editors' Update](#editors-update)
+    - [Loss Recovery](#loss-recovery)
+    - [Connection Migration](#connection-migration)
+      - [Third Implementation Draft](#third-implementation-draft)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 ## Tuesday, 14 November 2017
 
 _13:30-15:30    Afternoon session I, Padang_
