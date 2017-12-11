@@ -8,11 +8,9 @@ Attendees are expected to be familiar with Working Group drafts and related issu
 
 ## Register
 
-To attend, fill out the [registration form](https://goo.gl/forms/yhtgEBt1R25TJGFI2), indicating whether you will attend the Interop event and Working Group meeting.
-
 Remote participation will be available, but requires registration.
 
-**Registration will close on 8 December, 2017.**
+**Registration is now closed.**
 
 
 ## Schedule and Agenda
