@@ -21,18 +21,16 @@ _23-25 January_
 
 ## Agenda
 
-Discussion will include:
+Discussion will include (with the person leading the discussion):
 
 * Summary of interop meeting
-* QUIC Invariants
-* QUIC Application Abstractions
-* Multiplexing with other UDP protocols
-* Greasing packet types
-* HTTP compression
-* Connection migration (jana)
-* Packet renumbering
-* Closing
-* Loss recovery
-* Congestion control
+* Status update from editors
+* QUIC Invariants (Martin)
+* QUIC Application Abstractions (Jeff / Roberto)
+* Multiplexing with other UDP protocols (Jana)
+* Greasing (Martin)
+* HTTP compression (Mike)
+* Connection migration (Jana)
+* Loss recovery (Ian)
 * 3rd implementation draft
 
