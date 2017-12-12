@@ -28,6 +28,7 @@ Discussion will include (with the person leading the discussion):
 * QUIC Invariants (Martin)
 * QUIC Application Abstractions (Jeff / Roberto)
 * Multiplexing with other UDP protocols (Jana)
+* Connection ID and Handshake review (Ian)
 * Greasing (Martin)
 * HTTP compression (Mike)
 * Connection migration (Jana)
