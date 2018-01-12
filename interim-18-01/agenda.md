@@ -24,14 +24,13 @@ _23-25 January_
 Discussion will include (with the person leading the discussion):
 
 * Summary of interop meeting
-* Status update from editors
+* Status update from editors (Martin)
 * QUIC Invariants (Martin)
-* QUIC Application Abstractions (Jeff / Roberto)
+* HTTP compression (Mike)
 * Multiplexing with other UDP protocols (Jana)
 * Connection ID and Handshake review (Ian)
 * Greasing (Martin)
-* HTTP compression (Mike)
 * Connection migration (Jana)
 * Loss recovery (Ian)
+* QUIC Application Abstractions (Jeff / Roberto)
 * 3rd implementation draft
-
