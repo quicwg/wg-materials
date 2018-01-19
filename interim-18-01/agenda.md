@@ -34,3 +34,4 @@ Discussion will include (with the person leading the discussion):
 * Loss recovery (Ian)
 * QUIC Application Abstractions (Jeff / Roberto)
 * 3rd implementation draft
+* ECN in QUIC (Ingemar, morning time MEL preferred)
