@@ -23,16 +23,16 @@ _23-25 January_
 
 Discussion will include (with the person leading the discussion):
 
-* Summary of interop meeting (EKR)
-* Status update from editors (Martin)
-* QUIC Invariants (Martin)
-* HTTP compression (Mike)
-* Multiplexing with other UDP protocols (Jana)
-* Connection ID and Handshake review (Ian)
-* Greasing (Martin)
-* Connection migration (Jana)
-* Loss recovery (Ian)
-* QUIC Application Abstractions (Jeff / Roberto)
-* ECN in QUIC (Ingemar, morning time MEL preferred)
-* 3rd implementation draft
-* Next Steps (Mark / Lars)
+* 15min - Summary of interop meeting (EKR)
+* 15min - Status update from editors (Martin)
+* 45min - QUIC Invariants (Martin)
+* 2hr - HTTP compression (Mike)
+* 1hr - Multiplexing with other UDP protocols (Jana)
+* 1hr - Greasing (Martin)
+* 1hr - Connection ID and Handshake review (Ian)
+* 1hr - Connection migration (Jana)
+* 1hr - Loss recovery (Ian)
+* 1hr - QUIC Application Abstractions (Jeff / Roberto)
+* 30min - ECN in QUIC (Ingemar, morning time MEL preferred)
+* 30min - 3rd implementation draft
+* 15min - Next Steps (Mark / Lars)
