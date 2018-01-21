@@ -33,5 +33,6 @@ Discussion will include (with the person leading the discussion):
 * Connection migration (Jana)
 * Loss recovery (Ian)
 * QUIC Application Abstractions (Jeff / Roberto)
-* 3rd implementation draft
 * ECN in QUIC (Ingemar, morning time MEL preferred)
+* 3rd implementation draft
+* Next Steps
