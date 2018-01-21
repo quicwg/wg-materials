@@ -23,7 +23,7 @@ _23-25 January_
 
 Discussion will include (with the person leading the discussion):
 
-* Summary of interop meeting
+* Summary of interop meeting (EKR)
 * Status update from editors (Martin)
 * QUIC Invariants (Martin)
 * HTTP compression (Mike)
@@ -35,4 +35,4 @@ Discussion will include (with the person leading the discussion):
 * QUIC Application Abstractions (Jeff / Roberto)
 * ECN in QUIC (Ingemar, morning time MEL preferred)
 * 3rd implementation draft
-* Next Steps
+* Next Steps (Mark / Lars)
