@@ -286,7 +286,7 @@ Martin D. Can we do a transport parameter saying “don’t grease the stun bits
 
 MT: What about long packets?
 
-Ted: if we don’t grease it all, then middleboxes will ossify the ungreased part. We don’t have writeups of these use cases.
+Ted: if we don’t grease it all, then middleboxes will ossify the ungreased part. We don’t have write-ups of these use cases.
 
 Martin D.: tension between leaving codepoints for other protocols and greasing.
 
@@ -348,7 +348,7 @@ Inject conn id into key/iv generation, not expansion for client/server secrets. 
 
 Ekr: I might want to clean this up.
 
-Jana: Which is used for the aad?
+Jana: Which is used for the AAD?
 
 Martin T: mutated PN is the AAD, expanded PN is the IV.
 
@@ -403,7 +403,7 @@ Lars: Team needs to take into account impact on multipath.
 
 EKR/Jana: ECT might cause apparent migration failures. Maybe don’t set ECT on retransmissions.
 
-Huitema: [Missed this point, sorry]
+Huitema: *Missed this point, sorry*
 
 Even: Same behavior for ECT(0) and ECT(1)?
 
@@ -453,7 +453,7 @@ Kinnear: Can it fix with just having the probe packets be special?
 
 EKR: Is this going to be a big research problem? If not, fine to include, but if so, maybe we should defer.
 
-Huitema: [Missed this]
+Huitema: *Missed this*
 
 Eggert: Not worth breaking off a piece. Can we get resolution in London so we can try to implement thereafter.
 
@@ -495,7 +495,7 @@ Bunch of discussion of several variants of issuing a new connection ID in the TL
 
 Huitema: NEW_CONNECTION_ID is pretty complicated to use for this purpose.
 
-EKR: What about we instead put the [client ID, server ID] pair in all long header packets.
+EKR: What about we instead put the (client ID, server ID) pair in all long header packets.
 
 S. Iyengar: What about putting this is in a special crypto frame?
 
@@ -862,7 +862,7 @@ Jana:  The use cases are important -- I’ll argue that this is needed in a mode
 
 Ekr:  The argument is that the current spec doesn’t sufficiently handle NAT rebinding.
 
-Jana:  The current draft doesn’t do probing separately from commiting.
+Jana:  The current draft doesn’t do probing separately from committing.
 
 Ekr:  Okay, the functional answer is that it lets you make an informed choice rather than blindly leaping to a new connection.  So we’re already better than TCP, and we’re talking about getting better still.  I find myself currently unable to evaluate whether this is technically correct.  One possibility is that it’s generally fine and just needs refinement; the second is that it needs a pile of new work.  If it needs a pile of new work, I’m concerned about the time it would take.
 
@@ -1025,13 +1025,13 @@ Ian reiterates that he was hoping for feedback, no need to have a decision today
 
 Switching now to discussion of MinRTO (Issue #1017).  MT notes that we seem to be sending more packets to lower latency.  
 
-Twiddling thumbs at 2 it’s crazy but at microseconds it’s CRAZY!.  If we can do something about this we should.  On the other hand I’d iike to see some safeguards around when we don’t know what the max is.
+Twiddling thumbs at 2 it’s crazy but at microseconds it’s CRAZY!.  If we can do something about this we should.  On the other hand I’d like to see some safeguards around when we don’t know what the max is.
 
-Christian(wearing the IETF “nerds in paradise shirt”): One of the differences it’s easy to measure in QUIC the sprurious ACKs.  
+Christian(wearing the IETF “nerds in paradise shirt”): One of the differences it’s easy to measure in QUIC the spurious ACKs.  
 
 martinduke: How do you know it’s ack delay or RTT?  
 
-huitema: Even if you do not know you can make some conservative decision.  You can measure the n+1 but the time between that one and th next one was so and so that will give you an idea of the re-ordering.  Rather than getting all excited about max-delay, we should look at spurious RTO detection.  
+huitema: Even if you do not know you can make some conservative decision.  You can measure the n+1 but the time between that one and the next one was so and so that will give you an idea of the re-ordering.  Rather than getting all excited about max-delay, we should look at spurious RTO detection.  
 
 mD: what’s that impact on the spec?  20ms is crazy - can’t we change that?
 
@@ -1106,7 +1106,7 @@ Ordered but not not necessarily in-order; to make a distinction: I have five pac
 
 Ekr: agrees but it makes a little confusing because we offer reliability for the entire stream.  Explains difference with RTP.
 
-Jeff: There’s actually in QUIC that requires an endpoint to retransmit on a stream.  The protocol doesn’t require to restransmit everything.
+Jeff: There’s actually in QUIC that requires an endpoint to retransmit on a stream.  The protocol doesn’t require to retransmit everything.
 
 MT: It’s delivered in order.
 
@@ -1116,7 +1116,7 @@ Jana: The spirit of where the draft was to expect this to be in order byte strea
 
 Jana: In response to Jeff, we expected that they would. (?)
 
-Ted: It might actually help to say sequential.  Properties of QUIC streams not HTTP over QUIC streamns.  Right now it’s there, but it’s not there for the current application.
+Ted: It might actually help to say sequential.  Properties of QUIC streams not HTTP over QUIC streams.  Right now it’s there, but it’s not there for the current application.
 
 Roberto: Might be true for google, but would like to maybe make it true later.
 
@@ -1182,7 +1182,7 @@ Alan: to clarify - is there another mapping at the H3 layer?
 
 MartinD: in the H2 of TCP case is there any grouping? No but it was in SPDY4.
 
-Roberto: Some protocols are doing things suboptimally.
+Roberto: Some protocols are doing things sub-optimally.
 
 Roni: Any time syncing.
 
@@ -1196,7 +1196,7 @@ MartinD: If you’re getting less compression efficiency then this is the client
 
 Ian: Interesting and it feels like an interesting feature request.
 
-Mike: What Ian said.  But, I get ¾ of what you’re after and it could be reframmed would be to say you can multiple connections which share the same congestion congrol.
+Mike: What Ian said.  But, I get ¾ of what you’re after and it could be reframed would be to say you can multiple connections which share the same congestion control.
 
 Christian: +1 (and others)
 
@@ -1231,7 +1231,7 @@ Extensions are a pressure release value.  Only differs from HTTP2 idea because i
 
 If you need the extension to be reliable - you gotta make it so.
 
-Ekr: only allocated 00-17?  We have 240 spaces free? What’s the point about ignoring vs reliablity?  Code point space is too big.
+Ekr: only allocated 00-17?  We have 240 spaces free? What’s the point about ignoring vs reliability?  Code point space is too big.
 
 Ian: Interesting to have, but a little grumpy about providing it without having a mechanism to negotiate it.  Don’t want to add it until we have a negotiation mechanism.
 
@@ -1241,7 +1241,7 @@ Ekr: dissents - most everybody says you need this.
 
 Jana: Negotiation can be handled.
 
-Jana: Space can used for experimentation so we need to have some way to note what numbes they’re using.
+Jana: Space can used for experimentation so we need to have some way to note what numbers they’re using.
 
 Lars: I would like this so we can get rid of all the block frames.  You can put all of the block frame info ….
 
@@ -1259,7 +1259,7 @@ MT: We need it …
 
 Mnot: could we adopt this and admit it’s not perfect.
 
-Christian: ALready provided feedback but basically it’s okay except for the assignment mechanism.
+Christian: Already provided feedback but basically it’s okay except for the assignment mechanism.
 
 Ted: Look at the IAB RFC to do an extension!  Treating the extension differently than the base protocol could be dangerous.
 
