@@ -178,7 +178,7 @@ Jana: Given that we’re trying to get done, the first 10x seems good for now.
 
 Direction Forward: Mike to write up a PR to tweak QCRAM to not send dictionary inserts on the same stream as the HTTP request and hopefully fix up any resulting issues.  He’ll send to Buck and assuming it’s workable, we’ll discuss again on Thursday morning and hopefully call for adoption of this updated version.
 
-## Tuesday afternoon
+## Tuesday Afternoon
 
 *Scribe: Martin Duke*
 
@@ -411,7 +411,7 @@ Ted: You can do measurement in IPv6 headers. Breaking linkability very important
 **Martin T will do a whole new PR.**
 
 
-## Wednesday AM
+## Wednesday Morning
 
 *Scribe: EKR*
 
@@ -572,7 +572,7 @@ Praveen: I don’t care about n-tuple sharing
 Proposed resolution: Just have the server use the new connection ID in the stateless retry and we’re done. MT prepared PR#1066 to this end.
 
 
-## Wednesday afternoon
+## Wednesday Afternoon
 
 *Scribe: Mike B*
 
