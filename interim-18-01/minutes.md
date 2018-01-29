@@ -1,5 +1,35 @@
 # IETF QUIC WG Interim Meeting Minutes - January 2018
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+  - [Tuesday Morning](#tuesday-morning)
+    - [Summary of the Interop](#summary-of-the-interop)
+    - [Status update from the Editors](#status-update-from-the-editors)
+    - [Invariants](#invariants)
+    - [HTTP Header Compression](#http-header-compression)
+  - [Tuesday afternoon](#tuesday-afternoon)
+    - [Deadlocking](#deadlocking)
+    - [Multiplexing with other UDP (Jana)](#multiplexing-with-other-udp-jana)
+    - [Greasing](#greasing)
+  - [Wednesday AM](#wednesday-am)
+    - [ECN](#ecn)
+    - [Connection ID](#connection-id)
+  - [Wednesday afternoon](#wednesday-afternoon)
+    - [Larger Connection IDs](#larger-connection-ids)
+    - [Connection Migration](#connection-migration)
+  - [Thursday Morning](#thursday-morning)
+    - [Connection ID](#connection-id-1)
+    - [Header Compression](#header-compression)
+    - [Loss recovery draft ](#loss-recovery-draft)
+  - [Thursday Afternoon](#thursday-afternoon)
+    - [Abstractions](#abstractions)
+    - [Extensions](#extensions)
+    - [3rd Implementation Draft](#3rd-implementation-draft)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 ## Tuesday Morning
 
 *Scribe: Ian*
