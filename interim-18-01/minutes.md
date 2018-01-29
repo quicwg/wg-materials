@@ -8,7 +8,7 @@
 
 EKR: Some people made more progress than before and got resumption working.  Found a lot of items weren’t in the release notes and some of the changes were unclear and hard to find.
 
-Patrick McManus: If we make some progress on QPACK/QCRAM then we might want to add 
+Patrick McManus: If we make some progress on QPACK/QCRAM then we might want to add
 
 Christian: Want the spec to stabilize more before expanding the scope of the interop, which we’ve heard.
 
@@ -96,7 +96,7 @@ Mike: Right now, we’re chasing parity with H2 (for compression efficiency), no
 
 Second to last slide:
 
-Jana: Proposals are representing design points, but we don’t need to adopt a specific one if we want.  Call it QCRAM+PACK.  
+Jana: Proposals are representing design points, but we don’t need to adopt a specific one if we want.  Call it QCRAM+PACK.
 
 Mike: Or call it QPACK-05?  QCRAM style accounting with things sent on the control stream.  Do we want an optional feature to say “no blocking” on the decoder side?
 
@@ -112,7 +112,7 @@ MT: Want at least the ability to do no-blocking and some-blocking in return for 
 
 Alan: Could mitigate this with transport params(or settings) that allows you to seed the dictionary.
 
-Ian: Could use extra space in CHLO or subsequent packets to populate the table via headers 
+Ian: Could use extra space in CHLO or subsequent packets to populate the table via headers
 
 Roberto: This speculative use of requests to ‘prime’ the header compression table could end up being abusive, since that’s how applications might end up accomplishing the priming.
 
@@ -122,7 +122,7 @@ Mike: I think it’d be easier to take QCRAM and always send dictionary operatio
 
 Buck: If streams shutdown due to an abort, it’s important the header compression context ends up being kept in sync.  If there was an HTTP level abort frame, then you can cancel it at the app layer, and then the other side can stop writing new data and defer the RST until the headers have been acknowledged.  All implementations end up with application level header acknowledgement, so the big change here is a wait.
 
-Christian: Is concerned that Buck’s proposal requires redefining the transport level reset.  
+Christian: Is concerned that Buck’s proposal requires redefining the transport level reset.
 
 Buck: There’s no transport level reset in my version.
 
@@ -213,7 +213,7 @@ Roberto: You don’t
 QUIC might multiplex w/ STUN, ZRTP, DTLS, TURN, SRTP (0-3, 16-79 , 128-191 taken in first byte)
 Long Header is 128-255, but collision with SRTP is OK given the use cases.
 
-Ekr: SRTP thing might be true depending on your demux. 
+Ekr: SRTP thing might be true depending on your demux.
 Ian: might want RTP over QUIC
 
 Jana; replace SCTP with QUIC, plus replace media transport with QUIC
@@ -268,7 +268,7 @@ Ekr: as long as stuff isn’t misidentified as QUIC, we’re good to go.
 
 MT: I think we’re close to that. The stakeholders I’ve talked to can live with this. We have to write down that conclusion and how demux should work.
 
-Ian: conn_id flip is a total bummer for GQUIC migration. 
+Ian: conn_id flip is a total bummer for GQUIC migration.
 
 Marten S. solvable problem if long header types are distinguishable
 
@@ -548,7 +548,7 @@ Proposed resolution: Just have the server use the new connection ID in the state
 
 Martin has a PR for the Connection ID change.  General approach is agreed, modulo wordsmithing.
 
-### Larger Connection IDs	
+### Larger Connection IDs
 
 To support connection migration, you either get new IDs from the load balancer or share state with the load balancer to create them yourself.
 
@@ -909,129 +909,129 @@ Discussion of schedule for the day.
 
 ### Connection ID
 
-Ekr reviews the summary he sent to the list on Connection ID (see email entitled “Read-out on offline connection ID discussion”).  Discussion of wasting bytes on the long header, with general view that it was sent rarely enough that this was not an issue.  Discussion of whether or not the length was an invariant or the encoding was an invariant.  
+Ekr reviews the summary he sent to the list on Connection ID (see email entitled “Read-out on offline connection ID discussion”).  Discussion of wasting bytes on the long header, with general view that it was sent rarely enough that this was not an issue.  Discussion of whether or not the length was an invariant or the encoding was an invariant.
 
-Marteen is concerned about ossification, that there is a chance that the first player to go to IETF QUIC will end up setting up the expectation in middlebox.   
+Marteen is concerned about ossification, that there is a chance that the first player to go to IETF QUIC will end up setting up the expectation in middlebox.
 
-Jana asks if we can grease this; Roberto describes a simple 0-padding implementation.  
+Jana asks if we can grease this; Roberto describes a simple 0-padding implementation.
 
-Marteen remains concerned that there is not enough incentive to make this happen.  It seems that there is a commitment from several implementers and deployers.  Jana says that you still can control the rate at which you grease, so that it is not significant to the deployment of the largest players.  Concerns about whether or not low rates will be effective; there are mechanisms to focus the tests so that it is obvious to peers (e.g. per AS focus).  
+Marteen remains concerned that there is not enough incentive to make this happen.  It seems that there is a commitment from several implementers and deployers.  Jana says that you still can control the rate at which you grease, so that it is not significant to the deployment of the largest players.  Concerns about whether or not low rates will be effective; there are mechanisms to focus the tests so that it is obvious to peers (e.g. per AS focus).
 
-Jana: the incentives are there from our side.  
+Jana: the incentives are there from our side.
 
-Folks still need a bit more detail; ekr will write a PR or email to describe in more detail. 
+Folks still need a bit more detail; ekr will write a PR or email to describe in more detail.
 
-Question about the details of the load balancing servers interaction with the servers; seems like default size or default minimums would solve this problem, even if they were published by the service.  
+Question about the details of the load balancing servers interaction with the servers; seems like default size or default minimums would solve this problem, even if they were published by the service.
 
-Roni is concerned that this requires specific dependencies on action from the middle, and that this is contrary to the QUIC design goals.  
+Roni is concerned that this requires specific dependencies on action from the middle, and that this is contrary to the QUIC design goals.
 
-Ekr and Roberto note that there are distinctions between the cooperating middleboxes and non-cooperating middleboxes.  This knowledge gets shared with cooperating servers, and that’s the intended state.  Greasing will help make sure that the non-cooperating middleboxes either fail earlier or do not set up incorrect assumptions.  
+Ekr and Roberto note that there are distinctions between the cooperating middleboxes and non-cooperating middleboxes.  This knowledge gets shared with cooperating servers, and that’s the intended state.  Greasing will help make sure that the non-cooperating middleboxes either fail earlier or do not set up incorrect assumptions.
 
-Roni--you are expecting that they will do nothing; they will do something.  
+Roni--you are expecting that they will do nothing; they will do something.
 
-Roberto--we believe that we can prevent this ossification because large players will vary, either for greasing or as a standard practice.  There remains a risk of ossification to a small number of values, but this remains a problem.  Ted notes that if we always include the largest possible value as a one of the sizes used in greasing, then we can fall back to the largest available size.  
+Roberto--we believe that we can prevent this ossification because large players will vary, either for greasing or as a standard practice.  There remains a risk of ossification to a small number of values, but this remains a problem.  Ted notes that if we always include the largest possible value as a one of the sizes used in greasing, then we can fall back to the largest available size.
 
-Roni remains concerned that the firewall will attempt to use a heuristic analysis to determine what is well formed; they will act on that.  
+Roni remains concerned that the firewall will attempt to use a heuristic analysis to determine what is well formed; they will act on that.
 
-Roberto and Jana remind him that the purpose of the greasing is to provide data to that heuristic analysis of what the bounds should be; for those that do not follow that greasing in heuristic analysis will fall back to TCP.  
+Roberto and Jana remind him that the purpose of the greasing is to provide data to that heuristic analysis of what the bounds should be; for those that do not follow that greasing in heuristic analysis will fall back to TCP.
 
-Lars notes that the chairs would like to call consensus before London; don’t know how we are going to do it.  We could do a webex; the self-organizing design team will work through this.  
+Lars notes that the chairs would like to call consensus before London; don’t know how we are going to do it.  We could do a webex; the self-organizing design team will work through this.
 
-Jana suggests a formal design would be useful.  It is clear that 8-byte fixed is not what people want.  
+Jana suggests a formal design would be useful.  It is clear that 8-byte fixed is not what people want.
 
-Ekr will get the interested folk: Subodh, Kazuho, Ian, Brian, Marteen, to produce a proposal or set of proposals ASAP or by February 15.  
+Ekr will get the interested folk: Subodh, Kazuho, Ian, Brian, Marteen, to produce a proposal or set of proposals ASAP or by February 15.
 
-Roni thinks it would be good to send to the mailing list a note about the creation of this design team. 
+Roni thinks it would be good to send to the mailing list a note about the creation of this design team.
 
 Mark and Lars will take care of that.
 
 ### Header Compression
 
-Mike reviews the draft, starting with Section 3.1. 
+Mike reviews the draft, starting with Section 3.1.
 
-Allowed instructions on the control streams manage inserts into the table.  
+Allowed instructions on the control streams manage inserts into the table.
 
-Roberto describes how this could be extended, but does not argue that it should be updated at this stage.  This is comparable to HPACK’s performance in the lossless case and better than HPACK in the lossy case.  
+Roberto describes how this could be extended, but does not argue that it should be updated at this stage.  This is comparable to HPACK’s performance in the lossless case and better than HPACK in the lossy case.
 
-MT argues that this is the right target and that we would need a very strong case for making changes past this.  
+MT argues that this is the right target and that we would need a very strong case for making changes past this.
 
-Christian is plus one; question to the room on adoption of QCRAM.  
+Christian is plus one; question to the room on adoption of QCRAM.
 
-Dmitri notes that the design team had different proposals that were better than this, and did not have a single stream and so did not have this problem.  We should take stock now and understand that this has a structural problem; if you understand the structural problem and vote yes, okay, but I will vote no.  
+Dmitri notes that the design team had different proposals that were better than this, and did not have a single stream and so did not have this problem.  We should take stock now and understand that this has a structural problem; if you understand the structural problem and vote yes, okay, but I will vote no.
 
-Clarifying question:  are you arguing for multiple control streams?  
+Clarifying question:  are you arguing for multiple control streams?
 
-Dmitri: that is the obvious design alternative.  This is the kind of change that might well meet this bar of higher avoidance of HOL blocking.  
+Dmitri: that is the obvious design alternative.  This is the kind of change that might well meet this bar of higher avoidance of HOL blocking.
 
-Christian:  the better is the enemy of good. 
+Christian:  the better is the enemy of good.
 
-Jana: we’ve been through this; we need something to allow us to move forward, and we can swap in new things are they are proved to be better. 
+Jana: we’ve been through this; we need something to allow us to move forward, and we can swap in new things are they are proved to be better.
 
-Mike: Dmitri, I want to confirm that we see this as a starting point and we do see incremental improvements as coming.  We need to pick one and test what we can import into it.  
+Mike: Dmitri, I want to confirm that we see this as a starting point and we do see incremental improvements as coming.  We need to pick one and test what we can import into it.
 
-Dmitri:  I’m not arguing for a Chimera, and I recognize that we can go forward from here.  
+Dmitri:  I’m not arguing for a Chimera, and I recognize that we can go forward from here.
 
-Patrick argues that we have been discussing this for a long time and it is a blocker.  We need it to move forward.  Overwhelming preference for adopting the document now.  
+Patrick argues that we have been discussing this for a long time and it is a blocker.  We need it to move forward.  Overwhelming preference for adopting the document now.
 
 Mike:  this is the right time, and this is good enough (it’s in the ballpark and we can get to home base later).
 
 ### [Loss recovery draft ](https://github.com/quicwg/wg-materials/blob/master/interim-18-01/recovery.pdf)
 
-Pacing is recommended, but without a specific approach.  Introduced MAX ACK delay, partially derived from proposal for TCP from Yuchung.  Witnessing MIN RTT is a little bit harder during ACK coalescing, but with a large enough sample set, there will occasionally be a quick turnaround ACK.  
+Pacing is recommended, but without a specific approach.  Introduced MAX ACK delay, partially derived from proposal for TCP from Yuchung.  Witnessing MIN RTT is a little bit harder during ACK coalescing, but with a large enough sample set, there will occasionally be a quick turnaround ACK.
 
-Christian believes that this is gambling.  Not clear that he objects to it on those grounds.  
+Christian believes that this is gambling.  Not clear that he objects to it on those grounds.
 
-Martin Duke confirms that there may be RTT measurements that are lower than the MIN, but the current theory is that these are discarded.  
+Martin Duke confirms that there may be RTT measurements that are lower than the MIN, but the current theory is that these are discarded.
 
 Several folks expressed concerns about the max ack delay described on slide 3 (this is a reported value, not a direct measurement, so less subject to outlier situations where something is stuck in a buffer)
 
-Question from Lars about whether adding this to v1 is required; it certainly seems to be an improvement, but the charter focuses us on delivering a standard congestion controller.  Can we limit ourselves to that for v1?  Ian, sure, but we need some reason to motivate the inclusion of Max Ack Delay, so that we can move forward with it; it could even say that it does nothing in v1.  
+Question from Lars about whether adding this to v1 is required; it certainly seems to be an improvement, but the charter focuses us on delivering a standard congestion controller.  Can we limit ourselves to that for v1?  Ian, sure, but we need some reason to motivate the inclusion of Max Ack Delay, so that we can move forward with it; it could even say that it does nothing in v1.
 
 Ian suggests that we complete the slides and then discuss further.
 
-Discussion on whether or not we need a transport param for Max Ack Delay (pro’s and cons on slide 5).  
+Discussion on whether or not we need a transport param for Max Ack Delay (pro’s and cons on slide 5).
 
 Jana notes that it may not be knowable in User Space what the Max Ack Delay will be.
 
-Ian: it’s an initial state, not the observation.  
+Ian: it’s an initial state, not the observation.
 
-Patrick; so this is seeding Max Ack Delay?  
+Patrick; so this is seeding Max Ack Delay?
 
-Ian: yes, though you could also seed it with the default (25 millisecond delay).  
+Ian: yes, though you could also seed it with the default (25 millisecond delay).
 
-Roberto:  I’m thinking about it being in the clear on the public internet--is it likely to be used on the public Internet?  
+Roberto:  I’m thinking about it being in the clear on the public internet--is it likely to be used on the public Internet?
 
-Ian:  it should be generally available, since it may not be obvious in cloud situations whether you are traversing the public Internet.  
+Ian:  it should be generally available, since it may not be obvious in cloud situations whether you are traversing the public Internet.
 
-Christian:  I’m concerned that this because something that adds to the fingerprinting capability, and that having a bunch of these parameters has privacy implications that we have not explored.  Subodh asks about the source of some of these constants--Ian replies that many come from the tail loss probe drafts.  
+Christian:  I’m concerned that this because something that adds to the fingerprinting capability, and that having a bunch of these parameters has privacy implications that we have not explored.  Subodh asks about the source of some of these constants--Ian replies that many come from the tail loss probe drafts.
 
 Jana notes that knowing what MAX ACK DELAY is can help you to limit the number of packets sent for ACKs, but I agree with Christian that this explicit metric may not be necessary, given the additional data on timing availability in QUIC ACK packets.
 
-Ian:  there are two requests to the working group, but I am not asking to make the decision today.  The last slide will describe the data I intend to gather.  
+Ian:  there are two requests to the working group, but I am not asking to make the decision today.  The last slide will describe the data I intend to gather.
 
-Roberto:  there are two ways to express this:  as a factor of something else and as an absolute.  The latter is brittle.  Also a question on whether communicating this in crypto, whether the delay would be a problem.  If we had an Update Transport Params, we could throw it in there, in the protected part of the stream.  (There are issues there with other types of transport params, so introducing that type of update frame would have to have limits on what params could be included).  
+Roberto:  there are two ways to express this:  as a factor of something else and as an absolute.  The latter is brittle.  Also a question on whether communicating this in crypto, whether the delay would be a problem.  If we had an Update Transport Params, we could throw it in there, in the protected part of the stream.  (There are issues there with other types of transport params, so introducing that type of update frame would have to have limits on what params could be included).
 
-Praveen and Jana discussed some timing aspects of when the TLP would be fired off; for any learning mechanism, you have to encounter it once to get the data.  
+Praveen and Jana discussed some timing aspects of when the TLP would be fired off; for any learning mechanism, you have to encounter it once to get the data.
 
-Ian:  I think saying that we have to have a TLP for every congestion control context, rather than having an early default, seems to be expensive.   
+Ian:  I think saying that we have to have a TLP for every congestion control context, rather than having an early default, seems to be expensive.
 
-Praveen: one another option is that the very first TLP would be very conservative, then subsequently snap to the current estimate.  
+Praveen: one another option is that the very first TLP would be very conservative, then subsequently snap to the current estimate.
 
-Martin Duke:  I’m concerned that trusting a single TLP might be problematic.  Also, don’t personally plan to implement this, but wonder if this needs to be a transport param?  
+Martin Duke:  I’m concerned that trusting a single TLP might be problematic.  Also, don’t personally plan to implement this, but wonder if this needs to be a transport param?
 
-Patrick:  yeah, you could have this update be in a different frame.  
+Patrick:  yeah, you could have this update be in a different frame.
 
 Ian reiterates that he was hoping for feedback, no need to have a decision today.
 
-Switching now to discussion of MinRTO (Issue #1017).  MT notes that we seem to be sending more packets to lower latency.  
+Switching now to discussion of MinRTO (Issue #1017).  MT notes that we seem to be sending more packets to lower latency.
 
 Twiddling thumbs at 2 it’s crazy but at microseconds it’s CRAZY!.  If we can do something about this we should.  On the other hand I’d like to see some safeguards around when we don’t know what the max is.
 
-Christian(wearing the IETF “nerds in paradise shirt”): One of the differences it’s easy to measure in QUIC the spurious ACKs.  
+Christian(wearing the IETF “nerds in paradise shirt”): One of the differences it’s easy to measure in QUIC the spurious ACKs.
 
-martinduke: How do you know it’s ack delay or RTT?  
+martinduke: How do you know it’s ack delay or RTT?
 
-huitema: Even if you do not know you can make some conservative decision.  You can measure the n+1 but the time between that one and the next one was so and so that will give you an idea of the re-ordering.  Rather than getting all excited about max-delay, we should look at spurious RTO detection.  
+huitema: Even if you do not know you can make some conservative decision.  You can measure the n+1 but the time between that one and the next one was so and so that will give you an idea of the re-ordering.  Rather than getting all excited about max-delay, we should look at spurious RTO detection.
 
 mD: what’s that impact on the spec?  20ms is crazy - can’t we change that?
 
@@ -1041,7 +1041,7 @@ Jana: what do we need in v1?  Would love to nuke minRTO, but is afraid it will p
 
 Preveen: for safety we should avoid causing them in the first place.  As far as eliminating MinTO we need to be conservative.   Need to document some acking strategy.
 
-Sub: sender wants to limit when the timer gets set.  Wants to help protect against DoS.  
+Sub: sender wants to limit when the timer gets set.  Wants to help protect against DoS.
 
 Q:Is this normative? A: Not sure about the feeling. (but don’t loose that lovin’ feelin’):
 https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiLy8z17vHYAhVBN5QKHSZ7AiEQyCkILTAA&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DuOnYY9Mw2Fg&usg=AOvVaw0oV2aK8I4BjC_6j6LDx6kt
@@ -1052,11 +1052,11 @@ MartinDuke: Be included to have a mechanism to be as good as cutting edge TCP.
 
 Roberto: Agreed with MartinDuke.  If we attempted to provide this normative, then we’d need some hammer to enforce it.
 
-MT: Let’s be reflective of reality.  Premature to put it in quick 
+MT: Let’s be reflective of reality.  Premature to put it in quick
 
 Christian: Sometimes we need to repeat packets so it’s never a hard and fast rule to not resent.
 
-Praveen: Christian, quite true.  I think what is important here is that normative behavior guides us here; we might want to provide knobs here that allows us to vary or experiment.  I think safety properties are things we ought to care about.  We should be careful about deviating from TCP, since it will be sharing networks with TCP for a long time. 
+Praveen: Christian, quite true.  I think what is important here is that normative behavior guides us here; we might want to provide knobs here that allows us to vary or experiment.  I think safety properties are things we ought to care about.  We should be careful about deviating from TCP, since it will be sharing networks with TCP for a long time.
 
 PatrickM: What I have learned from TCP is that constants suck (consistently), and that we have the option here of a much better feedback loop, and we should take advantage of that.
 
@@ -1064,23 +1064,23 @@ Jana:  QUIC has a bunch of signalling that we do not have in TCP.  There is a pr
 
 Ian: last slide is Plan:  Gather Data (Slide 7)
 
-Martin: are you going to do this in both data center and open Internet?  Ian: just open Internet.  
+Martin: are you going to do this in both data center and open Internet?  Ian: just open Internet.
 
-Subodh: if you can write this up, we would like to run these tests as well. 
+Subodh: if you can write this up, we would like to run these tests as well.
 
-Jana:  Going back to what we want for v1--we don’t have to block on any of these for v1, except for 2.  We need a mechanism to carry the data for MAX ACK DELAY (without that, can’t run the experiment).  
+Jana:  Going back to what we want for v1--we don’t have to block on any of these for v1, except for 2.  We need a mechanism to carry the data for MAX ACK DELAY (without that, can’t run the experiment).
 
-Ian: should I spend cycles on coming up with a way to carry that without it being in the clear?  Feedback on that desired.  
+Ian: should I spend cycles on coming up with a way to carry that without it being in the clear?  Feedback on that desired.
 
-Praveen: MinRTO is already being used for TCP, despite it not being in the RFCs.  Other experiments: ER vs. non-ER.  One TLP vs. two TLP would also be useful to gather data on.  
+Praveen: MinRTO is already being used for TCP, despite it not being in the RFCs.  Other experiments: ER vs. non-ER.  One TLP vs. two TLP would also be useful to gather data on.
 
-IAN: zero, one, or two could be tested.  
+IAN: zero, one, or two could be tested.
 
-Ian:  I’m done, should I come up with a way to communicate MAX ACK DELAY outside the clear? 
+Ian:  I’m done, should I come up with a way to communicate MAX ACK DELAY outside the clear?
 
-PM: Yes.  Martin Duke: what’s the tradeoff here?  
+PM: Yes.  Martin Duke: what’s the tradeoff here?
 
-Ian: If this is not v1, then I won’t work on it.  Fine as an extension, if we have extensions, and we need something to test extensions with.  
+Ian: If this is not v1, then I won’t work on it.  Fine as an extension, if we have extensions, and we need something to test extensions with.
 
 Ian: Update Transport Params is my preference, but I have other uses for that.
 
@@ -1124,7 +1124,7 @@ Mike: Your example triggered some confusion with retransmission and …  Agrees 
 
 Ekr: Spec prohibits both of these.  I.e., spec requires in-order delivery and filling in holes.
 
-Jana: It’s easy to specify not doing in-order byte stream - it’s one sentence but it’s hard to implement.  
+Jana: It’s easy to specify not doing in-order byte stream - it’s one sentence but it’s hard to implement.
 
 Roberto: It’s possible that it’s not that hard.
 
@@ -1142,7 +1142,7 @@ MartinDuke: How does this differ from partial reliability
 
 Roberto: They are not the same but they are complimentary.
 
-MartinDuke: Partial reliability is in not in v1.		
+MartinDuke: Partial reliability is in not in v1.
 
 Roberto: If we just strike in-order delivery then that’s all we really need.
 
@@ -1204,7 +1204,7 @@ MT: needs more work
 
 Roberto: this is definitely a V2 feature…
 
-Mnot: Have discussions - have breakouts - 
+Mnot: Have discussions - have breakouts -
 
 Jana: This is a useful conversation.
 
@@ -1218,7 +1218,7 @@ Mnot: What’s the next step?
 
 Roberto: Having a wider discussion that does not stop slow or stop 1 would be nice to be done very quickly after v1.
 
-Lars: This is important in that it explains something about QUIC.  Some of this should go in the 
+Lars: This is important in that it explains something about QUIC.  Some of this should go in the
 Applicability statement.
 
 Jana: I think it’s nice to think about this but none of it is necessary for v1.
@@ -1237,7 +1237,7 @@ Ian: Interesting to have, but a little grumpy about providing it without having 
 
 Mnot: do we need something.
 
-Ekr: dissents - most everybody says you need this.  
+Ekr: dissents - most everybody says you need this.
 
 Jana: Negotiation can be handled.
 
