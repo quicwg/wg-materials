@@ -29,7 +29,7 @@ See [the agenda](agenda.md) for full details.
 
 ## Meeting Location
 
-    Ericsson Headqaurter, Torshamsgatan 21, 164 40 Kista 
+    Ericsson Headqaurter, Torshamsgatan 21, 164 40 Kista SWEDEN
     Meeting Room: Lars Magnus
 
 [map](https://www.google.se/maps/place/Ericsson/@59.405345,17.9536679,17z/data=!4m13!1m7!3m6!1s0x465f9e92536f9ef1:0x45325a56dafa037f!2sTorshamnsgatan+21,+164+40+Kista!3b1!8m2!3d59.405345!4d17.9558566!3m4!1s0x465f9e9249dd5ceb:0xa7d1663324159939!8m2!3d59.404607!4d17.9555976)
