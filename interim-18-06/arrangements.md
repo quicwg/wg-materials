@@ -36,7 +36,7 @@ See [the agenda](agenda.md) for full details.
 ## Accommodation
 
 
-There are a [hotels in Kista](https://www.google.com/maps/search/hotels/@59.4030287,17.9392915,16z/data=!4m5!2m4!5m3!5m2!1s2018-06-03!2i4?hl=en) itself. It's also possible to stay in downtown Stockholm and take the [Tunnelbana to Kista](https://sl.se/en/#/Travel/SearchTravelById/T-Centralen%20(Stockholm)/Kista%20(Stockholm)/9001/9302/2018-03-08%252009_00/arrive/en/null/null/2,8,1,4,96,/null/null/null/null/null/false/null/1/0/null/false) (about a 20-35 minute trip, depending on where you start).
+There are a few [hotels in Kista](https://www.google.com/maps/search/hotels/@59.4030287,17.9392915,16z/data=!4m5!2m4!5m3!5m2!1s2018-06-03!2i4?hl=en) itself. It's also possible to stay in downtown Stockholm and take the [Tunnelbana to Kista](https://sl.se/en/#/Travel/SearchTravelById/T-Centralen%20(Stockholm)/Kista%20(Stockholm)/9001/9302/2018-03-08%252009_00/arrive/en/null/null/2,8,1,4,96,/null/null/null/null/null/false/null/1/0/null/false) (about a 20-35 minute trip, depending on where you start).
 
 Options near T-Centralen include:
 
