@@ -68,10 +68,10 @@ Stockholm's [Tunnelbana](https://sl.se/en/) is an extensive metro network that i
 
 Stockholm's [Pendeltåg](https://sl.se/en/) (local trains) provides an alternative travel between Kista and Stockholm City (15 min). Helenelund station is 5 min walk from meeting venue. Same type of tickets and cost as the metro. Stockholm City provides easy changing between Pendeltåg and Tunnelbana (Local trains and metro). Travel to Arlanda requires additional ticket which costs 120 Sek in addition to reguler SL tickets.  
 
-Taxis in Stockholm can be costly, it is an open market where the drivers are free to set their own price, however there is an upper limit of the highest comparsion price to be 500 sek. The current reasonable comparision price is in the range of 320-350 Sek. The taxis have a note on their passenger doors that look like below. So before entering the car, please check the big number to avoid paying to much. Taking or ordering a cab from the big providers is generally safe:
+Taxis in Stockholm can be costly, it is an open market where the drivers are free to set their own price, however there is an upper limit of the highest comparison price to be 500 sek. The current reasonable comparison price is in the range of 320-350 Sek. The taxis have a note on their passenger doors that look like below. So before entering the car, please check the big number to avoid paying to much. Taking or ordering a cab from the big providers is generally safe:
 
 * Taxi Stockholm
 * Sverige Taxi (former Taxi 020)
 * Taxi Kurir
 
-![Comparision price sign](http://www.taxiengelholm.se/taxiagh/images/taxor_maj_2017_26.jpg)
+![comparison price sign](http://www.taxiengelholm.se/taxiagh/images/taxor_maj_2017_26.jpg)
