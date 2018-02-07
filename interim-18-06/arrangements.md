@@ -29,14 +29,25 @@ See [the agenda](agenda.md) for full details.
 
 ## Meeting Location
 
-    TBD
+    Ericsson Headqaurter, Torshamsgatan 21, 164 40 Kista 
+    Meeting Room: Lars Magnus
 
-[map]()
+[map](https://www.google.se/maps/place/Ericsson/@59.405345,17.9536679,17z/data=!4m13!1m7!3m6!1s0x465f9e92536f9ef1:0x45325a56dafa037f!2sTorshamnsgatan+21,+164+40+Kista!3b1!8m2!3d59.405345!4d17.9558566!3m4!1s0x465f9e9249dd5ceb:0xa7d1663324159939!8m2!3d59.404607!4d17.9555976)
 
 ## Accommodation
 
 
 There are a few [hotels in Kista](https://www.google.com/maps/search/hotels/@59.4030287,17.9392915,16z/data=!4m5!2m4!5m3!5m2!1s2018-06-03!2i4?hl=en) itself. It's also possible to stay in downtown Stockholm and take the [Tunnelbana to Kista](https://sl.se/en/#/Travel/SearchTravelById/T-Centralen%20(Stockholm)/Kista%20(Stockholm)/9001/9302/2018-03-08%252009_00/arrive/en/null/null/2,8,1,4,96,/null/null/null/null/null/false/null/1/0/null/false) (about a 20-35 minute trip, depending on where you start).
+
+Options in Kista within 10 min walk of meeting venue are:
+
+* [Scandic Victoria Tower](https://www.scandichotels.com/hotels/sweden/stockholm/scandic-victoria-tower?_ga=2.236009665.1157831380.1517997488-1771547511.1517997488)
+* [StayAt Hotel Apartments Kista](https://stayat.se/en/)
+* [Memory Hotel](http://www.memoryhotel.se/?AreaID=2)
+* [Scandic Kista](https://www.scandichotels.com/hotels/sweden/stockholm/scandic-kista?_ga=2.195262060.1157831380.1517997488-1771547511.1517997488)
+* [Connect Hotel Kista](http://connecthotels.se/en/kista/)
+* [StayAt Serviced Apartments Kista](https://stayat.se/en/accommodation/stockholm/kista-serviced-apartments/)
+
 
 Options near T-Centralen include:
 
@@ -49,6 +60,18 @@ Options near T-Centralen include:
 
 ## Transportation
 
-The easiest way to get to Stockholm from Arlanda Airport is the [Arlanda Express](https://www.arlandaexpress.com).
+The easiest way to get to Stockholm City from Arlanda Airport is the [Arlanda Express](https://www.arlandaexpress.com). 
 
-Stockholm's [Tunnelbana](https://sl.se/en/) is an extensive metro network that includes direct travel to Kista.
+From Arlanda airport to Kista, the options are either a taxi (~30 min, 400-450 Sek) or the local train from Arlanda station to Helenelund station (23 min travel, departs every 30 min, 151 Sek) then a 5 min walk to the meeting venue.   
+
+Stockholm's [Tunnelbana](https://sl.se/en/) is an extensive metro network that includes direct travel to Kista. There is a 10 min walk from the metro to the meeting venue. There are a number of ticket options, please see SL's web page. Each ticket allows travel on all SLs types of traffic, including changes of lines during 75 minutes, SL tickets are usable on the metro, local train, busses and some boats. 
+
+Stockholm's [Pendeltåg](https://sl.se/en/) (local trains) provides an alternative travel between Kista and Stockholm City (15 min). Helenelund station is 5 min walk from meeting venue. Same type of tickets and cost as the metro. Stockholm City provides easy changing between Pendeltåg and Tunnelbana (Local trains and metro). Travel to Arlanda requires additional ticket which costs 120 Sek in addition to reguler SL tickets.  
+
+Taxis in Stockholm can be costly, it is an open market where the drivers are free to set their own price, however there is an upper limit of the highest comparsion price to be 500 sek. The current reasonable comparision price is in the range of 320-350 Sek. The taxis have a note on their passenger doors that look like below. So before entering the car, please check the big number to avoid paying to much. Taking or ordering a cab from the big providers is generally safe:
+
+* Taxi Stockholm
+* Sverige Taxi (former Taxi 020)
+* Taxi Kurir
+
+![Comparision price sign](http://www.taxiengelholm.se/taxiagh/images/taxor_maj_2017_26.jpg)
