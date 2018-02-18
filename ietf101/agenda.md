@@ -32,8 +32,10 @@
 
 ### Spin Bit Proposal
 
-* 90 min - 
-
+* 25min - Spin Bit overview + clarifying questions ONLY
+*  5min - Scope of discussion - *chairs*
+* 45min - discussion
+* 15min - hums - *chairs*
 
 ### Issue Discussion
 
