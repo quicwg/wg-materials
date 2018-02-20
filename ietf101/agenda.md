@@ -19,6 +19,9 @@
 
 * 10 min - Discussion of what QUIC implementers learned at the hackathon.
 
+### "If Time Permits"
+
+* 5 min - Lightning talk on QUIC measurements (full talk in MAPRG) - *Jan Rüth*
 
 
 ## Thursday, 22 March 2018
