@@ -17,7 +17,13 @@
 
 ### Hackathon / Interop Report
 
-* 10 min - Discussion of what QUIC implementers learned at the hackathon.
+* 10 min - Discussion of what QUIC implementers did and learned at the hackathon.
+
+### Invariants
+
+* 60 min - Our goal is to nail down the invariants so that WGLC on the draft can begin. Includes:
+  * Connection ID
+
 
 ### "If Time Permits"
 
