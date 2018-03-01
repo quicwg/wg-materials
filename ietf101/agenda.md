@@ -28,6 +28,7 @@
 ### "If Time Permits"
 
 * 5 min - Lightning talk on QUIC measurements (full talk in MAPRG) - *Jan Rüth*
+* 5 min - Lightning talk on [PMTUD](https://tools.ietf.org/html/draft-fairhurst-tsvwg-datagram-plpmtud-02) for QUIC (full talk in TSVWG) - *Tom Jones*
 
 
 ## Thursday, 22 March 2018
