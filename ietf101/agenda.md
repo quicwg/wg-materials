@@ -26,14 +26,17 @@
 
 ### Invariants
 
-* 40 min - Our goal is to nail down the invariants so that WGLC on the draft can begin. Includes:
+* 35 min - Our goal is to nail down the invariants so that WGLC on the draft can begin. Includes:
   * Connection ID
 
+### ECN
+
+* 10 min - Overview of to-be-prepared PR on ECN for QUICv1 - *Ingemar Johansson*
 
 ### "If Time Permits"
 
-* 5 min - Lightning talk on QUIC measurements (full talk in MAPRG) - *Jan Rüth*
-* 5 min - Lightning talk on [PMTUD](https://tools.ietf.org/html/draft-fairhurst-tsvwg-datagram-plpmtud-02) for QUIC (full talk in TSVWG) - *Tom Jones*
+* 2.5 min - Lightning talk on QUIC measurements (full talk in MAPRG) - *Jan Rüth*
+* 2.5 min - Lightning talk on [PMTUD](https://tools.ietf.org/html/draft-fairhurst-tsvwg-datagram-plpmtud-02) for QUIC (full talk in TSVWG) - *Tom Jones*
 
 
 ## Thursday, 22 March 2018
