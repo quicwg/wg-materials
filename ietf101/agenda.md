@@ -17,11 +17,16 @@
 
 ### Hackathon / Interop Report
 
-* 10 min - Discussion of what QUIC implementers did and learned at the hackathon.
+* 5 min - Discussion of what QUIC implementers did and learned at the hackathon.
+
+### QUIC over DTLS Proposal
+
+* 20 min - Presentation (EKR)
+* 40 min - Discussion
 
 ### Invariants
 
-* 60 min - Our goal is to nail down the invariants so that WGLC on the draft can begin. Includes:
+* 40 min - Our goal is to nail down the invariants so that WGLC on the draft can begin. Includes:
   * Connection ID
 
 
