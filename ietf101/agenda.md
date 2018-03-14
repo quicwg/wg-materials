@@ -19,7 +19,7 @@
 
 * 5 min - Discussion of what QUIC implementers did and learned at the hackathon.
 
-### QUIC over DTLS Proposal
+### Stream 0, Layering and DTLS
 
 * 20 min - Presentation (EKR)
 * 40 min - Discussion
