@@ -19,14 +19,18 @@
 
 * 5 min - Discussion of what QUIC implementers did and learned at the hackathon.
 
+### Editors' Update
+
+* 20 min - Update on issue status, editor progress, hot topics.
+
 ### Stream 0, Layering and DTLS
 
 * 20 min - Presentation (EKR)
-* 40 min - Discussion
+* 30 min - Discussion
 
 ### Invariants
 
-* 35 min - Our goal is to nail down the invariants so that WGLC on the draft can begin. Includes:
+* 20 min - Our goal is to nail down the invariants so that WGLC on the draft can begin. Includes:
   * Connection ID
 
 ### ECN
