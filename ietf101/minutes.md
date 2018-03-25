@@ -8,11 +8,13 @@
 
 7th or 9th interop.  Usually happens before each interim and at each Hackathon.
 
-Interop Matrix available at https://docs.google.com/spreadsheets/d/1D0tW89vOoaScs3IY9RGC0UesWGAwE6xyLk0l4JtvTVg 
+[Interop Matrix](https://docs.google.com/spreadsheets/d/1D0tW89vOoaScs3IY9RGC0UesWGAwE6xyLk0l4JtvTVg)
 
 Yellow is good.  It's looking promising.  Hoping to go to http.9+ in Kista.
 Will share doodle poll for virtual interop meeting.  Based on version 5 (draft-11).
+
 A rust implementation exists (link) and isn't included in the Interop Matrix.
+
 IF YOU NEEDED ACCESS TO THE SLACK CHANNEL ask the CHAIRS!
 
 ### EDITORS UPDATE
@@ -40,16 +42,16 @@ Jana: Adding a ping bit - there's a problem with this because it might add towar
 Mirja: Padding should not be part of congestion control.  Data rate should be low anyway.  Just use a rate limiter.
 Ian: A good suggestion.
 
-ekr:  Need padding for CH.  What is padding for here - is it just for cover traffic.  ought to just a frame - it's an appliation thing and not a transport thing.
+ekr:  Need padding for CH.  What is padding for here - is it just for cover traffic.  ought to just a frame - it's an application thing and not a transport thing.
 
 Martin: Came to the same conclusion that Patrick did.  The risk is ACKs do congest the network.  Can avoid problems by just not sending them.  The value from ACK padding is pretty low.
 
-Subodh: Agrees with Patrick too.  Hiding the difference between ACks and real data is dubious.  Suggest 2a (what Ian said)
+Subodh: Agrees with Patrick too.  Hiding the difference between ACKs and real data is dubious.  Suggest 2a (what Ian said)
 
 Jana: Seems reasonable to not ACKs towards bytes in flight.  Allow the sender to set it.
 Ian: This is pretty complex.  But, we don't need to specify it.
 
-Christian: We have other frames that not acked.  Like pathchallenge (it is now acked).
+Christian: We have other frames that not acked.  Like path challenge (it is now acked).
 
 Resolution: Three options (two on slide third from the room): Will get a slide on Thursday...
 
@@ -57,44 +59,65 @@ Resolution: Three options (two on slide third from the room): Will get a slide o
 ### QUIC DTLS and Stream 0
 
 Ted: Is slide 9 what would if stayed the current structure?
-ekr: Yes.
-Ted: These crypto streams are now reliable.  This has application beyond crypto.
-ekr: The other proprety is that they have exemption from other rules (e.g., congestion control).
-Ted: You are creating a marriage of convience ...
 
-Ian joins the stage ... thinks we can do better.  Swallowing all of DTLS is a lot.  we migth beat DTLS into whatever we were going to do.
+ekr: Yes.
+
+Ted: These crypto streams are now reliable.  This has application beyond crypto.
+
+ekr: The other property is that they have exemption from other rules (e.g., congestion control).
+
+Ted: You are creating a marriage of convenience ...
+
+Ian joins the stage ... thinks we can do better.  Swallowing all of DTLS is a lot.  we might beat DTLS into whatever we were going to do.
 
 PHB: Likes it.  Seems to solve my problem (aka web services).
 
-Brian: Stream 0 is icky.  It's going to look like this.  Is there a way that we can get there if want to do it later?  Ian: we'd have to work that out.  Q: does this make co-existance with gQUIC easier or harder.  Ian: more thought required.
+Brian: Stream 0 is icky.  It's going to look like this.  Is there a way that we can get there if want to do it later?  
 
-Mike: Part of version negotiation includes that crypto protocol and now it's pinned to TLS.  If we move to DTLS we're pinning it to all versions.  ekr: we'd just move invariants be DTLS invariants.  ekr; There's lots of flexibilty wrt wire image.  Mike: special cases stream ID 0 vs byte this or that is kind of the same thing.  ekr: only once change would be to get ride of stream 0.
+Ian: we'd have to work that out.  
 
-Spencer (as AD): 1. chair picked for a reason. 2. expect WG to make informed decision. 3. coming off TLS1.3 is a recharter. 4. (as Spencer) don't have a good feeling about version negotiating and how much we might roll them.  mont: not going to wait 5 years for v2.
+Q: does this make co-existance with gQUIC easier or harder.  
+
+Ian: more thought required.
+
+Mike: Part of version negotiation includes that crypto protocol and now it's pinned to TLS.  If we move to DTLS we're pinning it to all versions.  
+
+ekr: we'd just move invariants be DTLS invariants.  
+
+ekr: There's lots of flexibility wrt wire image.  
+
+Mike: special cases stream ID 0 vs byte this or that is kind of the same thing. 
+
+ekr: only once change would be to get ride of stream 0.
+
+Spencer (as AD): 1. chair picked for a reason. 2. expect WG to make informed decision. 3. coming off TLS1.3 is a recharter. 4. (as Spencer) don't have a good feeling about version negotiating and how much we might roll them.  
+
+mnot: not going to wait 5 years for v2.
 
 Chris: Echoing Spencers #2 comment.  It would be good if we had time to experiment with it.  We should definitely consider it despite scheduling concerns.
 
-Jana: 1. this is devil we have. Packetization if it's goign to sit in DTLS - loosing ... 2. shame spiral starts a little earlier - qQUIC had tight integration and we decided to give that up on purpose.  3. I don't if this is the right architecture - not sure this is solved by thinking about this a a layer - havinga reliable transport on top of UDP is valuable.
+Jana: 1. this is devil we have. Packetization if it's going to sit in DTLS - loosing ... 2. shame spiral starts a little earlier - qQUIC had tight integration and we decided to give that up on purpose.  3. I don't if this is the right architecture - not sure this is solved by thinking about this a a layer - having a reliable transport on top of UDP is valuable.
 
 Christian: Would prefer an incremental approach.
 
-Victor: handshake, transport, and layer.  Decided to do just layer and thinks that the way to do it.  Don't want to duplicat the transport.
+Victor: handshake, transport, and layer.  Decided to do just layer and thinks that the way to do it.  Don't want to duplicate the transport.
 
-Ted: Identified a problem and with a solution.  If we have to impose changes on DTLS it will tkae more time.  keep the work here.
+Ted: Identified a problem and with a solution.  If we have to impose changes on DTLS it will take more time.  keep the work here.
 
-Patrick: From a code point of view: surprised how much of an impact it made - removed 4 times as much dode.  Hacked it up.  Core quesiton is do we want wide or narrow API ... We should talk about the wide of the API.
+Patrick: From a code point of view: surprised how much of an impact it made - removed 4 times as much dode.  Hacked it up.  Core question is do we want wide or narrow API ... We should talk about the wide of the API.
 
 Subodh: Who controls the bytes on the wire is important.  Having transport own the bits is valuable.  It's fixable.
 
 Colin: Seems like this might be better conceptualization.
 
-Andrei: Thanks for bringin this up.  Better to have better API.  A lot of peole are not happy with DTLS services.
+Andrei: Thanks for bringin this up.  Better to have better API.  A lot of people are not happy with DTLS services.
 
 Kazuho: Concerned about congestion control.
 
 Gabrial: Concerned switching horses would adversely impact interop.  Issues with stream 0, but we shouldn't go crazy because of that.
 
 Tommy: Concerns about DTLS reliance.  What would happen if we just did QUIC running it's handshake.
+
 ekr: Did talk an alternative where DLTS Packets = QUIC packets.
 
 Martin: For some people this is a feature and for some it's a bug.  There's some duplication.  When you duplicate the functions you don't necessarily have to duplicate the code.
@@ -114,7 +137,7 @@ mnot: 20+ people interested.  Email chairs if you're interested.
 Lars: This is going to move the milestones ...
 
 
-### INVARIANTS
+### Invariants
 
 Only one thing left if we're not changing packet layer.
 
@@ -139,7 +162,6 @@ In the WILD!
 
 https://quic.netray.io
 
-PLPMTUD
 
 
 
@@ -147,13 +169,15 @@ PLPMTUD
 ## Thursday, 22 March 2018
 
 
-### Invariants, Martin
+### Invariants
 
 The version negotiation packet is a list of versions. No length, no anything else. This was semi-intentional, but that's not discussed. 
 Is the rest of the packet non-extensible? How should these be specified as invariants?
 
 Ekr: Is this proposal like TLS, with a bunch of bytes at the end?
+
 Martin: No specific proposal here.
+
 Ekr: I’m reluctant to just have a length.
 
 Martin: Purpose is to agree, between client and server, on (1) the way to obfuscate handshake packets and (2) the handshake protocol itself. We could have another layer of negotiation inside that. I think we're actually okay with what we have, as long as we are aware of this limitation.
@@ -174,11 +198,11 @@ Jana: We have a lot of extensibility in other parts of the protocol; if we need 
 
 mnot: We have a sense at the mic that we don't need a change here. Add to issue status.
 
-### ECN, Ingemar Johansson
+### ECN
 
 Lars: In the room in Melbourne, the consensus was that we wanted to add the full version of ECN to QUIC v1. This is an overview of the PR.
 
-Ingemar: Proposed additions to QUIC transport and recovery are up on the github. No major changes since Melbourne, main discussion was around connection migration. Worked with Gorry to clarify those parts. There was an email discussion around ACK_ECN feedback format. Rough consensus that counting packets was good enough.
+Ingemar: Proposed additions to QUIC transport and recovery are up on the Github. No major changes since Melbourne, main discussion was around connection migration. Worked with Gorry to clarify those parts. There was an email discussion around ACK_ECN feedback format. Rough consensus that counting packets was good enough.
 
 Way forward is to create the Pull Request into the draft based on the issues to add the text.
 
@@ -217,31 +241,55 @@ Lars: Okay, please take a look at what's in the wiki, everyone! Let's get it rea
 25min - Spin Bit overview + clarifying questions ONLY, Brian Trammell
 
 mnot: Brian will give the presentation on Spin Bit first, with clarifying questions; and then afterwards only will we have discussions.
+
 Brian: I have backup slides that we may use during discussion.
 
 mnot/Lars: Our intent as chairs is to get something decided and discussed on list today. We want the whole IETF group here to discuss and review this, and we need to close on this soon.
 
 Brian: 
-    What is the spin bit? It's in PR 46, and we want to take one bit of the QUIC short header and make it spin. The server sends the last bit it saw from the client; the client sends the inverse of the last bit it saw from the server. It creates a square wave.
-    Why? We are preparing for a post-TCP world; we see measurements for QUIC rising globally, and we have a loss of latency visibility as TCP gets replaced. Many use cases are enumerated in the spin bit draft. Lots of troubleshooting, buffer bloat mitigation in routers, etc. In hackathon, we built a proof that the spin bit can reduce buffer bloat significantly!
-    The period of the pulse between the 0s and 1s is based on the RTT, so a passive observer in the middle can observer the flow round trip time. If you can observe both sides of the flow, you can separate out where the RTT is spent.
-    Three separate implementations of spin bit at hackathon, very easy to implement and get working.
-    Due to ack timing in QUIC, the information from the spin bit is more accurate RTT than checking after the decryption.
-    Does this work in non-perfect networks? In heavy loss, you'll estimate too high of an RTT slightly.
+
+    What is the spin bit? It's in PR 46, and we want to take one bit of the
+    QUIC short header and make it spin. The server sends the last bit it saw
+    from the client; the client sends the inverse of the last bit it saw from
+    the server. It creates a square wave.
+
+    Why? We are preparing for a post-TCP world; we see measurements for QUIC
+    rising globally, and we have a loss of latency visibility as TCP gets
+    replaced. Many use cases are enumerated in the spin bit draft. Lots of
+    troubleshooting, buffer bloat mitigation in routers, etc. In hackathon, we
+    built a proof that the spin bit can reduce buffer bloat significantly! The
+    period of the pulse between the 0s and 1s is based on the RTT, so a passive
+    observer in the middle can observer the flow round trip time. If you can
+    observe both sides of the flow, you can separate out where the RTT is spent.
+
+    Three separate implementations of spin bit at hackathon, very easy to
+    implement and get working. Due to ack timing in QUIC, the information from
+    the spin bit is more accurate RTT than checking after the decryption. Does
+    this work in non-perfect networks? In heavy loss, you'll estimate too high
+    of an RTT slightly.
     
 ekr: What is the graph? (slide 7)
 
 Brian: The spiky area at the beginning of the graph is the spin bit information available at the sender side, with a moving minimum (smoothed RTT). The lower graph is the server's view of the same thing. We induce a latency from 40 ms to 80 ms part way through the graph.
 
 ekr: And anyone can see this?
+
 Brian: Yes
+
 ekr: Why are the client and server different?
+
 Mirja: You only have acks in one way, so one direction is less accurate.
 
 Brian:
-    Currently, packet numbers are still in the clear in -10. So it's easy to detect loss, etc.
+
+    Currently, packet numbers are still in the clear in -10. So it's easy to
+    detect loss, etc.
     
-    In conclusion, we've talked about this for a year, and we've done implementations to get experience with it. This gets you pretty good RTT information, to all the points where the transport flow is viable. Explicit signalling that replaces implicit, and based on last summer's work, doesn't create a large privacy issue.
+    In conclusion, we've talked about this for a year, and we've done
+    implementations to get experience with it. This gets you pretty good RTT
+    information, to all the points where the transport flow is viable. Explicit
+    signalling that replaces implicit, and based on last summer's work, doesn't
+    create a large privacy issue.
     
 Dave Oran: Does this change at all when we do multipath?
 
@@ -256,34 +304,50 @@ Ian: Usually a packet policer.
 Brian: With burst loss, you get what you see in the blue line on slide 14. Vanilla on this slide is without looking at packet number at all; if things are running well, you don't need packet numbers at all, you just need spin edges.
 
 Ignacio: When you say it overestimates upon loss?
+
 Brian: It's because the edge gets delayed, and so your visible RTT goes up.
 
 Colin: Have you run into issues with reordering on low RTT?
+
 Brian: Yeah, looks like slide 13. With lower RTT, less absolute error. With 40ms RTT, and you have reordering, you get thrown off with values too low. A heuristic can be done to reject impossibly low values.
+
 Colin: What is unrealistically short?
+
 Brian: If less than one tenth of expected RTT, generally.
+
 Colin: This is only for short header packets, right?
+
 Brian: Yes, you can get the RTT from the handshake. You don't have many long header packets. It's not worth the complexity to add to the long header.
 
 Christian: I have a fear looking at the numbers that the spin bit is very good when things work well, but will degrade when the network has problems. This behavior goes against the notion of a measurement tool.
+
 Brian: Thanks for leading into the backup slides =) We looked into a mechanism called the edge-valid signal. When you have heavy loss and heavy reordering, the edges get lost, and you have fewer samples. We never drop all the samples, we just lose some. The number of valid samples lets you know how bad the network is. If we don't have packet numbers, you have two bits going up from 0-1-2-3 to indicate when there is a valid edge. What we saw here was that even when we disable flow and congestion control, with very high jitter and delay (the transport falls over) this still works.
+
 Christian: To summarize: if we have a visible packet number, we only need 1 bit spinning; if we don't have packet numbers, we need 2 bits spinning. Martin pointed out we only need three values (1-2-3) and lets 0 be invalid/no signal.
 
 Igor: We're discussing RTT measurements, but can we characterize loss patterns with the spin bit?
+
 mnot: Out of scope
+
 Brian: Yes, but we think the edges will let you know there is loss OR reordering, but not which. More work needs to be done.
 
 ekr: Please never again say three-bit-spin-bit
+
 Brian: It would be a spin bit and an edge vector
+
 Markku Kojo: Does this assume a continuous flow of packets to work?
+
 Brian: If the sender is application limited, you'll get overestimates. The sender can expose whether or not an edge is valid.
+
 Mirja: The second bit helps you, but even if you just have one bit, just don't spin and mark this as not valid for measuring (no edges)
 
 Eric Nygren: If you're switching what paths you're sending on, how do we handle that?
 Brian: That's a good research question.
 
 Subodh: There's some map between the flow and the packets, what is that?
+
 Brian: That's the five-tuple
+
 Colin: To clarify, this is limited to middleboxes observing the traffic on path - the bit(s) is/are authenticated ened-to-end.
     
 5min - Scope of discussion - chairs
@@ -292,13 +356,13 @@ mnot: To give context, we've been discussing this for a long time with a lot of 
 
 Brian: Yes, let's add this.
 
-Ted: I didn't hear the question, so I can't just say yes or no! Having gone through the work with the design team, I'm confident that this is a good bang-for-the-buck tradeoff. Extrodinarily small risk for privacy, with good benefits. The sender is in full control of this, and the server only does reflection. The sender can control if things are on; and so can the server decide not to reflect. Another good piece is that as we move into multipath, we can use this on a per-path basis, without trying to be too complicated. Definitely in favor.
+Ted: I didn't hear the question, so I can't just say yes or no! Having gone through the work with the design team, I'm confident that this is a good bang-for-the-buck tradeoff. Extraordinarily small risk for privacy, with good benefits. The sender is in full control of this, and the server only does reflection. The sender can control if things are on; and so can the server decide not to reflect. Another good piece is that as we move into multipath, we can use this on a per-path basis, without trying to be too complicated. Definitely in favor.
 
 mnot: What is "this"?
 
 Ted: I've mainly looked at the one bit spin bit, with the packet numbers. My intuition is that this is very similar in properties to the vector and no packet number; that may be an overall privacy win.
 
-DKG: I appreciate how this has been whittled down. I want this as small as possible; 0 is great; I appreciate the work for 1. The discusson earlier was about bursty traffic. There may be other traffic patterns for which this doesn't work, also. For non-reliable streams that don't use acks, are we designing ourselves into a hole? Are we hard-coding reliable streams into the network operator model? Let's keep those in mind, if we want to use this for non-reliable streams.
+DKG: I appreciate how this has been whittled down. I want this as small as possible; 0 is great; I appreciate the work for 1. The discussion earlier was about bursty traffic. There may be other traffic patterns for which this doesn't work, also. For non-reliable streams that don't use acks, are we designing ourselves into a hole? Are we hard-coding reliable streams into the network operator model? Let's keep those in mind, if we want to use this for non-reliable streams.
 
 Jana: I agree with what DKG just said. What happens if the ack rate goes down. But I have a broader point—I've spent the last year listening to the arguments on all sides. I've considered all the benefits and costs carefully. My informed opinion is that we should NOT include this bit in the core specifications for v1. I am happy for it to be an experiment, even Internet-wide, but there are a lot of open issues that challenge this mechanism. I don't think this needs to be or should be in the core spec.
 
@@ -320,7 +384,7 @@ Brian: While stating my skepticism to resisting traffic analysis in the network,
 
 mnot: In your proposal, this is always opt-in for both parties, right? It's not a guarantee even if it is in the invariants.
 
-Brian: Yes. On the point of greasing, individual flows can choose to opt in or out on a probibalistic basis. And if everyone chooses to not opt in, then there just are no signals.
+Brian: Yes. On the point of greasing, individual flows can choose to opt in or out on a probabilistic basis. And if everyone chooses to not opt in, then there just are no signals.
 
 Gabriel: I wanted to emphasize the nature of opt-in. We would definitely opt-in (Microsoft), not necessarily 100% of the time, but we would participate. The reason I'm confident for support is that we have done privacy analysis; I'd like to see the same done for the vec.
 
@@ -328,21 +392,29 @@ Zahed: Now that we've implemented this in the hackathon, I'm more convinced this
 
 Ian: I wanted to reiterate that sending fewer acks can induce about a 25% level of noise to the RTT estimate. If we do this, I want it to be good enough to be a useful signal. I'd rather have this be useful—so have the packet number in the clear, or have two bits in the packet. Speaking with implementors and operators, there are mixed opinions. Lots of yeses, noes, and maybes. If this is v1, it will be a pain in the future. We should go in the direction Jana was indicating. I want an experimental draft from Brian that uses many bits to make this more useful, and see what happens. Use all 5 bits. This seems like server push—a cool idea we think could be useful, but we shouldn't have added to v1. We shouldn't build anything we don't think is absolutely useful. Those who want to do this, do experiments.
 
-Marcus: We took QUIC stacks at the hackathon and got really nice measurement results, and clear benefits. Based on the probibalistic opt-in, the operators will have to be flexible from the beginning.
+Marcus: We took QUIC stacks at the hackathon and got really nice measurement results, and clear benefits. Based on the probabilistic opt-in, the operators will have to be flexible from the beginning.
 
 Manasi: I understand this from the point of view of a client endpoint, but there are other ways to understand the RTT. I suggest we spend more time understanding the value of this.
 
 ekr: My understanding is that if we encrypt the packet number, we do need a vec.
+
 Brian: Yes, to get good signal when the network degrades.
+
 ekr: And that's presumably when you want it.
+
 Brian: There are other scenarios, but yes.
+
 ekr: If I were given only two choices, between one spin bit and two, but with encrypted packet numbers, I would choose the latter! I took a little look at where this would go.. we have five fixed bits in the short header; adding the vec does cut into the flexibility of the bits we have left. If we need more bits, we're not in a great situation. We better be sure that it works before we add it. The vec seems un-baked to me right now. If it turns out that it sucks, then we'll be sad we used the space for it. Sorry to kick the can down the road, but I find it hard to decide now.
 
 Spencer: As AD, I've been mostly hands-off. I have a couple questions.
 Please hum if you think this is research, or engineering.
+
 Brian: Putting a signal on packets in engineering; the basic measurement is engineering; the possible field of things to do with the measurements is research.
+
 Ted: The choice between explicit and implicit signals is architecture.
+
 mnot: Please return to the queue...
+
 Spencer: Please hum if you think this is engineering (strong hum, mainly on one side); research (definitely less, but not trivial, other side of the room).
 
 Marten: QUIC is not the only UDP based protocol out there. The only thing to identify a QUIC short header is a 0 in the first bit, so a middle box will have to guess based on one bit. What does this mean for other protocols on UDP?
@@ -356,6 +428,7 @@ Kazuho: While I find a use of measurement, I favor taking this out of the core p
 Andrew: I've been looking at various distributions, and I think there's a lot more information you can get out of the vec than is immediately obvious. The same estimators work even without the spin bit, it's just more expensive. The privacy argument is not there as long as the attacker is willing to spend the resource. The only people we hurt are systems in the network for diagnostics.
 
 Lars: What should the WG do? This goes to everyone in the line.
+
 mnot: Options:
     1. Spin Bit(s) in Invariant
     2. Spin Bit(s) in QUICv1
@@ -365,7 +438,9 @@ mnot: Options:
 Emile: We deployed this in Orange, and it helped detect issues before there was a fallback to TCP. 
 
 Ted: When will we know about encrypted packet numbers (to the chairs)? 
+
 To Patrick's point, the design team did not find issues with privacy that could be leaked.
+
 I think the ossification is not what people are thinking of.
 
 Chairs: We were about to announce the design team for the packet number encryption, and we should land this within the next four weeks (probably won't affect the invariants).
@@ -418,7 +493,7 @@ Chris Seal: I support option (2) since if we become blind as operators, we won't
 
 Joerg Ott: A point on what we can gain from TCP seq numbers, you are inferring from an implicit signal. The spin bit as an explicit signal can be tweaked. We seem to be assuming well-behaved clients that aren't gaming the networks to take advantage of the behavior of the network (by artificially lengthening the RTT). We're making too many positive assumptions here. I go for option number (3)/(3a). I don't know if reserving the bits is future-proof.
 
-Ian: Commenting on the negotation for (3), I was referring to doing version negotation by using an experimental version number that's reserved for QUICv1+SPIN.
+Ian: Commenting on the negotiation for (3), I was referring to doing version negotiation by using an experimental version number that's reserved for QUICv1+SPIN.
 
 Ted: You mentioned HTTP running over QUIC—are we assuming that they'll run over all versions of a type? It makes a difference from a deployment stanpoint.
 
@@ -460,7 +535,7 @@ Emile: More support for option (2).
 
 Sanjay (Verizon): If we're looking to standardize QUIC, we need it to be stable. I don't like the version negotiation (3b) option. We should add this into the current release. There's a big divide between the designers and the users/operators.
 
-How many implemntors would implement this? (half a dozen, some overlap)
+How many implementers would implement this? (half a dozen, some overlap)
 
 mnot: Is the PR clean to get this in and try it in the implementation interop?
 
@@ -487,11 +562,12 @@ Marcus: As a measurement device implementor, I'd be happy to contribute to this 
 mnot: Two paths forward:
     1. Leave out of v1
     2. Have separate document, which may folded into QUICv1 down the road
+
 Lars: Those are certainly options. I'm not any clearer than when we started. We're not concluding on this today. Spencer?
 
-Spencer: 
-    This is the most positive conversation I've seen on this for a while—thank you to the WG and chairs for that. 
-    Can we close on this by the interim? (Chairs)
+Spencer: This is the most positive conversation I've seen on this for a while—thank you to the WG and chairs for that. 
+
+Can we close on this by the interim? (Chairs)
     
 Lars: It's clear that there is enough interest to use the spin bit and understand what it is good for. Option (4), no spin bit is out. Option (1) invariants is out. We're left with either being in v1 or just an experimental version to do the same. Don't delay QUICv1, but allow spinning.
 
