@@ -1,8 +1,10 @@
-Agenda Bashing
+# QUIC WG Minutes - IETF101
 
-...
 
-Hackathon Update
+## Monday, 19 March 2018
+
+
+### Hackathon Update
 
 7th or 9th interop.  Usually happens before each interim and at each Hackathon.
 
@@ -13,7 +15,7 @@ Will share doodle poll for virtual interop meeting.  Based on version 5 (draft-1
 A rust implementation exists (link) and isn't included in the Interop Matrix.
 IF YOU NEEDED ACCESS TO THE SLACK CHANNEL ask the CHAIRS!
 
-EDITORS UPDATE
+### EDITORS UPDATE
 
 Went through all the issues (before people added new ones).  Ian explained what tagged, assigned, closed tags mean.
 
@@ -52,7 +54,7 @@ Christian: We have other frames that not acked.  Like pathchallenge (it is now a
 Resolution: Three options (two on slide third from the room): Will get a slide on Thursday...
 
 
-QUIC DTLS
+### QUIC DTLS and Stream 0
 
 Ted: Is slide 9 what would if stayed the current structure?
 ekr: Yes.
@@ -112,7 +114,7 @@ mnot: 20+ people interested.  Email chairs if you're interested.
 Lars: This is going to move the milestones ...
 
 
-INVARIANTS
+### INVARIANTS
 
 Only one thing left if we're not changing packet layer.
 
@@ -142,13 +144,10 @@ PLPMTUD
 
 
 
-===================
-Thursday, 22 March 2018
+## Thursday, 22 March 2018
 
 
-Administrivia
-
-Invariants, Martin
+### Invariants, Martin
 
 The version negotiation packet is a list of versions. No length, no anything else. This was semi-intentional, but that's not discussed. 
 Is the rest of the packet non-extensible? How should these be specified as invariants?
@@ -175,8 +174,7 @@ Jana: We have a lot of extensibility in other parts of the protocol; if we need 
 
 mnot: We have a sense at the mic that we don't need a change here. Add to issue status.
 
-======
-ECN, Ingemar Johansson
+### ECN, Ingemar Johansson
 
 Lars: In the room in Melbourne, the consensus was that we wanted to add the full version of ECN to QUIC v1. This is an overview of the PR.
 
@@ -214,7 +212,8 @@ Jana: Seconding Martin's opinion; this is useful, and let's make the Wiki solid,
 
 Lars: Okay, please take a look at what's in the wiki, everyone! Let's get it ready for PR in June timeframe.
 
-Spin Bit Proposal
+### Spin Bit Proposal
+
 25min - Spin Bit overview + clarifying questions ONLY, Brian Trammell
 
 mnot: Brian will give the presentation on Spin Bit first, with clarifying questions; and then afterwards only will we have discussions.
@@ -286,8 +285,6 @@ Brian: That's a good research question.
 Subodh: There's some map between the flow and the packets, what is that?
 Brian: That's the five-tuple
 Colin: To clarify, this is limited to middleboxes observing the traffic on path - the bit(s) is/are authenticated ened-to-end.
-
-=====
     
 5min - Scope of discussion - chairs
 
