@@ -1,8 +1,21 @@
 # QUIC WG Minutes - IETF101
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Monday, 19 March 2018](#monday-19-march-2018)
+  - [Hackathon Update](#hackathon-update)
+  - [EDITORS UPDATE](#editors-update)
+  - [QUIC DTLS and Stream 0](#quic-dtls-and-stream-0)
+  - [Invariants](#invariants)
+- [Thursday, 22 March 2018](#thursday-22-march-2018)
+  - [Invariants](#invariants-1)
+  - [ECN](#ecn)
+  - [Spin Bit Proposal](#spin-bit-proposal)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Monday, 19 March 2018
-
 
 ### Hackathon Update
 
