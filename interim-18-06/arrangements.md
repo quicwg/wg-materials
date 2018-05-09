@@ -34,6 +34,10 @@ See [the agenda](agenda.md) for full details.
 
 [map](https://www.google.se/maps/place/Ericsson/@59.405345,17.9536679,17z/data=!4m13!1m7!3m6!1s0x465f9e92536f9ef1:0x45325a56dafa037f!2sTorshamnsgatan+21,+164+40+Kista!3b1!8m2!3d59.405345!4d17.9558566!3m4!1s0x465f9e9249dd5ceb:0xa7d1663324159939!8m2!3d59.404607!4d17.9555976)
 
+## Network
+
+During the meeting onsite persons will all have access to the Ericsson Guest WIFI network. This network is available at all places within the Ericsson Facilities. SSID: EWA@GUEST, this is a network with a captive portal and access code that will be displayed in the room. The network is only IPv4 I hope that will not be an issue for any participant. The network has basic firewalling but has been tested to support UDP and TCP on bascially any port outgoing. It also allows peer to peer within the network using UDP and TCP, but block ICMP echo requests (ping) between nodes. 
+
 ## Accommodation
 
 
