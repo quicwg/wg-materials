@@ -30,6 +30,9 @@ Discussion will include (with the person leading the discussion):
   * Negotiating Packet Number (#1296)
   * Implicit Stream Open (#1342)
   * _more issues as time permits_
+  * [slides](https://docs.google.com/presentation/d/1VSpqQR941xo80hyNi10RQ6mksSpTjmbG3p9_v0a-CWk/present)
+
+
 ### Out of Scope
 
 Out of scope items for this meeting include:
