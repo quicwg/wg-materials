@@ -24,14 +24,16 @@ _6-7 June_
 
 Discussion will include (with the person leading the discussion):
 
+* Summary of interop 
 * Stream 0 Design Team Report (Ekr, Ian) (3 hours)
+* HTTP (Mike) (1 hour)
 * QPACK (Alan) (1 hour)
 * Issues discussion (as time permits)
   * Negotiating Packet Number (#1296)
   * Implicit Stream Open (#1342)
   * _more issues as time permits_
   * [slides](https://docs.google.com/presentation/d/1VSpqQR941xo80hyNi10RQ6mksSpTjmbG3p9_v0a-CWk/present)
-
+* Interop / future meeting planning
 
 ### Out of Scope
 
