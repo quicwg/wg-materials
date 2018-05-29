@@ -26,6 +26,7 @@ Discussion will include (with the person leading the discussion):
 
 * Stream 0 Design Team Report (Ekr, Ian) (3 hours)
 * QPACK (Alan) (1 hour)
+* Load Balancer Interoperability (30 min)
 * Issues discussion (as time permits)
   * Negotiating Packet Number (#1296)
   * Implicit Stream Open (#1342)
