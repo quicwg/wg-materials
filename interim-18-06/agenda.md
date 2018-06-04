@@ -29,6 +29,7 @@ Discussion will include (with the person leading the discussion):
 * HTTP (Mike) (1 hour)
 * QPACK (Alan) (1 hour)
 * Load Balancer Interoperability (30 min)
+* ECN Proposal (1 hour) (#1372)
 * Issues discussion (as time permits)
   * Negotiating Packet Number (#1296)
   * Implicit Stream Open (#1342)
