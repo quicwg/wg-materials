@@ -30,10 +30,10 @@ Discussion will include (with the person leading the discussion):
 * HTTP (Mike) (1 hour)
 * [QPACK](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/qpack%20update%2006.18.pdf) (Alan) (1 hour)
 * [Load Balancer Interoperability](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/quic-load-balancers.pdf) (Martin Duke) (30 min)
-* [ECN Proposal](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/ECN%20for%20QUIC%20-%20interim-18-06.pdf) (1 hour) (Magnus) (#1372)
+* [ECN Proposal](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/ECN%20for%20QUIC%20-%20interim-18-06.pdf) (1 hour) (Magnus) ([#1372](https://github.com/quicwg/base-drafts/pull/1372))
 * [Issues discussion](https://docs.google.com/presentation/d/1VSpqQR941xo80hyNi10RQ6mksSpTjmbG3p9_v0a-CWk/present) (as time permits)
-  * Negotiating Packet Number (#1296)
-  * Implicit Stream Open (#1342)
+  * Negotiating Packet Number ([#1296](https://github.com/quicwg/base-drafts/pull/1296))
+  * Implicit Stream Open ([#1342](https://github.com/quicwg/base-drafts/pull/1342))
   * _more issues as time permits_
 * Interop / future meeting planning
 
