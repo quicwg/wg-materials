@@ -1,5 +1,7 @@
 # IETF QUIC Working Group Interim Meeting
 
+**NOTE**: Attendees (remote or onsite) must register; see the meeting arrangements page.
+
 * [Meeting arrangements](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/arrangements.md)
 * [Issues List](https://github.com/quicwg/base-drafts/issues)
 * [Drafts](https://github.com/quicwg/base-drafts)
@@ -22,7 +24,19 @@ _6-7 June_
 
 Discussion will include (with the person leading the discussion):
 
-* TBD
+* Summary of interop (Ekr)
+* Editors' Report (MT)
+* Stream 0 Design Team Report (Ekr, Ian) (3 hours)
+* HTTP (Mike) (1 hour)
+* QPACK (Alan) (1 hour)
+* Load Balancer Interoperability (30 min)
+* ECN Proposal (1 hour) (#1372)
+* Issues discussion (as time permits)
+  * Negotiating Packet Number (#1296)
+  * Implicit Stream Open (#1342)
+  * _more issues as time permits_
+  * [slides](https://docs.google.com/presentation/d/1VSpqQR941xo80hyNi10RQ6mksSpTjmbG3p9_v0a-CWk/present)
+* Interop / future meeting planning
 
 ### Out of Scope
 
