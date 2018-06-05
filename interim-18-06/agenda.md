@@ -26,7 +26,7 @@ Discussion will include (with the person leading the discussion):
 
 * Summary of interop (Ekr)
 * Editors' Report (MT)
-* Stream 0 Design Team Report (Ekr, Ian) (3 hours)
+* [Stream 0 Design Team Report](https://docs.google.com/presentation/d/1Ka3tfIsyR2BVKEA-_IM2KDt3pGOkSq9yRRR41OzdAUw/edit?usp=sharing) (Ekr, Ian) (3 hours)
 * HTTP (Mike) (1 hour)
 * QPACK (Alan) (1 hour)
 * Load Balancer Interoperability (Martin Duke) (30 min)
