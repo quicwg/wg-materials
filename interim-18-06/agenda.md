@@ -24,7 +24,7 @@ _6-7 June_
 
 Discussion will include (with the person leading the discussion):
 
-* Summary of interop (Ekr)
+* Summary of -12 interop (Kazuho)
 * Editors' Report (MT)
 * [Stream 0 Design Team Report](https://docs.google.com/presentation/d/1Ka3tfIsyR2BVKEA-_IM2KDt3pGOkSq9yRRR41OzdAUw/edit?usp=sharing) (Ekr, Ian) (3 hours)
 * HTTP (Mike) (1 hour)
