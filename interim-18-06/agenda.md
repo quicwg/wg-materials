@@ -28,7 +28,7 @@ Discussion will include (with the person leading the discussion):
 * Editors' Report (MT)
 * [Stream 0 Design Team Report](https://docs.google.com/presentation/d/1Ka3tfIsyR2BVKEA-_IM2KDt3pGOkSq9yRRR41OzdAUw/edit?usp=sharing) (Ekr, Ian) (3 hours)
 * HTTP (Mike) (1 hour)
-* QPACK (Alan) (1 hour)
+* [QPACK](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/qpack%20update%2006.18.pdf) (Alan) (1 hour)
 * [Load Balancer Interoperability](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/quic-load-balancers.pdf) (Martin Duke) (30 min)
 * [ECN Proposal](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/ECN%20for%20QUIC%20-%20interim-18-06.pdf) (1 hour) (Magnus) (#1372)
 * Issues discussion (as time permits)
