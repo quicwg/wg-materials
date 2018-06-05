@@ -25,7 +25,7 @@ _6-7 June_
 Discussion will include (with the person leading the discussion):
 
 * Summary of -12 interop (Kazuho)
-* Editors' Report (MT)
+* [Editors' Report](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/editors.pdf) (MT)
 * [Stream 0 Design Team Report](https://docs.google.com/presentation/d/1Ka3tfIsyR2BVKEA-_IM2KDt3pGOkSq9yRRR41OzdAUw/edit?usp=sharing) (Ekr, Ian) (3 hours)
 * [HTTP](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/HTTP.pdf) (Mike) (1 hour)
 * [QPACK](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/qpack%20update%2006.18.pdf) (Alan) (1 hour)
