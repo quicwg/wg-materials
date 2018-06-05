@@ -24,7 +24,8 @@ _6-7 June_
 
 Discussion will include (with the person leading the discussion):
 
-* Summary of interop 
+* Summary of interop
+* Editors' Report
 * Stream 0 Design Team Report (Ekr, Ian) (3 hours)
 * HTTP (Mike) (1 hour)
 * QPACK (Alan) (1 hour)
