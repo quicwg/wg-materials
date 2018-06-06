@@ -26,7 +26,7 @@ Discussion will include (with the person leading the discussion):
 
 * Summary of -12 interop (Kazuho)
 * [Editors' Report](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/editors.pdf) (MT)
-* [Stream 0 Design Team Report](hhttps://docs.google.com/presentation/d/e/2PACX-1vRYFb378ohxIn42Dq9a7Y-FfTSo6fLLwgEIhmexGH4SlAkA_nVc_b0RB4Q7yUzWdc4GqjBmK3OC9QoC/pub?start=false&loop=false&delayms=3000&slide=id.p) (Ekr, Ian) (3 hours)
+* [Stream 0 Design Team Report](https://docs.google.com/presentation/d/e/2PACX-1vRYFb378ohxIn42Dq9a7Y-FfTSo6fLLwgEIhmexGH4SlAkA_nVc_b0RB4Q7yUzWdc4GqjBmK3OC9QoC/pub?start=false&loop=false&delayms=3000&slide=id.p) (Ekr, Ian) (3 hours)
 * [HTTP](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/HTTP.pdf) (Mike) (1 hour)
 * [QPACK](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/qpack%20update%2006.18.pdf) (Alan) (1 hour)
 * [Load Balancer Interoperability](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/quic-load-balancers.pdf) (Martin Duke) (30 min)
