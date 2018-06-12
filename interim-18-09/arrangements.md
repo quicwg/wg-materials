@@ -1,7 +1,7 @@
 # QUIC Working Group Interim Meeting - September 2018
 
 This is the arrangements page for the QUIC Working Group's sixth Interim Face-to-Face meeting,
-hosted by TBD in TBD.
+hosted by NetApp in New York City, NY, USA.
 
 ## Register
 
@@ -19,20 +19,27 @@ Attendees should also note the [agenda](agenda.md), as some topics will be consi
 
 ## Schedule and Agenda
 
-<!--
-We'll be meeting Wednesday and Thursday, 6-7 June 2018. Meetings will begin at 9:30am and end at
+We'll be meeting Wednesday and Thursday, 19-20 September 2018. Meetings will begin at 9:30am and end at
 approximately 5pm on each day (although we may choose to end earlier).
 
-There will also be an interop event on 4-5 June (Monday and Tuesday).
--->
+There will also be an interop event on 17-18 September (Monday and Tuesday).
 
 See [the agenda](agenda.md) for full details.
 
 
 ## Meeting Location
 
+[NetApp NYC](https://goo.gl/maps/1sY2KLXkRS82) \
+285 Madison Ave \
+New York, NY 10017 \
+USA
+
+<!--
 ## Network
 
 ## Accommodation
 
+NetApp NYC is located midtown, with many hotels nearby.
+
 ## Transportation
+-->
