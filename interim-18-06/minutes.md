@@ -149,7 +149,11 @@ Principle: HTTP/QUIC is like HTTP/2 except when it is not :)
 
 Dropped flags from HTTP/2 because it’s in the transport layer.
 
-Alt-Svc and some others don’t define the flags.
+mnot: What about HTTP/2 Extension frames?
+
+Lucas: ALTSVC and ORIGIN frames don't define any flags. 
+
+mnot: [CACHE_DIGEST](https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest-04#section-2) does, something for the authors to watch out for.
 
 1 byte per frame saving if we go with the proposal.
 
