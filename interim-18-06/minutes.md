@@ -1,23 +1,28 @@
 # QUIC Interim Meeting Minutes: June 2018
 
-Morning 2018-06-06
-Scribe: Eric Rescorla
+## Morning 2018-06-06
 
-Topic I: Interop Report (Kazuho Oku)
+*Scribe: Eric Rescorla*
+
+### Topic I: Interop Report (Kazuho Oku)
+
 Interop on 3 versions
-draft-11: ATS is now improved, otherwise same as before
-draft-12: 4 implementations. Problems with PN encryption. Should have provided test vector
-draft-11 + Stream0 DT: Minq and Quicly reached interop with both 0-RTT and 1-RTT, but no Retry
 
-Topic II: Editors Report (Martin Thomson)
-See Martin Thomson’s slide preso: https://github.com/quicwg/wg-materials/blob/master/interim-18-06/editors.pdf
+* draft-11: ATS is now improved, otherwise same as before
+* draft-12: 4 implementations. Problems with PN encryption. Should have provided test vector
+* draft-11 + Stream0 DT: Minq and Quicly reached interop with both 0-RTT and 1-RTT, but no Retry
+
+### Topic II: Editors Report (Martin Thomson)
+
+See [Martin Thomson’s slide preso](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/editors.pdf)
 
 
+### Topic III: Stream 0 Design Team (Ian Swett)
 
-Topic III: Stream 0 Design Team (Ian Swett)
-https://docs.google.com/presentation/d/176bVI27bRJrfahf8RR89hbZ_owMs54ipxXALNUUsV1c/edit?usp=sharing
+[Presentation](https://docs.google.com/presentation/d/176bVI27bRJrfahf8RR89hbZ_owMs54ipxXALNUUsV1c/edit?usp=sharing)
 
 Assorted notes that may not be in slides:
+
 Early versions of this in PicoTLS, Minq, BoringSSL. NSS, OpenSSL will be in nightly soonish. OpenSSL is probably the furthest behind.
 
 Huitema: Need to tell people not to get clever and merge the ACK structures.
@@ -27,19 +32,22 @@ EKR: The current slides actually miss the destination connection ID in the Retry
 Some questions we don’t seem to have too much clarity on:
 
 Why multiple retries? Cascading retries?
-Should you be able to change CID on multiple retriest?
+
+Should you be able to change CID on multiple retries?
 
 Hardie: do the tokens have to be self-contained?
+
 EKR: No, but they have to be unforgeable.
 
 Jana: I just noticed you can only change CID on the first retry? Is that a good idea
+
 EKR: Not necessarily, but we wouldn’t be able to use the same anti-injection mechanism.
 
 Recording: Open issue. how many retries should be allowed.
 
 No strong consensus in DT on one Initial type versus >1
 
-BIO BREAK
+*BIO BREAK*
 
 Mark Nottingham: DT output has no special status
 
@@ -50,106 +58,138 @@ Ted: Who is going to analyze this? EKR took action item to liaise with academics
 Gabriel: We (Microsoft) are in favor of this, though it will be a big change. Let’s try to minimize big changes going forward.
 
 Consensus call: Does anyone object to going forward.
+
 No objections.
 
-Consensus: We will go in this direction modulo the open issue Martin raised + the separable issues. 
+**Consensus: We will go in this direction modulo the open issue Martin raised + the separable issues.**
 
 Now move on to the separable issues and pick up PN spaces later.
 
-Flow Control for Handshake
-Long discussion
+#### Flow Control for Handshake
 
-Consensus: Do nothing in QUIC but punt to TLS WG and let them handle it.
+*Long discussion*
 
-Empty ACK
+**Consensus: Do nothing in QUIC but punt to TLS WG and let them handle it.**
+
+#### Empty ACK
+
 Kazuho: Can’t we just send a coalesced packet in the lower space.
 
 Proposal: Punt this to v2 and Ian will explain how to use coalesced packets. Then we can take a look at whether the proposal works.
 
-HANDSHAKE_DONE
+#### HANDSHAKE_DONE
+
 Conclusion: You should not discard keys earlier than 3RTO after the handshake is complete unless you have a signal that the other side has the keys. Martin Duke to write examples of signals.
 
 
-Packet # Encryption/Spaces
-Long discussion
+#### Packet # Encryption/Spaces
 
-Consensus: Continue with separate packet number spaces; there are some reservations from MT and Christian? It is legal to use a single sending counter if you want.
+*Long discussion*
+
+**Consensus: Continue with separate packet number spaces; there are some reservations from MT and Christian? It is legal to use a single sending counter if you want.**
 
 
-Handshake Examples (EKR)
-https://github.com/quicwg/wg-materials/blob/master/interim-18-06/quic-flow.pdf
+### Handshake Examples (EKR)
 
-Afternoon 2018-06-06
-Scribe: Sean Turner
-Topic IV: HTTP (MikeB)
-https://github.com/quicwg/wg-materials/blob/master/interim-18-06/HTTP.pdf 
+[Presentation](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/quic-flow.pdf)
+
+## Afternoon 2018-06-06
+
+*Scribe: Sean Turner*
+
+### Topic IV: HTTP (MikeB)
+
+[Presentation](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/HTTP.pdf)
 
 Principle: HTTP/QUIC is like HTTP/2 except when it is not :)
+
 Dropped flags from HTTP/2 because it’s in the transport layer.
+
 Alt-Svc and some others don’t define the flags.
 
 1 byte per frame saving if we go with the proposal.
+
 Conclusion: Define flags inside priority, not in every frame type.
 
 Principle: Application layer shouldn’t need to “grab” a particular stream by ID.
 Can’t combine control streams because either side can initiate.
+
 Dmitri: It’s not actually simpler; you’re in limbo until you read the 1st byte.
+
 MT: It made my code simpler.
+
 Robert: 1) Order and in-order are subtle different.  This would require that something be interpreted as in-order. 2) It’s difficult how to drop into the middle of a session and debug.
+
 McManus: It’s a nice extension point.
 
 Conclusion: There’s some nervousness, but we will continue discussing the type byte proposal on list.  Comments are welcome.
 
 Principle: See 1st principle.
+
 Priority doesn’t work well with QUIC.
+
 4th option (not shown on penultimate slide): restricted form of HTTP/2 priority to only allow dependency on placeholders.  Doesn’t work well for video, others.
 
 Conclusion: This needs to be done in consultation with httpbis, at the least.  Present to them in Montreal.
 
-Topic V: QPACK (Alan)
-https://github.com/quicwg/wg-materials/blob/master/interim-18-06/qpack%20update%2006.18.pdf 
+### Topic V: QPACK (Alan)
 
-Clarification Question:
+[Presentation](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/qpack%20update%2006.18.pdf)
+
+Clarification Questions:
+
 Decoder can limit Encoder’s use of acknowledged header: yes
-Why is there a length on the instructions: Some HPACK decoders have issues if instructions are partially received.
-Can we get in a deadlock position with flow control: potentially?
-	….
 
-#904/1355 New Static Table
+Why is there a length on the instructions: Some HPACK decoders have issues if instructions are partially received.
+
+Can we get in a deadlock position with flow control: potentially?
+
+
+#### 904/1355 New Static Table
+
 1st flight is what it is used for request headers but not much beyond that.
+
 HPACK was 61
+
 How many fit into first byte 16 or 62ish
+
 Highly browser specific!
+
 Where is diminishing returns come into play?
 
-AI: mnot suggests Humit(sp?) get some #s.
+**AI: mnot suggests Hooman get some #s.**
 
-#1343 Static Table Negotiation
+#### 1343 Static Table Negotiation
+
 Nobody has asked for an alternative table.
+
 Transport Parameters - put the ….
 
 Conclusion: QUICv2 for more than one!
 
-#1371 Tracking header blocks for resent stream 
+#### 1371 Tracking header blocks for resent stream 
+
 Conclusion: Option 2 doesn’t fully work.  Discuss over beer.
 
+#### Interop
 
-Interop
 Call Alan if you’re interested in Interop!
 
-Morning 2018-06-07
-Scribe: Brian Trammell
+## Morning 2018-06-07
 
-Topic VI: ECN Proposal (Magnus)
-https://github.com/quicwg/wg-materials/blob/master/interim-18-06/ECN%20for%20QUIC%20-%20interim-18-06.pdf 
+*Scribe: Brian Trammell*
+
+### Topic VI: ECN Proposal (Magnus)
+
+[Presentation](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/ECN%20for%20QUIC%20-%20interim-18-06.pdf)
 
 See PR #1372: https://github.com/quicwg/base-drafts/pull/1372 
 
-ECN Ack Frame
+#### ECN Ack Frame
 
 Lars: Do we need an ACK-ECN frame, or can we put ECN in ACK frame? Zeroes back are also info, and are efficient (varint, three bytes). In majority of cases, ECN works.
 
-Brian: Two issues here. Path impariments are rare. Stack impairments less rare but will become more rare. Two frames feels mainly like it’s easy to write, not a great reason.
+Brian: Two issues here. Path impairments are rare. Stack impairments less rare but will become more rare. Two frames feels mainly like it’s easy to write, not a great reason.
 
 Jana: Even if peer doesn’t want ECN, would still have to send extra bytes.
 
@@ -167,7 +207,9 @@ Roberto: Yo it’s good that we’re solving ECN, we should handle debug too.
 
 Brian: QUICv2.
 
-Brian: Can we solve Lars’ layer 9 problem by renaming: put ECN in the ACK frame and having a smaller ACK frame (short ack = SHACK or small ack = SMACK; Jana: ACK-ICN (implicit)) for cases where ECN didn’t work?
+Brian: Can we solve Lars’ layer 9 problem by renaming: put ECN in the ACK frame and having a smaller ACK frame (short ack = SHACK or small ack = SMACK.
+
+Jana: ACK-ICN (implicit)) for cases where ECN didn’t work?
 
 Martin: Maybe have a flag that says the ACK frame contains an ECN counter update.
 
@@ -183,21 +225,21 @@ Christian: We spent some time to prevent optimistic ACKs, does ECN reintroduce t
 
 Jana: Fundamental issue with ECN: endpoint can mark to get better treatment and ignore. Let’s not litigate ECN here, but that’s a reason a peer might decide not to participate.
 
-Capability Check Verification
+#### Capability Check Verification
 
 Lars: Is there any benefit to turning it off when not capable?
 
 Magnus: yes, otherwise you’re not playing fairly.  Network will prefer the ECN traffic, but not actually get the payoff of a ECN-behaving client.
 
-Continuous Verification
+#### Continuous Verification
 
 Magnus: packet duplication makes this hard, you can get slop in the counters, list discussion on this ongoing.
 
-Congestion Experienced
+#### Congestion Experienced
 
 Magnus: Classical ECN behavior, but we can do experiments. Text points to 8311.
 
-Connection Migration
+#### Connection Migration
 
 Magnus: new paths start with capability check, if already working then continue in continuous verification.
 
@@ -213,7 +255,7 @@ Magnus: Probe not yet fully spec’d out, blackhole mitigation is impossible. As
 
 Brian: The bit of information that leaks here is that the endpoint doesn’t support userspace ECT, which is not much.
 
-Issue: ACK Frequency and Recovery Period
+#### Issue: ACK Frequency and Recovery Period
 
 Ian: Any time a packet is newly missing, an ACK is sent immediately. It might make sense to treat a CE counter increase the same, this fixes the ACK frequency. Let’s split off the details of ACK frequency optimizations for this mechanism from this PR. 
 
@@ -239,7 +281,7 @@ Jana: need some more redundancy to account for ack loss, but this seems better t
 
 Magnus: Being explicit about which was marked doesn’t give you much from a CC standpoint. Cumulative counters get bigger, yes, other encodings might fix that (such as truncating and reporting low bits). I want to get to a baseline, then talk about the details.
 
-QUIC ACK Frequency Considerations
+#### QUIC ACK Frequency Considerations
 
 Magnus: this NOT ECN, came up during design process...
 
@@ -267,7 +309,7 @@ Martin + Brian: Let’s just write down minRTT/4
 
 Subodh + Patrick: we’re SRTT/4
 
-Receiver Tracking of Recovery Period
+#### Receiver Tracking of Recovery Period
 
 Magnus: this is not a good idea.
 
@@ -292,7 +334,7 @@ Martin: takes AI to fix this. Need to be careful about stateless resets...
 
 Roberto: For the mic: I think this is a case where the correct behavior isn't actually obvious. Seems like we should warn implementers that duplication can happen. Look out for it.
 
-Blackhole Mitigation
+#### Blackhole Mitigation
 
 How many packets to send with ECT on handshake before falling back to non ECT?
 
@@ -302,7 +344,7 @@ Roberto: If we want people to implement this stuff, don’t add complexity for e
 
 Kazuho: Assuming we do path migration, this is a MUST.
 
-Conclusion
+#### Conclusion
 
 Unanimity that we should add ECN, just working on the details.
 
@@ -321,8 +363,10 @@ Roberto: Normal fallback to TCP on ECN blackhole. We will not attempt to recover
 ekr: Is this something implementors do, or something the standard requires?
 
 Brian: Let’s call the fallback a MAY.
-Topic VII: mvfst (Subodh)
-https://github.com/quicwg/wg-materials/blob/master/interim-18-06/mvfst.pdf 
+
+### Topic VII: mvfst (Subodh)
+
+[Presentation](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/mvfst.pdf)
 
 Issue: setting the right idle timeout is hard, and idle timeout is underspecified. Ping interval can be longer than idle timeout. 
 
@@ -337,9 +381,10 @@ Action: Subodh to file an issue.
 Jana: Tooling will be important. Need to do better than TCPdump and Wireshark
 
 Lars: Plug for EPIQ (Lars, put a link here please): workshop on QUIC research. Tooling in scope.
-Topic VIII: WG Planning
 
-Mark: Hopefully by Montreal we can start announcing that we’re getting close to done, and that implementers should come to the table. 
+### Topic VIII: WG Planning
+
+Mark: Hopefully by Montreal we can start announcing that we’re getting close to done, and that any remaining implementers should come to the table. 
 
 Mark: We’re planning an interim at NetApp in New York City the week of 17 September 2018. Two days of interop and two days of meeting. It looks like we’re not going to be done by Bangkok, so we’re starting to plan an interim the third or fourth week of January 2019 in Asia or Europe, people with facilities please talk to us. 
 
@@ -383,8 +428,9 @@ MartinD: QPACK has fewer dependencies on the transport than HB
 
 MikeB: so, QPACK in Montreal and HQ for New York.
 
-Topic IX: Load Balancer (MartinD)
-https://github.com/quicwg/wg-materials/blob/master/interim-18-06/quic-load-balancers.pdf 
+### Topic IX: Load Balancer (MartinD)
+
+[Presentation](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/quic-load-balancers.pdf)
 
 Seeking feedback on whether group is interested in problem statement and high level technical feedback on design proposed
 
@@ -399,8 +445,10 @@ Discussion of whether this should be upleveled to something like REST or another
 Mike b: you may want a model where lb informs the servers of their assigned cids
 
 Discussion of  whether the logical consumers of this are represented in the quicwg rather than hosting operators, etc..
-Balance of Time: Issues (MartinT)
-https://github.com/quicwg/wg-materials/blob/master/interim-18-06/misc-issues.pdf
+
+### Balance of Time: Issues (MartinT)
+
+[Presentation](https://github.com/quicwg/wg-materials/blob/master/interim-18-06/misc-issues.pdf)
 
 Stateless reset oracles (page 2 + 3): 
 
@@ -414,7 +462,7 @@ Subodh, jana, kazuho all have suggestions on scope of keys. Text needed
 
 Proof of receipt “simple fix” text will be coordinated by MT.
 
-#1342 implicit open page 6
+#### 1342 implicit open page 6
 
 Do we or don’t we have implicit opens (currently?) -
 
@@ -433,10 +481,12 @@ Ekr: fewer funky behaviors the better - unidirectional streams serve the use cas
 Gabriel / Nick: likes implicit and symmetry on both sides in face of loss
 
 Mnot: can you not live with any of the options: 1 hum
-Who prefers implicit open: lots, who prefers explicit open: a little
-Strong preference declared by chair for implicit open`
 
-#58 frame type extensibility (page 8)
+Who prefers implicit open: lots, who prefers explicit open: a little
+
+Strong preference declared by chairs for implicit open
+
+#### 58 frame type extensibility (page 8)
 
 Mnot asks who has strong opinions on outcome; ~8 hands raised
 
@@ -468,7 +518,7 @@ Momentum builds..
 
 Note that transport params that declare you support a feature have optional values for configuring the feature.
 
-#1016 - initial_max_stream_data
+#### 1016 - initial_max_stream_data
 
 Jana likes flexibility and likes default of 0.
 
@@ -476,7 +526,7 @@ Kazuho - patrick - jana - we should do it
 
 Nobody voices unhappiness with that direction
 
-#1296 negotiating packet number protection (slide 12+)
+#### 1296 negotiating packet number protection (slide 12+)
 
 Kazuho: this exposes linkability of path migration - should we disable migration if pne was disabled?
 
@@ -510,17 +560,15 @@ Mike b: tell proponents we’d be happy to review the document but unclear if we
 
 Mnot - we need a list consensus call this is a prediscussion for the list - leaning towards a separate document not necessarily in the wg
 
+#### Long Headers and ICMP
+
 IGOR PROPOSES ALLOWING LONG HEADERS WHENEVER TO HELP ICMP
 
-Kazuho: just prepend the short packet with a longheader corrupt sentinnel
+Kazuho: just prepend the short packet with a longheader corrupt sentinel
 
 Subodh: unreachable is interesting as well as pmtud
 
 Roberto: this isn’t congestion controlled - so use sparingly
 
 Igor to send pr regarding pmtu and this approach
-
-
-
-
 
