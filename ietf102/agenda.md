@@ -24,3 +24,5 @@
 * 20 min - Update on issue status, editor progress, hot topics.
 
 ### Issue Discussion
+
+* 1495 - [CID Liveness](https://github.com/quicwg/base-drafts/issues/1495)
