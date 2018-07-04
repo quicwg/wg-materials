@@ -13,9 +13,7 @@ If you wish to observe the meeting but not actively participate, you are strongl
 
 Attendees should also note the [agenda](agenda.md), as some topics will be considered out-of-scope for this meeting.
 
-<!--
-* [Register for the meeting](https://goo.gl/forms/aqDNrjKF097XCmi43) (closes 3 May 2018).
--->
+* [Register for the meeting](https://goo.gl/forms/q4zd4QoyWgoxKYof1) (closes 13 August 2018).
 
 ## Schedule and Agenda
 
