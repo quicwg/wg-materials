@@ -23,6 +23,10 @@
 
 * 20 min - Update on issue status, editor progress, hot topics.
 
+### Operations Drafts
+
+* 15 min - Brief (re-)introduction of drafts, open issues seeking authors.
+
 ### Issue Discussion
 
 * 1495 - [CID Liveness](https://github.com/quicwg/base-drafts/issues/1495)
