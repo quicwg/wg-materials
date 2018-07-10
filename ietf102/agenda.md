@@ -22,7 +22,7 @@
 ### Editors' Update
 
 * 20 min - Update on issue status, editor progress, hot topics. *Martin*
-
+* 10 min - Stream0 integration. *Ian*
 ### Operations Drafts
 
 * 15 min - Brief (re-)introduction of drafts, open issues seeking authors. *Brian and Mirja*
