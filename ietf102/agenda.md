@@ -31,9 +31,9 @@
 
 *balance of time*
 
-* [Connection IDs](https://github.com/quicwg/base-drafts/issues/1495) - *Ian* ([slides]())
-* Retry - *Martin* ([slides]())
-* HTTP - *Mike* ([slides]())
+* [Connection IDs](https://github.com/quicwg/base-drafts/issues/1495) - *Mike* ([slides](https://github.com/quicwg/wg-materials/raw/master/ietf102/CIDs.pdf))
+* Retry - *Martin* ([slides](https://github.com/quicwg/wg-materials/raw/master/ietf102/retry.pdf))
+* HTTP - *Mike* ([slides](https://github.com/quicwg/wg-materials/raw/master/ietf102/HTTP.pdf))
 
 ### Planning
 
