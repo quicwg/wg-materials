@@ -34,3 +34,7 @@
 * [Connection IDs](https://github.com/quicwg/base-drafts/issues/1495) - *Ian* ([slides]())
 * Retry - *Martin* ([slides]())
 * HTTP - *Mike* ([slides]())
+
+### Planning
+
+* 15min - Future meetings, implementation drafts, and getting to Last Call
