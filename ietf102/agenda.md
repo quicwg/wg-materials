@@ -17,18 +17,20 @@
 
 ### Hackathon / Interop Report
 
-* 5 min - Discussion of what QUIC implementers did and learned at the hackathon.
+* 5 min - Discussion of what QUIC implementers did and learned at the hackathon. *Jana*
 
 ### Editors' Update
 
-* 20 min - Update on issue status, editor progress, hot topics.
+* 20 min - Update on issue status, editor progress, hot topics. *Martin*
 
 ### Operations Drafts
 
-* 15 min - Brief (re-)introduction of drafts, open issues seeking authors.
+* 15 min - Brief (re-)introduction of drafts, open issues seeking authors. *Brian and Mirja*
 
 ### Issue Discussion
 
 *balance of time*
 
-* 1495 - [CID Liveness](https://github.com/quicwg/base-drafts/issues/1495)
+* [Connection IDs](https://github.com/quicwg/base-drafts/issues/1495) - *Ian* ([slides]())
+* Retry - *Martin* ([slides]())
+* HTTP - *Mike* ([slides]())
