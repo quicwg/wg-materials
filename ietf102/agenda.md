@@ -21,7 +21,7 @@
 
 ### Editors' Update
 
-* 20 min - Update on issue status, editor progress, hot topics. *Martin*
+* 20 min - Update on issue status, editor progress, hot topics. *Martin* ([slides](https://github.com/quicwg/wg-materials/raw/master/ietf102/editors.pdf))
 * 10 min - Stream0 integration. *Ian*
 
 ### Operations Drafts
