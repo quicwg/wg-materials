@@ -21,8 +21,8 @@
 
 ### Editors' Updates
 
-* 5 min - Update on issue status, editor progress, hot topics. *Martin* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf102/editors.pdf))
-* 10 min - Summary of Stream 0 Changes *Ian* ([slides]())
+* 5 min - Update on issue status, editor progress, hot topics. *Martin* ([slides](https://github.com/quicwg/wg-materials/raw/master/ietf102/editors.pdf))
+* 10 min - Stream0 integration. *Ian*
 
 ### Operations Drafts
 
@@ -32,10 +32,10 @@
 
 *balance of time*
 
-* HTTP - Summary of changes and remaining issues *Mike* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf102/HTTP.pdf))
 * Retry - *Martin* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf102/retry.pdf))
-* Connection IDs - *Mike* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf102/CIDs.pdf))
 * Managing Keys - *Martin* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf102/keys.pdf))
+* Connection IDs - *Mike* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf102/CIDs.pdf))
+* HTTP - Summary of changes and remaining issues *Mike* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf102/HTTP.pdf))
 
 ### Planning
 
