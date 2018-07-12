@@ -24,9 +24,9 @@ https://trac.ietf.org/trac/ietf/meeting/wiki/102hackathon
 
 * 5 min - Discussion of what QUIC implementers did and learned at the hackathon. *Jana*
 
-### Editors' Update
+### Editors' Updates
 
-* 20 min - Update on issue status, editor progress, hot topics. *Martin* ([slides](https://github.com/quicwg/wg-materials/raw/master/ietf102/editors.pdf))
+* 5 min - Update on issue status, editor progress, hot topics. *Martin* ([slides](https://github.com/quicwg/wg-materials/raw/master/ietf102/editors.pdf))
 * 10 min - Stream0 integration. *Ian*
 
 ### Operations Drafts
@@ -37,9 +37,11 @@ https://trac.ietf.org/trac/ietf/meeting/wiki/102hackathon
 
 *balance of time*
 
-* [Connection IDs](https://github.com/quicwg/base-drafts/issues/1495) - *Mike* ([slides](https://github.com/quicwg/wg-materials/raw/master/ietf102/CIDs.pdf))
-* Retry - *Martin* ([slides](https://github.com/quicwg/wg-materials/raw/master/ietf102/retry.pdf))
-* HTTP - *Mike* ([slides](https://github.com/quicwg/wg-materials/raw/master/ietf102/HTTP.pdf))
+* Retry - *Martin* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf102/retry.pdf))
+* Managing Keys - *Martin* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf102/keys.pdf))
+* Stateless Reset - *Martin* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf102/pingpong.pdf))
+* Connection IDs - *Mike* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf102/CIDs.pdf))
+* HTTP - Summary of changes and remaining issues *Mike* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf102/HTTP.pdf))
 
 ### Planning
 
