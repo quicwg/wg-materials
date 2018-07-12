@@ -6,6 +6,11 @@
 
 
 
+## Saturday and Sunday, 14 & 15 July, 2018
+
+*8:30	Hackathon, Fairmont Queen Elizabeth Montreal, Room: Centre Ville (Ground Floor) - [in other time zones](https://www.timeanddate.com/worldclock/fixedtime.html?msg=QUIC+WG+Meeting&iso=20180718T0830&p1=165&ah=2&am=30)*
+https://trac.ietf.org/trac/ietf/meeting/wiki/102hackathon
+
 ## Wednesday, 18 July, 2018
 
 *9:30-12:00	Wednesday Morning session I, Place du Canada - [in other time zones](https://www.timeanddate.com/worldclock/fixedtime.html?msg=QUIC+WG+Meeting&iso=20180718T0930&p1=165&ah=2&am=30)*
