@@ -27,11 +27,11 @@ https://trac.ietf.org/trac/ietf/meeting/wiki/102hackathon
 ### Editors' Updates
 
 * 5 min - Update on issue status, editor progress, hot topics. *Martin* ([slides](https://github.com/quicwg/wg-materials/raw/master/ietf102/editors.pdf))
-* 10 min - Stream0 integration. *Ian*
+* 10 min - Stream0 integration. *Ian* ([slides](https://github.com/quicwg/wg-materials/raw/master/ietf102/stream0.pdf))
 
 ### Operations Drafts
 
-* 15 min - Brief (re-)introduction of drafts, open issues seeking authors. *Brian and Mirja*
+* 15 min - Brief (re-)introduction of drafts, open issues seeking authors. *Brian and Mirja* ([slides](https://github.com/quicwg/wg-materials/raw/master/ietf102/ops-drafts.pdf))
 
 ### Issue Discussion
 
