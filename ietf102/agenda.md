@@ -6,10 +6,11 @@
 
 
 
-## Saturday and Sunday, 14 & 15 July, 2018
+## Saturday and Sunday, 14/15 July, 2018
 
-*8:30	Hackathon, Fairmont Queen Elizabeth Montreal, Room: Centre Ville (Ground Floor) - [in other time zones](https://www.timeanddate.com/worldclock/fixedtime.html?msg=QUIC+WG+Meeting&iso=20180718T0830&p1=165&ah=2&am=30)*
-https://trac.ietf.org/trac/ietf/meeting/wiki/102hackathon
+*8:30- Fairmont Queen Elizabeth Montreal, Room: Centre Ville (Ground Floor) - [in other time zones](https://www.timeanddate.com/worldclock/fixedtime.html?msg=QUIC+WG+Meeting&iso=20180718T0830&p1=165&ah=2&am=30)*
+
+[Hackathon](https://trac.ietf.org/trac/ietf/meeting/wiki/102hackathon)
 
 ## Wednesday, 18 July, 2018
 
@@ -22,16 +23,16 @@ https://trac.ietf.org/trac/ietf/meeting/wiki/102hackathon
 
 ### Hackathon / Interop Report
 
-* 5 min - Discussion of what QUIC implementers did and learned at the hackathon. *Jana*
+* 5 min - Discussion of what QUIC implementers did and learned at the hackathon - *Jana*
 
 ### Editors' Updates
 
-* 5 min - Update on issue status, editor progress, hot topics. *Martin* ([slides](https://github.com/quicwg/wg-materials/raw/master/ietf102/editors.pdf))
-* 10 min - Stream0 integration. *Ian* ([slides](https://github.com/quicwg/wg-materials/raw/master/ietf102/stream0.pdf))
+* 5 min - Update on issue status, editor progress, hot topics - *Martin* ([slides](https://github.com/quicwg/wg-materials/raw/master/ietf102/editors.pdf))
+* 10 min - Stream0 integration - *Ian* ([slides](https://github.com/quicwg/wg-materials/raw/master/ietf102/stream0.pdf))
 
 ### Operations Drafts
 
-* 15 min - Brief (re-)introduction of drafts, open issues seeking authors. *Brian and Mirja* ([slides](https://github.com/quicwg/wg-materials/raw/master/ietf102/ops-drafts.pdf))
+* 15 min - Brief (re-)introduction of drafts, open issues seeking authors - *Brian and Mirja* ([slides](https://github.com/quicwg/wg-materials/raw/master/ietf102/ops-drafts.pdf))
 
 ### Issue Discussion
 
