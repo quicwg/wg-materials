@@ -42,6 +42,8 @@ https://trac.ietf.org/trac/ietf/meeting/wiki/102hackathon
 * Stateless Reset - *Martin* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf102/pingpong.pdf))
 * Connection IDs - *Mike* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf102/CIDs.pdf))
 * HTTP - Summary of changes and remaining issues *Mike* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf102/HTTP.pdf))
+* Recovery - *Ian* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf102/recovery.pdf))
+
 
 ### Planning
 
