@@ -282,7 +282,7 @@ Can a serveer send Retry if it receives a 0RTT packet?
 
 proposal for this: SHOULD NOT rather than MUST NOT
 
-Martin on Discarding Handshake keys
+## Martin on Discarding Handshake keys
 
 When can Keys be destroyed? (#1544)
 
@@ -312,7 +312,7 @@ EKR: text needs to say that in a sequence the last packet you get is here. happy
 
 Patrick M: if infinite is ok, may need non-normative text that says that but talks about timers
 
-### Martin on Stateless Reset
+## Martin on Stateless Reset
 
 Problem: stateless reset is indistinguishable from a QUIC packet by design
 
