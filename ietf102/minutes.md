@@ -1,3 +1,7 @@
+# QUIC Working Group Minutes
+
+* IETF102 - Montreal
+* Scribe: Joe Lorenzo Hall
 
 ## QUIC update from Martin
 
