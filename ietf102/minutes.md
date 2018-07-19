@@ -21,7 +21,7 @@ have a Slack group for this
 
 ## Ian on Stream0
 
-TLS records may span mult segments of TCP
+TLS records may span multiple segments of TCP
 
 In Quick draft-12 (prior to Stream0), a bit more complicated
 
@@ -35,7 +35,7 @@ another change... was issues in no having separate packet spaces.
 
 by spoofing an unencrypted packet, you could create a hole that would fool sender into thinking their encrypted packet was delivered
 
-benefits of sepaarate packet number spaces: solves the shadowing attack, etc.
+benefits of separate packet number spaces: solves the shadowing attack, etc.
 
 cost: structure costs... requred a sent_packets structure per enc level, must store an ACK structure per enc level during hs
 
@@ -53,7 +53,7 @@ open issues (#1486, #1451): looping with retry packets, etc.
 
 IETF QUIC applicability: application des and mapping designers on use of quic
 
-IETF QUIC manageability: application and netowrk admins on the implications of QUIC deployment for common management tasks
+IETF QUIC manageability: application and network admins on the implications of QUIC deployment for common management tasks
 
 applicability: basically no changes, just reved the draft to unexpire it.
 
@@ -61,7 +61,7 @@ goal: facilitiate design fo non-HTTP application bindings to QUIC
 
 Not many changes here but little controversy, so little attention
 
-manageability: suraces the protocols' wire images presnet to devices on the path
+manageability: surfaces the protocols' wire images present to devices on the path
 
 goal: provide a guide to QUIC's wire image for operators/management vendors without making them read the whole transport spec
 
@@ -75,13 +75,13 @@ moving forward with -applicability
 
 editors can suggest text, but we may not be the best potential authors for some of this stuff
 
-we currently address impementors, application-layer users, and deployers with -app, is this too much?
+we currently address implementers, application-layer users, and deployers with -app, is this too much?
 
 Jana: we talked about -app a while ago. Do you cover implementors?
 
 there is some of that, seeds, etc. there is some stuff on what an error interface should look like.
 
-Mirja: touches point about interface discusssion. may want to say more about transport interface in the document
+Mirja: touches point about interface discussion. may want to say more about transport interface in the document
 
 Gorry F: we should be careful as we write it that we write to the audience so that they'll read it. two groups of people you could write to
 
@@ -101,7 +101,7 @@ Mirja: I agree they should be published at the same time. even if you send it at
 
 Show of hands: who can work on one of these open issues. (A smattering of people.)
 
-EKR on agenda basghin: would like to get Retry done... so much list traffic
+EKR on agenda bashing: would like to get Retry done... so much list traffic
 
 (we'll try to get things done.)
 
@@ -125,17 +125,17 @@ proposal: don't worry about it
 
 ### looping
 
-clients accept mult retry packets... no way to distinguish different retries
+clients accept multiple retry packets... no way to distinguish different retries
 
 proposed fix: non-terminal server MUST provide a dew CID
 
 ### spoofing
 
-attacker can spoof a retry if they can see the Intial
+attacker can spoof a retry if they can see the Initial
 
 attacker can also alter the CID
 
-MitM can provide a Retry with its choice of CID and strip the toke from the subsequent Intial
+MitM can provide a Retry with its choice of CID and strip the toke from the subsequent Initial
 
 Jana: are we saying that a server has to (something)?
 
@@ -169,13 +169,13 @@ You're assuming you know if you're terminal or non-terminal server.
 
 MT: are you the only one that thinks this is a problem
 
-Subodh Iyengar: why did we make a different decision to allow Retrys to change the CID? If we bind these, this wouldn't be a problem.
+Subodh Iyengar: why did we make a different decision to allow Retries to change the CID? If we bind these, this wouldn't be a problem.
 
 Why don't we bind to CID?
 
 MT: if you're going to open old issues that we've already litigated, no bueno
 
-Ian S: I thikn this is find. Don't have an objection to EKR's approach.
+Ian S: I think this is find. Don't have an objection to EKR's approach.
 
 This is a non-issue from an operational perspective
 
@@ -217,17 +217,17 @@ EKR: (?)
 
 MT: only attack aware of is attacker can chose CID that ultimately reaches the server (man-on-the-side)
 
-EKR: requirements obvaite off-path attackers (?)
+EKR: requirements obviate off-path attackers (?)
 
 MT: we made sure that you had to see the packets in order to attack... off-path isn't going to see that.
 
 maybe we do nothing
 
-Igor L: attacker with ability to see hs can target negotation, pretty powerful
+Igor L: attacker with ability to see hs can target negotiation, pretty powerful
 
 Jana: slightly different flavor of attack... allows a MiTM to direct all traffic to a different server
 
-might want to discuss seperately if we want to authenticate on CID
+might want to discuss separately if we want to authenticate on CID
 
 (?): there is an imp concern here... server can force client to always use the same CID
 
@@ -261,13 +261,13 @@ Martin on Discarding Handshake keys
 
 When can Keys be destroyed? (#1544)
 
-Simple soln: timers
+Simple solution: timers
 
-treat each packent number space separately
+treat each packet number space separately
 
 a space is kaput when both read and write keys for next space are ready
 
-set a timer when doneand destroy the keys when it expires
+set a timer when done and destroy the keys when it expires
 
 Alternative: HANDSHAKE_DONE frame
 
@@ -285,21 +285,21 @@ Subodh: in the previous iteration, there was more interest in this but not with 
 
 EKR: text needs to say that in a sequence the last packet you get is here. happy to provide text.
 
-Patrick M: if infininte is ok, may need non-normative text that says that but talks about timers
+Patrick M: if infinite is ok, may need non-normative text that says that but talks about timers
 
 ### Martin on Stateless Reset
 
-Problem: staetless reset is indsintugishable from a QUIC packet by design
+Problem: stateless reset is indistinguishable from a QUIC packet by design
 
 ... that no one can decrypt
 
 can result in a wild loop/resend
 
-simple soln: stateless reset is a small packet footprint... e.g., if too small to be a QUIC packet you'd drop it.
+simple solution: stateless reset is a small packet footprint... e.g., if too small to be a QUIC packet you'd drop it.
 
 only send it if it was smaller than the packet that was received.
 
-Slightly more complex soln: random drop sateless reset if it ins't smaller than the incoming packet
+Slightly more complex solution: random drop sateless reset if it ins't smaller than the incoming packet
 
 Gorry: can you be robust to this or not?
 
@@ -313,13 +313,13 @@ Erik N: but there may be an encapsulation or translator that makes it bigger. Wa
 
 Tommy: can an endpoint carry a decaying number of resets it's been handling... "in the past 10s I've sent a ridiculous number of resets, stop"
 
-Jonnathon Lennox: does it have to be that the packet is smaller than a stateless reset? or exactly the size?
+Jonathan Lennox: does it have to be that the packet is smaller than a stateless reset? or exactly the size?
 
-EKR: these are optimimzations
+EKR: these are optimizations
 
 you have to keep some state or you can't keep track of crap that's coming in
 
-simple solution seems ok, only getting small packets... any reall app will send big packets
+simple solution seems ok, only getting small packets... any real app will send big packets
 
 concur with Nick's point that randomization (?)
 
@@ -391,11 +391,11 @@ Jana: I don't think you can assume that you only need to do this on path changes
 
 if you are starting a new path, you will have to send a CID that is higher than any one you've ever used.
 
-This is essentially like a racheting
+This is essentially like a ratcheting
 
 proposal: NEED_CONNECTION_ID frame, request to have at least X CIDs beyond seq number Y
 
-RETIRE_CONNECTION_ID frame: declares old CID no longer assoc with this connection
+RETIRE_CONNECTION_ID frame: declares old CID no longer associated with this connection
 
 Kazuho: we need a design group for this.
 
@@ -413,7 +413,7 @@ Please implement and find the rest of the potential problems.
 
 some editorial issues, but want to get people thinking about non-editorial
 
-early retransmit threshhol is 1/4 or 1/8 (#945)
+early retransmit threshold is 1/4 or 1/8 (#945)
 
 this is inconsistent... want to make both of them 1/8 until we have more data.
 
@@ -421,7 +421,7 @@ Gorry: isn't this related to cong control?
 
 Jana: QUIC is using it's own mechanisms in Linux using TCP
 
-Max Data Recevied before sending an ACK (#1428)
+Max Data Received before sending an ACK (#1428)
 
 Reno used for cong control, but is ACK-clocked
 
@@ -461,7 +461,7 @@ We are hoping to ship protocol and ops drafts together... have the invariants dr
 
 Also on spin bit elephant in the room... need data an experience as to its usefulness in managing networks.
 
-won't be delaying last call if we don't hae this data
+won't be delaying last call if we don't have this data
 
 Brian T: we've taken the spin bit of the interim agenda, can we put it back since so many people using this are there
 
