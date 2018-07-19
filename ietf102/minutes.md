@@ -7,21 +7,23 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-  - [QUIC update from Martin](#quic-update-from-martin)
-  - [Ian on Stream0](#ian-on-stream0)
-  - [Brian on Operational Drafts](#brian-on-operational-drafts)
-    - [open issues (see slides)](#open-issues-see-slides)
-  - [Martin on Retry](#martin-on-retry)
-    - [retry overview](#retry-overview)
-    - [looping](#looping)
-    - [spoofing](#spoofing)
-    - [0RTT and Retry](#0rtt-and-retry)
-    - [Martin on Stateless Reset](#martin-on-stateless-reset)
-  - [Mike B on CIDs](#mike-b-on-cids)
-    - [Sequence without Gaps (-13)](#sequence-without-gaps--13)
-  - [Mike B on HTTP update](#mike-b-on-http-update)
-  - [Ian on Recovery](#ian-on-recovery)
-  - [The FUTURE!!!!](#the-future)
+
+- [QUIC update from Martin](#quic-update-from-martin)
+- [Ian on Stream0](#ian-on-stream0)
+- [Brian on Operational Drafts](#brian-on-operational-drafts)
+  - [open issues (see slides)](#open-issues-see-slides)
+- [Martin on Retry](#martin-on-retry)
+  - [retry overview](#retry-overview)
+  - [looping](#looping)
+  - [spoofing](#spoofing)
+  - [0RTT and Retry](#0rtt-and-retry)
+- [Martin on Discarding Handshake keys](#martin-on-discarding-handshake-keys)
+- [Martin on Stateless Reset](#martin-on-stateless-reset)
+- [Mike B on CIDs](#mike-b-on-cids)
+  - [Sequence without Gaps (-13)](#sequence-without-gaps--13)
+- [Mike B on HTTP update](#mike-b-on-http-update)
+- [Ian on Recovery](#ian-on-recovery)
+- [The FUTURE!!!!](#the-future)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 ## QUIC update from Martin
