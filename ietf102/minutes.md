@@ -82,7 +82,7 @@
  Ok, but this is lame.
  proposal: We already have a quasi-random value in the auth tag of the Initial.
  We now have a bunch of new complexity... terminal/non-terminal. Some servers are going to be bouncing around alot.
- MT: don't agree with that assessment. 
+ MT: don't agree with that assessment.
  You're assuming you know if you're terminal or non-terminal server.
  MT: are you the only one that thinks this is a problem
  Subodh Iyengar: why did we make a different decision to allow Retrys to change the CID? If we bind these, this wouldn't be a problem.
