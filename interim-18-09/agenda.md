@@ -13,6 +13,13 @@
 
 Discussion will include (with the person leading the discussion):
 
-### Out of Scope
+### Wednesday, 19 September
 
-Out of scope items for this meeting include:
+#### Spin Bit Experiment Reviews
+
+_~30 minutes each; [more information](https://mailarchive.ietf.org/arch/msg/quic/3o9eAubWNfWvuMBLu-tIxc5Tba0)._
+
+* Marcus Ihlar
+
+### Thursday, 20 September
+
