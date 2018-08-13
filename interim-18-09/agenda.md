@@ -9,17 +9,28 @@
 
 ## Daily Schedule
 
+## Daily Schedule
+
+_17-18 September_
+
+* 9:30 - Interop meeting (not part of the IETF WG meeting; doors open at 9:00)
+
+_19-20 September_
+
+* 9:30 - Start (doors open at 9:00)
+  * Scribes, Blue Sheets, NOTE WELL
+* 12:15-13:30 - Lunch
+* ~17:00 - End
+
+
 ## Agenda
 
 Discussion will include (with the person leading the discussion):
 
-### Wednesday, 19 September
-
-#### Spin Bit Experiment Reviews
+### Spin Bit Experiment Reviews
 
 _~30 minutes each; [more information](https://mailarchive.ietf.org/arch/msg/quic/3o9eAubWNfWvuMBLu-tIxc5Tba0)._
 
 * Marcus Ihlar
 
-### Thursday, 20 September
 
