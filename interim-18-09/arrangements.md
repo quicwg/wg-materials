@@ -5,7 +5,7 @@ hosted by NetApp in New York City, NY, USA.
 
 ## Register
 
-**All Attendees -- remote or local -- must register**. Late registrations may be denied.
+**All Attendees -- remote or local -- must register**. Registration is now closed.
 
 Attendees are expected to be familiar with Working Group drafts and related issues, and to take active part in discussion. All participation takes place under the terms of the IETF [NOTE WELL](https://www.ietf.org/about/note-well.html) statement. See our [contribution guidelines](https://github.com/quicwg/base-drafts/blob/master/CONTRIBUTING.md) for more information about participating in QUIC.
 
@@ -13,7 +13,6 @@ If you wish to observe the meeting but not actively participate, you are strongl
 
 Attendees should also note the [agenda](agenda.md), as some topics will be considered out-of-scope for this meeting.
 
-* [Register for the meeting](https://goo.gl/forms/q4zd4QoyWgoxKYof1) (closes 13 August 2018).
 
 ## Schedule and Agenda
 
