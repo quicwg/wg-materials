@@ -32,5 +32,6 @@ Discussion will include (with the person leading the discussion):
 _~30 minutes each; [more information](https://mailarchive.ietf.org/arch/msg/quic/3o9eAubWNfWvuMBLu-tIxc5Tba0)._
 
 * Marcus Ihlar
+* Brian Trammell - Replacing Wireshark for Intraflow Performance Diagnostics
 
 
