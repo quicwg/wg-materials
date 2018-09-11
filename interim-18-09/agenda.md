@@ -27,6 +27,15 @@ _19-20 September_
 
 Discussion will include (with the person leading the discussion):
 
+* Issues summary (Martin)
+* QPACK index wrapping (#1657) (Alan)
+* Flow control gotchas (Mike)
+* max_bytes_before_ack (#1715) (Ian)
+* max ack delay (Ian/Jana)
+* Retry (Martin)
+* End of early data (Martin)
+* Connection ID task force ()
+
 ### Spin Bit Experiment Reviews
 
 _~30 minutes each; [more information](https://mailarchive.ietf.org/arch/msg/quic/3o9eAubWNfWvuMBLu-tIxc5Tba0)._
@@ -34,5 +43,3 @@ _~30 minutes each; [more information](https://mailarchive.ietf.org/arch/msg/quic
 * Marcus Ihlar (Ericsson)
 * Brian Trammell - Replacing Wireshark for Intraflow Performance Diagnostics
 * Alexandre Ferrieux (Orange)
-
-
