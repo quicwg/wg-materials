@@ -28,7 +28,7 @@ _19-20 September_
 Discussion will include (with the person leading the discussion):
 
 * Issues summary (Martin)
-* QPACK index wrapping (#1657) (Alan)
+* QPACK index wrapping ([#1644](https://github.com/quicwg/base-drafts/issues/1644)) (Alan)
 * Flow control gotchas (Mike)
 * max_bytes_before_ack (#1715) (Ian)
 * max ack delay (Ian/Jana)
