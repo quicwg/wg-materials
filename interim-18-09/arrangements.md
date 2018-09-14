@@ -31,12 +31,12 @@ See [the agenda](agenda.md) for full details.
 New York, NY 10017 \
 USA
 
-<!--
-## Network
+The receptionist on the ground floor has a list with all registered attendees. Give them your name and say that you're there for the "IETF QUIC" meeting at NetApp. Take an elevator to the 19th floor (I *think* it was the 19th floor...)
+
+There should be some drinks and possibly small snacks throughout the day. There won't be catered lunch, but we're in midtown, so no problem.
+
 
 ## Accommodation
 
 NetApp NYC is located midtown, with many hotels nearby.
 
-## Transportation
--->
