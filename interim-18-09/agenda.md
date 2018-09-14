@@ -9,8 +9,6 @@
 
 ## Daily Schedule
 
-## Daily Schedule
-
 _17-18 September_
 
 * 9:30 - Interop meeting (not part of the IETF WG meeting; doors open at 9:00)
@@ -25,6 +23,16 @@ _19-20 September_
 
 ## Agenda
 
+### Spin Bit Experiment Reviews
+
+_~30 minutes each; [more information](https://mailarchive.ietf.org/arch/msg/quic/3o9eAubWNfWvuMBLu-tIxc5Tba0)._
+
+* Alexandre Ferrieux (Orange)
+* Marcus Ihlar (Ericsson)
+* Brian Trammell - Replacing Wireshark for Intraflow Performance Diagnostics
+
+### QUIC Issues
+
 Discussion will include (with the person leading the discussion):
 
 * Issues summary (Martin)
@@ -36,10 +44,7 @@ Discussion will include (with the person leading the discussion):
 * End of early data (Martin)
 * Connection ID task force ()
 
-### Spin Bit Experiment Reviews
+### As Time Permits
 
-_~30 minutes each; [more information](https://mailarchive.ietf.org/arch/msg/quic/3o9eAubWNfWvuMBLu-tIxc5Tba0)._
+* [An Interface to the QUIC Transport Protocol](https://tools.ietf.org/html/draft-pauly-quic-interface)
 
-* Marcus Ihlar (Ericsson)
-* Brian Trammell - Replacing Wireshark for Intraflow Performance Diagnostics
-* Alexandre Ferrieux (Orange)
