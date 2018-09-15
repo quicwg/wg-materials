@@ -44,6 +44,7 @@ Discussion will include (with the person leading the discussion):
 * End of early data (Martin)
 * Connection ID task force (Mike)
 * First octet (Martin)
+* quic-trace (Victor)
 
 ### As Time Permits
 
