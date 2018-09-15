@@ -35,6 +35,7 @@ Discussion will include (with the person leading the discussion):
 * Retry (Martin)
 * End of early data (Martin)
 * Connection ID task force ()
+* quic-trace (Victor)
 
 ### Spin Bit Experiment Reviews
 
