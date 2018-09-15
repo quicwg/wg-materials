@@ -42,7 +42,8 @@ Discussion will include (with the person leading the discussion):
 * max ack delay (Ian/Jana)
 * Retry (Martin)
 * End of early data (Martin)
-* Connection ID task force ()
+* Connection ID task force (Mike)
+* First octet (Martin)
 
 ### As Time Permits
 
