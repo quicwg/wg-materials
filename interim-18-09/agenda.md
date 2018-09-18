@@ -23,6 +23,13 @@ _19-20 September_
 
 ## Agenda
 
+### Interop Summary
+
+_~5 minutes_
+
+* Interop event - Christian
+* QPack interop - Alan
+
 ### Spin Bit Experiment Reviews
 
 _~30 minutes each; [more information](https://mailarchive.ietf.org/arch/msg/quic/3o9eAubWNfWvuMBLu-tIxc5Tba0)._
@@ -37,16 +44,25 @@ Discussion will include (with the person leading the discussion):
 
 * Issues summary (Martin)
 * QPACK index wrapping ([#1644](https://github.com/quicwg/base-drafts/issues/1644)) (Alan)
-* Flow control gotchas (Mike)
-* max_bytes_before_ack (#1715) (Ian)
-* max ack delay (Ian/Jana)
-* Retry (Martin)
-* End of early data (Martin)
 * Connection ID task force (Mike)
 * First octet (Martin)
-* quic-trace (Victor)
+* End of early data (Martin)
+* Retry (Martin)
+* max_bytes_before_ack (#1715) / max ack delay (Ian / Jana)
+* ACK ECN (Ian)
+* Flow control gotchas (Mike)
+
+### Planning
+
+_~10 minutes_
+
+- Next meeting(s)
+- Next interop
+- Getting done
+
 
 ### As Time Permits
 
+* quic-trace (Victor)
 * [An Interface to the QUIC Transport Protocol](https://tools.ietf.org/html/draft-pauly-quic-interface)
 
