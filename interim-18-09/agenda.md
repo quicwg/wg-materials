@@ -49,7 +49,8 @@ Discussion will include (with the person leading the discussion):
 * End of early data (Martin)
 * Retry (Martin)
 * max_bytes_before_ack (#1715) / max ack delay (Ian / Jana)
-* ACK ECN (Ian)
+* Encoding CID lengths 1, 2, 3 (#1570)
+* ACK-ECN (Ian)
 * Flow control gotchas (Mike)
 
 ### Planning
