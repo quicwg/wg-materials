@@ -47,10 +47,11 @@ Discussion will include (with the person leading the discussion):
 * Connection ID task force (Mike)
 * First octet (Martin)
 * End of early data (Martin)
+* Encoding CID lengths 1, 2, 3 (#1570)
+
+* ACK-ECN (Ian)
 * Retry (Martin)
 * max_bytes_before_ack (#1715) / max ack delay (Ian / Jana)
-* Encoding CID lengths 1, 2, 3 (#1570)
-* ACK-ECN (Ian)
 * Flow control gotchas (Mike)
 
 ### Planning
