@@ -48,9 +48,9 @@ Discussion will include (with the person leading the discussion):
 * First octet (Martin)
 * End of early data (Martin)
 * Encoding CID lengths 1, 2, 3 (#1570)
-
 * ACK-ECN (Ian)
 * Retry (Martin)
+* Handshake deadlock (#1764)
 * max_bytes_before_ack (#1715) / max ack delay (Ian / Jana)
 * Flow control gotchas (Mike)
 
