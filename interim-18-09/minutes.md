@@ -39,7 +39,7 @@ Demonstration of the spin bit graph
 
 Discussion of the graphs -- these just show the output of the spin bit measurement, but they don’t compare to any ground truth
 
-Orange is experimenting with three bits, but QUIC has only done privacy analysis of the single Spin Bit. That privacy analysis was done by a design team and then accepted by the working group - the other two bits must also be analyzed and accepted in order to go forward. 
+Orange is experimenting with three bits (spin bit for RTT + two bits for segmental loss), but QUIC has only done privacy analysis of the single Spin Bit. That privacy analysis was done by a design team and then accepted by the working group - the other two bits must also be analyzed and accepted in order to go forward
 
 Plan A: work with a partner to take E2# measurements
 
@@ -60,7 +60,7 @@ Jana: Also consider malicious endpoints.
 
 Christian: QUIC is an application-level transport, so spin measures application RTT. Are there implications here? (Zahed +1)
 
-Alexandre: This is equivalent to TCP.
+Alexandre: This is equivalent to TCP. Kernel on a loaded CPU doesn't run faster than userland.
 
 Christian: when you present in Bangkok please present data about how much noise is injected by the application layer.
 
