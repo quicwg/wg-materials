@@ -750,6 +750,8 @@ Some discussion on using HRR. People didn’t like it.
 
 ### Max_bytes_before_ack - Ian/Jana
 
+https://github.com/quicwg/wg-materials/blob/master/interim-18-09/ack-delay.pdf
+
 Ian - How much to delay acks? Some congestion controllers need frequent feedback like reno and max ack delay influences RTO timers, so ack delay matters. The less frequently the receiver send acks, if the sender doesn’t have pacing enabled, it’s going to cause bursts.
 
 Option 1: 1- size fits all
