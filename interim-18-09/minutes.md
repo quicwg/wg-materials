@@ -836,6 +836,8 @@ Consensus seems like we are going to do max ack delay, the ack threshold is stil
 
 ### Flow control gotchas - Mike Bishop
 
+https://github.com/quicwg/wg-materials/blob/master/interim-18-09/flowcontrol.pdf
+
 Mike - don’t wait for all bytes to arrive before reading
 
 Mt- I don’t even write the entire data if I don’t have flow control to write it.
@@ -963,7 +965,7 @@ Victor: no problem with people building on top of quic.
 
 Mt: Wouldn't want to ship something on quic until its done. There are some debates that need to happen if QUIC might affect the ecosystem of the web platform if something that depends on QUIC is shipped.
 
-### PR from EKR (PR #1755)
+### PR from EKR ([PR #1755](https://github.com/quicwg/base-drafts/pull/1755))
 
 Motivation: Reduce rtts for moving from QUIC v1 -> v2.
 
