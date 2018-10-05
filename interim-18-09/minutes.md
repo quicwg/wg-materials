@@ -438,7 +438,7 @@ MT: I can change the invariants section 4.3 to say that CIDs are arbitrary lengt
 
 ### ACK ECN - Ian
 
-https://github.com/quicwg/wg-materials/blob/master/interim-18-09/ACK%20and%20ACK_ECN%20-%20New%20York%20Interim.pdf
+https://github.com/quicwg/wg-materials/blob/master/interim-18-09/ack-ecn.pdf
 
 Drawbacks of current design: counters increase indefinitely, does not indicate what packets were marked, ACK and ACK_ECN often overlap.
 
