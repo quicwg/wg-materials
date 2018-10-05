@@ -663,7 +663,7 @@ Lars - if DT has achieved consensus, we can discuss in Bangkok. Once we know wha
 
 ### Handshake deadlock (issue #1764)
 
-Ian - having trouble uploading files.
+https://github.com/quicwg/wg-materials/blob/master/interim-18-09/Handshake%20deadlock%20%252F%20DoS%20mitigation%20(%231764).pdf
 
 Server must not send 3x unvalidated bytes. Current text incorrectly described as 3 packets, needs fixing.
 If the server sends a flight of data, with an ack of the client finished and the handshake packets in the first flight is lost or the server flight is larger than 3 packets, then the server gets into a deadlock. 
