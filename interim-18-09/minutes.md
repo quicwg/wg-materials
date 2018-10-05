@@ -995,6 +995,8 @@ Looked like no conclusion. But no opposition either.
 
 ### QUIC transport interface - eric kinnear
 
+https://github.com/quicwg/wg-materials/blob/master/interim-18-09/quic-transport-interface.pdf
+
 Should we expose the connection as a quic connection or transport connection as a quic stream.
 
 Transport as QUIC connection
