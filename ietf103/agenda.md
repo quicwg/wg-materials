@@ -37,6 +37,7 @@
 
 *balance of time*
 
+_TBD_
 
 
 
@@ -52,6 +53,8 @@
 ### Spin Bit
 
 *balance of time*
+
+_TBD_
 
 
 ### Planning
