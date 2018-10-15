@@ -42,7 +42,9 @@ Tokyo is served by two major airports.
 
 [NRT](https://www.narita-airport.jp/en/) is Narita International Airport. The quickest, easiest way
 to get from Narita to the meeting location is to take the [Narita
-Express](http://www.jreast.co.jp/e/nex/) train to Tokyo Station, a one-hour trip that costs approximately ¥2,800.
+Express](http://www.jreast.co.jp/e/nex/) train to Tokyo Station, a one-hour trip that costs
+approximately ¥3,020 (¥4,000 round-trip if you buy a [special
+ticket](http://www.jreast.co.jp/e/pass/nex_round.html) upon arrival).
 
 [HND](http://www.haneda-airport.jp/inter/en/) is Haneda International Airport, which is much closer
 to Tokyo, but has slightly fewer international flights. There are a variety of ways to get from
