@@ -40,17 +40,17 @@ offices in Tokyo, Japan ([map](https://goo.gl/maps/8cs81Mp1yJx)).
 
 Tokyo is served by two major airports.
 
-[NRT](https://www.narita-airport.jp/en/) is Narita International Airport. The quickest, easiest way
-to get from Narita to the meeting location is to take the [Narita
-Express](http://www.jreast.co.jp/e/nex/) train to Tokyo Station, a one-hour trip that costs
-approximately ¥3,020 (¥4,000 round-trip if you buy a [special
-ticket](http://www.jreast.co.jp/e/pass/nex_round.html) upon arrival).
+* [NRT](https://www.narita-airport.jp/en/) is Narita International Airport. The quickest, easiest
+  way to get from Narita to the meeting location is to take the [Narita
+  Express](http://www.jreast.co.jp/e/nex/) train to Tokyo Station, a one-hour trip that costs
+  approximately ¥3,020 (¥4,000 round-trip if you buy a [special
+  ticket](http://www.jreast.co.jp/e/pass/nex_round.html) upon arrival).
 
-[HND](http://www.haneda-airport.jp/inter/en/) is Haneda International Airport, which is much closer
-to Tokyo, but has slightly fewer international flights. There are a variety of ways to get from
-Haneda to the meeting location, but the most direct is to take the [Keikyu-Kuko
-Line](http://www.haneda-tokyo-access.com/en/) (which changes into the Asakusa Line) to Takaracho
-Station, about a 35 minute train ride.
+* [HND](http://www.haneda-airport.jp/inter/en/) is Haneda International Airport, which is much
+  closer to Tokyo, but has slightly fewer international flights. There are a variety of ways to get
+  from Haneda to the meeting location, but the most direct is to take the [Keikyu-Kuko
+  Line](http://www.haneda-tokyo-access.com/en/) (which changes into the Asakusa Line) to Takaracho
+  Station, about a 35 minute train ride.
 
 Upon arrival, it's advisable to get a [Suica](http://www.jreast.co.jp/e/pass/suica.html) or
 [Pasmo](https://www.pasmo.co.jp/en/) IC card to pay for public transportation, as well as use in
