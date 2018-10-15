@@ -20,7 +20,7 @@ Attendees should also note the [agenda](agenda.md), as some topics will be consi
 We'll be meeting Wednesday to Thursday, 30-31 January 2019. Meetings will begin at 9:30am and end at
 approximately 5pm on each day (although we may choose to end earlier).
 
-There will also be an interop event on 28-29 Januar (Monday and Tuesday).
+There will also be an **interop event** on 28-29 January (Monday and Tuesday).
 
 See [the agenda](agenda.md) for full details.
 
