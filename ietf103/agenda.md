@@ -38,6 +38,7 @@
 *balance of time*
 
 * Version Negotiation RTs (#1773)
+* Making QUIC Deployable Again (draft stability)
 
 _TBD_
 
