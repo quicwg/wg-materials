@@ -6,13 +6,15 @@ hosted by Akamai in Tokyo, Japan.
 
 ## Register
 
-**All Attendees -- remote or local -- must register**. Registration is not open yet.
+**All Attendees -- remote or local -- must register**.
 
 Attendees are expected to be familiar with Working Group drafts and related issues, and to take active part in discussion. All participation takes place under the terms of the IETF [NOTE WELL](https://www.ietf.org/about/note-well.html) statement. See our [contribution guidelines](https://github.com/quicwg/base-drafts/blob/master/CONTRIBUTING.md) for more information about participating in QUIC.
 
 If you wish to observe the meeting but not actively participate, you are strongly urged to attend remotely.
 
 Attendees should also note the [agenda](agenda.md), as some topics will be considered out-of-scope for this meeting.
+
+[Register here](https://goo.gl/forms/H5NA9n0eLTtsm5IU2). **Registration closes on 18 December 2018.**
 
 
 ## Schedule and Agenda
