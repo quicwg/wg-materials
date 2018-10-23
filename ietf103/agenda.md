@@ -27,11 +27,11 @@
 
 ### Editors' Updates
 
-* 10 min - Update on issue status, editor progress, hot topics
+* 15 min - Update on issue status, editor progress, hot topics
 
 ### Operations Drafts
 
-* 10 min - Status update
+* 15 min - Status update
 
 ### Issue Discussion
 
