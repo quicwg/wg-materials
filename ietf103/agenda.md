@@ -46,6 +46,7 @@ _TBD_
 ### As Time Permits
 
 * QUIC Load Balancing - *Martin Duke*
+* [QUIC Unreliable Datagrams](https://tools.ietf.org/html/draft-pauly-quic-datagram-00) - *Tommy Pauly*
 
 
 ## Wednesday, 7 November 2018
