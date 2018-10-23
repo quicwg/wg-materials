@@ -39,6 +39,7 @@
 
 * Version Negotiation RTs (#1773)
 * Making QUIC Deployable Again (draft stability)
+* MAX_STREAMS(\_BIDI/\_UNI) frame (#1889)
 
 _TBD_
 
