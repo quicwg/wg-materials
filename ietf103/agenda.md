@@ -61,9 +61,14 @@ _TBD_
 
 ### Spin Bit
 
-*balance of time*
-
-_TBD_
+* 15 min - Overview - *Marcus Ihlar*
+* 60 min - Open Mic / discussion
+* balance of time:
+  * Confirm: decision will be limited to the single-bit variant
+  * Confirm: the spin bit is fit for purpose
+  * Confirm: intent to implement and deploy
+  * Consensus: include the spin bit in the specification
+  * Consensus: requirement level / negotiation mechanism for the spin bit (if previous consensus acheived)
 
 
 ### Planning
