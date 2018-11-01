@@ -37,15 +37,13 @@
 
 *balance of time*
 
-* Version Negotiation RTs (#1773)
-* Making QUIC Deployable Again (draft stability)
-* MAX_STREAMS(\_BIDI/\_UNI) frame (#1889)
-
-_TBD_
-
+* Version Negotiation RTs (#1773) - ekr/Martin Thomson
+* Varints for Transport Parameters (#1608) - Marten Seeman
+* Indefinite length DATA frames (#1885) - Mike Bishop
 
 ### As Time Permits
 
+* Making QUIC Deployable Again (draft stability) - Ian Swett
 * QUIC Load Balancing - *Martin Duke*
 * [QUIC Unreliable Datagrams](https://tools.ietf.org/html/draft-pauly-quic-datagram-00) - *Tommy Pauly*
 
