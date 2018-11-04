@@ -13,7 +13,7 @@ _28-29 January_
 
 * 9:30 - Interop meeting (not part of the IETF WG meeting; doors open at 9:00)
 
-_31-31 January_
+_30-31 January_
 
 * 9:30 - Start (doors open at 9:00)
   * Scribes, Blue Sheets, NOTE WELL
