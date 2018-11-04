@@ -33,10 +33,12 @@
 
 * 15 min - Status update
 
+
 ### Issue Discussion
 
 *balance of time*
 
+* [QUIC human rights review](https://tools.ietf.org/html/draft-martini-hrpc-quichr-00)
 * Version Negotiation RTs (#1773) - ekr/Martin Thomson
 * Varints for Transport Parameters (#1608) - Marten Seeman
 * Indefinite length DATA frames (#1885) - Mike Bishop
