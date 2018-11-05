@@ -23,31 +23,30 @@
 
 ### Hackathon / Interop Report
 
-* 5 min - Discussion of what QUIC implementers did and learned at the hackathon
+* 5 min - Discussion of what QUIC implementers did and learned at the hackathon - *Lars*
 
 ### Editors' Updates
 
-* 15 min - Update on issue status, editor progress, hot topics
+* 15 min - Update on issue status, editor progress, hot topics - *Martin Thomson* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf103/editors.pdf), [octet0 slides](https://github.com/quicwg/wg-materials/blob/master/ietf103/octet0.pdf))
 
 ### Operations Drafts
 
-* 15 min - Status update
-
+* 15 min - Status update - *Mirja Kühlewind* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf103/ops-drafts-ietf103.pdf))
 
 ### Issue Discussion
 
 *balance of time*
 
-* Version Negotiation RTs (#1773) - *ekr/Martin Thomson*
+* Version Negotiation RTs (#1773) - *ekr/Martin Thomson* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf103/vn.pdf))
 * Varints for Transport Parameters (#1608) - *Marten Seeman*
-* Indefinite length DATA frames (#1885) - *Mike Bishop*
+* HTTP Issues - *Mike Bishop* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf103/http.pdf))
 
 ### As Time Permits
 
 * [QUIC human rights review](https://tools.ietf.org/html/draft-martini-hrpc-quichr-00)
-* Making QUIC Deployable Again (draft stability) - *Ian Swett*
-* QUIC Load Balancing - *Martin Duke*
-* [QUIC Unreliable Datagrams](https://tools.ietf.org/html/draft-pauly-quic-datagram-00) - *Tommy Pauly*
+* Making QUIC Deployable (draft stability) - *Ian Swett*
+* QUIC Load Balancing - *Martin Duke* 
+* [QUIC Unreliable Datagrams](https://tools.ietf.org/html/draft-pauly-quic-datagram-00) - *Tommy Pauly* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf103/IETF103-QUIC-Datagram.pdf))
 
 
 ## Wednesday, 7 November 2018
@@ -61,7 +60,7 @@
 
 ### Spin Bit
 
-* 15 min - Overview - *Marcus Ihlar*
+* 15 min - Overview - *Marcus Ihlar* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf103/spin_summary.pdf))
 * 60 min - Open Mic / discussion
 * balance of time:
   * Confirm: decision will be limited to the single-bit variant
