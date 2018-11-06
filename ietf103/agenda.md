@@ -44,7 +44,7 @@
 ### As Time Permits
 
 * [QUIC human rights review](https://tools.ietf.org/html/draft-martini-hrpc-quichr-00)
-* Making QUIC Deployable (draft stability) - *Ian Swett*
+* Making QUIC Deployable (draft stability) - *Ian Swett* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf103/Making%20QUIC%20Deployable.pdf))
 * QUIC Load Balancing - *Martin Duke* 
 * [QUIC Unreliable Datagrams](https://tools.ietf.org/html/draft-pauly-quic-datagram-00) - *Tommy Pauly* ([slides](https://github.com/quicwg/wg-materials/blob/master/ietf103/IETF103-QUIC-Datagram.pdf))
 
