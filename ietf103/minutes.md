@@ -121,7 +121,7 @@ mike: not using qpack dynamic table at all is rather a drawback to request size
 jana: what mt said. also what is the use case for negotiation?
 kazuho: use case is that endpoint can wait for peer's signal to decide whether or not create qpack decoder stream. full negotiation just moves blocking part around - prefers negotiation
 subodh: worried about offer/select semantics .. and also current state of waiting for settings frame. prefers defaults mode. h2 has a defaults mode as client can speak wout server
-alan and dimitri: qpack default size to 0 in impls
+alan and dmitri: qpack default size to 0 in impls
 eric kinnear: not sure this is a meaningful hol improvement
 mt: i hear that defaults are ok - but not sure how to impl it. how do i do a header block size default eg? 0 is only safe default but not useful
 eric kinnear: yuck wrt different rules from different settings (from off mic). 
@@ -138,7 +138,7 @@ ian: in favor. framing in framing makes it hard to make large content serving wo
 ekr: mildly in favor
 mike: existing alignment is to allow push promise
 jana: more in favor. imagine a world without push and then you don't need this.
-dimitri: to ian still need to support peers that frame data
+dmitri: to ian still need to support peers that frame data
 kazuho: server timings as trailer is a good use case
 
 [initial priority]
