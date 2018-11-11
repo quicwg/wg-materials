@@ -1,5 +1,40 @@
 # QUIC Working Group Minutes - IETF103 Bangkok
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+  - [Tuesday, 6 November, 2018](#tuesday-6-november-2018)
+    - [INTEROP REPORT - LARS](#interop-report---lars)
+    - [EDITOR'S UPDATE - Martin Thomson](#editors-update---martin-thomson)
+    - [MIRJA PRESENTS OPERATIONS DRAFTS](#mirja-presents-operations-drafts)
+      - [pmtu discovery](#pmtu-discovery)
+      - [connection id generation](#connection-id-generation)
+      - [application handling](#application-handling)
+      - [rejected 0rtt](#rejected-0rtt)
+    - [VERSION NEGOTIATION presented by Martin Thomson](#version-negotiation-presented-by-martin-thomson)
+    - [HTTP ISSUES PRESENTED BY MIKE BISHOP](#http-issues-presented-by-mike-bishop)
+      - [settings interlocking slide](#settings-interlocking-slide)
+      - [length prefixed frames considered irksome](#length-prefixed-frames-considered-irksome)
+      - [initial priority](#initial-priority)
+      - [naming http/quic](#naming-httpquic)
+    - [INITIAL INJECTION ATTACK from Marten S](#initial-injection-attack-from-marten-s)
+  - [Wednesday, 7 November 2018](#wednesday-7-november-2018)
+    - [Spin Bit](#spin-bit)
+      - [Overview](#overview)
+      - [Discussion](#discussion)
+      - [Hums](#hums)
+        - [1. Confirm: decision will be limited to the single-bit variant](#1-confirm-decision-will-be-limited-to-the-single-bit-variant)
+        - [2. Confirm: the spin bit is fit for purpose](#2-confirm-the-spin-bit-is-fit-for-purpose)
+        - [3. It must be possible not to spin](#3-it-must-be-possible-not-to-spin)
+        - [4. Confirm: the privacy/security/ossification aspects of spin are well-understood](#4-confirm-the-privacysecurityossification-aspects-of-spin-are-well-understood)
+        - [5. Intent to implement and deploy](#5-intent-to-implement-and-deploy)
+        - [6. To include the spin bit in the specification, as laid out here. Some decisions can still be made.](#6-to-include-the-spin-bit-in-the-specification-as-laid-out-here-some-decisions-can-still-be-made)
+        - [Hum: No negotiation for spin bit support?](#hum-no-negotiation-for-spin-bit-support)
+    - [Planning](#planning)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 ## Tuesday, 6 November, 2018
 
 *13:50-15:50 Tuesday Afternoon session I, Thai Chitlada 1 - in other time zones*
