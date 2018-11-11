@@ -17,7 +17,7 @@
       - [length prefixed frames considered irksome](#length-prefixed-frames-considered-irksome)
       - [initial priority](#initial-priority)
       - [naming http/quic](#naming-httpquic)
-    - [INITIAL INJECTION ATTACK from Marten S](#initial-injection-attack-from-marten-s)
+    - [INITIAL INJECTION ATTACK from Marten Seemann](#initial-injection-attack-from-marten-seemann)
   - [Wednesday, 7 November 2018](#wednesday-7-november-2018)
     - [Spin Bit](#spin-bit)
       - [Overview](#overview)
@@ -295,17 +295,17 @@ support hum strongly in favor with non zero do not support. perhaps 70:30
 
 support hum for letting httpbis wg decide: ~100% support
 
-### INITIAL INJECTION ATTACK from Marten S
+### INITIAL INJECTION ATTACK from Marten Seemann
 
 martin d: pr 1819 was meant to allow receivers to drop initial packets. not sure how to bring back the dead PR
 
-marten s: still need the ack
+marten s: We still need the ACK in 1819. This proposal will require some changes to loss recovery.
 
 lars: out of time!
 
 kazuho: we have this discussion on and off since may - opposed to changing this now because it is an optimization
 
-marten s: its a security surface issue
+marten s: its an attack surface issue
 
 
 ## Wednesday, 7 November 2018
@@ -414,6 +414,8 @@ Lars: Clients, or also servers?
 
 Christian: Definitely includes servers. Both.
 
+Marten Seemann: For p2p applications there's no real distinction between client and server. It must be possible for both sides to opt-out unilaterally.
+
 Sanjay: There was discussion about how to specify that you must spin..
 
 Lars: This eliminates the possibility to "must spin".
@@ -422,7 +424,7 @@ Jana: As far as opting out without consequence, there's the question of how to n
 
 Mark: Let's talk about that later
 
-Martin Seeman: It seems like you could still have preferential treat..
+Marten Seemann: It seems like you could still have preferential treatment
 
 Martin Thomson: The specific design for opt out is the last item. That's not this question.
 
@@ -444,7 +446,7 @@ Kazuho: I want to point out that for ossification, we have done plenty of analys
 
 Cullen: I don't think we understand these in any protocols! Would the chairs change the question to "do you have enough info today to decide the other questions".
 
-Martin Seeman: There's been an analysis of geolocation, but not for VPN or NATs. You can get the RTT from the VPN endpoint and the server.
+Marten Seemann: There's been an analysis of geolocation, but not for VPN or NATs. You can get the RTT from the VPN endpoint and the server.
 
 Lars: That's just for TCP proxies.
 
@@ -452,7 +454,7 @@ ekr: We previously hummed that you must be able to opt out. I'm not convinced we
 
 Mark: is that about having enough information?
 
-Ted: Responding to the concern that Martin raised about VPN: it is the case that if you are *very* far away, you can detect that there is a VPN gateway present. You can't tell where it is, though. It is possible to determine a tunnel is present, but nothing more. If this is a case of concern, make the default to opt out over a tunnel. I am convinced we can mitigate this successfully.
+Ted: Responding to the concern that Marten raised about VPN: it is the case that if you are *very* far away, you can detect that there is a VPN gateway present. You can't tell where it is, though. It is possible to determine a tunnel is present, but nothing more. If this is a case of concern, make the default to opt out over a tunnel. I am convinced we can mitigate this successfully.
 
 Marcus: On the topic of preferential treatment, the incentive of the network is to use the bit to improve your experiment. If you don't want this at all, a network can just block all QUIC, but they don't have any reason to do that.
 
@@ -514,7 +516,7 @@ ekr: Firefox does not intend to set the spin bit
 
 Jana: Fastly doesn't intend to do it now, but no promises
 
-Martin Seeman: My protocol apps won't implement it
+Marten Seemann: quic-go won't implement it
 
 ##### 5. Intent to implement and deploy
 
