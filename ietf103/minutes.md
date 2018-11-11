@@ -38,7 +38,9 @@ lars: that was more of a conformance test.. quic-tracker (?)
 ### EDITOR'S UPDATE - Martin Thomson
 
 
-colin: wrt first octet discussions and avtcore.. mt: we have slides on that later
+colin: wrt first octet discussions and avtcore.
+
+mt: we have slides on that later
 
 ekr: would like 4 weeks before freeze
 
@@ -46,9 +48,9 @@ mt: fair. point still stands that you have been warned about oncoming freeze
 
 mnot: wg has expressed that we need a period of stability to let impls catch up
 
-mt: outright bugs will continue to get fixed. but soon a stable protocol will need to set in. suggests a speculative issue for improvements will be more aggressively closed - this does not exclude bugs. discussiing on list before opening issues will become better. editorial issues are always welcome with PR
+mt: outright bugs will continue to get fixed. but soon a stable protocol will need to set in. suggests a speculative issue for improvements will be more aggressively closed - this does not exclude bugs. discussing on list before opening issues will become better. editorial issues are always welcome with PR
 
-mt: we lack experience in deployment, and we need that before rfc. therefore get that soon. might mean there are some asthetic things that suck
+mt: we lack experience in deployment, and we need that before rfc. therefore get that soon. might mean there are some aesthetic things that suck
 
 (Long Header Slide 4)
 
@@ -93,13 +95,13 @@ ekr: if document has force it should not do things that are not advisable and th
 
 jana: import to say why not what
 
-martin: people are already doing this.. wuic/ws reference
+martin: people are already doing this.. quic/ws reference
 
 spencer as AD: partial reliability is explicitly out of scope. we should talk
 
 ian: its fine to say nothing given spencer's comment. however this totally works fine!
 
-mirija: ekr please add your arguments to the github issue
+mirja: ekr please add your arguments to the github issue
 
 lars: quic v2 will likely contain partial reliability. ops shouldn't presuppose this
 
@@ -115,7 +117,7 @@ tommy: talking about strategies is useful. agrees to do a pull request
 
 harald: disappointed in wg discussion. the choice is whether or not we want to provide a forum for discussion of this topic or not (and yield influence if not)
 
-lars: nobody is trying to shut down the partial reliability discussion - we're talking about this documnet
+lars: nobody is trying to shut down the partial reliability discussion - we're talking about this document
 
 harald: we have minimal chance of influence and it seems like we are pushing it away
 
@@ -125,7 +127,7 @@ harald: there's a lot of junk in rfc series such as ipv5 we should worry about t
 
 spencer as AD: do people have incentive for partial reliability in some other way?
 
-ted: charter presumes PR is an extension. is the document defining applicability of core quic or that of extensions + core? considerations around extensions could be dealt with in a new doc by limintg scope of this doc to core quic and create a new one for extensions
+ted: charter presumes PR is an extension. is the document defining applicability of core quic or that of extensions + core? considerations around extensions could be dealt with in a new doc by limiting scope of this doc to core quic and create a new one for extensions
 
 mirija: we can be more explicit about versions.
 
@@ -242,15 +244,15 @@ mike b: you should use h2 unless you cant
 
 ted: is there confusion between tokens and names?
 
-patrick: h3 is meant to be a successor to h2 because its better. also h* all have same semantics which is impt signal
+patrick: h3 is meant to be a successor to h2 because its better. also h* all have same semantics which is important signal
 
 kazuho: logging will not like anything other than http/* and h2 already said no minor version numbers
 
 spencer: update charter before ad transition
 
-mnot: namning of http needs to stay in http community
+mnot: naming of http needs to stay in http community
 
-mt: this is a fork? mnot: semantics vs wire is what is impt
+mt: this is a fork? mnot: semantics vs wire is what is important
 
 HUMS ON SUPPORTING RENAMING to H3
 
@@ -323,7 +325,7 @@ HUM TOPICS
 - Confirm: the privacy/security aspects of spin are well-understood and acceptable
 - Confirm: intent to implement and deploy
 - Consensus: include the spin bit in the specification
-- Consensus: requirement level / negotiation mechanism for the spin bit (if previous consensus acheived)
+- Consensus: requirement level / negotiation mechanism for the spin bit (if previous consensus achieved)
 
 Christian: does this include the recent PR to make the use of spin a percentage?
 
@@ -331,7 +333,7 @@ Bob: The last point (requirement level) is not well phrased as a question
 
 Ted: For understanding of privacy/security, we must know that it must be possible to not spin
 
-DKG: While there was a refernce to ossification earlier, that's not on the hum list. I'm not convinced we know what the ossification risks are.
+DKG: While there was a reference to ossification earlier, that's not on the hum list. I'm not convinced we know what the ossification risks are.
 
 Subodh: To add to the ossification concern, what's the differential treatment concern?
 
@@ -405,7 +407,7 @@ Lars: I want to confirm that people have the information they need.
 
 Kazuho: I want to point out that for ossification, we have done plenty of analysis for zeroing or randomizing. We haven't discussed using another signal.
 
-Cullen: I don't think we understand these in any protocols! Would the chairs change the question to "do you have enough info today to decide the other questions". [CHANGED]
+Cullen: I don't think we understand these in any protocols! Would the chairs change the question to "do you have enough info today to decide the other questions".
 
 Martin Seeman: There's been an analysis of geolocation, but not for VPN or NATs. You can get the RTT from the VPN endpoint and the server.
 
@@ -445,7 +447,7 @@ ekr: As someone who hummed no, I don't presently understand if the proposed desi
 
 Al Morton: We haven't put a green check or red X on this (4). We've emptied the line for the negative. We need to make the call.
 
-Nick Sullivan: To ekr, is ossification equal to descrimination?
+Nick Sullivan: To ekr, is ossification equal to discrimination?
 
 DKG: I think discrimination is the ossification concern. I agree that the chairs took the right feel of the room though.
 
