@@ -506,7 +506,7 @@ Ian Swett: Chrome will not do this, and Google servers are a "may"
 
 Martin Duke: F5 is a middlebox and server and would support in both
 
-Lightspeed will implement in client and server
+Dmitri Tikhonov: LiteSpeed Technologies will implement in client and server
 
 Dan Druta: Will use and deploy as a middlebox
 
