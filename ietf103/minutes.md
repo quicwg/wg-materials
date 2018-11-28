@@ -140,7 +140,7 @@ mirja: ekr please add your arguments to the github issue
 
 lars: quic v2 will likely contain partial reliability. ops shouldn't presuppose this
 
-mirija: just documenting current practice
+mirja: just documenting current practice
 
 jana: not clear what partial reliability is without a definition.. hard to do given its not in charter scope. stay out of the way
 
@@ -164,7 +164,7 @@ spencer as AD: do people have incentive for partial reliability in some other wa
 
 ted: charter presumes PR is an extension. is the document defining applicability of core quic or that of extensions + core? considerations around extensions could be dealt with in a new doc by limiting scope of this doc to core quic and create a new one for extensions
 
-mirija: we can be more explicit about versions.
+mirja: we can be more explicit about versions.
 
 #### pmtu discovery
 
@@ -188,13 +188,13 @@ jana: martin duke knows
 
 christian: you are worried about making general discussion about specific applications mappings. interop happens at application layer
 
-mk: general classes of application can benefit from advice
+mirja: general classes of application can benefit from advice
 
 ekr: this one is application specific (0rtt)
 
 subodh: +1 to ekr.
 
-mk: can we tell people something useful independent of application
+mirja: can we tell people something useful independent of application
 
 subodh: now thinks general advice would be useful
 
@@ -544,7 +544,7 @@ ekr: Is this a hum for the general design space, right?
 
 Mark: yes, with room to improve.
 
-Mirja: You can always block QUIC traffic as a whole. So if we're so concerned if
+Mirja: You can always block QUIC traffic as a whole. So if we're so concerned about differential treatment we should stop working on quic as a whole.
 
 ##### 6. To include the spin bit in the specification, as laid out here. Some decisions can still be made.
 
