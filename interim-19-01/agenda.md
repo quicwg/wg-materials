@@ -23,4 +23,32 @@ _30-31 January_
 
 ## Agenda
 
+### Interop Summary
+
+_~5 minutes_
+
+* Interop event
+
+### QUIC Issues
+
+_1.5 days_
+
+See the [project board](https://github.com/quicwg/base-drafts/projects/3).
+
+### HTTP Issues
+
+_.5 days_
+
 _TBD_
+
+### Planning
+
+_~15 minutes_
+
+- Next meeting(s)
+- Next interop
+- Getting done
+
+### As Time Permits
+
+_none yet_
