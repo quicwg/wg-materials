@@ -51,4 +51,5 @@ _~15 minutes_
 
 ### As Time Permits
 
-* 16:00-16:15 (try 30th, fallback 31st) : QUIC logging, debugging and tooling (Robin Marx)
+* QUIC Load Balancing (Martin Duke)
+* 16:00-16:15 31 January: QUIC logging, debugging and tooling (Robin Marx)
