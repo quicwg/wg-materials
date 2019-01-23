@@ -51,4 +51,4 @@ _~15 minutes_
 
 ### As Time Permits
 
-_none yet_
+* 16:00-16:15 (try 30th, fallback 31st) : QUIC logging, debugging and tooling (Robin Marx)
