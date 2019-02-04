@@ -450,7 +450,7 @@ Rui:
 
 Ian:  Making them ack-eliciting has certain impacts on the congestion controller.  We perhaps don’t want those impacts, and some of them are hard to reason about.
 
-<scribe lost>
+*scribe lost*
 
 Ekr: when you’re asking path validation, you send the challenge on the old path but might get
 
@@ -702,8 +702,6 @@ Roberto: you cannot drop all the packets, you need to do a path change.
 
 Ian:
 
-<scribe approaching brain dead state>
-
 Ekr:
 
 Mike: we could move to a totally different ip address, it s almost garantee to be a different server, don t try. If it s the same ip and port, no problem.
@@ -853,7 +851,7 @@ https://github.com/quicwg/base-drafts/issues/2344
 
 MT: We had a PR that does just this, Marten said why not flow control and all these other things. RESET_STREAM is the only that increases the risk, the rest of them we’re fine apart from this.
 
-Kazuho: My argument was about enforcing the stream limit <missed rest>
+Kazuho: My argument was about enforcing the stream limit *missed rest*
 
 MT: Argument here is mostly around denial of service, not sure I understand/agree, seemed like part of the risk of taking 0-RTT
 Kazuho: You cannot allow all frames for 0-RTT: CRYPTO, ACK, and STREAM frames have different rules. Why allow other frames that are never used in 0-RTT.
@@ -1001,7 +999,7 @@ Christian: Not comfortable with adding unnecessary things like MAX_STREAM_DATA, 
 
 Martin D: All of 0-RTT is not necessary
 
-<multiple talking>
+*multiple talking*
 
 Roberto: For QUIC to succeed, has to be enough better than TCP to be worth the cost. 0-RTT is a huge benefit, getting streams in first packet are absolutely necessary, we might be having slightly different definitions of necessary here. Are we all in agreement that 0-RTT stuff is necessary here?
 
@@ -1033,7 +1031,7 @@ Eric: Can we split this into principle acceptance separate from taking the new f
 
 MT: Can we do this later once people can think about it?
 
-<Coming back to this later>
+*Coming back to this later*
 
 #### Issue 2360
 
@@ -1180,7 +1178,7 @@ Ian: There are some tradeoffs, hard to figure it out
 
 Mark: Okay, any objection to close
 
-<Silence>
+*Silence*
 
 Close it
 
@@ -1225,7 +1223,7 @@ Ian: You mentioned transport param. Can we close and say “write an extension p
 
 Mark: Any other input that doesn’t mirror that?
 
-<nobody>
+*nobody*
 
 Go for that
 
@@ -1267,7 +1265,7 @@ Marten: I think timers are bad too, though. There’s nothing bad about seeing t
 
 Ekr: We have a mechanism for determining when things are delivered and that’s ACKs
 
-David: If we don’t discard keys at all, there are attacks for injection later from Initial, etc. We want to stop accepting Initial packets. However, if we stop accepting too soon we can get into weird situations. Proposal I like is to have an explicit signal: the moment you can agree you stop receiving you use that signal and stop then <missed some more detail>
+David: If we don’t discard keys at all, there are attacks for injection later from Initial, etc. We want to stop accepting Initial packets. However, if we stop accepting too soon we can get into weird situations. Proposal I like is to have an explicit signal: the moment you can agree you stop receiving you use that signal and stop then *missed some more detail*
 
 Christian: It’s really about when do you want to stop accepting, need to coordinate that between the two sides.
 
@@ -1330,7 +1328,7 @@ MT: I’m going to do this as a mega-PR that kills: Key update, 1-RTT transition
 
 David: I would slightly tweak, you need to be done with the previous one, including CFIN.
 
-<Jana and David discuss read key>
+*Jana and David discuss read key*
 
 Christian: You can do stuff with implicit, there are some things you can’t do, there are some attacks where you need to send ACKs but could be sending for spoofed packets and then the peer could kill your connection. Secondly, let’s be done with it.
 
@@ -1359,7 +1357,7 @@ MT: Noted in 1951 that conclusion in 2267 will be placeholder for this.
 
 Mark: Everyone okay with that.
 
-<No objection>
+*No objection*
 
 #### Issue: #2267
 
@@ -1429,7 +1427,7 @@ MT: Reason for that text is the 0-RTT stuff.
 
 Christian: Kazuho and I have been working on a secure way to do the handshake which would remove the possibility of having an attack during the handshake. A key part of that is verifying that the client hello is exactly the same in the client initial and in the retry. As in a hash of the crypto data matches the previous one.
 
-Ekr: Christian, as I understand it, you would like to prohibit changing the client hello. <Yes> Modulo 0-RTT sequence number issue, there is no actual reason to change the initial packet at all, we know how to make the 0-RTT packet safe with the sequence numbers continuing to increase. That makes more sense with layering design of QUIC. Architecturally I don’t see any reason to change it, so it’s better to say that you can’t change the client hello. There’s at least one reason you would say that: There might be situations in which you want to get a head start on processing the data while you wait for the retry.
+Ekr: Christian, as I understand it, you would like to prohibit changing the client hello. *Yes* Modulo 0-RTT sequence number issue, there is no actual reason to change the initial packet at all, we know how to make the 0-RTT packet safe with the sequence numbers continuing to increase. That makes more sense with layering design of QUIC. Architecturally I don’t see any reason to change it, so it’s better to say that you can’t change the client hello. There’s at least one reason you would say that: There might be situations in which you want to get a head start on processing the data while you wait for the retry.
 
 Subodh: One of the reasons that you might want to change it -> VN downgrade protection might require regenerating to include new TPs.
 
@@ -1481,11 +1479,11 @@ Christian, Nick: Put hash in retry token, totally enforceable
 
 Hum: Support for Ekr’s proposal
 
-<Loud hum>
+*Loud hum*
 
 Against
 
-<One>
+*One*
 
 Marten: Already articulated my reasons against.
 
