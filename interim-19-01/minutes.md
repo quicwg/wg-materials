@@ -3,6 +3,106 @@
 * Chairs: Mark Nottingham, Lars Eggert
 * Location: Tokyo, Japan
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Wednesday](#wednesday)
+  - [Interop Summary (5 minutes) Lars Eggert](#interop-summary-5-minutes-lars-eggert)
+  - [Process change discussion.](#process-change-discussion)
+  - [Crypto-Related Issues](#crypto-related-issues)
+    - [First issue: #2308](#first-issue-2308)
+    - [Second issue: #2214](#second-issue-2214)
+    - [Flow control for post-handshake CRYPTO messages #1834](#flow-control-for-post-handshake-crypto-messages-1834)
+    - [Third Issue: #2170](#third-issue-2170)
+    - [Fourth Issue: #2329](#fourth-issue-2329)
+    - [Fifth Issue: #1874](#fifth-issue-1874)
+  - [Version Negotiation-related Issues](#version-negotiation-related-issues)
+    - [Sixth Issue #1773](#sixth-issue-1773)
+    - [Seventh Issue: #1810](#seventh-issue-1810)
+  - [Connection ID/Migration](#connection-idmigration)
+    - [Discuss Requirement that connection IDs not be correlatable.](#discuss-requirement-that-connection-ids-not-be-correlatable)
+    - [Define a safe algorithm for changing CID in response to a change in CID](#define-a-safe-algorithm-for-changing-cid-in-response-to-a-change-in-cid)
+    - [Don't change CID on peer CID change](#dont-change-cid-on-peer-cid-change)
+    - [Why are we bothering to number CIDs?](#why-are-we-bothering-to-number-cids)
+    - [Can Initial/0-RTT CIDs safely be used for routing?](#can-initial0-rtt-cids-safely-be-used-for-routing)
+    - [Be more conservative about migration?](#be-more-conservative-about-migration)
+    - [Issue 2101 Should retiring all CIDs be an error?](#issue-2101-should-retiring-all-cids-be-an-error)
+    - [Issue 2372 PATH_* frame should not be ACK-eliciting](#issue-2372-path_-frame-should-not-be-ack-eliciting)
+    - [Issue 1994 endpoints don t know how many connections IDs the peer is willing to store](#issue-1994-endpoints-don-t-know-how-many-connections-ids-the-peer-is-willing-to-store)
+    - [Issue 203 connection migration should be indistinguishable from a new connection](#issue-203-connection-migration-should-be-indistinguishable-from-a-new-connection)
+    - [Issue 2319 Introduce and error code for loss recovery-related errors](#issue-2319-introduce-and-error-code-for-loss-recovery-related-errors)
+    - [Issue 1989](#issue-1989)
+    - [Issue 1990 encoding of connection_close reason phrases.](#issue-1990-encoding-of-connection_close-reason-phrases)
+    - [Issue 2151: where can you send CONNECTION_CLOSE](#issue-2151-where-can-you-send-connection_close)
+    - [Issue 2347](#issue-2347)
+    - [Issue 2118 allow PMTU probing of a path suspected of not supporting …..](#issue-2118-allow-pmtu-probing-of-a-path-suspected-of-not-supporting-)
+    - [Issue 1638 Dead path timeout](#issue-1638-dead-path-timeout)
+    - [Issue 2342 spoofed connection migration as a DoS vector](#issue-2342-spoofed-connection-migration-as-a-dos-vector)
+    - [Issue 2348 specify IPv6 flow label for QUIC](#issue-2348-specify-ipv6-flow-label-for-quic)
+    - [Issue 1243 ICMP and ICMPv6 PMTUD with asymmetric connections-ids](#issue-1243-icmp-and-icmpv6-pmtud-with-asymmetric-connections-ids)
+    - [Issue 279 Public troubleshooting Flags.](#issue-279-public-troubleshooting-flags)
+    - [Issue 632 On-Path calculation of loss and congestion](#issue-632-on-path-calculation-of-loss-and-congestion)
+    - [Issue 602 End-To-Path close signal](#issue-602-end-to-path-close-signal)
+- [Thursday](#thursday)
+  - [Misc Issues](#misc-issues)
+    - [Issue 2299](#issue-2299)
+    - [Issue 2049](#issue-2049)
+    - [Issue 2344](#issue-2344)
+    - [Issue 2360](#issue-2360)
+    - [Issue 219](#issue-219)
+    - [Issue 969](#issue-969)
+    - [Issue 1482](#issue-1482)
+    - [Issue 1993](#issue-1993)
+  - [Path Issues](#path-issues)
+    - [Issue: #279](#issue-279)
+  - [Handshake-Related Issues](#handshake-related-issues)
+    - [First Issue: #1951](#first-issue-1951)
+    - [Issue: #2267](#issue-2267)
+    - [Issue: #2309](#issue-2309)
+    - [Issue: #2180](#issue-2180)
+    - [Issue: #655](#issue-655)
+    - [Issue: 2397](#issue-2397)
+  - [HTTP/QPACK Issues](#httpqpack-issues)
+    - [Varint the Things](#varint-the-things)
+    - [Issue 2275: Varint h3 unidirectional stream types](#issue-2275-varint-h3-unidirectional-stream-types)
+    - [Issue 2253: Consider making h3 frame types varint](#issue-2253-consider-making-h3-frame-types-varint)
+    - [Issue 2233: Why are setting identifiers not varints?](#issue-2233-why-are-setting-identifiers-not-varints)
+  - [Push Issues](#push-issues)
+    - [Issue 718: Retain use of SETTINGS_ENABLE_PUSH](#issue-718-retain-use-of-settings_enable_push)
+    - [Issue 2232: Should receipt of multiple promises really be an error?](#issue-2232-should-receipt-of-multiple-promises-really-be-an-error)
+  - [Extensibility Issues](#extensibility-issues)
+    - [Issue 2291: Allow extra data after self-terminating h3 frames](#issue-2291-allow-extra-data-after-self-terminating-h3-frames)
+    - [Issue 2229: Can I send non-data frames on CONNECT streams?](#issue-2229-can-i-send-non-data-frames-on-connect-streams)
+    - [Issue 2224: Why do control streams need to be typed?](#issue-2224-why-do-control-streams-need-to-be-typed)
+  - [HTTP Messaging Issues](#http-messaging-issues)
+    - [Issue 2396: HTTP/3 frame encodings are unnecessarily difficult to serialize and parse](#issue-2396-http3-frame-encodings-are-unnecessarily-difficult-to-serialize-and-parse)
+    - [Issue 2395: HTTP/3 uses LTV unlike TLS or QUIC transport](#issue-2395-http3-uses-ltv-unlike-tls-or-quic-transport)
+    - [Issue 2230: What indicates the end of a message?](#issue-2230-what-indicates-the-end-of-a-message)
+    - [Issue 2228: How do I generate an RST?](#issue-2228-how-do-i-generate-an-rst)
+    - [Issue 1885:DATA frame encoding is inefficient for long dynamically generated bodies](#issue-1885data-frame-encoding-is-inefficient-for-long-dynamically-generated-bodies)
+  - [Relationship to HTTP/TCP Issues](#relationship-to-httptcp-issues)
+    - [Issue 2223: When can you coalesce connections](#issue-2223-when-can-you-coalesce-connections)
+    - [Issue 371: ALTSVC Frame](#issue-371-altsvc-frame)
+    - [Issue 2384: What scheme should be used for HTTP/3?](#issue-2384-what-scheme-should-be-used-for-http3)
+    - [Issue 253: HTTP/QUIC without Alt-Svc?](#issue-253-httpquic-without-alt-svc)
+  - [HTTP Closing Issues](#http-closing-issues)
+    - [Issue 2226: Why do I have to explicitly cancel after GOAWAY?](#issue-2226-why-do-i-have-to-explicitly-cancel-after-goaway)
+  - [Planning](#planning)
+  - [QPACK Dynamic Table Issues](#qpack-dynamic-table-issues)
+    - [Issue 2276: Disallow changes of table size after 0-RTT](#issue-2276-disallow-changes-of-table-size-after-0-rtt)
+    - [Issue 2258: Initial maximum table size needs clarification](#issue-2258-initial-maximum-table-size-needs-clarification)
+    - [Issue 2363: The initial table capacity is zero](#issue-2363-the-initial-table-capacity-is-zero)
+    - [Issue 2100: Avoid creating QPACK codec streams when unnecessary](#issue-2100-avoid-creating-qpack-codec-streams-when-unnecessary)
+    - [Issue 1420: encoder stream can deadlock](#issue-1420-encoder-stream-can-deadlock)
+  - [QPACK Wrapping Issues](#qpack-wrapping-issues)
+    - [Issue 2112: Largest Reference algorithm can produce invalid values](#issue-2112-largest-reference-algorithm-can-produce-invalid-values)
+    - [Issue 2371: Assign QPACK error codes?](#issue-2371-assign-qpack-error-codes)
+  - [QUICvis - Robin Marx](#quicvis---robin-marx)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 ## Wednesday
 
 Morning Scribe: Ted Hardie
@@ -187,7 +287,7 @@ Short break, followed by quick introductions.  Everyone marvels at the vending m
 
 
 
-### Third Issue: #2170
+#### Third Issue: #2170
 
 https://github.com/quicwg/base-drafts/issues/2170
 
@@ -2109,7 +2209,7 @@ Mike: Also not required to create the streams.
 Adopt Kazuho’s PR.
 
 
-### Issue 1420: encoder stream can deadlock
+#### Issue 1420: encoder stream can deadlock
 
 https://github.com/quicwg/base-drafts/issues/1420
 
@@ -2137,7 +2237,7 @@ Kazuho: use 02xx
 Alan: Sold
 
 
-## QUICvis - Robin Marx
+### QUICvis - Robin Marx
 
 Working on Web-based tools along with JS implementation.
 
