@@ -726,7 +726,7 @@ When (after how long) do we decide a path is dead?
 
 Martin T.: the idea is sound, but we do kind of meed more concrete proposal. When does the timer start? …. Be specific.
 
-Jana: TCP standard has a mechanism for that. We shoul djust reuse this. We just then need to choose multiples of (consecutive) RTOs.
+Jana: TCP standard has a mechanism for that. We should just reuse this. We just then need to choose multiples of (consecutive) RTOs.
 
 Christian: when moving from wifi to 3G the delays can be very different.
 
@@ -787,7 +787,7 @@ Kazuho: i suggest changing the name to discourage_migration.
 
 igor : what about a 0-rtt client?
 
-Kazuho: disable_migration is confusing. Disable_explicit_migrtaion might be better?
+Kazuho: disable_migration is confusing. Disable_explicit_migration might be better?
 
 Roberto: what’s the point here if the client is still doing NAT rebinding.
 
@@ -804,13 +804,13 @@ Ian:
 
 Ekr:
 
-Mike: we could move to a totally different ip address, it s almost garantee to be a different server, don t try. If it s the same ip and port, no problem.
+Mike: we could move to a totally different ip address, it s almost guarantee to be a different server, don t try. If it s the same ip and port, no problem.
 
 Martin D: you can get a stateless reset.
 
 All: no you can’t
 
-Mike: if there is a rebing that happen to get back to the good server, what shoul dbe the server behavior?
+Mike: if there is a rebing that happen to get back to the good server, what should be the server behavior?
 
 K: small set of server. E.g. …. 1 server.
 
@@ -834,7 +834,7 @@ Consensus on that decision.
 
 #### Issue 2348 specify IPv6 flow label for QUIC
 
-Christian: should we push for comfromance with RFC 6437. I.E. adding the requirement that if we are doing IPv6 adding a label for that connection.
+Christian: should we push for conformance with RFC 6437. I.E. adding the requirement that if we are doing IPv6 adding a label for that connection.
 
 david@goog: I’m ok with SHOULD, i m opposed to MUST.
 
@@ -931,7 +931,7 @@ Marten: That’s the case that I ran into, I added a padding byte
 
 Ekr: We could always require one byte all the time.
 
-Christian: If I’m including a stream frame, either it fills packet or it doesnt, if it doesn’t I encode the length
+Christian: If I’m including a stream frame, either it fills packet or it doesn't, if it doesn’t I encode the length
 
 Mark: Do we need to change the spec?
 
@@ -1979,7 +1979,7 @@ Mnot: Bringing back HTTP1 nightmares.
 
 Ian: The main reason is about making easier to fast zero copy implementations.  Most compelling argument against - they aren’t going to use the crappy thing we have now enough.
 
-Mnot: Yeah I see that, but is a nice optimation.  We should do this in another Frame type.
+Mnot: Yeah I see that, but is a nice optimization.  We should do this in another Frame type.
 
 Ian: this should be a different frame type.
 
@@ -2228,7 +2228,7 @@ Mnot: Merge it!
 #### Issue 2371: Assign QPACK error codes?
 https://github.com/quicwg/base-drafts/issues/2371
 
-Mnot: it’s clarical.
+Mnot: it’s clerical.
 
 Alan: They are TBD in the doc, but registry is in HTTP doc.
 
