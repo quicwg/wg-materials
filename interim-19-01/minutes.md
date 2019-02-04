@@ -12,79 +12,79 @@ Afternoon Scribe: Alex Gouaillard
 
 This sheet is the greenest we’ve had since -04, but still slightly concerned that there are some basic stuff that is not yet done.  Not a lot of H3 out there, though it is gaining traction.  Picoquic is now testing NAT rebinding.  If we can focus on test coverage, rather than making further changes to the draft, things are looking “pretty” good.  Martin Duke adjusted the algorithm for the level of “greenness”, so it is now directly proportional to the completion.
 
-Interop planned again for the Prague hackathon. 
+Interop planned again for the Prague hackathon.
 
-After this interop is over, we will move to draft -18, -19 might make draft deadline, but not early enough to make an interop target for Prague.  There was also a small off-line QPACK interop, which seemed to go well. 
+After this interop is over, we will move to draft -18, -19 might make draft deadline, but not early enough to make an interop target for Prague.  There was also a small off-line QPACK interop, which seemed to go well.
 
-Patrick has a build of Firefox that can show iQUIC, would be nice to be able to show something like that rather than terminal.  By Prague it should be working (Ian Swett speaking for Chrome). 
+Patrick has a build of Firefox that can show iQUIC, would be nice to be able to show something like that rather than terminal.  By Prague it should be working (Ian Swett speaking for Chrome).
 
-Christian notes that there was some performance testing results shown yesterday; it might be useful for Prague to have some focus on that.  Lars agreed and said that doing it during the interim as well.  
+Christian notes that there was some performance testing results shown yesterday; it might be useful for Prague to have some focus on that.  Lars agreed and said that doing it during the interim as well.
 
-Martin Duke asked if we should define a set of tests--just put them on a wiki page, and we can add those to the sheet as well, though it gets a bit busy. 
+Martin Duke asked if we should define a set of tests--just put them on a wiki page, and we can add those to the sheet as well, though it gets a bit busy.
 
 Any other issues for the interop?  Hearing none, moved back to logistics.
 
-Site logistics were reviewed.  Note that the vending machine includes soup!  
+Site logistics were reviewed.  Note that the vending machine includes soup!
 
 Reviewing the agenda for the rest of the meeting.  Note that the QUIC issues list approach this time should be driven from the issues list and include all issues.
 
-### Process change discussion.  
+### Process change discussion.
 
-Core change: declare consensus on the TLS and Transport drafts, modulo the open issues.  That is accompanied by raising the bar for a new issue.  Change the process so each draft from -19 represent consensus.  Invariants has already past this process, essentially; we’ve already raised the bar for that.  
+Core change: declare consensus on the TLS and Transport drafts, modulo the open issues.  That is accompanied by raising the bar for a new issue.  Change the process so each draft from -19 represent consensus.  Invariants has already past this process, essentially; we’ve already raised the bar for that.
 
-Ekr commented that there are currently so many open issues that it is difficult to determine which have consensus, which are contested, etc.  Looking for a better way to manage that.  
+Ekr commented that there are currently so many open issues that it is difficult to determine which have consensus, which are contested, etc.  Looking for a better way to manage that.
 
 Mark responded that we are aiming to have a very small set of open design issues, and that they are more clearly described.   Difficult for those reviewing the documents to have a map in their heads of what is still truly open. Will try to note when specific issues are particularly gnarly and need to flag those to the implementers.  (Continued on slide 7, Chair slides).
 
-The onus will shift to those raising a new issue to insure that it is self-describing, atomic, and a meaningful technical issues (no bike shed issues at this point:  style and editorial issues should be very minimal).  The chairs will label issues as “design” if the working group needs to gain consensus on it.  
+The onus will shift to those raising a new issue to insure that it is self-describing, atomic, and a meaningful technical issues (no bike shed issues at this point:  style and editorial issues should be very minimal).  The chairs will label issues as “design” if the working group needs to gain consensus on it.
 
-MT notes that he has done a lot triage, and he would like to have a way to manage some aspects of this.  Conclusion that editors can establish that something is editorial; the chairs will identify those not editorial as design.  Those that don’t meet the bar for right now may be parked as v2.  
+MT notes that he has done a lot triage, and he would like to have a way to manage some aspects of this.  Conclusion that editors can establish that something is editorial; the chairs will identify those not editorial as design.  Those that don’t meet the bar for right now may be parked as v2.
 
-Ekr says the eventual bar that is needed is working group attention vs. has consensus. 
+Ekr says the eventual bar that is needed is working group attention vs. has consensus.
 
 Mark notes that for cases where the working group doesn’t even need to pay attention (previously considered, not well described), this is prejudiced toward closing those.
 
 Clarification:  technical defects are clearly in.  The other category, for technical improvements, is more nuanced; there needs to be some interest shown.  Mark notes that the aim here is to give the implementer community some stability.   Marten asks whether when we open a design issue are we trying to go for minimal changes or are all design spaces on the table?  Mark, don’t want to bind our hands to much, so no options are off the table, but still prejudiced to stability where possible.
 
-David asks how this all gets determined--the answer is the usual IETF process (wg consensus, as judged by chairs).  The upshot is that the editors will generally not close design-level issues; they can close editorial ones.  Aiming for a process similar to the end stage of TLS, but not quite there yet.  
+David asks how this all gets determined--the answer is the usual IETF process (wg consensus, as judged by chairs).  The upshot is that the editors will generally not close design-level issues; they can close editorial ones.  Aiming for a process similar to the end stage of TLS, but not quite there yet.
 
-Mark notes that this isn’t magical, and no one is getting a new powers here; we’re here to get everyone in the same head space, that would allow us to move forward a bit better.  
+Mark notes that this isn’t magical, and no one is getting a new powers here; we’re here to get everyone in the same head space, that would allow us to move forward a bit better.
 
-Ekr asks if we need a separate conversation, maybe at the end of the meeting, on how we get feedback from deployments.   Some of those will be simple (adjustment of defaults, changing ambiguous language), but others will be harder to get described and to triage.  Maybe we can have that conversation during our final planning phase for this meeting? 
+Ekr asks if we need a separate conversation, maybe at the end of the meeting, on how we get feedback from deployments.   Some of those will be simple (adjustment of defaults, changing ambiguous language), but others will be harder to get described and to triage.  Maybe we can have that conversation during our final planning phase for this meeting?
 
-Mark confirms that this approach makes sense to everyone (close or park issues as described above).  
+Mark confirms that this approach makes sense to everyone (close or park issues as described above).
 
-Jana asks if the existing “design issues” get this process.  Basic approach is yes, but to grind through them as quickly as possible during this meeting or after.  
+Jana asks if the existing “design issues” get this process.  Basic approach is yes, but to grind through them as quickly as possible during this meeting or after.
 
-Next question:  do we have consensus to declare that the  -18 drafts of Transport and TLS, modulo their open design issues, are ready to be in this “raising the bar” phase. 
+Next question:  do we have consensus to declare that the  -18 drafts of Transport and TLS, modulo their open design issues, are ready to be in this “raising the bar” phase.
 
-Ekr: if we can agree that there are some issues that are on the agenda to discuss whether they should have been closed or merged, then I’m in favor.  
+Ekr: if we can agree that there are some issues that are on the agenda to discuss whether they should have been closed or merged, then I’m in favor.
 
-MT notes that those are explicitly on the agenda.   
+MT notes that those are explicitly on the agenda.
 
 David asks for clarification on what “interim consensus means”
 
-Mark and others explain that this is partly that they accurately reflect the current state of the working group’s understanding and partly that we are now saying that the editorial job has shifted to reflecting wg consensus rather than speculatively updating.   
+Mark and others explain that this is partly that they accurately reflect the current state of the working group’s understanding and partly that we are now saying that the editorial job has shifted to reflecting wg consensus rather than speculatively updating.
 
-The group then discussed briefly changes that might have occurred without appearing in the change logs, and agreed issues could be raised on that.  
+The group then discussed briefly changes that might have occurred without appearing in the change logs, and agreed issues could be raised on that.
 
-We are just getting a sense of the room now, and we will delay the confirmation on the list in order to give time for re-reading -18.  Given that, is this a good step forward?  People say that this is needed in order to make progress.  
+We are just getting a sense of the room now, and we will delay the confirmation on the list in order to give time for re-reading -18.  Given that, is this a good step forward?  People say that this is needed in order to make progress.
 
-We cannot sustain the rate of changes in our document and expect to get anything shipped in 2019 or maybe ever.  We are currently on issue 2384; that’s a lot of discussion.  The spreadsheet is a pulsing animation of green fading to white and returning; we really need to progress toward steady green.  
+We cannot sustain the rate of changes in our document and expect to get anything shipped in 2019 or maybe ever.  We are currently on issue 2384; that’s a lot of discussion.  The spreadsheet is a pulsing animation of green fading to white and returning; we really need to progress toward steady green.
 
 The group then turned to discuss what other drafts might be ready or when specific drafts (e.g. recovery) were likely to be ready. By Prague we may be able to get some of the higher layer ones stable, but the current ones that need stability are TLS and Transport.  Target date for call on the list is mid-February.
 
-Christian asked if we should have an online Interop event to validate the -18 consensus.  Will be discussed during the planning session at the end. 
+Christian asked if we should have an online Interop event to validate the -18 consensus.  Will be discussed during the planning session at the end.
 
-Jana and Christian make the point that showing interop would be the strongest indication of consensus. 
+Jana and Christian make the point that showing interop would be the strongest indication of consensus.
 
 Martin Duke and Roberto note that getting that done in 2 weeks is unlikely.  Agree that for the mid-February call, only review is required to declare consensus.
 
-Best way forward on drafts where we have not yet declared consensus is to have the WG members exercise appropriate discretion in opening new issues.    
+Best way forward on drafts where we have not yet declared consensus is to have the WG members exercise appropriate discretion in opening new issues.
 
-The chairs set the stage for the need for the speed in reflecting this (8.5 minutes per issue if we want to do them all!).  Hold on to your opinions if you can, unless you have a real need to weigh in.  State preferences quickly and get to the point.  Hypothetical, devil’s advocate discussions should be very limited.  For each, maybe we should gauge the interest in the issue as quickly as possible at the start.  At the end, there will be someone assigned to drive those kept open to conclusions. 
+The chairs set the stage for the need for the speed in reflecting this (8.5 minutes per issue if we want to do them all!).  Hold on to your opinions if you can, unless you have a real need to weigh in.  State preferences quickly and get to the point.  Hypothetical, devil’s advocate discussions should be very limited.  For each, maybe we should gauge the interest in the issue as quickly as possible at the start.  At the end, there will be someone assigned to drive those kept open to conclusions.
 
-The chairs remind folks of how to manage the mics for remote participation.  
+The chairs remind folks of how to manage the mics for remote participation.
 
 Keep in the back of your mind that we may need decisions on some things where there is no reason to pick one over the other--grab the coin and move on, may be the way to.
 
@@ -103,13 +103,13 @@ WG wants to address this.
 
 Ekr is AEADing a lot slower than doing 70-80 AEADs.
 
-If it is, we are now trading off this new facility off the old path.  
-Relative to the client’s ability to do public key operations, this is not an interesting attack from a client perspective.  The worst case scenario is an on-path attacker who knows the connection ID.  
+If it is, we are now trading off this new facility off the old path.
+Relative to the client’s ability to do public key operations, this is not an interesting attack from a client perspective.  The worst case scenario is an on-path attacker who knows the connection ID.
 
-MT suggest we should shift this from MUST to SHOULD, to allow this to be at discretion?  That might break Kazuho’s currently path mtu approach.  Possible approach is to limit this to just limit coalescence in some way (e.g. to a set number of packets, or by encryption level).  Roberto notes that servers are going to do whatever it needs to do when it is under a DDoS attack; we can close this with this understanding.  Ekr agrees.  
+MT suggest we should shift this from MUST to SHOULD, to allow this to be at discretion?  That might break Kazuho’s currently path mtu approach.  Possible approach is to limit this to just limit coalescence in some way (e.g. to a set number of packets, or by encryption level).  Roberto notes that servers are going to do whatever it needs to do when it is under a DDoS attack; we can close this with this understanding.  Ekr agrees.
 
-Marten wonders why his particular solution is not acceptable?  Why not limit to a single decryption level?  Ekr reviews the proposal and agrees that this is acceptable. Mike agreed that if this is a problem we are going to fix, Marten’s fix is okay.  
- 
+Marten wonders why his particular solution is not acceptable?  Why not limit to a single decryption level?  Ekr reviews the proposal and agrees that this is acceptable. Mike agreed that if this is a problem we are going to fix, Marten’s fix is okay.
+
 Martin Seemann will have the token to fix this with a PR.
 
 #### Second issue: #2214
@@ -117,65 +117,65 @@ https://github.com/quicwg/base-drafts/issues/2214
 
 Next issue, also from Marten #2214.
 
-MT reviews the synchronization problem.  The fix is to limit the number key updates to one per round trip, but there is disagreement on what mechanism will enforce this.  
+MT reviews the synchronization problem.  The fix is to limit the number key updates to one per round trip, but there is disagreement on what mechanism will enforce this.
 
-There are two proposals--Kazuho take a bit to indicate “accept a key update”, otherwise a frame that acknowledges a key update.   Reflecting a key update to the peer is a flavor of one.  A third possibility is using the ACK update.  
+There are two proposals--Kazuho take a bit to indicate “accept a key update”, otherwise a frame that acknowledges a key update.   Reflecting a key update to the peer is a flavor of one.  A third possibility is using the ACK update.
 
-Christian says there is no reason to make the key update as fast as possible.  Ian agrees with Christian.  MT what’s the proposal concretely.  
+Christian says there is no reason to make the key update as fast as possible.  Ian agrees with Christian.  MT what’s the proposal concretely.
 
-Victor suggests ask for permission to rotate keys in a frame (DTLS 1.3 style).  
+Victor suggests ask for permission to rotate keys in a frame (DTLS 1.3 style).
 
-Jana asks for a review of Christian’s proposal, and Christian goes through it, stressing that it is a conservative approach.  
+Jana asks for a review of Christian’s proposal, and Christian goes through it, stressing that it is a conservative approach.
 
-Roberto:  it seems that we are agreeing that a key update shorter than one per round trip is out of scope?  General agreement.  
+Roberto:  it seems that we are agreeing that a key update shorter than one per round trip is out of scope?  General agreement.
 
-Kazuho reviews the case of a device coming off and on a network, which would typical cause a key update.  
+Kazuho reviews the case of a device coming off and on a network, which would typical cause a key update.
 
-Ekr notes that he agrees with Christian’s general approach (“don’t be stupid”), but it does need some spec language, so you can define what happens when it does occur after testing.  
+Ekr notes that he agrees with Christian’s general approach (“don’t be stupid”), but it does need some spec language, so you can define what happens when it does occur after testing.
 
 Who cares?  A quick design team: Martin, Ian, Marten, Kazuho, Ekr and Victor.  Include Christian to the best of their ability.
 
 #### Flow control for post-handshake CRYPTO messages #1834
 
-https://github.com/quicwg/base-drafts/issues/1834 
+https://github.com/quicwg/base-drafts/issues/1834
 
-Raised by Victor, asking for a way to bound the buffer.  
+Raised by Victor, asking for a way to bound the buffer.
 
-Ekr asks why the server can’t just through those packets away?  Because you have to throw away whole packets, which may have other data.  
+Ekr asks why the server can’t just through those packets away?  Because you have to throw away whole packets, which may have other data.
 
-EKR agrees with Marten that this can happen, but because it happens before the CFIN.  (Note that this is not related to the EPOCH boundary, despite the current write-up).  
+EKR agrees with Marten that this can happen, but because it happens before the CFIN.  (Note that this is not related to the EPOCH boundary, despite the current write-up).
 
-Robert asks what the proposal is. 
+Robert asks what the proposal is.
 
-Subodh asks why this is different from previous discussion on initial data. 
+Subodh asks why this is different from previous discussion on initial data.
 
-MT notes that there is a time bound there, and that the limitation is that abuse results in a handshake failure.  Also, here there is no limit created by TLS.  
- 
-Subodh notes that the session tickets will process them immediately, and 
- 
-Marten re-reviews what happens when the first byte is missing and why that creates buffering.  
- 
-Kazuho suggested we just pick a buffer bound and stick in the spec, and ekr agrees (e.g. 50kb of buffer).   Note that the state machine for acknowledgement generally doesn’t affect anything else, and this would be a departure from that.  
- 
-Ian, three options: nothing in the spec, there will be random closures; we can state a limit and the closure will not be round; go with flow control.  
- 
-Nick suggests closing the CRYPTO stream if there is abuse of this.  
- 
-Ekr says this is like you are doing TLS on a different connection.  
- 
-MT also likes that suggestion, and it is only used for session tickets.  Recipient keeps a fixed buffer of some size, after the buffer over-flows, it just discards; that means eventually the mis-behaving the client will drop the TLS connection.  This is consonant with the fact that TLS requires in TLS acknowledgement for things that require post-handshake authorization.  
+MT notes that there is a time bound there, and that the limitation is that abuse results in a handshake failure.  Also, here there is no limit created by TLS.
+
+Subodh notes that the session tickets will process them immediately, and
+
+Marten re-reviews what happens when the first byte is missing and why that creates buffering.
+
+Kazuho suggested we just pick a buffer bound and stick in the spec, and ekr agrees (e.g. 50kb of buffer).   Note that the state machine for acknowledgement generally doesn’t affect anything else, and this would be a departure from that.
+
+Ian, three options: nothing in the spec, there will be random closures; we can state a limit and the closure will not be round; go with flow control.
+
+Nick suggests closing the CRYPTO stream if there is abuse of this.
+
+Ekr says this is like you are doing TLS on a different connection.
+
+MT also likes that suggestion, and it is only used for session tickets.  Recipient keeps a fixed buffer of some size, after the buffer over-flows, it just discards; that means eventually the mis-behaving the client will drop the TLS connection.  This is consonant with the fact that TLS requires in TLS acknowledgement for things that require post-handshake authorization.
 
 Discussion of whether the transport acknowledgements of the post-drop packets is confusing
 
-Is the the same as being permissive of broken implementations.  If so that seems bad.  Fixed sized buffer would be better then.  Fixed sized buffer problem is what is the sender’s view of the buffer- there is none.  What stops the sender from sending a ton.  
+Is the the same as being permissive of broken implementations.  If so that seems bad.  Fixed sized buffer would be better then.  Fixed sized buffer problem is what is the sender’s view of the buffer- there is none.  What stops the sender from sending a ton.
 
-MT - still likes the idea of tweaking say you must accept at least this must.  If buffers are overrun then drop packets and kill connection.  
+MT - still likes the idea of tweaking say you must accept at least this must.  If buffers are overrun then drop packets and kill connection.
 
-Subodh - can we just ACK the overflowing buffer.  Ian do not want to implement that.  
+Subodh - can we just ACK the overflowing buffer.  Ian do not want to implement that.
 
-Kazuho - If the buffer overflows then the client must terminate connection - can we make it a should.  
+Kazuho - If the buffer overflows then the client must terminate connection - can we make it a should.
 
-MT - I would allow all: ignore and kill.  Duke - this is just about NSTs so can we just have one in flight.  
+MT - I would allow all: ignore and kill.  Duke - this is just about NSTs so can we just have one in flight.
 
 Ekr - no that would collide the stream and ack processing.  Duke - If I can just refuse data from TLS if stuff in flight ...
 
@@ -197,30 +197,30 @@ Goes through the issue, showing the protocol expansion; base question do we matc
 
 https://github.com/quicwg/base-drafts/issues/2329
 
-Actions to take when Reserved Bits are not Zero.  Issue is that 3 out of 4 garbage packets result in the connection being torn down.  If we are sticking with the current approach, needs a clarification; if we change, need text.  
+Actions to take when Reserved Bits are not Zero.  Issue is that 3 out of 4 garbage packets result in the connection being torn down.  If we are sticking with the current approach, needs a clarification; if we change, need text.
 
-MT prefers option 1, and that’s why it is in the draft.  We have a responsibility to do something about timing side channels. (e.g. CBC padding exploit when they were permitted to be any value).  2 bits is not a lot of leverage, but formally option 1 is the right choice.  
+MT prefers option 1, and that’s why it is in the draft.  We have a responsibility to do something about timing side channels. (e.g. CBC padding exploit when they were permitted to be any value).  2 bits is not a lot of leverage, but formally option 1 is the right choice.
 
-Roberto , David.  Implementations may do something other than this, but the correct guideline in the spec is useful; 1 is the right choice in the spec, but implementations might vary.  
+Roberto , David.  Implementations may do something other than this, but the correct guideline in the spec is useful; 1 is the right choice in the spec, but implementations might vary.
 
-Ekr reviews the current state of header protection for this and notes that this means the CBC padding exploit may not be salient here.  Because of header protection, you know that these are the bits the sender intended, they just are wrong.  That means “Must Be Zero, but ignore” leaves this in a reasonable state, even if it is technically a protocol violation.  
+Ekr reviews the current state of header protection for this and notes that this means the CBC padding exploit may not be salient here.  Because of header protection, you know that these are the bits the sender intended, they just are wrong.  That means “Must Be Zero, but ignore” leaves this in a reasonable state, even if it is technically a protocol violation.
 
-MT the philosophy I was applying, was “if someone deviates from the spec, kill the connection.”  
+MT the philosophy I was applying, was “if someone deviates from the spec, kill the connection.”
 
-David strongly prefer MBZ, must ignore.  If you receive some protocol violations kill this connection makes sense, but for  this it is a no-op.  
+David strongly prefer MBZ, must ignore.  If you receive some protocol violations kill this connection makes sense, but for  this it is a no-op.
 
-Roberto  if you have specified something you should mean it, and you should kill it to promote interoperability.  
+Roberto  if you have specified something you should mean it, and you should kill it to promote interoperability.
 
-Marten was that there was fear it could be used to signal to a middlebox without negotiations.  
+Marten was that there was fear it could be used to signal to a middlebox without negotiations.
 
-Ekr disagrees that this a reasonable concern.  
+Ekr disagrees that this a reasonable concern.
 
-Jana agrees with Roberto, though possibly with a less visceral response. 
-Wants to shutdown the extensibility argument.  
+Jana agrees with Roberto, though possibly with a less visceral response.
+Wants to shutdown the extensibility argument.
 
-Mark:  this seems to be converging on leaving as is?  (ekr asks whether we are defining what the protocol violation result should be?  
+Mark:  this seems to be converging on leaving as is?  (ekr asks whether we are defining what the protocol violation result should be?
 
-MT responds when detected, departure from the spec is a protocol violation and shuts down the connection)  A brief digression into nihilism about RC 2119 results.  
+MT responds when detected, departure from the spec is a protocol violation and shuts down the connection)  A brief digression into nihilism about RC 2119 results.
 
 Consensus for option one, but refreshing the issue to assign an editorial PR task to Martin Duke.
 
@@ -236,39 +236,39 @@ Formal analysis of the protocol would be nice.  It would be, but this is a not a
 
 https://github.com/quicwg/base-drafts/issues/1773
 
-Desire a version negotiation method that limits additional round trips.  Current method requires burning a roundtrip to get to version n+1.  
+Desire a version negotiation method that limits additional round trips.  Current method requires burning a roundtrip to get to version n+1.
 
-David and ekr have discussed and one option is to remove version negotiation, making the VN packet in the invariants a stub.  VN method can be used without downgrade protection, but the real method is coming in v2.  Discussion of what the greasing story would be here; it’s similar, but the client always reconnects on v1.  
+David and ekr have discussed and one option is to remove version negotiation, making the VN packet in the invariants a stub.  VN method can be used without downgrade protection, but the real method is coming in v2.  Discussion of what the greasing story would be here; it’s similar, but the client always reconnects on v1.
 
-Marten reminds folks that we gave 32 bits to VN, so we could have a lot of experimentation, and that if we are not allowing VN until v2, we should claw them back.  
+Marten reminds folks that we gave 32 bits to VN, so we could have a lot of experimentation, and that if we are not allowing VN until v2, we should claw them back.
 
-Jana asks what we should do with experiments, which was partially answered.  Roberto notes that we should have the attitude that v2 will be quick.  He also wants to be sure that the middleboxes cannot drop version 2, to force them to stick v1. 
+Jana asks what we should do with experiments, which was partially answered.  Roberto notes that we should have the attitude that v2 will be quick.  He also wants to be sure that the middleboxes cannot drop version 2, to force them to stick v1.
 
-MT believes that middleboxes will be able to do it.  So, to make v2 have version negotiation, you’d have to use a transport parameter to add it back to v1.  
+MT believes that middleboxes will be able to do it.  So, to make v2 have version negotiation, you’d have to use a transport parameter to add it back to v1.
 
-Eric asks if we are really doing something that has a lower cost in RTTs; it’s worth doing something now.  The one RTT cost is bad enough to avoid it.  
+Eric asks if we are really doing something that has a lower cost in RTTs; it’s worth doing something now.  The one RTT cost is bad enough to avoid it.
 
-Ted asks whether the re-introduction of VN in a transport parameter will again cost an RTT (answer “maybe”  it could, or if the V2 VN version negotiation is based on EKRs, then it might not).  
+Ted asks whether the re-introduction of VN in a transport parameter will again cost an RTT (answer “maybe”  it could, or if the V2 VN version negotiation is based on EKRs, then it might not).
 
-Marten says basically if we have a 0RTT VN design we should do it now, is it clear that this available?  
+Marten says basically if we have a 0RTT VN design we should do it now, is it clear that this available?
 
-Ekr goes through the theory behind his period, which flips the design to be limited to a compatible version negotiation, rather than a big enough change to be incompatible.  If you need an incompatible change, you need a new port or a new scheme, etc. Remember that the server can offer supported versions in its transport parameters.  
+Ekr goes through the theory behind his period, which flips the design to be limited to a compatible version negotiation, rather than a big enough change to be incompatible.  If you need an incompatible change, you need a new port or a new scheme, etc. Remember that the server can offer supported versions in its transport parameters.
 
-Roberto:  returns to the question of experiments, and reminds folks that burning an extra RTT allows you to force experiments even if you control only one endpoint.  
+Roberto:  returns to the question of experiments, and reminds folks that burning an extra RTT allows you to force experiments even if you control only one endpoint.
 
-Kazuho doesn’t like adding RTT to experiments.  Also concerned about the ability to change the initial packet.  
+Kazuho doesn’t like adding RTT to experiments.  Also concerned about the ability to change the initial packet.
 
-Ekr reviews the options is:  nothing, kick the can down the road, do it now.  Christian has a lot sympathy for what Martin is saying; you have to pay a penalty to negotiate update.  We have to deal with up and down and sideways.  
+Ekr reviews the options is:  nothing, kick the can down the road, do it now.  Christian has a lot sympathy for what Martin is saying; you have to pay a penalty to negotiate update.  We have to deal with up and down and sideways.
 
-Subodh, there are other ways to discover v2 is usable. Ted notes that incompatible change may still be needed, and that the fallback (new port, new scheme) is a very high pain to pay.  It may be useful to have the discussion of whether incompatible change is important to us, because they may tell us whether to kick the can down the road. 
+Subodh, there are other ways to discover v2 is usable. Ted notes that incompatible change may still be needed, and that the fallback (new port, new scheme) is a very high pain to pay.  It may be useful to have the discussion of whether incompatible change is important to us, because they may tell us whether to kick the can down the road.
 
-MT notes that there are some possibilities in the PR that forces a RTT when there is an incompatible changes.  Note that this has to be a v1 extension at any point that this gets reintroduced.  Convergence appears to be for kicking the can down a short road, with a rapid v2, but Marten notes that we have had that theory for a bunch of other changes (see multipath etc.), and that getting them all in could be useful.  
+MT notes that there are some possibilities in the PR that forces a RTT when there is an incompatible changes.  Note that this has to be a v1 extension at any point that this gets reintroduced.  Convergence appears to be for kicking the can down a short road, with a rapid v2, but Marten notes that we have had that theory for a bunch of other changes (see multipath etc.), and that getting them all in could be useful.
 
-Martin Duke asks if we can keep the current Transport draft and then have a new document on the side?  
+Martin Duke asks if we can keep the current Transport draft and then have a new document on the side?
 
-Martin notes that the other server upgrade discussion in BKK came to a different conclusion for that upgrade question.  Jana notes this applies to other protocols than HTTP.  
+Martin notes that the other server upgrade discussion in BKK came to a different conclusion for that upgrade question.  Jana notes this applies to other protocols than HTTP.
 
-Roberto none of this negotiation matters until we have v1.  
+Roberto none of this negotiation matters until we have v1.
 
 Proposal is that David’s PR is the basis.  A small design team on the other approach is ekr, David, Ted, Marten Kazuho, MT,
 
@@ -280,23 +280,23 @@ Is this OBE?  Yes, MT will record.
 
 ### Connection ID/Migration
 
-#### Discuss Requirement that connection IDs not be correlatable. 
+#### Discuss Requirement that connection IDs not be correlatable.
 
 https://github.com/quicwg/base-drafts/issues/2084
 
-Half editorial;half other.  This rules out a number of designs for connection IDs, e.g. consistent hashing for first packet (so that you get them in the same bucket every time).  That may be fine, but is it what we want? 
+Half editorial;half other.  This rules out a number of designs for connection IDs, e.g. consistent hashing for first packet (so that you get them in the same bucket every time).  That may be fine, but is it what we want?
 
-MT whether it would be sufficient to list a couple of options and describe their properties?  This isn’t observable, so it is very hard to penalize bad connection ID generation.  
+MT whether it would be sufficient to list a couple of options and describe their properties?  This isn’t observable, so it is very hard to penalize bad connection ID generation.
 
-Roberto; we’re all in agreement that MUST NOT is not observable and so might need to be downgrade--not agreed.  
+Roberto; we’re all in agreement that MUST NOT is not observable and so might need to be downgrade--not agreed.
 
-Ian if the connection ID is no more correlatable than the destination IP, then there is no issue here--MT, but anything we do must be strictly worse than this. 
+Ian if the connection ID is no more correlatable than the destination IP, then there is no issue here--MT, but anything we do must be strictly worse than this.
 
-Ekr notes doesn’t know what we are trying to achieve. 
+Ekr notes doesn’t know what we are trying to achieve.
 
-Christian suggests we describe the attack in the security section, and give a forward pointer to that description, so that implementers know what the risks are. 
+Christian suggests we describe the attack in the security section, and give a forward pointer to that description, so that implementers know what the risks are.
 
-Jana agrees with Christian.  
+Jana agrees with Christian.
 
 Assigned to editors to describe the attack.  That may include removing the RFC 2119 language.
 
@@ -310,17 +310,17 @@ Duplicate, moving to the next one to discuss.
 
 https://github.com/quicwg/base-drafts/issues/2145
 
-Is there a way to force the peer to change their connection ID?  
+Is there a way to force the peer to change their connection ID?
 
-MT notes that the current one is change the port. Essentially, this is change per path, and a port change is considered a path change.  Since the real reason for this is avoiding linkability, we shouldn’t use it just because we have a mechanism.  
+MT notes that the current one is change the port. Essentially, this is change per path, and a port change is considered a path change.  Since the real reason for this is avoiding linkability, we shouldn’t use it just because we have a mechanism.
 
-Eric and Kazuho discuss whether there is a big loss in losing the ability to run multiple connections on a single 5-tuple using different connection IDs and rotate both CIDs at the same time.  
+Eric and Kazuho discuss whether there is a big loss in losing the ability to run multiple connections on a single 5-tuple using different connection IDs and rotate both CIDs at the same time.
 
-Eric agrees that this could be valuable, but probably something we can lose, Kazuho points out you can change ports and force such a change.  This means that the connection ID doesn’t change on the other side change, but do change on the path change.  
+Eric agrees that this could be valuable, but probably something we can lose, Kazuho points out you can change ports and force such a change.  This means that the connection ID doesn’t change on the other side change, but do change on the path change.
 
-MT has a PR that does just this.  We can then move on to the other question.  
+MT has a PR that does just this.  We can then move on to the other question.
 
-#### Why are we bothering to number CIDs? 
+#### Why are we bothering to number CIDs?
 
 https://github.com/quicwg/base-drafts/issues/2159
 
@@ -336,28 +336,28 @@ Trying to avoid having someone be able to attack a single server.  Note that the
 
 https://github.com/quicwg/base-drafts/issues/2143
 
-In this case the attacker causes data to go to the wrong address; the current defense is to probe both paths when you see migration, and not migrating if the old path responds.   
+In this case the attacker causes data to go to the wrong address; the current defense is to probe both paths when you see migration, and not migrating if the old path responds.
 
-Eric--this is explicitly an on path attacker, and this is the case in which path validation will eventually fail.  During the time it takes to prove that the attacker isn’t the real endpoint (the path validation timeout), the wrong path is used.  
+Eric--this is explicitly an on path attacker, and this is the case in which path validation will eventually fail.  During the time it takes to prove that the attacker isn’t the real endpoint (the path validation timeout), the wrong path is used.
 
-Roberto notes that multipath TCP had a similar issue, which allowed an attacker to force the use of a path that had a more capable of adversary.  There are two options to fix this; signal intent or don’t send packets until you get confirmation on the new path.  Spamming both paths during this period might be a mitigation here.  
+Roberto notes that multipath TCP had a similar issue, which allowed an attacker to force the use of a path that had a more capable of adversary.  There are two options to fix this; signal intent or don’t send packets until you get confirmation on the new path.  Spamming both paths during this period might be a mitigation here.
 
-But ekr wants to see a strong description of the security properties required.  NAT can be a attacker in this scenario.  Probing both paths may be required here because of the NAT rebinding.  1 RTO not 3 RTO because of the probing.  
+But ekr wants to see a strong description of the security properties required.  NAT can be a attacker in this scenario.  Probing both paths may be required here because of the NAT rebinding.  1 RTO not 3 RTO because of the probing.
 
 David thinks it more important that we work through NATs than coming something that improves against this attack but does not enable NAT traversal.  Close, no action, but EKR will write a description of the principles for the on-path attacker defense we intend.
 
-Roberto points out that what we have now isn’t as good as TCP, but TCP also doesn’t survive NAT rebinding, so this may be a base-level tradeoff.  
+Roberto points out that what we have now isn’t as good as TCP, but TCP also doesn’t survive NAT rebinding, so this may be a base-level tradeoff.
 
-Martin believes that the section 9 should shift from SHOULD to MUST.  
+Martin believes that the section 9 should shift from SHOULD to MUST.
 
-Robert describes why the current mechanism is worse.  One way to bring in the new mechanism would be to insist on probes but exempt something like port (since the common NAT case will be thus covered).  
+Robert describes why the current mechanism is worse.  One way to bring in the new mechanism would be to insist on probes but exempt something like port (since the common NAT case will be thus covered).
 
 Christian notes that on-path attackers who can affect the route (e.g. routers, not observers) are already capable of taking over anything.
 
 (Lunch break)
 new scribe - Dr Alex G. (CoSMo)
 
-eric@apple - strict(er) proposal: do not consider port and address separately. If any change, you MUST re-validate. 
+eric@apple - strict(er) proposal: do not consider port and address separately. If any change, you MUST re-validate.
 
 Kazuho - We might want endpoint to send several path_challenge.
 
@@ -366,11 +366,11 @@ Jana: we should not differentiate IP and port: …
 
 Martin D: fine with that
 Even if we were to send data before validation finishes, we would still wait for validation to happen.
-Christian: the IP address is not protected by either encryption or authentication. Because of that, we resort to heuristics. I think that what we have today is good. We could do something about ipv6 (since it s then less likely to have a NAT and then it would have some interesting properties). 
+Christian: the IP address is not protected by either encryption or authentication. Because of that, we resort to heuristics. I think that what we have today is good. We could do something about ipv6 (since it s then less likely to have a NAT and then it would have some interesting properties).
 
 Eric: requiring validation before going to the new path remove the heuristic about believing people can […] you or not. It’s now deterministic in that regard. Agreed, there are still some heuristic left.
 
-Martin (moz): what’s the cost then? 
+Martin (moz): what’s the cost then?
 
 Christian: the connection slows down. I do not believe you can have an attack whithout effect. In the case of a NAt rebinding we also slow down anyway.
 
@@ -379,7 +379,7 @@ Christian: the connection slows down. I do not believe you can have an attack wh
 Martin: could you structure it as a MUST … UNLESS?
 Port number only change?
 
-…@fastly: how much a problem is it? 
+…@fastly: how much a problem is it?
 
 ted@goog: ipv6: tcp bindings and udp bindings in NAt are different, and ipv6 changes are a strong signal. However, I’m not sure i understand what we want to optimize. We want to protect ourselves to a reasonable degree, but that “reasonable” seems to be all over the place. Especially NAT rebinding happen very often, while the attacks require such a sophistication that their frequencies should be very low in contrast.
 
@@ -444,30 +444,30 @@ Martin duke: do you need a separate timer then?
 
 All: we already do.
 
-Ekr: by default, things are ack’ed. Let’s define the criteria for not ack’ing and check that those messages meet the criteria. 
+Ekr: by default, things are ack’ed. Let’s define the criteria for not ack’ing and check that those messages meet the criteria.
 
-Rui: 
+Rui:
 
 Ian:  Making them ack-eliciting has certain impacts on the congestion controller.  We perhaps don’t want those impacts, and some of them are hard to reason about.
 
 <scribe lost>
-  
-Ekr: when you’re asking path validation, you send the challenge on the old path but might get 
 
-Christian: you don’t want to repeat the path_challenge on the main path because you lost it. 
+Ekr: when you’re asking path validation, you send the challenge on the old path but might get
+
+Christian: you don’t want to repeat the path_challenge on the main path because you lost it.
 
 Roberto: you need to make sure everything is accounted for as far as it comes to congestion control. If it takes ACK’ing to get the congestion control right, so be it.
 
 Jana: there is an assumption that the path_response comes on the same (old) path as the path_challenge. ACK can cause confusion…
 
 Ekr: if the path frames are bundled with other frames, then there will be acks regardless. Either one path is valid, or both are.
-If i understand Jana’s point correctly, 
+If i understand Jana’s point correctly,
 
-Roberto: is it good enough the way it is? 
+Roberto: is it good enough the way it is?
 
 Ian: close with no action, re-open if new data.
 
-Mark: ACK 
+Mark: ACK
 
 Mike: the draft is not clear, and we should state one way or the other.
 
@@ -489,19 +489,19 @@ Marten: problem: there might be some implementation which keep connection ID for
 
 Mark: call for the room.  A few strongly for, more mildly for, some mildly opposed, no one strongly opposed
 
-Martin @moz: it is a fixed number. 
+Martin @moz: it is a fixed number.
 
 Christian: there are other resources that could become eligible for such magic number e.g. token. I’d be in favor or keeping the spec as-is.
 
 Ian: it’s not flow control. I believe it’s trivial. I’m in favor of it , because it’s trivial, and the number proposed for the max is way above what i need which is 2.
 
-Ekr: i’m slightly against. I find the semantics are not clear. 
+Ekr: i’m slightly against. I find the semantics are not clear.
 
-K : if it’s not an error to go beyond the max (i.e. if the number is advisory), then i don’t see any reason against. 
+K : if it’s not an error to go beyond the max (i.e. if the number is advisory), then i don’t see any reason against.
 
 Eric, ian, …
 
-Ekr: I think that it not being an error is a problem. You can be stuck at the limit. 
+Ekr: I think that it not being an error is a problem. You can be stuck at the limit.
 
 Roberto: is it good enough the way it is? Do we have to figure this out today?
 
@@ -527,7 +527,7 @@ Christian: having an error for this should be in the main spec, and not in the l
 
 Mark: is it an issue people have strong feelings about? Is it going to be onerous or dangerous for us?
 
-Ekr: typically the reason for having a separate new error code, it’s because the client will act on it. 
+Ekr: typically the reason for having a separate new error code, it’s because the client will act on it.
 
 Roberto: i would love to hear from implementor especially, whether or not it would be too hard, or easy to do, and everybody will understand the protocol violation meaning the connection will go bye-bye.
 
@@ -539,7 +539,7 @@ Marten: we had already a discussion about error codes. We removed several. We sa
 
 david@goog: do we care?
 
-Christian: i kind of care because I don’t want to give more information in that specific case. The ACK’ing could be feeding an attack. 
+Christian: i kind of care because I don’t want to give more information in that specific case. The ACK’ing could be feeding an attack.
 
 Mark: would you be more comfortable with not being required to generate it?
 Several people shaking their head “no”.
@@ -552,7 +552,7 @@ Mark call for the room. Decide then to close it. Martin (@moz) to wrap this.
 
 #### Issue 1989
 
-K: I like this issue. It’s useful for other issues. 
+K: I like this issue. It’s useful for other issues.
 Is frame type really useful?
 
 Ian: i agree with marten, it’s kind of useless and annoying.
@@ -565,7 +565,7 @@ Mark: can we close this issue with no action.
 
 Consensus to close with no action.
 
-#### Issue 1990 encoding of connection_close reason phrases. 
+#### Issue 1990 encoding of connection_close reason phrases.
 
 Lars: for the protocol there is nothing to:
 
@@ -585,7 +585,7 @@ K: Sometimes you are not aware of the highest level available, either locally or
 
 david@goog: propose the highest when you know, and treat the rest separately. I believe they are separate issues.
 
-Roberto: we don’t want random elements to react. 
+Roberto: we don’t want random elements to react.
 
 Jana: we want the right peer to be able to read it though.
 
@@ -632,9 +632,9 @@ Christian: when moving from wifi to 3G the delays can be very different.
 
 Jana: I was just separating the concept of dead path and the concept of dead connection.
 
-Christian: it looks like this is an implementation detail, not a standard feature. 
+Christian: it looks like this is an implementation detail, not a standard feature.
 
-Jana: this is definitely a local implementation issue, but this is one that all implementation will have, so we could have advisory rules in the standard. 
+Jana: this is definitely a local implementation issue, but this is one that all implementation will have, so we could have advisory rules in the standard.
 
 Roberto: it does not seems to be part of the protocol per say, since it does not interoperate. We should pu tit in another spec, e.g. “best practice” ?
 
@@ -642,11 +642,11 @@ Mark: can we write down what we just say, and keep it for later.
 
 Ian: I’d like to see something about that in “transport”
 
-Mark: everybody ok with that? 
+Mark: everybody ok with that?
 
-Martin: I have a little bit of text. 
+Martin: I have a little bit of text.
 
-Mark: I think we can move on then. 
+Mark: I think we can move on then.
 
 #### Issue 2342 spoofed connection migration as a DoS vector
 
@@ -672,9 +672,9 @@ Kazuho: migration is disabled, …
 
 Ian: is it going to the same point? Client should not make migration.
 
-Martin D: i m confused about the difference between net rebinding and migration. 
+Martin D: i m confused about the difference between net rebinding and migration.
 
-Ekr: trying to understand what we are trying to achieve. 
+Ekr: trying to understand what we are trying to achieve.
 
 Jana: ..
 
@@ -691,8 +691,8 @@ Kazuho: disable_migration is confusing. Disable_explicit_migrtaion might be bett
 
 Roberto: what’s the point here if the client is still doing NAT rebinding.
 
-eric@apple: reason for sending disable_migration were: my infra can’t, or I don’t want to. It looks 
-]s                                                                            
+eric@apple: reason for sending disable_migration were: my infra can’t, or I don’t want to. It looks
+]s
 
 Mark: this issue i straightforward, but there is a problem about semantics.
 
@@ -700,11 +700,11 @@ Martin T: the text is not bad. We should all read it again.
 
 Roberto: you cannot drop all the packets, you need to do a path change.
 
-Ian: 
+Ian:
 
 <scribe approaching brain dead state>
 
-Ekr: 
+Ekr:
 
 Mike: we could move to a totally different ip address, it s almost garantee to be a different server, don t try. If it s the same ip and port, no problem.
 
@@ -714,11 +714,11 @@ All: no you can’t
 
 Mike: if there is a rebing that happen to get back to the good server, what shoul dbe the server behavior?
 
-K: small set of server. E.g. …. 1 server. 
+K: small set of server. E.g. …. 1 server.
 
 Eric@apple: server should give a good faith effort. “You should not do it, but if you do and it work, so be it”.
 
-Roberto: I cannot think of a strategy that I would implement and be a good strategy. I could induce long answer time, longer than usual. Is there another trusted domain I could use? 
+Roberto: I cannot think of a strategy that I would implement and be a good strategy. I could induce long answer time, longer than usual. Is there another trusted domain I could use?
 
 Jana: you should get a stateless reset.
 
@@ -774,11 +774,11 @@ Mike: we said this morning that it was a non-goal.
 
 Martin T: agreed, but if we speak about closing the path it’s different.
 
-Roberto: we did not want the path be able to observe that we are closing the path to avoid OSSification. 
+Roberto: we did not want the path be able to observe that we are closing the path to avoid OSSification.
 
 Mark: martin, do you really want an unspoofable thing.
 
-Martin D: i won’t die on the sword for that in the scope of V1. The incentive is to encourage boxes vendors not to time out NAT bindings so quickly. 
+Martin D: i won’t die on the sword for that in the scope of V1. The incentive is to encourage boxes vendors not to time out NAT bindings so quickly.
 
 Roberto: there are better things to do than this.
 
@@ -798,21 +798,21 @@ Morning Scribe: Eric Kinnear
 
 #### Issue 2299
 
-https://github.com/quicwg/base-drafts/issues/2299 
+https://github.com/quicwg/base-drafts/issues/2299
 
-Marten: Can we just close this with no action? 
+Marten: Can we just close this with no action?
 
-Mark: Is everyone happy closing this with no further action? 
+Mark: Is everyone happy closing this with no further action?
 
 Ekr: This reopens whether or not you should enforce minimum encoding. If nobody cares about enforcing minimum encoding then we can just close
 
-Marten: In spec? 
+Marten: In spec?
 
 Martin T: Only for frame types right now
 
-Ekr: I’m okay with requiring that people minimally encode. I don’t want to require checking minimum encoding. 
+Ekr: I’m okay with requiring that people minimally encode. I don’t want to require checking minimum encoding.
 
-Mark: Status quo seems acceptable? 
+Mark: Status quo seems acceptable?
 
 Several people: Yes
 
@@ -821,82 +821,82 @@ Several people: Yes
 
 https://github.com/quicwg/base-drafts/issues/2049
 
-David: Can’t you put a bit of padding at the start? 
+David: Can’t you put a bit of padding at the start?
 
 Marten: We have a requirement for protection that it’s at least 4 bytes
 
-MT: If you have a short packet number and a short packet there is a case where a DATA frame that goes to the end of the packet can produce a packet that is too short by one byte. 
+MT: If you have a short packet number and a short packet there is a case where a DATA frame that goes to the end of the packet can produce a packet that is too short by one byte.
 
 David: So just use one byte of padding
 
 Marten: That’s the case that I ran into, I added a padding byte
 
-Ekr: We could always require one byte all the time. 
+Ekr: We could always require one byte all the time.
 
 Christian: If I’m including a stream frame, either it fills packet or it doesnt, if it doesn’t I encode the length
 
-Mark: Do we need to change the spec? 
+Mark: Do we need to change the spec?
 
 Marten: Maybe editorially?
 
-MT: Make people aware of this very small edge case? 
+MT: Make people aware of this very small edge case?
 
 Mark: Can go editorial or you can send PR
 
-Marten: I’m happy with it going editorial 
+Marten: I’m happy with it going editorial
 
 Marten might send PR, otherwise up to editors to close or change
 
 #### Issue 2344
 
-https://github.com/quicwg/base-drafts/issues/2344 
+https://github.com/quicwg/base-drafts/issues/2344
 
-MT: We had a PR that does just this, Marten said why not flow control and all these other things. RESET_STREAM is the only that increases the risk, the rest of them we’re fine apart from this. 
+MT: We had a PR that does just this, Marten said why not flow control and all these other things. RESET_STREAM is the only that increases the risk, the rest of them we’re fine apart from this.
 
 Kazuho: My argument was about enforcing the stream limit <missed rest>
 
 MT: Argument here is mostly around denial of service, not sure I understand/agree, seemed like part of the risk of taking 0-RTT
-Kazuho: You cannot allow all frames for 0-RTT: CRYPTO, ACK, and STREAM frames have different rules. Why allow other frames that are never used in 0-RTT. 
+Kazuho: You cannot allow all frames for 0-RTT: CRYPTO, ACK, and STREAM frames have different rules. Why allow other frames that are never used in 0-RTT.
 
-Marten: Which frames? 
+Marten: Which frames?
 
 Kazuho: NEW_CONNECTION_ID, for one
 
-Ekr: The way we got here was what’s safe, it may be the case that other things are safe. It’s not entirely clear they’re safe, many of them aren’t useful. We’ve already got rules about other epochs, why would it be simpler to allow 
-more in 0-RTT. 
+Ekr: The way we got here was what’s safe, it may be the case that other things are safe. It’s not entirely clear they’re safe, many of them aren’t useful. We’ve already got rules about other epochs, why would it be simpler to allow
+more in 0-RTT.
 
 MT: Reset and stop sending would operate like normal and that makes things simpler
 
-Roberto: Two things. (1) What is the minimum set of stuff in 0-RTT for it to be useful? I think we should do that and only that. (2) If it doesn’t make protocol worse, can we just not do it? 
+Roberto: Two things. (1) What is the minimum set of stuff in 0-RTT for it to be useful? I think we should do that and only that. (2) If it doesn’t make protocol worse, can we just not do it?
 
-Kazuho: We should allow max stream count, max data, things that flow control. We don’t need to allow other frames like NEW_CONNECTION_ID, etc. there will be frames that don’t need to be sent and it’s a waste of time to analyze security properties of sending them. 
+Kazuho: We should allow max stream count, max data, things that flow control. We don’t need to allow other frames like NEW_CONNECTION_ID, etc. there will be frames that don’t need to be sent and it’s a waste of time to analyze security properties of sending them.
 
-Ian: If 0-RTT is sent by the client, and client just sent TPs for flow control windows and such, why do we need flow control messages? 
-Reset stream makes sense, but rest of them? 
+Ian: If 0-RTT is sent by the client, and client just sent TPs for flow control windows and such, why do we need flow control messages?
+Reset stream makes sense, but rest of them?
 
-Jana: You might want to send initial small values and increase for specific streams. 
+Jana: You might want to send initial small values and increase for specific streams.
 
 MT: That’s what Firefox does now
 
-Marten: There are frames that could be useful if you think about it, we used to think about flow control, it makes sense if you’re expecting a large download. New connection id you might want to supply so the server can switch immediately after the handshake. 
+Marten: There are frames that could be useful if you think about it, we used to think about flow control, it makes sense if you’re expecting a large download. New connection id you might want to supply so the server can switch immediately after the handshake.
 
 Kazuho: By time handshake is complete, client should be sending 1-RTT.
 
-Mike: Server will have been sending 1-RTT packets, only after handshake completes on the client can it send 1-RTT packets. 
+Mike: Server will have been sending 1-RTT packets, only after handshake completes on the client can it send 1-RTT packets.
 
-Kazuho: Client can send 1-RTT with client finished, handshake completes when ack of client finished is received. 
+Kazuho: Client can send 1-RTT with client finished, handshake completes when ack of client finished is received.
 
 MT: Let’s discuss handshake part later
 
 MT: My original issue here was about the other frames, I couldn’t see a reason not to do some other frames
 
-Kazuho: Path challenge? 
+Kazuho: Path challenge?
 
-MT: If we can make a decision on path challenge ones, we can draw the line at the stream related ones. 
+MT: If we can make a decision on path challenge ones, we can draw the line at the stream related ones.
 
-Ekr: Are we going to be able to resolve this today? Could we just keep list or have someone go sort it out? 
+Ekr: Are we going to be able to resolve this today? Could we just keep list or have someone go sort it out?
 
-MT: Path challenge Jana? 
+MT: Path challenge Jana?
 
 Jana: Path that you’re doing handshake on, you’re doing validation there
 
@@ -914,13 +914,13 @@ MT: That’s the analysis that I did
 
 Mike: We don’t have any frames that do that except for data, we should probably specify the same requirement as TLS, but I don’t see why any frame would be harmful. We need to decide if our standard is minimum we need or minimum that is safe
 
-Ekr: Do we agree no CRYPTO? 
+Ekr: Do we agree no CRYPTO?
 
 Mike: Sure
 
 MT: No use for it
 
-Jana: Proposal: Minimum set that we know we need and know are safe, include those now. As implementations progress if there are others, do the analysis separately per frame in the future. 
+Jana: Proposal: Minimum set that we know we need and know are safe, include those now. As implementations progress if there are others, do the analysis separately per frame in the future.
 
 Mark: Applying that principle to that issue, we have a minimal set and this is the issue for reset stream and flow control
 
@@ -933,19 +933,19 @@ Kazuho: And extensions
 
 MT: If we do this, extensions need to solve this problem for their extension
 
-Mike: Proposal: Prohibit CRYPTO and include others as needed. 
+Mike: Proposal: Prohibit CRYPTO and include others as needed.
 
 Jana: Oh sure
 
-Ian: We’re pretty close to a default allow and prohibit list 
+Ian: We’re pretty close to a default allow and prohibit list
 
-Roberto: Allowing server to optionally accept something and having some servers do different behaviors is not great. Let’s do minimal set that we accept and everything else reject. If we want something more do it in v2. 
+Roberto: Allowing server to optionally accept something and having some servers do different behaviors is not great. Let’s do minimal set that we accept and everything else reject. If we want something more do it in v2.
 
 Mark: v1 and HTTP, we’re currently focused on minimal set, let’s make sure we keep that in mind here
 
-Kazuho: 0-RTT packets can be sent at a much higher rate because you can just copy those packets, server cluster cannot reject all the copies because they don’t have a single hashmap for checking if ticket has been reused. For example, if we allow NEW_CONNECTION_ID in 0-RTT packets, a server implementer is required to handle connection IDs arriving at a much higher rate rather than 1-RTT packets where we know the client is legit. 
+Kazuho: 0-RTT packets can be sent at a much higher rate because you can just copy those packets, server cluster cannot reject all the copies because they don’t have a single hashmap for checking if ticket has been reused. For example, if we allow NEW_CONNECTION_ID in 0-RTT packets, a server implementer is required to handle connection IDs arriving at a much higher rate rather than 1-RTT packets where we know the client is legit.
 
-Jana: Clarification, suggesting to *not* allow those? 
+Jana: Clarification, suggesting to *not* allow those?
 
 Kazuho: Yes
 
@@ -959,11 +959,11 @@ Mark: I think that’s the direction we’re going in. Martin, please restate pr
 
 Proposal:
 
-MT: Limit to stuff we know we need. Leaves only the five mentioned above (CONNECTION_CLOSE, NEW_CONNECTION_ID, PATH_CHALLENGE, PATH_RESPONSE, PING) out for the moment, do analysis for each one when we know we need it. 
-Allow STREAM, RESET_STREAM, STOP_SENDING, MAX_DATA, MAX_STREAM_DATA, MAX_STREAM_ID, DATA_BLOCKED, STREAM_DATA_BLOCKED, STREAM_ID_BLOCKED, PADDING. 
+MT: Limit to stuff we know we need. Leaves only the five mentioned above (CONNECTION_CLOSE, NEW_CONNECTION_ID, PATH_CHALLENGE, PATH_RESPONSE, PING) out for the moment, do analysis for each one when we know we need it.
+Allow STREAM, RESET_STREAM, STOP_SENDING, MAX_DATA, MAX_STREAM_DATA, MAX_STREAM_ID, DATA_BLOCKED, STREAM_DATA_BLOCKED, STREAM_ID_BLOCKED, PADDING.
 ACK, CRYPTO, NEW_TOKEN not allowed.
 
-Ian: These are things that are useful, not things we need. 
+Ian: These are things that are useful, not things we need.
 
 MT: Sure
 
@@ -973,9 +973,9 @@ MT: Reset stream is allowed
 
 Jana: People are thinking about this in two ways
 
-Ekr: Seems like we have a set of frames that are permitted and rest forbidden. Is this adding new things that are permitted? 
+Ekr: Seems like we have a set of frames that are permitted and rest forbidden. Is this adding new things that are permitted?
 
-MT: Yes, typing in now. 
+MT: Yes, typing in now.
 
 Marten: The list is really small, there’s obviously no security impact of PING, I already made the case for NEW_CONNECTION_ID, CONNECTION_CLOSE can be useful. Path challenge/response are the only ones left
 
@@ -989,9 +989,9 @@ Jana: Does allow mean everything else prohibited
 
 MT: Yes everything else prohibited
 
-Ian: Objection. Seems weird to allow half and not other ones. But also don’t  want to keep talking about it. 
+Ian: Objection. Seems weird to allow half and not other ones. But also don’t  want to keep talking about it.
 
-Ekr: Yeah this seems like no principles at all 
+Ekr: Yeah this seems like no principles at all
 
 MT: PR went with principle of just allow everything
 
@@ -1001,47 +1001,47 @@ Christian: Not comfortable with adding unnecessary things like MAX_STREAM_DATA, 
 
 Martin D: All of 0-RTT is not necessary
 
-<multiple talking> 
+<multiple talking>
 
-Roberto: For QUIC to succeed, has to be enough better than TCP to be worth the cost. 0-RTT is a huge benefit, getting streams in first packet are absolutely necessary, we might be having slightly different definitions of necessary here. Are we all in agreement that 0-RTT stuff is necessary here? 
+Roberto: For QUIC to succeed, has to be enough better than TCP to be worth the cost. 0-RTT is a huge benefit, getting streams in first packet are absolutely necessary, we might be having slightly different definitions of necessary here. Are we all in agreement that 0-RTT stuff is necessary here?
 
 Mark: I see a whole lot of nodding heads
 
-Ian: I was going to say I would rather prefer that we prohibit ACK, CRYPTO, NEW_TOKEN and leave everything else. Or just don’t do anything and just move on. I think the middle ground is really weird. 
+Ian: I was going to say I would rather prefer that we prohibit ACK, CRYPTO, NEW_TOKEN and leave everything else. Or just don’t do anything and just move on. I think the middle ground is really weird.
 
-MT: I did some analysis and think the new ones in this PR are safe. I know Kazuho disagrees and I disagree with that, but I think we’re going to have to table this. 
+MT: I did some analysis and think the new ones in this PR are safe. I know Kazuho disagrees and I disagree with that, but I think we’re going to have to table this.
 
-Martin D: Meaningfully latency reducing is the necessary bar here. I agree with what we’re doing with this set. 
+Martin D: Meaningfully latency reducing is the necessary bar here. I agree with what we’re doing with this set.
 
 Rui: I think PADDING should be allowed as well
 
 MT: It already is, I need to add it to this list
 
-Ekr: What would be awkward if we didn’t take the new ones? 
+Ekr: What would be awkward if we didn’t take the new ones?
 
 MT: Firefox current behavior opens up flow control immediately.
 
-Ekr: Need to walk me through that. 
+Ekr: Need to walk me through that.
 
-Jana: I was going to suggest that we can do that, it’s not lack of principle, just a different principle. Seems like people aren’t sure how they all feel about these frames. 
+Jana: I was going to suggest that we can do that, it’s not lack of principle, just a different principle. Seems like people aren’t sure how they all feel about these frames.
 
-Kazuho: I wanted to make point that if you allow more streams then rules about how to handle stream frames are different since FC limits are different. I don’t buy that allowing more frames gives you more consistency. 
+Kazuho: I wanted to make point that if you allow more streams then rules about how to handle stream frames are different since FC limits are different. I don’t buy that allowing more frames gives you more consistency.
 
 Martin D: I want to withdraw comment that CONNECTION_CLOSE in initial is not useful, there is a need for it
 
-Eric: Can we split this into principle acceptance separate from taking the new frames? 
+Eric: Can we split this into principle acceptance separate from taking the new frames?
 
-MT: Can we do this later once people can think about it? 
+MT: Can we do this later once people can think about it?
 
-<Coming back to this later> 
+<Coming back to this later>
 
 #### Issue 2360
 
 https://github.com/quicwg/base-drafts/issues/2360
 
-MT: Related to discussion about what can go in 0-RTT. When someone is sending 0-RTT they shouldn’t be reading 1-RTT. If you’re reading 1-RTT you should have sent the rest of the handshake. This suggests that you prohibit increasing flow control, makes it a protocol violation to use those flow control increases. 
+MT: Related to discussion about what can go in 0-RTT. When someone is sending 0-RTT they shouldn’t be reading 1-RTT. If you’re reading 1-RTT you should have sent the rest of the handshake. This suggests that you prohibit increasing flow control, makes it a protocol violation to use those flow control increases.
 
-Ian: How to enforce? 
+Ian: How to enforce?
 
 MT: Server can say this is a packet that exceeds what was in TPs
 
@@ -1055,15 +1055,15 @@ Kazuho: Unless we take this we’re relaxing requirements from TLS 1.3
 
 Ian: Could we just say once you send a 1-RTT packet, then no larger can be sent in 0-RTT
 
-Ekr: This is somewhat different, if you’re given a flow control window of 50 bytes for 0-RTT, but 1000 for 1-RTT, you could use that credit in 0-RTT. Say don’t do that, server can enforce or not as it pleases. 
+Ekr: This is somewhat different, if you’re given a flow control window of 50 bytes for 0-RTT, but 1000 for 1-RTT, you could use that credit in 0-RTT. Say don’t do that, server can enforce or not as it pleases.
 
 Marten: I don’t see how this is equivalent to max early data in TLS
 
 MT: M.e.d. Comes from previous connection
 
-Marten: For performance reasons you may want to set high limits, for security send a smaller value. 
+Marten: For performance reasons you may want to set high limits, for security send a smaller value.
 
-Ekr: Client can only get here if already consumed entire server flow including finish, so no reason not to send in 1-RTT. 
+Ekr: Client can only get here if already consumed entire server flow including finish, so no reason not to send in 1-RTT.
 
 Jana: If we don’t require server to enforce it, then we’re weakening requirement on client
 
@@ -1078,36 +1078,36 @@ Ekr: No way to increase 0-RTT flow control window, doesn’t strike me as that h
 
 Kazuho: Can apply this check, I don’t think we need to enforce, but need to allow servers to enforce it
 
-Ekr: We do require servers to enforce flow control violations. Why require that? Should that push us towards requiring this? 
+Ekr: We do require servers to enforce flow control violations. Why require that? Should that push us towards requiring this?
 
-MT: Just an additional check, I would assume we would have special handling for data in 0-RTT and check against a counter/limit 
+MT: Just an additional check, I would assume we would have special handling for data in 0-RTT and check against a counter/limit
 
 Alan: I’m going to make you send me illegal stuff to see if I error
 
-Ekr: We do that all the time 
+Ekr: We do that all the time
 
 Alan: How often server changes flow control limit is probably once a year, probably very rare
 
-Jana: Sure sure 
+Jana: Sure sure
 
 Ekr: Maybe the argument here is that you have to remember this, maybe that’s more annoying. For ordinary flow control you have server state and you know exactly what’s allowed
 
-Mike: You already have to save TPs 
+Mike: You already have to save TPs
 
 MT: If you’re doing something like increasing limit from 5k to 10k, you don’t necessarily have to remember that
 
-Ekr: Why save TPs? 
+Ekr: Why save TPs?
 
 Mike: They’re only allowed to increase and client must comply with that during the first flight
 
-Ekr: This one is different, max early data is a separate TP that only applies in first flight, and there’s no opportunity to change it 
+Ekr: This one is different, max early data is a separate TP that only applies in first flight, and there’s no opportunity to change it
 
 MT: This isn’t quite that, we just use the standard flow control limits
 
-Alan: Is this just MAY vs. MUST? 
+Alan: Is this just MAY vs. MUST?
 
 MT: Yeah, if it’s trivial MUST otherwise MAY
-We had a discuss already around application of TPs to new session ticket, had ability to put TPs attached to new session ticket, allows setting limit for the next connection 0-RTT. Decision was not to have the extra degree of flexibility. 
+We had a discuss already around application of TPs to new session ticket, had ability to put TPs attached to new session ticket, allows setting limit for the next connection 0-RTT. Decision was not to have the extra degree of flexibility.
 
 Ekr: You could just define a new TP if you really needed that
 
@@ -1117,13 +1117,13 @@ Ekr: The only piece of flow control in TLS is max early data and otherwise you�
 
 Marten: So then we’re still weakening security of QUIC
 
-Jana: Does TLS require that the server enforce this limit? 
+Jana: Does TLS require that the server enforce this limit?
 
 Ekr: Looking it up, I know we enforce it. TLS says SHOULD enforce
 
 MT: I can use a SHOULD
 
-Ekr: We all agree client can’t go above, I’m not going to press for MUST enforce, SHOULD seems good, MAY would be okay 
+Ekr: We all agree client can’t go above, I’m not going to press for MUST enforce, SHOULD seems good, MAY would be okay
 As far as separate TPs, how many people are going to actually use this, if nobody then doesn’t matter, if everyone then we should have another TP. Let’s check implementation experience
 
 Mike: I don’t see why you couldn’t just include window update in first 1-RTT
@@ -1132,16 +1132,16 @@ Ekr: You could, if everyone’s doing that we could just separate them
 
 Mark: Do we have agreement
 
-Yes, we’re good to let implementation experience raise an issue if we need two, for now require that client doesn’t do it and server SHOULD enforce. 
+Yes, we’re good to let implementation experience raise an issue if we need two, for now require that client doesn’t do it and server SHOULD enforce.
 
 #### Issue 219
 
-https://github.com/quicwg/base-drafts/issues/219 
+https://github.com/quicwg/base-drafts/issues/219
 
-Ian: Channeling Victor: 
-This is a regression vs. h2, there you can increase default initial flow control window for streams. There are ways to do this, but I’ve not been able to convince anyone to implement it. Willing to slap -v2 label and move on, but be aware this is a regression vs. h2. 
+Ian: Channeling Victor:
+This is a regression vs. h2, there you can increase default initial flow control window for streams. There are ways to do this, but I’ve not been able to convince anyone to implement it. Willing to slap -v2 label and move on, but be aware this is a regression vs. h2.
 
-Alan: Isn’t there a way to do this? 
+Alan: Isn’t there a way to do this?
 
 MT: There’s an opportunity cost there
 
@@ -1149,7 +1149,7 @@ Ekr: Allowing client to send updated TPs would be good because they aren’t enc
 
 New frame type could be -v2 or extension
 
-Mark: Go to -v2? 
+Mark: Go to -v2?
 
 Ekr: Or extension
 
@@ -1159,16 +1159,16 @@ Ekr: Yes
 
 #### Issue 969
 
-https://github.com/quicwg/base-drafts/issues/969 
+https://github.com/quicwg/base-drafts/issues/969
 
-Nick: I didn’t realize this was even still open. Issue is that you process ACKs from smallest to greatest to invalidate the oldest packets first, this requires sorting, then processing. 
+Nick: I didn’t realize this was even still open. Issue is that you process ACKs from smallest to greatest to invalidate the oldest packets first, this requires sorting, then processing.
 
-On the flip side, it makes it more difficult to write the frame than what we 
-have now to read the frame, so I’m fine with closing it. 
+On the flip side, it makes it more difficult to write the frame than what we
+have now to read the frame, so I’m fine with closing it.
 Lars: I’ve been processing ACKs in the other direction
-Nick: For RACK and FACK that invalidates older packets in response to newer packets. I take the smallest ACK, invalidate everything before that, go to the next one, you don’t want to get it backwards. 
+Nick: For RACK and FACK that invalidates older packets in response to newer packets. I take the smallest ACK, invalidate everything before that, go to the next one, you don’t want to get it backwards.
 
-Roberto: If I’m understanding, this is implementation efficiency as opposed to protocol win. 
+Roberto: If I’m understanding, this is implementation efficiency as opposed to protocol win.
 
 Nick: Yes
 
@@ -1182,11 +1182,11 @@ Mark: Okay, any objection to close
 
 <Silence>
 
-Close it 
+Close it
 
 #### Issue 1482
 
-https://github.com/quicwg/base-drafts/issues/1482 
+https://github.com/quicwg/base-drafts/issues/1482
 
 Mike: We have this extension mechanism, we’ve tossed around ideas for extensions. We should actually build one. Adopt one, deploy it a bit, see how it goes
 
@@ -1200,17 +1200,17 @@ David: Datagram extension
 
 MT: We’ve discussed two candidates yesterday. Little risk that it’s a problem. Issue has done its job
 
-Jana: We do not want to move BLOCKED to an extension. 
+Jana: We do not want to move BLOCKED to an extension.
 
-Mark: Can we close? Any objection? 
+Mark: Can we close? Any objection?
 
-Mike: Can we adopt any before RFC? 
+Mike: Can we adopt any before RFC?
 
 Mark: To revisit that issue later
 
 #### Issue 1993
 
-https://github.com/quicwg/base-drafts/issues/1993 
+https://github.com/quicwg/base-drafts/issues/1993
 
 MT: Came out of discussion with WebRTC folks about potential use of API and how QUIC interacts with server
 They proposed a TP in their specification, without discussing with anyone else
@@ -1219,13 +1219,13 @@ There are some nasty hacks that use fact that someone is on the same network for
 
 Mark: Why is this the right layer for that
 
-MT: Look at WebRTC land, I don’t think we need to do this 
+MT: Look at WebRTC land, I don’t think we need to do this
 
-Ian: You mentioned transport param. Can we close and say “write an extension proposal” 
+Ian: You mentioned transport param. Can we close and say “write an extension proposal”
 
-Mark: Any other input that doesn’t mirror that? 
+Mark: Any other input that doesn’t mirror that?
 
-<nobody> 
+<nobody>
 
 Go for that
 
@@ -1244,7 +1244,7 @@ No objection to pushing to -v2, doing that
 
 https://github.com/quicwg/base-drafts/issues/1951
 
-Also related, 2267. 
+Also related, 2267.
 
 Ekr: This is where we failed in our principles, on path attack at beginning of connection. This is about how long window for attacks survives. Second is around key transitions and expiry of old keys. Previously had timers, this replaces with a somewhat goofy signal. Elsewhere we still have timers. Two problems: (1) Don’t need to fix this at all, we’ve got lots of problems at beginning of handshake, extending a little isn’t super serious (2) If we must do something about this, we should do something else and not this
 
@@ -1253,38 +1253,38 @@ Nick had a suggestion about a general retire key bit, we should do a single mech
 Suggestion: Revert this PR
 
 Ian: Reverting is not practical, this fixes several actual textual issues.
-Those issues are not purely editorial. 
+Those issues are not purely editorial.
 
-Marten: Only reason we use timers is for reordering resilience. Nothing bad happens other than reordered packets are not decrypt-able and get retransmitted, so those are purely optimization. Handshake keys on the other hand, we rely on encryption level, and we need to use those keys because we can’t retransmit with other keys. 
+Marten: Only reason we use timers is for reordering resilience. Nothing bad happens other than reordered packets are not decrypt-able and get retransmitted, so those are purely optimization. Handshake keys on the other hand, we rely on encryption level, and we need to use those keys because we can’t retransmit with other keys.
 
 David: I agree
 
 Kazuho: If the attack doesn’t go away, I don’t see a reason to pay the cost of this mechanism
 
-Ekr: This creates a weird interlock 
+Ekr: This creates a weird interlock
 
 Marten: I think timers are bad too, though. There’s nothing bad about seeing that next encryption level was used and inferring that we know packets were received
 
 Ekr: We have a mechanism for determining when things are delivered and that’s ACKs
 
-David: If we don’t discard keys at all, there are attacks for injection later from Initial, etc. We want to stop accepting Initial packets. However, if we stop accepting too soon we can get into weird situations. Proposal I like is to have an explicit signal: the moment you can agree you stop receiving you use that signal and stop then <missed some more detail> 
+David: If we don’t discard keys at all, there are attacks for injection later from Initial, etc. We want to stop accepting Initial packets. However, if we stop accepting too soon we can get into weird situations. Proposal I like is to have an explicit signal: the moment you can agree you stop receiving you use that signal and stop then <missed some more detail>
 
 Christian: It’s really about when do you want to stop accepting, need to coordinate that between the two sides.
 
-MT: Can we keep it on this issue? 
+MT: Can we keep it on this issue?
 
-Ekr: I think this is about the keys, not quite the same issue. If we have an approach of saying “I’m done with this key”, it solves lots of the problems here. 
+Ekr: I think this is about the keys, not quite the same issue. If we have an approach of saying “I’m done with this key”, it solves lots of the problems here.
 
-MT: I’m actually okay with that 
+MT: I’m actually okay with that
 
 Ekr: That would then be ACKed and you’d have all the right properties, new one is sent with the new key not the old key
 
-David: Two general’s problem. Let me explain: You can never be fully sure of the state of your peer. https://en.wikipedia.org/wiki/Two_Generals%27_Problem 
+David: Two general’s problem. Let me explain: You can never be fully sure of the state of your peer. https://en.wikipedia.org/wiki/Two_Generals%27_Problem
 
-Ian: I was originally in favor of the change in the PR. Reasons: (1) most implementations will remove from send queue all initial data once they could anyway as an optimization (2) I don’t like timers that expire on 3MSL, prefer having a real signal that is exercised all the time instead of something that doesn’t occur on all connections. 
-Fine with a different explicit signal that isn’t handshake packet. 
+Ian: I was originally in favor of the change in the PR. Reasons: (1) most implementations will remove from send queue all initial data once they could anyway as an optimization (2) I don’t like timers that expire on 3MSL, prefer having a real signal that is exercised all the time instead of something that doesn’t occur on all connections.
+Fine with a different explicit signal that isn’t handshake packet.
 
-MT: Explicit signal could work just fine, man-on-the-side could no longer send you a spurious Initial packet later one, which is the whole point. Would also kill off other handshake-y problems. Going to need to write up and discuss a PR for a concrete proposal, want to roll forward rather than back something out. 
+MT: Explicit signal could work just fine, man-on-the-side could no longer send you a spurious Initial packet later one, which is the whole point. Would also kill off other handshake-y problems. Going to need to write up and discuss a PR for a concrete proposal, want to roll forward rather than back something out.
 
 Ekr: This also kills 2267
 
@@ -1296,17 +1296,17 @@ MT: Potentially solves key-update.  It’s beautiful.
 
 Martin D: Is there any objection to solving initial with timer?
 
-Subodh, David don’t like it 
+Subodh, David don’t like it
 
-Subodh: Yesterday we discussed flow control handshake messages, is it such a big deal for you to keep handshake keys? 
+Subodh: Yesterday we discussed flow control handshake messages, is it such a big deal for you to keep handshake keys?
 
 Ian: You’re talking about 2267? No
 
-MT: This is the case with 2267 where if you didn’t throw away the keys, you wouldn’t have that problem. 
+MT: This is the case with 2267 where if you didn’t throw away the keys, you wouldn’t have that problem.
 
-Ian: But TLS says discard after 3PTO and throw away keys 
+Ian: But TLS says discard after 3PTO and throw away keys
 
-Marten: Proposal is to have explicit signal, one way, per encryption level 
+Marten: Proposal is to have explicit signal, one way, per encryption level
 
 David: Signal says I have received everything I’ve expected to get at the previous level, once you’ve sent that and received it from the peer, then you throw away the keys
 
@@ -1316,48 +1316,48 @@ David: Sure
 
 Subodh: This adds more complexity though, explicit signal adds more conditions to check vs. implicit signal which is easier to check and the whole thing is only useful for Initial->Handshake transition anyways
 
-David: I think there’s value in later transitions, good to discard them and save state. Also condition from Marten where CFIN gets retransmitted indefinitely, nice to have one solution that does all of them. 
+David: I think there’s value in later transitions, good to discard them and save state. Also condition from Marten where CFIN gets retransmitted indefinitely, nice to have one solution that does all of them.
 
 Jana: Behavior hasn’t changed, you’re just more explicit about knowing that the peer did that
 
-Subodh: Yes, but you have to check and now deal with it if they violate that. It’s not free, there could be more dragons in that closet 
+Subodh: Yes, but you have to check and now deal with it if they violate that. It’s not free, there could be more dragons in that closet
 
 Jana: Seems like it’s less cost
 
 Ekr: We’re waiting for MT to make a PR now
 
-MT: I’m going to do this as a mega-PR that kills: Key update, 1-RTT transition, Handshake transition, all subtly different, will be big but the core of it will be relatively straightforward. We want a signal that says “I have read and write keys for this epoch” and I am prepared to use those keys. Once you’ve both sent and received one of those, you can remove everything from before that. 
+MT: I’m going to do this as a mega-PR that kills: Key update, 1-RTT transition, Handshake transition, all subtly different, will be big but the core of it will be relatively straightforward. We want a signal that says “I have read and write keys for this epoch” and I am prepared to use those keys. Once you’ve both sent and received one of those, you can remove everything from before that.
 
-David: I would slightly tweak, you need to be done with the previous one, including CFIN. 
+David: I would slightly tweak, you need to be done with the previous one, including CFIN.
 
 <Jana and David discuss read key>
 
-Christian: You can do stuff with implicit, there are some things you can’t do, there are some attacks where you need to send ACKs but could be sending for spoofed packets and then the peer could kill your connection. Secondly, let’s be done with it. 
+Christian: You can do stuff with implicit, there are some things you can’t do, there are some attacks where you need to send ACKs but could be sending for spoofed packets and then the peer could kill your connection. Secondly, let’s be done with it.
 
 Subodh: I think that’s only relevant for 1951 with spoofed ACKs with Initial->Handshake transition. I think implicit can still work with Initial->Handshake, doesn’t work as well for Handshake->1-RTT, can just keep Handshake keys, but if people prefer to drop them that’s a different thing
 
-Ekr: I agree there’s not a huge amount of value in dropping the Handshake keys. But I prefer the more general solution, and if it solves more problems then that’s great too. 
+Ekr: I agree there’s not a huge amount of value in dropping the Handshake keys. But I prefer the more general solution, and if it solves more problems then that’s great too.
 
-Marten: How does this relate to the key update problem we had before with frequent key updates, do we still need the bits in the header? 
+Marten: How does this relate to the key update problem we had before with frequent key updates, do we still need the bits in the header?
 
-MT: No we don’t, this would be the frame that people were arguing for to solve that as well. So this rate controls the key updates and we’re all set with that problem. 
+MT: No we don’t, this would be the frame that people were arguing for to solve that as well. So this rate controls the key updates and we’re all set with that problem.
 
-Mark: How long to write the PR Martin? 
+Mark: How long to write the PR Martin?
 
-MT: I have most of it there already, so shouldn’t be a huge amount of time. 
-I’ll do two phases, technical pieces correct, reason about it, then organize and clean it up: this will touch recovery, transport, and TLS. 
+MT: I have most of it there already, so shouldn’t be a huge amount of time.
+I’ll do two phases, technical pieces correct, reason about it, then organize and clean it up: this will touch recovery, transport, and TLS.
 
-Mark: Mostly concerned about how we judge consensus. 
+Mark: Mostly concerned about how we judge consensus.
 
-MT: I want to do this on new process. 2 weeks. 
+MT: I want to do this on new process. 2 weeks.
 
-Mark: Make PR, proposal, get consensus on list. 
+Mark: Make PR, proposal, get consensus on list.
 
-That closes 1951, 2267, key update elsewhere. 
+That closes 1951, 2267, key update elsewhere.
 
-MT: Noted in 1951 that conclusion in 2267 will be placeholder for this. 
+MT: Noted in 1951 that conclusion in 2267 will be placeholder for this.
 
-Mark: Everyone okay with that. 
+Mark: Everyone okay with that.
 
 <No objection>
 
@@ -1369,53 +1369,53 @@ See above discussion.
 
 #### Issue: #2309
 
-https://github.com/quicwg/base-drafts/issues/2309 
+https://github.com/quicwg/base-drafts/issues/2309
 
-Christian: Migration before handshake is completed is very messy. We had some implementations try doing migration right after connection is setup, but then you get a repeat of handshake packets, but then you see some of them being sent on the new address. 
-High level solution is to not initiate migration until you’ve completed the handshake. 
-Wanted a PR to do just that, but we don’t have a way to refer to what constitutes “completed the handshake”. Want a way to say it’s done, but if we have 
+Christian: Migration before handshake is completed is very messy. We had some implementations try doing migration right after connection is setup, but then you get a repeat of handshake packets, but then you see some of them being sent on the new address.
+High level solution is to not initiate migration until you’ve completed the handshake.
+Wanted a PR to do just that, but we don’t have a way to refer to what constitutes “completed the handshake”. Want a way to say it’s done, but if we have
 
-Jana: Principle sounds good. Let’s do it and add the definition. 
+Jana: Principle sounds good. Let’s do it and add the definition.
 
-David: gQUIC makes a new connection. 
+David: gQUIC makes a new connection.
 
-Ian: I think that’s what Eric was saying as well. 
+Ian: I think that’s what Eric was saying as well.
 
-Mike: I will concur, we just need a better definition; previous issue will add one. 
+Mike: I will concur, we just need a better definition; previous issue will add one.
 
-Christian: It’s not sufficient to have the keys that you need, you need to be sure that the peer whas all the keys that they need. 
+Christian: It’s not sufficient to have the keys that you need, you need to be sure that the peer whas all the keys that they need.
 
-Mike: Client can’t really know the handshake is finished. 
+Mike: Client can’t really know the handshake is finished.
 
-David: MT, in your PR, can you define handshake finished as when you’ve discarded Handshake keys. 
+David: MT, in your PR, can you define handshake finished as when you’ve discarded Handshake keys.
 
-MT: Defining handshake finished that way is wrong, but cannot migrate until Handshake keys have been discarded is okay. 
+MT: Defining handshake finished that way is wrong, but cannot migrate until Handshake keys have been discarded is okay.
 
-Mark: Note that we’ve agreed we want to do this, how it gets incorporated depends on the PR for 2267. 
+Mark: Note that we’ve agreed we want to do this, how it gets incorporated depends on the PR for 2267.
 
 
 #### Issue: #2180
 https://github.com/quicwg/base-drafts/issues/2180
 
-Ekr: In the case of Retry, you can do two things: make a whole new connection with crypto state, CIDs, etc. Other one is to replay previous initial packet. 
+Ekr: In the case of Retry, you can do two things: make a whole new connection with crypto state, CIDs, etc. Other one is to replay previous initial packet.
 
 MT: We’re not very clear on that point
 
-Ekr: It would be one thing to say nothing, but we encourage people to make a new packet, if we want people to do that, we should require it. Argument against: It may cost a lot to do that, especially with post-quantum. Some level of variance as to what you could take from previous one (key shares). We should decide if we think this is a whole new connection, or is it a continuation of the previous connection. 
+Ekr: It would be one thing to say nothing, but we encourage people to make a new packet, if we want people to do that, we should require it. Argument against: It may cost a lot to do that, especially with post-quantum. Some level of variance as to what you could take from previous one (key shares). We should decide if we think this is a whole new connection, or is it a continuation of the previous connection.
 
-Ian: I believe it’s a continuation of the current connection, but I know that’s not documented. 
+Ian: I believe it’s a continuation of the current connection, but I know that’s not documented.
 
-Jana: I think it is, it’s the original CID, if it’s not the same one, then semantically it makes no sense. Must be the same connection. 
+Jana: I think it is, it’s the original CID, if it’s not the same one, then semantically it makes no sense. Must be the same connection.
 
-Mike: You’re regenerating client hello whether it has same key-share or not. 
+Mike: You’re regenerating client hello whether it has same key-share or not.
 
 Martin D: Client TPs don’t have that, so not
 
 Mike: Ah, I’m remembering a different iteration
 
-Subodh: We cache CI, since 0-RTT data needs to be dealt with, do we replay it or not, do we tell application to retry 0-RTT data themselves, what do we do with that? 
+Subodh: We cache CI, since 0-RTT data needs to be dealt with, do we replay it or not, do we tell application to retry 0-RTT data themselves, what do we do with that?
 
-Ekr: Wasn’t there some stuff about how to fix the 0-RTT data? 
+Ekr: Wasn’t there some stuff about how to fix the 0-RTT data?
 
 MT: If you get a retry you can send 0-RTT. If you don’t change key then you have to keep increasing packet numbers, there is text there already for that
 
@@ -1423,57 +1423,57 @@ Ekr: We think you can use 0-RTT in Retry
 
 MT: Yes we’ve already decided that
 
-Martin D: If we do in fact have language encouraging people to write a new client hello, we should strike that, I don’t see any negative impacts if the client wants to do that, but we can leave it up to the implementation. 
+Martin D: If we do in fact have language encouraging people to write a new client hello, we should strike that, I don’t see any negative impacts if the client wants to do that, but we can leave it up to the implementation.
 
-MT: Reason for that text is the 0-RTT stuff. 
+MT: Reason for that text is the 0-RTT stuff.
 
-Christian: Kazuho and I have been working on a secure way to do the handshake which would remove the possibility of having an attack during the handshake. A key part of that is verifying that the client hello is exactly the same in the client initial and in the retry. As in a hash of the crypto data matches the previous one. 
+Christian: Kazuho and I have been working on a secure way to do the handshake which would remove the possibility of having an attack during the handshake. A key part of that is verifying that the client hello is exactly the same in the client initial and in the retry. As in a hash of the crypto data matches the previous one.
 
-Ekr: Christian, as I understand it, you would like to prohibit changing the client hello. <Yes> Modulo 0-RTT sequence number issue, there is no actual reason to change the initial packet at all, we know how to make the 0-RTT packet safe with the sequence numbers continuing to increase. That makes more sense with layering design of QUIC. Architecturally I don’t see any reason to change it, so it’s better to say that you can’t change the client hello. There’s at least one reason you would say that: There might be situations in which you want to get a head start on processing the data while you wait for the retry. 
+Ekr: Christian, as I understand it, you would like to prohibit changing the client hello. <Yes> Modulo 0-RTT sequence number issue, there is no actual reason to change the initial packet at all, we know how to make the 0-RTT packet safe with the sequence numbers continuing to increase. That makes more sense with layering design of QUIC. Architecturally I don’t see any reason to change it, so it’s better to say that you can’t change the client hello. There’s at least one reason you would say that: There might be situations in which you want to get a head start on processing the data while you wait for the retry.
 
 Subodh: One of the reasons that you might want to change it -> VN downgrade protection might require regenerating to include new TPs.
 
-Ekr: VN is different. That always conceptually required regenerating it. 
+Ekr: VN is different. That always conceptually required regenerating it.
 
-Subodh: We have this special cause where one way you do it this way, VN, you do it the other way. It would be nice to have consistency there. Regeneration of client hello would allow you to do that in one way. 
+Subodh: We have this special cause where one way you do it this way, VN, you do it the other way. It would be nice to have consistency there. Regeneration of client hello would allow you to do that in one way.
 
-Ian: I support Christian and Ekr saying you MUST NOT change it. Tells you nothing new about it. Why would you regenerate something based on absolutely no new information. 
+Ian: I support Christian and Ekr saying you MUST NOT change it. Tells you nothing new about it. Why would you regenerate something based on absolutely no new information.
 
-Jana: VN and Retry are semantically completely different, I think it’s appropriate to keep it that way. 
+Jana: VN and Retry are semantically completely different, I think it’s appropriate to keep it that way.
 
-Marten: I’m okay with implementations wanting to reuse their client hello. In my implementation it would cause a lot of trouble to reuse it, so I don’t want a MUST NOT. 
+Marten: I’m okay with implementations wanting to reuse their client hello. In my implementation it would cause a lot of trouble to reuse it, so I don’t want a MUST NOT.
 
-Ekr: Why? 
+Ekr: Why?
 
-Marten: It would be easier to start a new TLS connection. You can either tell TLS to close and start a new one. 
+Marten: It would be easier to start a new TLS connection. You can either tell TLS to close and start a new one.
 
-Ekr: I just assumed you hold onto the data from your Initial packet, since you need to do that in order to retransmit it anyways. 
+Ekr: I just assumed you hold onto the data from your Initial packet, since you need to do that in order to retransmit it anyways.
 
-Kazuho: I prefer MUST use same client hello. TLS 0-RTT has this requirement that says when a packet arrives later than expected, then it should reject 0-RTT, want to make sure implementations won’t reject if it comes back 1-RTT later. 
+Kazuho: I prefer MUST use same client hello. TLS 0-RTT has this requirement that says when a packet arrives later than expected, then it should reject 0-RTT, want to make sure implementations won’t reject if it comes back 1-RTT later.
 
-Ekr: Yeah we need to find a way to fix that, the issue is that we have a time difference between the packet was sent and received, but now you’re going to have built in a bunch more time difference. 
+Ekr: Yeah we need to find a way to fix that, the issue is that we have a time difference between the packet was sent and received, but now you’re going to have built in a bunch more time difference.
 
 Kazuho: Argument that TCP also has retransmissions
 
 MT: Yeah that seems like the right argument. If you treat this like loss, that just kind of works, and doesn’t impose anything new on implementations
 
-Martin D: What if I want to edit client hello to allow 0-RTT 
+Martin D: What if I want to edit client hello to allow 0-RTT
 
 Marten: There’s nothing stopping much later Retry
 
-Nick: Should be time limited to prevent attacks. 
+Nick: Should be time limited to prevent attacks.
 
 Ian: There’s a time limit on retry token and you can’t wait forever
 
-Roberto: Sounds like we’re arguing that we should change protocol to make implementation easier. Can we do that in -v2. 
+Roberto: Sounds like we’re arguing that we should change protocol to make implementation easier. Can we do that in -v2.
 
-Ekr: The proposed MUST is about making protocol thing easier. 
+Ekr: The proposed MUST is about making protocol thing easier.
 
-Proposal: Resolve this by saying you must reuse same client hello every time. Argument for: One version is better than two. Reason for this version, makes Christian and Kazuho’s proposed protection for initial handshake easier. Argument against: Makes Marten’s implementation harder. 
+Proposal: Resolve this by saying you must reuse same client hello every time. Argument for: One version is better than two. Reason for this version, makes Christian and Kazuho’s proposed protection for initial handshake easier. Argument against: Makes Marten’s implementation harder.
 
-Marten: Why are we doing this to support an extension that we aren’t actually doing yet / which would be unenforceable. 
+Marten: Why are we doing this to support an extension that we aren’t actually doing yet / which would be unenforceable.
 
-Ian: It’s much easier to only have one path, less prone to failures in the real world that are hard to debug, let’s just do it one way. 
+Ian: It’s much easier to only have one path, less prone to failures in the real world that are hard to debug, let’s just do it one way.
 
 Marten: Unenforceable MUST
 
@@ -1491,29 +1491,29 @@ Marten: Already articulated my reasons against.
 
 Mark: Go ahead and close the issue with text. Marten okay?
 
-Marten: I guess I have to live with that, thanks for asking. 
+Marten: I guess I have to live with that, thanks for asking.
 
 
 #### Issue: #655
 
 https://github.com/quicwg/base-drafts/issues/655
 
-Victor: I’m surprised the issue is still open. Happy for it to be -v2. 
+Victor: I’m surprised the issue is still open. Happy for it to be -v2.
 
-MT: This is super clever and super unnecessary. 
+MT: This is super clever and super unnecessary.
 
-Mark: Okay, it’s -v2. 
+Mark: Okay, it’s -v2.
 
 
 #### Issue: 2397
 
 https://github.com/quicwg/base-drafts/issues/2397
 
-Lars: Comments on issue says it can be closed with no action. 
+Lars: Comments on issue says it can be closed with no action.
 
-Mike: Missing text people assume should be there. We don’t have text that says discard if packet doesn’t match connection’s version. 
+Mike: Missing text people assume should be there. We don’t have text that says discard if packet doesn’t match connection’s version.
 
-Conclusion: Short PR just to make that text clear. 
+Conclusion: Short PR just to make that text clear.
 
 
 
@@ -1582,7 +1582,7 @@ Mike: They’re octets. We picked those for values, but I really do not care?
 
 #### Issue 2275: Varint h3 unidirectional stream types
 
-https://github.com/quicwg/base-drafts/issues/2275 
+https://github.com/quicwg/base-drafts/issues/2275
 
 Frame types
 
@@ -1590,7 +1590,7 @@ Mike: Currently a length prefix so under the same logic it would be fine.
 
 MT: It’s not under length.
 
-Roberto: 0=1 
+Roberto: 0=1
 
 Hum: Unidirectional to varint? Ambiguous.
 
@@ -1604,7 +1604,7 @@ Victor: I’d like a bigger space?
 
 Hum: Varint these.  Yes.
 
-Alan/Subodh: I am grumpy (and want it minuted) 
+Alan/Subodh: I am grumpy (and want it minuted)
 
 
 #### Issue 2253: Consider making h3 frame types varint
@@ -1812,7 +1812,7 @@ MT: Happy with LTV.  no desire to use TV.
 
 Ekr; The argument was about some cases where the remainder of the data?
 
-David: Another issue … 
+David: Another issue …
 
 Ian: Changing to TLV allows us to not lie about the length.
 
@@ -1889,7 +1889,7 @@ Roberto: I feel strongly about this one!  Seems like it’s easy to mess up and 
 
 Mnot: Why wouldn’t this allow trailers.
 
-Roberto: Proxy get to use frame type before or after it parses all the headers … 
+Roberto: Proxy get to use frame type before or after it parses all the headers …
 
 Mike: In terms of protocol consistency we should nothing or make it a property of frames in general.  Can also be done as an extension - existing draft.
 
@@ -1974,7 +1974,7 @@ Mike: HTTPS URIs are defined to be TCP-only.  We need a way to refer to HTTP/3 e
 
 Mnot: A new scheme is not a decision the WG can make alone.  We need to coordinate this with the HTTPbis WG and W3C Tag.
 
-Ekr: 1st principles: if you have an HTTPS site and QUIC and they are not the same origin it is going to be a disaster.  How do you tell the client that QUIC is available? Can we do this with a self-contained URI to convey this info.  
+Ekr: 1st principles: if you have an HTTPS site and QUIC and they are not the same origin it is going to be a disaster.  How do you tell the client that QUIC is available? Can we do this with a self-contained URI to convey this info.
 
 Mnot: Should this WG do this?
 
@@ -2037,7 +2037,7 @@ Ian: If we do not require that the server do is there a risk that the client …
 
 Kazuho: I prefer keeping this a SHOULD.
 
-Roberto: There is a potential race that this might resolve.  
+Roberto: There is a potential race that this might resolve.
 
 Alan: I prefer requiring it.
 
