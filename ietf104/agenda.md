@@ -26,12 +26,23 @@
 
 ### Editors' Updates
 
+- key updates
+- ORTT
+
+
+### Recovery Draft
+
+- overview
+- issue discussion
+
 ### Issue Discussion
 
 *balance of time*
 
+
 ### As Time Permits
 
+*TBD*
 
 ## Session 2
 
