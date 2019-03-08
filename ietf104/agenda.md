@@ -28,7 +28,7 @@
 
 ### Editors' Updates
 
-- Key Updates - *???*
+- Key Updates 
 
 
 ### Recovery Draft
@@ -69,4 +69,4 @@ See:
 
 ### As Time Permits
 
-continued from previous session
+*continued from previous session*
