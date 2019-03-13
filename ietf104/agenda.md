@@ -41,7 +41,7 @@
 
 ### As Time Permits
 
-*TBD*
+* 10 min - QUIC connection migration - *Cherie Shi*
 
 ## Wednesday, 27 March, 2019
 
