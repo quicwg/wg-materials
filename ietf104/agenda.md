@@ -28,7 +28,7 @@
 
 ### Editors' Updates
 
-- Key Updates 
+- Key Updates - *Martin Thomson*
 
 
 ### Recovery Draft
@@ -42,6 +42,7 @@
 ### As Time Permits
 
 * 10 min - QUIC connection migration - *Cherie Shi*
+
 
 ## Wednesday, 27 March, 2019
 
