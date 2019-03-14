@@ -28,7 +28,7 @@
 
 ### Editors' Updates
 
-- Key Updates - *Martin Thomson*
+- [Discarding Old Keys](https://datatracker.ietf.org/doc/slides-104-quic-sessb-discarding-old-keys/) - *Martin Thomson*
 
 
 ### Recovery Draft
