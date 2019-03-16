@@ -32,10 +32,10 @@ See [the agenda](agenda.md) for full details.
 [Cloudflare](https://cloudflare.com/) is hosting our meeting at their
 offices in London, United Kingdom ([map](https://goo.gl/maps/sVH4U1Y3bjT2)).
 
-  Cloudflare London
-  County Hall, Belvedere Rd 
-  South Bank, London SE1 7GP
-  UK
+    Cloudflare London
+    County Hall, Belvedere Rd 
+    South Bank, London SE1 7GP
+    UK
 
 
 ## Transportation
