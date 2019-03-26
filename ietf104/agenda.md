@@ -66,7 +66,7 @@ See:
 
 ### Planning
 
-* 15 min - Future meetings, implementation drafts, and getting to Last Call
+* 15 min - Future meetings, implementation drafts, other ([EPIQ workshop](http://conferences.sigcomm.org/sigcomm/2019/workshop-epiq.html)) and getting to Last Call
 
 ### As Time Permits
 
