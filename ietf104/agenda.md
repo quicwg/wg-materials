@@ -42,6 +42,7 @@
 ### As Time Permits
 
 * 10 min - QUIC connection migration - *Cherie Shi*
+* 15 min - QUIC offoad - *Manasi Deval*
 
 
 ## Wednesday, 27 March, 2019
