@@ -1,5 +1,39 @@
 # QUIC Working Group Minutes - IETF104 Prague
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Tuesday](#tuesday)
+  - [Interim Meeting Planning](#interim-meeting-planning)
+  - [Hackathon / Interop Report](#hackathon--interop-report)
+  - [Editors' Updates](#editors-updates)
+    - [Discarding Old Keys - Martin Thomson](#discarding-old-keys---martin-thomson)
+    - [Recovery Draft from ian](#recovery-draft-from-ian)
+- [Wednesday](#wednesday)
+  - [Early Report from Key Update Design Team](#early-report-from-key-update-design-team)
+  - [Transport Issues](#transport-issues)
+    - [2528, Are Transport Parameters Mandatory?](#2528-are-transport-parameters-mandatory)
+    - [2496, QUIC Ossification](#2496-quic-ossification)
+    - [2473, Connection ID Length changes](#2473-connection-id-length-changes)
+    - [2471, Stateless Reset Lacks Normative Text](#2471-stateless-reset-lacks-normative-text)
+    - [2464, Remember Fewer Transport Parameters for 0-RTT](#2464-remember-fewer-transport-parameters-for-0-rtt)
+    - [2458, Client MUST use 1-RTT packets if it reads 1-RTT packets](#2458-client-must-use-1-rtt-packets-if-it-reads-1-rtt-packets)
+    - [2441, Peer that terminate a single connection on an IP/port cannot migrate with empty CIDs](#2441-peer-that-terminate-a-single-connection-on-an-ipport-cannot-migrate-with-empty-cids)
+    - [2436](#2436)
+    - [2403](#2403)
+    - [2400: VN packets may be dropped more often when QUIC bit is 1.](#2400-vn-packets-may-be-dropped-more-often-when-quic-bit-is-1)
+    - [2389](#2389)
+    - [2388](#2388)
+    - [2387](#2387)
+    - [2360: 0-RTT flow control limits can't be increased](#2360-0-rtt-flow-control-limits-cant-be-increased)
+  - [Future plans](#future-plans)
+  - [QUIC Connection Migration](#quic-connection-migration)
+  - [QUIC Offload](#quic-offload)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 ## Tuesday
 
 ### Interim Meeting Planning
