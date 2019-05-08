@@ -37,6 +37,11 @@ offices in London, United Kingdom ([map](https://goo.gl/maps/sVH4U1Y3bjT2)).
     South Bank, London SE1 7GP
     UK
 
+The entrance is in front of Forum Magnum Square on Belvedere Road. Once inside
+walk to the elevators foyer on the left of the central staircase and press "6"
+on the keypad. Use the elevator shown on the display (A, B or C). Once on floor
+6, go left to get into the office.
+
 
 ## Transportation
 
