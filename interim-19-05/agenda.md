@@ -13,11 +13,12 @@ _20-21 May_
 
 * 9:30 - Interop meeting (not part of the IETF WG meeting; doors open at 9:00)
 
+
 _22-23 May_
 
 * 9:30 - Start (doors open at 9:00)
   * Scribes, Blue Sheets, NOTE WELL
-* 12:15-13:30 - Lunch
+* 12:15-13:15 - Lunch
 * ~17:00 - End
 
 
@@ -27,18 +28,27 @@ _22-23 May_
 
 _~5 minutes_
 
-* Interop event
 
-### QUIC Issues
+### Transport and TLS Issues
 
 _1.5 days_
 
+See the [project board](https://github.com/quicwg/base-drafts/projects/5).
 
-### HTTP Issues
 
-_.5 days_
+### HTTP and QPACK Issues
 
-_TBD_
+_.25 days_
+
+See the [http issues list](https://github.com/quicwg/base-drafts/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3A-http+label%3Adesign) and [qpack issues list](https://github.com/quicwg/base-drafts/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3A-qpack+label%3Adesign).
+
+
+### Recovery Issues
+
+_.25 days_
+
+See the [http issues list](https://github.com/quicwg/base-drafts/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3A-recovery+label%3Adesign).
+
 
 ### Planning
 
@@ -47,6 +57,7 @@ _~15 minutes_
 - Next meeting(s)
 - Next interop
 - Getting done
+
 
 ### As Time Permits
 
