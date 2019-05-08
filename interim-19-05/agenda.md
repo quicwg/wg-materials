@@ -47,7 +47,7 @@ See the [http issues list](https://github.com/quicwg/base-drafts/issues?utf8=✓
 
 _.25 days_
 
-See the [http issues list](https://github.com/quicwg/base-drafts/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3A-recovery+label%3Adesign).
+See the [recovery issues list](https://github.com/quicwg/base-drafts/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3A-recovery+label%3Adesign).
 
 
 ### Planning
