@@ -28,6 +28,8 @@ _22-23 May_
 
 _~5 minutes_
 
+See the [interop sheet](https://docs.google.com/spreadsheets/d/1D0tW89vOoaScs3IY9RGC0UesWGAwE6xyLk0l4JtvTVg/edit#gid=535093126)
+
 
 ### Transport and TLS Issues
 
