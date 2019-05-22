@@ -64,3 +64,4 @@ _~15 minutes_
 ### As Time Permits
 
 - [WebTransport](https://tools.ietf.org/html/draft-vvv-webtransport-overview-00)
+- Firewalls for QUIC (Firewalls against QUIC?)
