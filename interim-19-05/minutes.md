@@ -1,3 +1,4 @@
+
 # QUIC May 2019 Interim Meeting Minutes
 
 * Chairs: Mark Nottingham, Lars Eggert
@@ -7,6 +8,92 @@
 	- Wednesday afternoon: Mike Bishop
 	- Thursday morning: Martin Duke
 	- Thursday afternoon: Eric Kinnear
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Administrivia](#administrivia)
+- [Interop](#interop)
+- [Transport and TLS](#transport-and-tls)
+  - [#2736: More Connection ID Space](#2736-more-connection-id-space)
+  - [#2534: ECN text disables ECN too aggressively](#2534-ecn-text-disables-ecn-too-aggressively)
+  - [#2581: Bring back AEAD_AES_128_CCM_8 now that we pad the plaintext](#2581-bring-back-aead_aes_128_ccm_8-now-that-we-pad-the-plaintext)
+  - [#2656: Discarding connection state at server on unvalidated client](#2656-discarding-connection-state-at-server-on-unvalidated-client)
+  - [#2541: Clients cannot abandon Initial packets while server can still send initial close](#2541-clients-cannot-abandon-initial-packets-while-server-can-still-send-initial-close)
+  - [#2673: Output of the discard keys design team](#2673-output-of-the-discard-keys-design-team)
+  - [#2550: Apply GREASE to transport parameters](#2550-apply-grease-to-transport-parameters)
+  - [#2602: Idle timeout needs more description and a recommendation](#2602-idle-timeout-needs-more-description-and-a-recommendation)
+  - [#2552: Saving a round-trip time in the initial handshakes with retry](#2552-saving-a-round-trip-time-in-the-initial-handshakes-with-retry)
+  - [#2546: ACK of ACK are useful](#2546-ack-of-ack-are-useful)
+  - [#2441: Peers that only terminate a single connection on an IP/port cannot migrate with 0-byte CIDs](#2441-peers-that-only-terminate-a-single-connection-on-an-ipport-cannot-migrate-with-0-byte-cids)
+  - [#2496: QUIC Version Ossification](#2496-quic-version-ossification)
+  - [#2084: Discuss requirement that connection IDs not be correlatable](#2084-discuss-requirement-that-connection-ids-not-be-correlatable)
+  - [#2170: Embed QUIC version in expansion](#2170-embed-quic-version-in-expansion)
+  - [#2143: Be more conservative about migration](#2143-be-more-conservative-about-migration)
+  - [#2180: Is Retry a new connection or what?](#2180-is-retry-a-new-connection-or-what)
+  - [#2473:  CID Length Changes](#2473--cid-length-changes)
+  - [#2387](#2387)
+  - [#2389:  Be clearer about the purpose of disable_migration](#2389--be-clearer-about-the-purpose-of-disable_migration)
+  - [#2309:  Migration before handshake completed](#2309--migration-before-handshake-completed)
+  - [#2308:  Handling of coalesced packets with decryption errors creates DoS opportunity](#2308--handling-of-coalesced-packets-with-decryption-errors-creates-dos-opportunity)
+  - [#2580:  Is path validation a SHOULD or a MUST?](#2580--is-path-validation-a-should-or-a-must)
+  - [#2394: Spoofed Retry token attack on IP Authentication](#2394-spoofed-retry-token-attack-on-ip-authentication)
+  - [#2205:  Largest acked MUST NOT decrease](#2205--largest-acked-must-not-decrease)
+  - [#2471:  Stateless Reset Lacks Normative Text](#2471--stateless-reset-lacks-normative-text)
+  - [#2743: Better articulate principles for ciphersuites](#2743-better-articulate-principles-for-ciphersuites)
+  - [#2656: Discarding connection state at server on unvalidated client](#2656-discarding-connection-state-at-server-on-unvalidated-client-1)
+  - [#2541: Clients cannot abandon Initial packets while server can still send Initial close](#2541-clients-cannot-abandon-initial-packets-while-server-can-still-send-initial-close)
+  - [#2496](#2496)
+  - [#2741: Revisit Initial keys discard](#2741-revisit-initial-keys-discard)
+  - [#2725: We lost the text recommending replacement of used CIDs](#2725-we-lost-the-text-recommending-replacement-of-used-cids)
+  - [#2645: Retire one’s own CID](#2645-retire-ones-own-cid)
+  - [#2724: PATH_RESPONSE not retransmitted](#2724-path_response-not-retransmitted)
+  - [#2689:  Checking Duplicate TPs is onerous](#2689--checking-duplicate-tps-is-onerous)
+  - [#2684:  Mixture of transport and congestion control functions](#2684--mixture-of-transport-and-congestion-control-functions)
+  - [#2732:  Reuse of SRTs](#2732--reuse-of-srts)
+  - [#2685:  CC state after a change of path](#2685--cc-state-after-a-change-of-path)
+  - [#2720:  Privacy of spin with multiple connections on same 5-tuple](#2720--privacy-of-spin-with-multiple-connections-on-same-5-tuple)
+- [Viktor - WebTransport](#viktor---webtransport)
+- [Planning](#planning)
+- [Recovery Issues](#recovery-issues)
+  - [#2728: x1](#2728-x1)
+  - [#2650: simplify recovery if Handshake Timer was unified with PTO.](#2650-simplify-recovery-if-handshake-timer-was-unified-with-pto)
+  - [#2648: crypto time value should include rttvar](#2648-crypto-time-value-should-include-rttvar)
+  - [#2638: max-ack-delay unknown for new connections.](#2638-max-ack-delay-unknown-for-new-connections)
+  - [#2630: define “under-utilization” of cwnd](#2630-define-under-utilization-of-cwnd)
+  - [#2596: should platform delays be in ack-delay?](#2596-should-platform-delays-be-in-ack-delay)
+  - [#2593: persistent congestion when app-limited](#2593-persistent-congestion-when-app-limited)
+  - [#2556 kPersistentCongestionThreshold 2 or 3?](#2556-kpersistentcongestionthreshold-2-or-3)
+  - [#2555: idle period for congestion control](#2555-idle-period-for-congestion-control)
+  - [#2534: ECN verification too strict](#2534-ecn-verification-too-strict)
+  - [#1860 (Editorial): ack-only feedback loop in recovery instead of transport](#1860-editorial-ack-only-feedback-loop-in-recovery-instead-of-transport)
+- [Resolve Asymmetric Idle Timeout Definitions](#resolve-asymmetric-idle-timeout-definitions)
+- [QPACK](#qpack)
+- [HTTP/3](#http3)
+  - [#2718: Truncated Stream Handling is Aggressive](#2718-truncated-stream-handling-is-aggressive)
+  - [#2711: Relax prohibition on server-initiated bidirectional streams](#2711-relax-prohibition-on-server-initiated-bidirectional-streams)
+  - [#2699: Specify handling of QUIC SERVER_BUSY connection failures](#2699-specify-handling-of-quic-server_busy-connection-failures)
+  - [#2551, 2662: Replace MALFORMED_FRAME with specific error codes](#2551-2662-replace-malformed_frame-with-specific-error-codes)
+  - [#2516: Semantics of MAX_HEADER_LIST_SIZE](#2516-semantics-of-max_header_list_size)
+  - [#2498: Behavior on out-of-range settings](#2498-behavior-on-out-of-range-settings)
+  - [#2412: Can MAX_PUSH_ID go backward?](#2412-can-max_push_id-go-backward)
+  - [#2410: Import rules on “malformed requests” from RFC7540](#2410-import-rules-on-malformed-requests-from-rfc7540)
+  - [#2697: SHOULD use PRIORITY](#2697-should-use-priority)
+  - [#2502/2690: Priority inversion from reordering](#25022690-priority-inversion-from-reordering)
+  - [#2678: Use unidirectional streams for everything!](#2678-use-unidirectional-streams-for-everything)
+  - [#2526: PUSH_ID frame](#2526-push_id-frame)
+  - [#2632: Symmetric GOAWAY](#2632-symmetric-goaway)
+  - [#2488: Embed address validation token in Alt-Svc](#2488-embed-address-validation-token-in-alt-svc)
+  - [#2439: http:// URIs over HTTP/3](#2439-http-uris-over-http3)
+  - [#2223: Coalescing rules](#2223-coalescing-rules)
+  - [#253: HTTP/3 without Alt-Svc](#253-http3-without-alt-svc)
+- [QUIC Firewalls](#quic-firewalls)
+- [HTTP/3 Priorities](#http3-priorities)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 
 ## Administrivia
 
