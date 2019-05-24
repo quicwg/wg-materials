@@ -517,7 +517,7 @@ Jana/Mike B: PR is there, needs to go to consensus call.
 ### #2630: define “under-utilization” of cwnd
 Ian: There’s a PR for this.
 
-Jana: If inflight < cwnd, what should you do?
+Jana: If inflight is less than cwnd, what should you do?
 
 Christian: This is a change from Reno.
 
@@ -527,7 +527,7 @@ Ian: There’s a pointer to an RFC in the existing text.
 
 Lars: we would need to translate into QUIC terms.
 
-Jana: Let’s define under-utliization in clear terms, then provide pointers to some possible mitigations.
+Jana: Let’s define under-utilization in clear terms, then provide pointers to some possible mitigations.
 
 Ian: We either have that now, or had it until recently. We can’t say pacing means we’re not cwnd-limited. We just need to pound out some text. Ian, Gorry, and Jana will do it.
 
@@ -1109,9 +1109,9 @@ Jana: How does that translate from application to transport.
 
 Kazuho: Application defines content of the blob, but everyone has a blob. I don’t know that it’s super important for us.
 
-Mark: Is anyone willing to write up a proposal of how to do this in transport? <No>
+Mark: Is anyone willing to write up a proposal of how to do this in transport? _No_
 
-Christian: It’s trivial, special-case a CONNECTION_CLOSE error code, and… <starts to explain and then cut off>
+Christian: It’s trivial, special-case a CONNECTION_CLOSE error code, and… _starts to explain and then cut off_
 
 Alan: I’m advocating that we support this because it helps bidirectional, you should also be able to say “I’m going away, no more pushes”. Saying I’m not going to accept any more pushes, that’s a valid HTTP/3 use case for a client sending a GOAWAY.
 
@@ -1260,7 +1260,7 @@ Mark: HTTP WG is the one who defines this, we’re just mapping onto QUIC. Howev
 Ian: This is me channelling what I’ve heard from people unhappy with the status quo. 
 Chrome had HTTP/2 priorities, didn’t see any difference, now disables them by default. 
 
-<Walk through HTTP/2, HTTP/3 status quo, in slides>
+_Walk through HTTP/2, HTTP/3 status quo, in slides_
 
 PR #2700: 
 Removes streams depending on streams, adds 1 byte exclusive priority to replace that functionality
