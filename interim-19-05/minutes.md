@@ -2,7 +2,7 @@
 # QUIC May 2019 Interim Meeting Minutes
 
 * Chairs: Mark Nottingham, Lars Eggert
-* Location: Tokyo, Japan
+* Location: London, UK
 * Scribes:
 	- Wednesday morning: Cory Benfield
 	- Wednesday afternoon: Mike Bishop
