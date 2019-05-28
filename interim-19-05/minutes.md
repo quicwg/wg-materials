@@ -38,6 +38,7 @@
   - [#2309:  Migration before handshake completed](#2309--migration-before-handshake-completed)
   - [#2308:  Handling of coalesced packets with decryption errors creates DoS opportunity](#2308--handling-of-coalesced-packets-with-decryption-errors-creates-dos-opportunity)
   - [#2580:  Is path validation a SHOULD or a MUST?](#2580--is-path-validation-a-should-or-a-must)
+  - [#2192: Optimistic ACK in early handshake](#2192-optimistic-ack-in-early-handshake)
   - [#2394: Spoofed Retry token attack on IP Authentication](#2394-spoofed-retry-token-attack-on-ip-authentication)
   - [#2205:  Largest acked MUST NOT decrease](#2205--largest-acked-must-not-decrease)
   - [#2471:  Stateless Reset Lacks Normative Text](#2471--stateless-reset-lacks-normative-text)
@@ -312,7 +313,8 @@ MT has already written the SHOULD NOT sentence; receiver MAY ignore all but the 
 https://github.com/quicwg/base-drafts/issues/2580
 
 Will be closed by #2637; needs a consensus call.
-#2192: Optimistic ACK in early handshake
+
+### #2192: Optimistic ACK in early handshake
 https://github.com/quicwg/base-drafts/issues/2192
 
 We discuss this in the Security Considerations already.  Let’s just close this as already addressed.
