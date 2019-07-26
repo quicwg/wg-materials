@@ -401,6 +401,167 @@ Wednesday, 24 July, 2019
  
 Issue Discussion
 ================
+
+#2844 Client Connection IDs are Broken
+David Schinazi: Addressed comments in the PR. Asking for review. 
+Ekr: Will review
+
+#2863 Unrecoverable loss patterns lead to deadlock
+Ekr: Gotten less clear in the past day. David may need to open up the DT.
+David Schinazi: Negative progress.  Will discuss with the DT participants and figure out way forward. Unarchived Slack channel and will arrange meeting with to discuss next steps.
+MT: Cluster of issues around this one. We'll bucket them here. Can't do anything in the meeting now. Should have an update by the interim.
+
+Jana (meta): want to make sure we get to the recovey issues.
+Mark: ACK
+
+#2496 QUIC Version Ossification
+Martin Duke: Not convinced that "have server provide an alternative VN" is viable.
+Ekr: Attackers can strip out versions they don't like and we land at an equilibrium, or fall back to TCP.
+Martin: Any model will require support from some critical mass of clients and servers to encourage folks to not ossify.
+Roberto: (missed)
+Gorry: Networks want to know when new versions exist so they can be let through. Not convinced this threat model is the one we need to deal with.
+Ekr: Threat model is legitimate. Should be treating middleboxes as dumb pipes and prevent them from looking at data. Idea is to avoid arms race.
+Gorry: This might be an issue. Don't agree with the threat model.
+Ekr: Google has seen this with gQUIC.
+Gorry: Yes, but don't know of this is true of IETF QUIC. Might not be the same case.
+MT: Many things assume that symmetric crypto is free and public key crypto is prohibitively expensive. Retries requiring public key crypto are a non starter.
+MT: Another option (relating to migration looking like connection establishment) might be viable.
+Mirja: Whatever we do is just increasing the work for someone to break it and for servers (receivers). This is worse if there are middleboxes with few QUIC connections yet servers with many QUIC connections. Might not be worth the performance cost given uncertainty of threat model and risks. It's more important we have a way out for now.
+Ekr: Not sure we're increasing the cost for server of client. One or two more symmetric crypto operations is not that bad. 
+Ben Schwartz: Split mode ESNI forwarder is a middlebox that needs to knwo the version number. Split mode is probably incompatible with in-band VN. 
+David Benjamin: Also consider whether or not the middleboxes can be updated. In TLS 1.3, middleboxes ossified and couldn't be updated. The idea with trial decryption and rapid updates made it so that some middleboxes never caught up, and for those that did can be persuaded to be fixed.
+Ekr: ACK -- agreed that there's some class of middleboxes that can't be updated. 
+Roberto: Protecting against lazy implementers. We're missing protecting against lazy endpoint implementers. Important to think about second aspect, which is that hard working implementers will do the Right Thing. We should consider whether or not detection of them is important.
+Brian: Two operations one can do without the keys: (1) detect QUIC and drop (want QUIC vs non-QUIC to not be the flag to drop in v1), and (2) middleboxes might detect different versions and force downgrade. 
+MT: Don't disagree. We have evidence that people build "if TLS then drop packet" products. The first issue (suppressing is this QUIC v1) is important. Can't suppress QUIC vs non-QUIC.
+Subodh: Not convinced that masking the VN is sufficient to stop motivated attackers from detecting QUIC v1 vs v2. Attacker could do trial decryption to make a determiniation. More substantial changes are needed if we want complete indistinguishability. Protecting against lazy implementers (with obfuscation) is good.
+Ekr: Agree that masking is not enough. Need encryption under unknown keys. Ability to parse CH is version dependent. This helps enforce protocol correctness.
+Jonathan: Detecting QUIC vs non-QUIC to be able to let QUIC but not other UDP through may be needed.
+Ben: Middleboxes *will* attempt to detect and distinguish VNs. Need to parse SNI out of CH for censorship. These are common. These systems will be doing version-dependent processing, and will likely not fail open if they don't like the VN.
+Brian: Strongest desire is to distinguish QUIC from garbage to let QUIC through. Best way forward is to have a single clear breakpoint inside the initial. 
+Gorry: Want QUIC v2, v3, etc to appear. 
+Jana: Some firewalls do offer QUIC detection as a feature. That’s likely to increase. And SNI-based censoring will continue. Lazy implementers is a real problem that we should address. (There’s a lot precedent for folks getting protocol details wrong in shipping products.) We should not lose solving the first problem while working for the second one. 
+Lars: Thee hums: do nothing, protect against lazy implementers, and protect against eager implementers.
+David Schinazi: Recently deployed Google QUIC 46, respecting IETF invariants. Many introspection features exist (sniffing SNI for video broke since they changed packet format) and are used in practice. Afraid of lazy implementers. Protecting against eager implementers is hard since, if the client can detect it, then so can the middleboxes to some degree. Opinion: do a little bit for now, and don’t get too smart. 
+Mirja: Don’t want to get to the point where people won’t support QUIC if they’re unable to perform current or deemed essential services.
+Ben: Some discussion of a QUIC bit. Would like the inverse, that there’s a space of packets that have an inverse wire image of QUIC that won’t collide and would like to multiplex other protocols alongside. 
+Lars: We currently have that. You want to maintain current behavior.
+Ben: Exposing the VN can occur in the last packet.
+Mirja: Purpose of ESNI is to force people to block everything if they want to block anything. Agree that some things are more expensive and that some eager implementer mitigations are only incrementally expensive. Currently undecided between the options.
+Kazhuo: Connection greasing is a good way to prevent middleboxes from decrypting the CI to determine version. Consensus call: are we going to decide these as optional or mandatory features?
+Lars: Assumed they’d be mandatory.
+Ekr: Some are optional and some are not. The version with removing the VN and do trial decryption is not optional, whereas connection greasing is. 
+Ian: Assumed they’d all be optional. Are any options going to be what Christian suggested to submit new versions rapidly update. 
+Ekr: Is that “do nothing”?
+Ian: Not really, since we’re actively doing something (submitting new versions).
+Lars: Can’t agree on shipping frequency. 
+Jana: Can make optional vs non-optional earlier on. 
+Ben: Lazy implementers might take off-the-shelf library and shove packets into it to determine what version it is. Seems to be less engineering work.
+Mirja: Answer to the hum depends on the solution.
+Roberto: Lazy versus hard working is the same as those that have not read and read the spec, respectively.
+
+Hums:
+Nothing: little
+Something for lazy: strong consensus
+Something for eager: little
+
+MT: This is a decision that will bind our actions in this WG before we ship the protocol. Does not preclude future work. 
+Lars: The hum was to determine what we’re doing for QUIC v1. Does not preclude future work.
+Martin Duke: Optional things don’t need to block v1. 
+Mirja: There is an option to do nothing and protect against lazy implementers by sending two versions at once. 
+Lars: Not clear if that’s a viable long term solution.
+Mirja: Keep deploying versions quickly and dynamically.
+Lars: WG can’t agree on this sort of solution.
+Kazuho: Have not spent much time on discussing hard working implementers.
+Lars: Hum indicated that we’ll spend time on option (2).
+Ekr: Matched my understanding. Do we need a Design Team or something else?
+MT: Martin Duke suggested that if we remove this from blocking V1 we might have some time. H3 will take the longest to finalize. We’ll have plenty of time to sort this out.
+Lars: Closed by the interim?
+Ekr: Suggest bringing proposal to the interim. 
+Lars: Lots of people are interested. Talk to Ekr, who will lead the team.
+MT: Version downgrade is not really detectable. Should be coupled to the VN work that’s ongoing. 
+Ekr: There’s no version negotiation currently. Would like to change those semantics. 
+David Schinazi: The reason to remove version downgrade prevention was due to ratholing. The rationale was to take it out and implement it as an extension.
+Roberto: Trying to avoid ratholing. For the design team: is downgrade detection part of the scope? 
+Ekr: No, since there’s not any version negotiation currently. 
+
+H3 Priorities:
+Ian (summarizing side meeting): Fairly broad interest in removing H2-style priorities from H3 spec. Interest in trying to ship something in time for H3. Unclear if it should be blocking or not, and whether or not it should be conveyed in a frame or header. Broad support for a setting that indicates if priorities are used and which scheme.
+MT: Not broad support for that. Broad support for signalling that one’s not doing the H2 scheme.
+Ian: We need broader consensus on the idea that we will not do H2-style priorities. 
+Mark: Needs cross discussion with httpbis group. Might need to take this to the AD for a charter change. 
+Roberto: H2 priorities have failed. 
+MT: Agreed. If this goes on the critical path it’s unlikely that we’ll ship an RFC next year.
+Roberto: Both outcomes of removing priorities (everything’s fine, and some things break) are fine.
+Jana: Are we talking about creating a new priority scheme in this group or in httpbis?
+Mark: We’re discussing H3 with no priority scheme, or one that’s compatible. 
+Jana: Supportive of shipping with no priorities, knowing that some implementations will do it but not based on a specification. 
+Mark: Priority scheme means client-to-server priority hinting mechanism.
+David Schinazi: What we have in the spec currently is complicated. Preference is to not have hints in the core spec. There will likely be experimentation with priorities as extensions, and they can all land later.
+Kazhuo: (missed)
+Roberto: These schemes were always optional. Either outcome should not block H3. 
+Lucas: Agree with Roberto. Disagree about placeholders. Hard to create hints without a placeholder. (??)
+
+Hum:
+Keep H2 priorities in H3: (1 in Jabber)
+Remove H2 priorities from H3: (lots) // please rephrase this question as needed
+Don’t know what to do yet: (nothing)
+
+#2789 Use a higher speed RTT for new paths
+MT: Didn’t understand Gorry’s text. 
+Gorry: If the principle is to do what TCP does in this environment, then text needs to be improved. 
+Ian: Some text has improved since Gorry filed the issue. Will work with Jana to prepare a PR.
+Jana: (missed)
+Gorry: (missed)
+Lars: This is only editorial.
+
+#2630 Define under-utiliation of cwnd
+Gorry: Complicated to get the text. The intent was easy.
+Ian: There’s a PR for this issue. Need more people to review the PR.
+Praveen: (Comment from audio will go into the Github issue.)
+Jana: We have algorithms for capping cwnd. 
+Gorry: Will work with Jana to update soon.
+
+#2556 Should kPersistentCongestionThreshold be 2 or 3?
+MT: If TCP had principles we could use to make a decision here, then we should use it. But we don’t have that.
+Ian: We picked a constant that was most similar to the number of TLPs we send before declaring congestion. 
+Jana: Spec says two TLPs then an RTO. 
+Lars: Close with no action and re-open if an issue is found with validation.
+MT: Not sure we’ll have enough information to pick a constant with confidence. Maybe we should just acknowledge that.
+Lars: Which value is more conservative.
+MT: 2 is more conservative. 
+Lars: In the absence of data, let’s just do 2. 
+Jana: In the absence of data, we can also do 3. It doesn’t matter to me. We need an illustration as to what the value means and what happens if it’s changed. People may set these constants to whatever they want anyway.
+Gorry: This is new ground in the IETF. 
+Lars: Close with no action.
+
+#2555 Define idle period for congestion period
+Ian: Need to discuss with Praveen.
+Jana: On general issue of idle period, we chose not to not walking into that territory and defer discussion of that to a separate RFC. 
+
+#2534 ECT text disables ECN too aggressively
+Jana: Will update.
+
+#2923 Min_RTT management
+Lars: LEDBAT has similar concept of Min_RTT, and we refresh it over the lifetime of a connection. Does anyone know what it does.
+Jana: Not sure LEDBAT does anything.
+MT: Would suggest something less than something naive, wherein you cut and start over every 10 minutes. Probably want to do something in terms of number of samples rather than time. 
+Roberto: Provided code does not require a variable with Min_RTT, great.
+Andrew: (missed)
+MT: There are many ways to bike shed this issue. We should make some suggestions and not do anything more complicated than that. Resetting on idle won’t work for a number of usage patterns, since definitions of idle vary. 
+Ian: How many people have read recovery document. (Lots of hands are raised.)
+Jana: Maybe they read it and don’t care.
+Eric: We did what was in the recovery draft.
+
+#2632 H# GOAWAY should be symmetric and cover bidi and uni streams
+Mike Bishop: GOAWAY in H2 refers to streams and makes things stop in both directions. Should do the same thing here. 
+MT: Want to argue the converse, since this depends on conception of PUSH. If you shut down PUSH, you need to let requests continue.
+Mark: Does anyone else care about the outcome? (No hands.) Is this issue a blocker?
+Mike: If PRIORITY is removed, we can close over half the issues.
+MT: Will commit to discussing with Alan. People who understand the problem need chat.
+Roberto: Does GOAWAY make most sense at H3 or a layer beneath. Will we resolve it in V1? Not sure.
+MT: Against moving GOAWAY down in any version.
+Mark: Take discussion to the list.
  
  
 Future meetings, implementation drafts, and getting to Last Call
