@@ -1,5 +1,51 @@
 # QUIC Working Group Minutes - IETF105 Montreal
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Tuesday, 23 July, 2019](#tuesday-23-july-2019)
+  - [Hackathon / Interop Report](#hackathon--interop-report)
+  - [Issue Discussion](#issue-discussion)
+    - [https://github.com/quicwg/base-drafts/issues/2792 (Marten Seeman assigned to Sean Turner)](#httpsgithubcomquicwgbase-draftsissues2792-marten-seeman-assigned-to-sean-turner)
+    - [https://github.com/quicwg/base-drafts/issues/2670 (Nick Banks issue, Martin Thomsom presenting)](#httpsgithubcomquicwgbase-draftsissues2670-nick-banks-issue-martin-thomsom-presenting)
+    - [https://github.com/quicwg/base-drafts/issues/2844](#httpsgithubcomquicwgbase-draftsissues2844)
+    - [https://github.com/quicwg/base-drafts/issues/2863](#httpsgithubcomquicwgbase-draftsissues2863)
+    - [https://github.com/quicwg/base-drafts/issues/2763](#httpsgithubcomquicwgbase-draftsissues2763)
+    - [https://github.com/quicwg/base-drafts/issues/2834](#httpsgithubcomquicwgbase-draftsissues2834)
+    - [https://github.com/quicwg/base-drafts/issues/2770](#httpsgithubcomquicwgbase-draftsissues2770)
+    - [https://github.com/quicwg/base-drafts/issues/2785](#httpsgithubcomquicwgbase-draftsissues2785)
+    - [https://github.com/quicwg/base-drafts/issues/2741](#httpsgithubcomquicwgbase-draftsissues2741)
+    - [https://github.com/quicwg/base-drafts/issues/2534](#httpsgithubcomquicwgbase-draftsissues2534)
+    - [https://github.com/quicwg/base-drafts/issues/2656](#httpsgithubcomquicwgbase-draftsissues2656)
+    - [https://github.com/quicwg/base-drafts/issues/2496](#httpsgithubcomquicwgbase-draftsissues2496)
+    - [https://github.com/quicwg/base-drafts/issues/2084](#httpsgithubcomquicwgbase-draftsissues2084)
+    - [https://github.com/quicwg/base-drafts/issues/2170](#httpsgithubcomquicwgbase-draftsissues2170)
+    - [https://github.com/quicwg/base-drafts/issues/2143](#httpsgithubcomquicwgbase-draftsissues2143)
+    - [https://github.com/quicwg/base-drafts/issues/2388](#httpsgithubcomquicwgbase-draftsissues2388)
+    - [https://github.com/quicwg/base-drafts/issues/2387](#httpsgithubcomquicwgbase-draftsissues2387)
+    - [https://github.com/quicwg/base-drafts/issues/2205](#httpsgithubcomquicwgbase-draftsissues2205)
+    - [https://github.com/quicwg/base-drafts/issues/2342](#httpsgithubcomquicwgbase-draftsissues2342)
+    - [https://github.com/quicwg/base-drafts/issues/2389](#httpsgithubcomquicwgbase-draftsissues2389)
+    - [https://github.com/quicwg/base-drafts/issues/2602](#httpsgithubcomquicwgbase-draftsissues2602)
+  - [AOB Tuesday](#aob-tuesday)
+- [Wednesday, 24 July, 2019](#wednesday-24-july-2019)
+  - [Issue Discussion](#issue-discussion-1)
+    - [#2844 Client Connection IDs are Broken](#2844-client-connection-ids-are-broken)
+    - [#2863 Unrecoverable loss patterns lead to deadlock](#2863-unrecoverable-loss-patterns-lead-to-deadlock)
+    - [#2496 QUIC Version Ossification](#2496-quic-version-ossification)
+  - [H3 Priorities](#h3-priorities)
+  - [Recovery and HTTP Issues](#recovery-and-http-issues)
+    - [#2789 Use a higher speed RTT for new paths](#2789-use-a-higher-speed-rtt-for-new-paths)
+    - [#2630 Define under-utiliation of cwnd](#2630-define-under-utiliation-of-cwnd)
+    - [#2555 Define idle period for congestion period](#2555-define-idle-period-for-congestion-period)
+    - [#2534 ECT text disables ECN too aggressively](#2534-ect-text-disables-ecn-too-aggressively)
+    - [#2923 Min_RTT management](#2923-min_rtt-management)
+    - [#2632 H# GOAWAY should be symmetric and cover bidi and uni streams](#2632-h-goaway-should-be-symmetric-and-cover-bidi-and-uni-streams)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 
 ## Tuesday, 23 July, 2019
 
@@ -584,6 +630,7 @@ Hum:
  - Don’t know what to do yet: (nothing)
 
 
+### Recovery and HTTP Issues
 
 #### #2789 Use a higher speed RTT for new paths
 
