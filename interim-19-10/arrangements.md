@@ -14,7 +14,7 @@ If you wish to observe the meeting but not actively participate, you are strongl
 
 Attendees should also note the [agenda](agenda.md), as some topics will be considered out-of-scope for this meeting.
 
-[Register here](). **Registration closes on 13 September 2019.**
+[Register here](https://forms.gle/MDNHUW49qEoYiTGf9). **Registration closes on 13 September 2019.**
 
 
 ## Schedule and Agenda
