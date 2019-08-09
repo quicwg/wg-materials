@@ -47,7 +47,7 @@ The interop event on Monday and Tuesday will be in a different location nearby (
 
 Nearby airports include [SFO](http://flysfo.com) and [SJC](https://www.flysanjose.com).
 
-Generally, a car is necessary to get around Silicon Valley, although can can also use services like [Uber](https://www.uber.com), [Lyft](https://www.lyft.com) and of course [taxis](https://www.siliconvalleyyellowtaxi.com/#!).
+Generally, a car is necessary to get around Silicon Valley, although you can also use services like [Uber](https://www.uber.com), [Lyft](https://www.lyft.com) and of course [taxis](https://www.siliconvalleyyellowtaxi.com/#!).
 
 
 ## Accommodation
