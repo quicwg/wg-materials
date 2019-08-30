@@ -24,5 +24,38 @@ _16-17 October_
 
 ## Agenda
 
+### Interop Summary
+
+_~5 minutes_
+
+See the [interop sheet](https://docs.google.com/spreadsheets/d/1D0tW89vOoaScs3IY9RGC0UesWGAwE6xyLk0l4JtvTVg/edit#gid=535093126)
+
+
+### Transport and TLS Issues
+
+See the [project board](https://github.com/quicwg/base-drafts/projects/5).
+
+
+### HTTP and QPACK Issues
+
+See the [http issues list](https://github.com/quicwg/base-drafts/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3A-http+label%3Adesign) and [qpack issues list](https://github.com/quicwg/base-drafts/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3A-qpack+label%3Adesign).
+
+### Recovery Issues
+
+See the [recovery issues list](https://github.com/quicwg/base-drafts/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3A-recovery+label%3Adesign).
+
+
+### Planning
+
+_~15 minutes_
+
+- Next meeting(s)
+- Next interop
+- Getting done
+
+
+### As Time Permits
+
+
 
 _TBD_
