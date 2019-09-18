@@ -33,6 +33,16 @@ See the [interop sheet](https://docs.google.com/spreadsheets/d/1D0tW89vOoaScs3IY
 
 ### Transport and TLS Issues
 
+* We need to be done with these issues (and they need discussion):
+  * Issue 2863: Handshake deadlock issue
+  * Issue 2632: Bidirectional H3 GOAWAY
+  * Issue 2602: Idle timeout
+
+* Issues that need discussion:
+  * Issue 3014: Are we changing Retry?
+  * Issue 2928: Multi-packet CH
+  * Issue 2496: Version Number Ossification
+
 See the [project board](https://github.com/quicwg/base-drafts/projects/5).
 
 
