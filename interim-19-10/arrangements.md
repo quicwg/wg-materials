@@ -36,12 +36,17 @@ See [the agenda](agenda.md) for full details.
     Cupertino, CA 95014
     USA
 
+Due to construction, the entrance from De Anza Blvd. is closed. Enter the building via the entrance that faces Bandley Dr.
+Parking is available in the parking lot which can be entered from Lazaneo Dr. or Bandley Dr.
+
 The interop event on Monday and Tuesday will be in a different location nearby ([map](https://duckduckgo.com/?q=4+Infinite+Loop+Cupertino%2C+CA+95014&t=osx&ia=maps&iaxm=maps&strict_bbox=0&bbox=37.341774956134316%2C-122.04414088950196%2C37.315225645604386%2C-122.02182491049805)):
 
     4 Infinite Loop
     Cupertino, CA 95014
     USA
 
+Upon arrival, continue straight on Mariani Ave. until it becomes Infinite Loop and enter via the door labeled "4 Infinite Loop".
+Parking is available in the parking lot outside Infinite Loop 4.
 
 ## Transportation
 
