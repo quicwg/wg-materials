@@ -53,6 +53,10 @@ See the [http issues list](https://github.com/quicwg/base-drafts/issues?utf8=✓
 
 See the [recovery issues list](https://github.com/quicwg/base-drafts/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3A-recovery+label%3Adesign).
 
+### QUIC-LB update (20 min)
+
+Brief re-introduction to the draft and its current status. This is a prelude
+to moving for adoption in Singapore. See the [most recent draft](https://datatracker.ietf.org/draft-duke-quic-load-balancers).
 
 ### Planning
 
