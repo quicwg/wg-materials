@@ -1,7 +1,70 @@
+
 # QUIC May 2019 Interim Meeting Minutes
 
 * Chairs: Mark Nottingham, Lars Eggert
 * Location: Cupertino, US
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+  - [Wednesday Morning](#wednesday-morning)
+
+- [Wednesday Morning](#wednesday-morning)
+  - [Agenda bash and arrangements](#agenda-bash-and-arrangements)
+  - [Interop Summary](#interop-summary)
+  - [Transport and TLS Issues](#transport-and-tls-issues)
+    - [Issue 3014: Are we changing Retry?](#issue-3014-are-we-changing-retry)
+    - [Issue 2928: Multi-packet CH](#issue-2928-multi-packet-ch)
+    - [Issue 2863: Handshake deadlock issue](#issue-2863-handshake-deadlock-issue)
+    - [Issue 3067:  PTO gets extended before handshake completion](#issue-3067--pto-gets-extended-before-handshake-completion)
+    - [Back to 2863](#back-to-2863)
+- [Wednesday Afternoon](#wednesday-afternoon)
+  - [Transport and TLS (continued)](#transport-and-tls-continued)
+    - [Issue 2602: Idle timeout](#issue-2602-idle-timeout)
+    - [Issue 2496: Version Ossification](#issue-2496-version-ossification)
+    - [Issue 3091: Require sending ACKs for ack-eliciting](#issue-3091-require-sending-acks-for-ack-eliciting)
+    - [Issue 3053: Padding requirements are incorrect](#issue-3053-padding-requirements-are-incorrect)
+    - [Issue 2152: Stateless reset being checked after MAC failure](#issue-2152-stateless-reset-being-checked-after-mac-failure)
+    - [Issue 3085: Stateless reset should be datagram-based](#issue-3085-stateless-reset-should-be-datagram-based)
+    - [Issue 3020: Transport parameter registry changes](#issue-3020-transport-parameter-registry-changes)
+    - [Issue 2741: Initial key discard](#issue-2741-initial-key-discard)
+    - [Issue 2792: Timing side-channel on key updates](#issue-2792-timing-side-channel-on-key-updates)
+    - [Issue 2143: Be conservative about migration](#issue-2143-be-conservative-about-migration)
+    - [Issue 2387: Security considerations](#issue-2387-security-considerations)
+    - [Issue 3027: Codes for frame encoding errors](#issue-3027-codes-for-frame-encoding-errors)
+    - [Issue 3054: Label for key updates](#issue-3054-label-for-key-updates)
+    - [Issue 3046](#issue-3046)
+  - [Triage](#triage)
+    - [Issue 2909: Path migration assumptions](#issue-2909-path-migration-assumptions)
+    - [Issue 3100: ACK+PADDING in response to ACK should be illegal](#issue-3100-ackpadding-in-response-to-ack-should-be-illegal)
+    - [Issue 3062: Disconnect version number from draft number](#issue-3062-disconnect-version-number-from-draft-number)
+    - [Issue 2755: ECN algorithm](#issue-2755-ecn-algorithm)
+    - [Issue 2823: Do initial secrets change after retry packets?](#issue-2823-do-initial-secrets-change-after-retry-packets)
+    - [Issue 3097: Is CONNECTION_CLOSE really ack eliciting?](#issue-3097-is-connection_close-really-ack-eliciting)
+    - [Issue 3095: Backoff of connection close needs to be a MUST](#issue-3095-backoff-of-connection-close-needs-to-be-a-must)
+  - [Recovery](#recovery)
+    - [Issue 3094: Bursty sends on cwind increase](#issue-3094-bursty-sends-on-cwind-increase)
+    - [Issue 3078: Lost server Initial takes too long to retransmit](#issue-3078-lost-server-initial-takes-too-long-to-retransmit)
+    - [Issue 2555: Define idle period for CC](#issue-2555-define-idle-period-for-cc)
+- [Thursday Morning](#thursday-morning)
+  - [Future Planning](#future-planning)
+    - [Next Meetings](#next-meetings)
+    - [Interims](#interims)
+  - [QUIC-LB](#quic-lb)
+- [Thursday Afternoon](#thursday-afternoon)
+  - [HTTP and QPACK Issues](#http-and-qpack-issues)
+    - [Next issue: GOAWAY, see above.](#next-issue-goaway-see-above)
+    - [Next issue:  How we deal with SETTINGS](#next-issue--how-we-deal-with-settings)
+    - [2797  concurrent requests and initial_max_bidi are not the same?](#2797--concurrent-requests-and-initial_max_bidi-are-not-the-same)
+    - [2817. Guidance around how to translate error codes?  If so, should it be normative?](#2817-guidance-around-how-to-translate-error-codes--if-so-should-it-be-normative)
+    - [2911 Not have a unified space?](#2911-not-have-a-unified-space)
+    - [2963 Doe we need to explicitly state that if the server does not abort reading, the client MUST continue sending the request body even if it sees a response begin?  What about if the response is complete?](#2963-doe-we-need-to-explicitly-state-that-if-the-server-does-not-abort-reading-the-client-must-continue-sending-the-request-body-even-if-it-sees-a-response-begin--what-about-if-the-response-is-complete)
+    - [3061 Missing QUIC Version Hints](#3061-missing-quic-version-hints)
+    - [QPACK:  Boolean blocked streams setting #3073.](#qpack--boolean-blocked-streams-setting-3073)
+    - [HTTP Priorities](#http-priorities)
+    - [Key discards](#key-discards)
+    - [Jana:  Interop runner.](#jana--interop-runner)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
 ## Wednesday Morning
