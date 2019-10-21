@@ -6,8 +6,6 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-  - [Wednesday Morning](#wednesday-morning)
-
 - [Wednesday Morning](#wednesday-morning)
   - [Agenda bash and arrangements](#agenda-bash-and-arrangements)
   - [Interop Summary](#interop-summary)
@@ -60,9 +58,9 @@
     - [2963 Doe we need to explicitly state that if the server does not abort reading, the client MUST continue sending the request body even if it sees a response begin?  What about if the response is complete?](#2963-doe-we-need-to-explicitly-state-that-if-the-server-does-not-abort-reading-the-client-must-continue-sending-the-request-body-even-if-it-sees-a-response-begin--what-about-if-the-response-is-complete)
     - [3061 Missing QUIC Version Hints](#3061-missing-quic-version-hints)
     - [QPACK:  Boolean blocked streams setting #3073.](#qpack--boolean-blocked-streams-setting-3073)
-    - [HTTP Priorities](#http-priorities)
-    - [Key discards](#key-discards)
-    - [Jana:  Interop runner.](#jana--interop-runner)
+  - [HTTP Priorities](#http-priorities)
+  - [Key discards](#key-discards)
+  - [Jana:  Interop runner.](#jana--interop-runner)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -1105,7 +1103,7 @@ Ian:  looking at the code for this, it is fairly complex.
 
 Alan:  If the encoder is conservator, it gets less complex.
 
-#### HTTP Priorities
+### HTTP Priorities
 
 Ian
 
@@ -1185,7 +1183,7 @@ Ryan: we should have some mechanism to help servers send the right things to cli
 
 Ian will write a draft for Singapore and present it in HTTP and QUIC.  The draft will need extensions for both H2 and H3; the negotiation pieces for H3 needs to be done for QUIC.
 
-#### Key discards 
+### Key discards 
 
 MT: No one has gotten a solution that has resulted in happiness.  My suggestion is:  you keep the keys forever.  If someone can find a solution that allows us to discard them before the connection closes, we can consider that.  
 
@@ -1229,7 +1227,7 @@ All: not the same issue of deadlock.
 
 Mnot:  We have a plan, the next step is PR.
 
-#### Jana:  Interop runner.  
+### Jana:  Interop runner.  
 
 Marten:  Dockerized implementations that run test cases against each other and reports the output.  After the tests run, we take a pcap and check that the right thing happened (e.g. retry).
 
