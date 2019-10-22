@@ -1,6 +1,6 @@
 # QUIC Working Group Interim Meeting - October 2019
 
-This is the arrangements page for the QUIC Working Group's eighth Interim Face-to-Face meeting,
+This is the arrangements page for the QUIC Working Group's ninth Interim Face-to-Face meeting,
 hosted by Apple in Cupertino, California USA.
 
 

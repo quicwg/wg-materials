@@ -1,6 +1,6 @@
 # QUIC Working Group Interim Meeting - January 2019
 
-This is the arrangements page for the QUIC Working Group's sixth Interim Face-to-Face meeting,
+This is the arrangements page for the QUIC Working Group's seventh Interim Face-to-Face meeting,
 hosted by Akamai in Tokyo, Japan.
 
 

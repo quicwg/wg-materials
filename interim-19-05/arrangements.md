@@ -1,6 +1,6 @@
 # QUIC Working Group Interim Meeting - May 2019
 
-This is the arrangements page for the QUIC Working Group's seventh Interim Face-to-Face meeting,
+This is the arrangements page for the QUIC Working Group's eighth Interim Face-to-Face meeting,
 hosted by Cloudflare in London, United Kingdom.
 
 
