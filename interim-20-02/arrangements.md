@@ -29,11 +29,20 @@ See [the agenda](agenda.md) for full details.
 
 ## Meeting Location
 
-[Google](https://google.com/) is hosting our meeting at their offices in Zurich 
-([map]()):
+[Google](https://google.com/) is hosting our meeting at their offices in Zurich.
 
-    address
-    here
+The first day of the interop meeting will be at ([map](https://goo.gl/maps/MJ9jymBjxfkTmp33A)):
+
+    Gustav-Gull-Platz 1
+    8004 Zürich
+    Switzerland
+
+All other days will meet at ([map](https://goo.gl/maps/CcqirTmNzUTwyYUp8)):
+
+    Kasernenstrasse 97 Sihlpost
+    8004 Zürich
+    Switzerland
+
 
 ## Transportation
 
