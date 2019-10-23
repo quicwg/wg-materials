@@ -1,5 +1,5 @@
 
-# QUIC May 2019 Interim Meeting Minutes
+# QUIC October 2019 Interim Meeting Minutes
 
 * Chairs: Mark Nottingham, Lars Eggert
 * Location: Cupertino, US
