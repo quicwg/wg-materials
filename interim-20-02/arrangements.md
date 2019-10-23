@@ -31,26 +31,36 @@ See [the agenda](agenda.md) for full details.
 
 [Google](https://google.com/) is hosting our meeting at their offices in Zurich.
 
-The first day of the interop meeting will be at ([map](https://goo.gl/maps/MJ9jymBjxfkTmp33A)):
+Monday's interop event will be in the Alptransit room on the third floor of the
+Google EURG building ([map](https://goo.gl/maps/N8BwruZkMMd8LXTR6)):
 
     Gustav-Gull-Platz 1
     8004 Zürich
     Switzerland
 
-All other days will meet at ([map](https://goo.gl/maps/CcqirTmNzUTwyYUp8)):
+Tuesday's interop event will be in the Sihlpost room on the fourth floor of the
+Google EURA1 building (also called Sihlpost, the old central post office)
+([map](https://goo.gl/maps/5JXtcBV2QRyx1hwn7)):
 
-    Kasernenstrasse 97 Sihlpost
+    Kasernenstrasse 97
     8004 Zürich
     Switzerland
 
-
 ## Transportation
 
-[Zurich Airport](https://www.flughafen-zuerich.ch) is the closest international airport. There are [many direct train connections](https://www.rome2rio.com/map/Zurich-Airport-ZRH/Zürich-HB) to Zurich Hauptbahnhof (next to the venue), with a transfer time of about ten minutes.
+[Zurich Airport](https://www.flughafen-zuerich.ch) (IATA ZRH) is the closest
+international airport. 
 
+Both buildings are a short (EURA1: 1 minute, EURG: 6 minutes) walk from the 
+Europaallee exit of Zurich main railway station 
+([Zürich HB](https://www.sbb.ch/en/station-services/railway-stations/shopville-zuerich-main-station.html)). 
+There is a [direct 12-minute train connection](https://goo.gl/maps/AnLnqysrCHJ97vKD9) 
+every ten minutes from the airport to HB. Be sure to purchase a ticket (ZVV zones 
+110 and 121) before boarding the train.
 
 ## Accommodation
 
-There are a large number of hotels within walking distance.
+There are [numerous hotels](https://www.google.com/maps/search/hotels+near+Zurich+Main+Station,+Bahnhofplatz,+Zürich/) 
+within walking distance of the venue and the main station.
 
  
