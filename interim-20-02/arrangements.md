@@ -14,7 +14,9 @@ If you wish to observe the meeting but not actively participate, you are strongl
 
 Attendees should also note the [agenda](agenda.md), as some topics will be considered out-of-scope for this meeting.
 
-[Register here](). **Registration closes on 10 January 2020.**
+[Register here](). **Registration closes on 10 January 2020.** Since access to
+the venue is controlled, *attendees not registered by the deadline will not be
+issued visitor badges, and therefore not admitted to the venue.*
 
 
 ## Schedule and Agenda
@@ -46,6 +48,10 @@ Google EURA1 building (also called Sihlpost, the old central post office)
     8004 Zürich
     Switzerland
 
+In both cases, access to the building is controlled, and the meeting rooms are
+adjacent to the reception area. Find the Google reception entrance at each
+building, go to reception, and retrieve your visitor badge upon arrival.
+
 ## Transportation
 
 [Zurich Airport](https://www.flughafen-zuerich.ch) (IATA ZRH) is the closest
@@ -57,6 +63,9 @@ Europaallee exit of Zurich main railway station
 There is a [direct 12-minute train connection](https://goo.gl/maps/AnLnqysrCHJ97vKD9) 
 every ten minutes from the airport to HB. Be sure to purchase a ticket (ZVV zones 
 110 and 121) before boarding the train.
+
+Auto rental is *not recommended*: long-term parking near the station is scarce
+and exorbitantly expensive, even for Zurich.
 
 ## Accommodation
 
