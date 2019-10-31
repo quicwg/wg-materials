@@ -14,7 +14,7 @@ If you wish to observe the meeting but not actively participate, you are strongl
 
 Attendees should also note the [agenda](agenda.md), as some topics will be considered out-of-scope for this meeting.
 
-[Register here](). **Registration closes on 10 January 2020.** Since access to
+[Register here](https://forms.gle/mj4KCM7VGVkyoKkf7). **Registration closes on 10 January 2020.** Since access to
 the venue is controlled, *attendees not registered by the deadline will not be
 issued visitor badges, and therefore not admitted to the venue.*
 
