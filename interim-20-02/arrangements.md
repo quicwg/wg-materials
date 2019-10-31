@@ -24,7 +24,7 @@ issued visitor badges, and therefore not admitted to the venue.*
 We'll be meeting Wednesday and Thursday, 5-6 February 2020. Meetings will begin at 9:30am and end
 at approximately 5pm on each day (although we may choose to end earlier).
 
-There will also be an **interop event** on 4-5 February (Monday and Tuesday).
+There will also be an **interop event** on 3-4 February (Monday and Tuesday).
 
 See [the agenda](agenda.md) for full details.
 
