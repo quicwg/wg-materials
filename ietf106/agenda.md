@@ -53,6 +53,9 @@ See:
 
 Continued from previous session.
 
+### QUIC Load Balancers
+
+* 20 min - Discussion of the QUIC-LB draft, call for adoption
 
 ### Planning
 
