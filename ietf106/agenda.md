@@ -53,9 +53,14 @@ See:
 
 Continued from previous session.
 
+
+### QUIC Datagrams
+
+* 15 min - Discussion of the [QUIC Datagram draft](https://tools.ietf.org/html/draft-pauly-quic-datagram-05), call for adoption
+
 ### QUIC Load Balancers
 
-* 20 min - Discussion of the QUIC-LB draft, call for adoption
+* 15 min - Discussion of the [QUIC-LB draft](https://tools.ietf.org/html/draft-duke-quic-load-balancers-06), call for adoption
 
 ### Planning
 
