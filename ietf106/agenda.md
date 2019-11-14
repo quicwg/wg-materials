@@ -69,4 +69,4 @@ Continued from previous session.
 
 ### As Time Permits
 
-_TBD_
+* 10 min - [QUIC Version Negotiation](https://tools.ietf.org/html/draft-schinazi-quic-version-negotiation-02.html)
