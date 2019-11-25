@@ -1,5 +1,39 @@
 # QUIC Working Group Minutes - IETF106 Singapore
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Tuesday 19 November](#tuesday-19-november)
+  - [Hackathon / Interop Report](#hackathon--interop-report)
+  - [Issue Discussion](#issue-discussion)
+    - [2792 Timing side-channel on key updates](#2792-timing-side-channel-on-key-updates)
+    - [3111 Version ossification](#3111-version-ossification)
+    - [3212 Remove requirement for handshake to complete before KeyUpdate](#3212-remove-requirement-for-handshake-to-complete-before-keyupdate)
+    - [3020 Transport parameters are too constraining](#3020-transport-parameters-are-too-constraining)
+    - [3159 Do not accept 1RTT before handshake completion](#3159-do-not-accept-1rtt-before-handshake-completion)
+    - [2863 QUIC Discard Handshake Keys](#2863-quic-discard-handshake-keys)
+    - [3197 Active connection ID limit defaults to 0](#3197-active-connection-id-limit-defaults-to-0)
+    - [2602](#2602)
+    - [2143 more conservative about migration](#2143-more-conservative-about-migration)
+  - [Triage Issues](#triage-issues)
+    - [3189 Add loss bits to unencrypted header](#3189-add-loss-bits-to-unencrypted-header)
+  - [QUICv2 For HTTP/3?](#quicv2-for-http3)
+- [Wednesday November 20, 2019](#wednesday-november-20-2019)
+  - [Planning](#planning)
+  - [Issues](#issues)
+    - [David Schinazi:  #3014 (Corrupt retry packets)](#david-schinazi--3014-corrupt-retry-packets)
+    - [3094](#3094)
+    - [Refs in Recovery](#refs-in-recovery)
+    - [3265](#3265)
+  - [Datagrams](#datagrams)
+  - [Version Negotiation](#version-negotiation)
+  - [QUIC Load Balancers](#quic-load-balancers)
+  - [Interop Runner](#interop-runner)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 ## Tuesday 19 November
 
 Scribes: Brian Trammell and Tommy Pauly
@@ -14,7 +48,7 @@ David: Some implementations doing datagram interop
 Jana: There was also testing of the docker testing infrastructure for QUIC implementations.
 
 
-#### Issue Discussion
+### Issue Discussion
 
 #### [2792](https://github.com/quicwg/base-drafts/issues/2792) Timing side-channel on key updates
 
