@@ -1,14 +1,11 @@
-# QUIC WG - Padang - 10:00 - 12:00 Tuesday 19 November
+# QUIC Working Group Minutes - IETF106 Singapore
+
+## Tuesday 19 November
 
 Scribes: Brian Trammell and Tommy Pauly
 
-# Agenda Bash
 
-Martin Thomson: QUIC Version Negotiation needs fifteen minutes ahead of datagrams and load balancers
-Mark: OK
-
-
-# Hackathon / Interop Report
+### Hackathon / Interop Report
 
 Martin Duke: 7 clients, 11 servers. Worse than usual, attendance not great and -24 dropped recently enough that 3-4 teams not ready to go. Pretty successful. Basic protocol functionality in good shape. Some implementations doing mobility stuff, some implementations doing push, we'd like to see more.
 
@@ -17,9 +14,9 @@ David: Some implementations doing datagram interop
 Jana: There was also testing of the docker testing infrastructure for QUIC implementations.
 
 
-# Issue Discussion
+#### Issue Discussion
 
-## [2792](https://github.com/quicwg/base-drafts/issues/2792) Timing side-channel on key updates
+#### [2792](https://github.com/quicwg/base-drafts/issues/2792) Timing side-channel on key updates
 
 ekr: Discussed in Montreal. If you receive a phase 0 packet and phase 1 packet. If valid, update keys. If invalid, []. Keyphase bits are not AEAD, attacker can flip bit and force processing / failed integrity check. Could probe keyphase since key update takes more time. Therefore keys should be computed in advance. However, spec also says no more than two keys retained. 
 
@@ -28,7 +25,7 @@ mt: draft currently says SHOULD, ekr argues MAY. Don't care. There can be the ti
 mt: Any objections? (nope) Will create a PR.
 
 
-## [3111](https://github.com/quicwg/base-drafts/issues/3111) Version ossification
+#### [3111](https://github.com/quicwg/base-drafts/issues/3111) Version ossification
 
 ekr: defer? we thought this would be simple in Montreal. we have discussed. it appears more complicated. maybe requirements creep. we will have a relatively long period of draft/release overlap so the corresponding risk of ossification seems less high in deployment. Let's use an extension once we're actually deploying. Not in v1.
 
@@ -49,7 +46,7 @@ Martin Duke: Put in the sidecar with QUICLB and Prio
 Mark: we'll talk about extensions tomorrow
 
 
-## [3212](https://github.com/quicwg/base-drafts/issues/3212) Remove requirement for handshake to complete before KeyUpdate
+#### [3212](https://github.com/quicwg/base-drafts/issues/3212) Remove requirement for handshake to complete before KeyUpdate
 
 Martin: Document currently prohibits key updates until connection confirmed, but there can be updates as soon as 1RTT available.
 
@@ -60,7 +57,7 @@ ekr: channels something isaid, not what this issues says. this says text in spec
 Christian: revisit this after the handshake done issue. editorial change OK.
 
 
-## [3020](https://github.com/quicwg/base-drafts/issues/3020) Transport parameters are too constraining
+#### [3020](https://github.com/quicwg/base-drafts/issues/3020) Transport parameters are too constraining
 
 David: main extensibility joint is 16-bit transport params space in IANA registry. almost all of this is spec required. experimenters may want a codepoint without writing a spec but it's 256 codepoints, there could be collisions. correct fix is to tweak the registry. PR 3109 fixes this. 
 
@@ -69,7 +66,7 @@ Martin T: Provisional registrations can go anywhere, expert review for the entir
 ekr: provisional registrations are essentially free? (yes)
 
 
-## [3159](https://github.com/quicwg/base-drafts/issues/3159) Do not accept 1RTT before handshake completion
+#### [3159](https://github.com/quicwg/base-drafts/issues/3159) Do not accept 1RTT before handshake completion
 
 Martin T: this goes to core of design philosophy. we have tried to maintain impossibility of stuff we don't want people to be able to do. however TLS allows server to send 1RTT packets before it should be able to. implementations would get 1rtt secrets and start accepting packets. how can we prevent this? if we want to change TLS, that would be disruptive. would rather in PR [3224]() just make the normative language stronger.
 
@@ -84,7 +81,7 @@ Martin T: putting tight requirements on the implementation is not the right thin
 Roberto Peon: not possible to ensure an conformant implementation will not have this defect. is it possible to ensure the remote can probe? (yes)
 
 
-## [2863](https://github.com/quicwg/base-drafts/issues/2863) QUIC Discard Handshake Keys
+#### [2863](https://github.com/quicwg/base-drafts/issues/2863) QUIC Discard Handshake Keys
 
 Slides: https://github.com/quicwg/wg-materials/blob/master/ietf106/QUIC_Discard_Handshake_Keys_IETF_106.pdf
     **NOTE** no slides available in meeting materials; please keep these synced from github!
@@ -100,7 +97,7 @@ Roberto Peon: of course, server side migration is much bigger than just this.
 Jana: To Brian's point, we have great analysis from ekr. Let's not lose that.
 
 
-## [3197] (https://github.com/quicwg/base-drafts/issues/3197) Active connection ID limit defaults to 0
+#### [3197](https://github.com/quicwg/base-drafts/issues/3197) Active connection ID limit defaults to 0
 
 Eric Kinneear: PR [3201](https://github.com/quicwg/base-drafts/pull/3201) also covers [3193](). default needs to become 2, because [reasons]
 
@@ -114,12 +111,12 @@ Eric Kinnear: you can change without migrating. you need two so the server can g
 
 Mark: it sounds like there;s more discussion to happen here. work it out and finish the PR, we can CfC in the next batch.
 
-## [2602]()
+#### [2602](https://github.com/quicwg/base-drafts/issues/2602)
 
 Jana: needs no discussion. has a PR, close to done.
 
 
-## [2143](https://github.com/quicwg/base-drafts/issues/2143) more conservative about migration
+#### [2143](https://github.com/quicwg/base-drafts/issues/2143) more conservative about migration
 
 Eric Kinnear: last status in Cupertino, went through the text, should be in good shape 
 
@@ -132,18 +129,13 @@ Christian [missing, attack based on unauthenticated IP addresses]
 Eric Kinnear: I believe the current text highlights the attack and that it lists capabilities of that attacker. Please take a look
 
 
-Triage Issues:
-=================
+### Triage Issues
 
-## [3189](https://github.com/quicwg/base-drafts/issues/3189) Add loss bits to unencrypted header
+#### [3189](https://github.com/quicwg/base-drafts/issues/3189) Add loss bits to unencrypted header
 
-Mark: We've discussed this before, we had a separate issue that we wouldn't do this in QUICv1. Issue was locked, since we need to triage.
-Personal take is that making it an extension will be most productive. We would need a big privacy and security review if we were to take this.
+Mark: We've discussed this before, we had a separate issue that we wouldn't do this in QUICv1. Issue was locked, since we need to triage. Personal take is that making it an extension will be most productive. We would need a big privacy and security review if we were to take this.
 
-Igor Lubashev: There's discussion in TSVWG. Spin bit doesn't get delay and loss to the path, and many operators want to see this. There
-was a lot of discussion already for spin bit, and we adopted that. There wasn't a proposal at that time for a loss bit. However, now
-we have code implemented for a loss bit. I think there's a lot of interest in the community. We want WG engagement to do a review of the
-new draft.
+Igor Lubashev: There's discussion in TSVWG. Spin bit doesn't get delay and loss to the path, and many operators want to see this. There was a lot of discussion already for spin bit, and we adopted that. There wasn't a proposal at that time for a loss bit. However, now we have code implemented for a loss bit. I think there's a lot of interest in the community. We want WG engagement to do a review of the new draft.
 
 Roberto Peon: I would like to ask what the layer of the protocol is. We're smooshing layers a lot in QUIC, but we're stepping a layer
 too deep to add these things. It seems sad to solve this in QUIC and not solve for other protocols. This should be a lower layer.
@@ -153,12 +145,7 @@ Mark: Our options are:
     - This is out of scope
     - We ask for an extension draft
 
-Brian Trammell: It sounds like Roberto wants a new IP version =) This sounds like PLUS! More seriously, there are two questions here:
-    do we want to replace the fact that we had implicit signals with explicit signals; and do we want *this* proposal. It's REALLY late
-    to have this conversation. While it's nice that Igor is eager to do this fast, but it's late. I'm concerned that this as an extension
-    mechanism is very different from a lot of other extension mechanisms, and is a lot bigger. Maybe we discuss how many bits are laid aside
-    in v1 for extensibility. The answer is less clear than the spin bit, but if we do end up deciding that we want to do this, it would be
-    a shame to realize the bits are not available.
+Brian Trammell: It sounds like Roberto wants a new IP version =) This sounds like PLUS! More seriously, there are two questions here: do we want to replace the fact that we had implicit signals with explicit signals; and do we want *this* proposal. It's REALLY late to have this conversation. While it's nice that Igor is eager to do this fast, but it's late. I'm concerned that this as an extension mechanism is very different from a lot of other extension mechanisms, and is a lot bigger. Maybe we discuss how many bits are laid aside in v1 for extensibility. The answer is less clear than the spin bit, but if we do end up deciding that we want to do this, it would be a shame to realize the bits are not available.
     
 DKG: (Jabber scribe) 
 
@@ -168,11 +155,11 @@ David Schinazi: The decision to add one bit for latency we reached took a very l
 
 ekr: Certainly, this should be possible in an extension mechanism. If there is some reason we can't do this, then we should fix that now! I'm not in favor of having this in QUICv1, it opens a can of worms. We don't have the resources as a group to do the right review on this work right now.
 
-Chris Box: My dayjob is running mobile networks. Reiterate the need to understand packet loss. Without that, network deteriorates. How it's done, don't care. Now or later? Don't want to wait too long. We don't block QUIC, we have no intention of blocking QUIC, p
+Chris Box: My day job is running mobile networks. Reiterate the need to understand packet loss. Without that, network deteriorates. How it's done, don't care. Now or later? Don't want to wait too long. We don't block QUIC, we have no intention of blocking QUIC, p
 
 Gorry Fairhurst: I think the use of bytes we call transport is what we do in TSV. IPPM is here. We need to stop going on about the later. It's part of the area, we should do this. Is this proposal right? Don't know. Spent so much time not talking about this. 
         
-Igor Lubashev: The opinion that we should do nothing here... [missing] why QUIC is on UDP is due to the pragmatic realization that it works. Pragmatism is in the spirit of QUIC. Meanwhile TSVWG is talking about how to do measurability the right way.
+Igor Lubashev: The opinion that we should do nothing here... _missing_ why QUIC is on UDP is due to the pragmatic realisation that it works. Pragmatism is in the spirit of QUIC. Meanwhile TSVWG is talking about how to do measurability the right way.
     
 Ted Hardie: Clearly we must do this or people might deploy ECN, and we must prevent that. I am happy to work on this if it is not gating for V1. Do not set aside bits now. We need a real design process. 
     
@@ -190,14 +177,15 @@ Tommy: Not appropriate for V1. Very useful to look into. It will be a much bette
 
 Brian: How many people are willing to look at the privacy analysis *after* v1?
 
-(About a dozen or more hands, about the same as the spin bit)
+_(About a dozen or more hands, about the same as the spin bit)_
 
 Mark: I'd suggest proposing an extension. Not clear whether this is on the agenda for Zurich or for Vancouver.
 
 Gorry Fairhurst: As TSVWG chair, try and make sure there is a home for this. If there are central mechanisms, we should do this in TSVWG. If there is energy here, do it here. Make sure we have only one home. 
 
 
-QUICv2 For HTTP/3?
+### QUICv2 For HTTP/3?
+
 Slides: https://github.com/quicwg/wg-materials/blob/master/ietf106/ALPN.pdf
 
 Mike Bishop: What do we do for the alpn interface? Has implications on Version Negotiation. You currently can't get to alpn before version. There are ways to do them simultaneously, though.
@@ -232,13 +220,13 @@ Kazuho: What does feature mean?
 
 Mike: We have been careful to design away from complicated feature combinations.
 
-Jana: Can we actually specify H3Q1? [peanut gallery: that's just spelling] no i'm speaking in favor of stack.
+Jana: Can we actually specify H3Q1? _peanut gallery: that's just spelling_ no i'm speaking in favor of stack.
 
 Tommy: as one of the people who brought up the mapping, i almost want to see a minmal PR because I don't think we want to open that wormcan. it'll be fun to work on mapping, but in taps.
 
-Kyle: [missing]
+Kyle: _missing_
 
-ekr: the minimal thing here is h3 -> Q1. one thing we did in TLS. [too fast]
+ekr: the minimal thing here is h3 -> Q1. one thing we did in TLS. _too fast_
 
 dkg: just say H3 -> Q1. The idea that the working group can describe Q1 as properties in reasonable lifetime 
 
@@ -251,19 +239,15 @@ jana: clarification point. agree that h3 -> Q1
 mark: two hums. first hum: close issue with h3 -> q2. second hum: try and describe properties of Q1 for h3. 
 
 first hum: loud as hell
+
 second hum: crickets
 
 
-Day 2, Wednesday November 20, 2019
+## Wednesday November 20, 2019
 
-Agenda Bash? 
-Issue review is the main action item for the day.  Ekr notes that there is one remaining transport issue, then HTTP/3.
-Pull request 3120
-Order shifts after agenda bash to move datagram draft in front of Version negotiation.
+### Planning
 
-Praveen: suggests moving planning in front of the other items, so that it is sure to be done, and the agenda is adjusted accordingly.
-
-Mnot:  Planning:  there is some discussion of extensions and other documents later today, and the chairs and ADs have been talking about how things go from there.   We're hoping that the drafts will settle down and that the editors will take that time to ensure readability (so editorial-only PRs).  At the same time, we're looking for more implementation and deployment experience, so that we use that to inform the RFCs.  We're going to hold them for publication for about six months after they have been WG last called.  Because of that pause, the wg capacity can turn to extensions, new applciations, and potentially new versions. Those extension discussions should be limited, not a flood, and work on othe applications will go into BoF or other WG processes. There is an interim in Zurich, mostly focused on closing out v1, but there may be some time for extensions there.
+Mnot:  there is some discussion of extensions and other documents later today, and the chairs and ADs have been talking about how things go from there.   We're hoping that the drafts will settle down and that the editors will take that time to ensure readability (so editorial-only PRs).  At the same time, we're looking for more implementation and deployment experience, so that we use that to inform the RFCs.  We're going to hold them for publication for about six months after they have been WG last called.  Because of that pause, the wg capacity can turn to extensions, new applications, and potentially new versions. Those extension discussions should be limited, not a flood, and work on other applications will go into BoF or other WG processes. There is an interim in Zurich, mostly focused on closing out v1, but there may be some time for extensions there.
 
 Christian:  I like the idea of pausing before the publication, but if you are not doing the IETF Last Call, you are not getting the feedback from other areas or participants.  I am concerned.  I think that might extend the later IETF Last Call people.  
 
@@ -294,10 +278,11 @@ MT: This quiet period gets them a chance to catch up, because they have the same
 Mnot:  If you do think you have an extension which is generic enough,we will reserve time for it during the quiet for disucssion on the list. For this, we will need a charter change for that, but we've been talking to the ADs about that, and we'll put a proposal out for comment.
 
 
-On to Issues
+### Issues
 
-David Schinazi:  #3014 (Corrupt retry packets)
-David summarizes the issue Kazuho raised.  Retry packets are more fragile to accidental bit flips during connection establishment, because they are relying on UDP checksum, which is optional.  The proposal from Cupertino was to add an integrity tag to retry packets/ See re;ated PR #3120.  Last question: what hash to use, and they propose GMAC, in order not to introduce a new dependency.  Martin suggested using the initial salt as the initial secret.
+#### David Schinazi:  #3014 (Corrupt retry packets)
+
+David summarizes the issue Kazuho raised.  Retry packets are more fragile to accidental bit flips during connection establishment, because they are relying on UDP checksum, which is optional.  The proposal from Cupertino was to add an integrity tag to retry packets/ See related PR #3120.  Last question: what hash to use, and they propose GMAC, in order not to introduce a new dependency.  Martin suggested using the initial salt as the initial secret.
 
 Ekr: two point: re-using the initial salt is not good cryptographic.  Aside from that the question is whether the retry token should be encrypted.  Costs AEAS operation or two, but really XOR over a fixed mask.  There are two ways you go here; one is the way the PR describes, the other way is to an AEAS operation but use on the connection IDs as a none.  
 
@@ -365,7 +350,7 @@ Moving on to the other documents:  Recovery is up first.
 Six open issues.  
 
 
-## [3094](https://github.com/quicwg/base-drafts/issues/3094)
+#### [3094](https://github.com/quicwg/base-drafts/issues/3094)
 
 Ian Swett: We need input on #3094.  He would prefer not to merge, but he wants to know whether the guidance from the WG is that the pseudocode should cover MAYs as well as shoulds. 
 
@@ -387,7 +372,7 @@ MNot:  heard general support for having something.
 
 Reviewed other issues on the list, to see if there were ones that had not been assigned editorial but not otherwise marked urgent.
 
-## Refs in Recovery
+#### Refs in Recovery
 
 Jana:  We have references to the TCP RFCs, but Gorry has pointed that we don't have any linkage to the constants we use aside from those.  Proposal is to make the references normative. 
 
@@ -416,7 +401,7 @@ Praveen:  (again could not hear, sorry)
 Over to HTTP: What issues do we want to discuss.
 
 
-## [3265](https://github.com/quicwg/base-drafts/issues/3265)
+#### [3265](https://github.com/quicwg/base-drafts/issues/3265)
 
 Mike Bishop:  The most thorny issue we already discussed. #3265 is probably next in line.  This is requesting some that is new to HTTP and kind of not.  This is a request that we can send bodies at any point after the body has started.  I don't what this might break.
 
@@ -445,7 +430,7 @@ Mike Bishop:  most of the others have a pending resolution.  We might be better 
 Now moving to presentations, Datagrams first.  
 
 
-## Datagrams
+### Datagrams
 
 Eric Kinnear:  Unreliable datagram extension. (See slides).  Basic use case is reliable signalling stream/control stream and unreliable data.  We want this in QUIC, rather than DTLS, because we want to share handshake with existing reliable data. The design has simplified greatly, thanks for the comments. Flow control limits do not take Datagram frames into account. Feedback from implementors has been positive, and there were some at the Hackathon.
 
@@ -457,7 +442,8 @@ Roberto: I'm certain we're going to adopt this but it is scary for me as it is i
 
 Chris:  I think this is good direction, but this is a change to the security posture, because which packets get retransmitted turns out to leak.
 
-(Some dispute)
+_Some dispute_
+
 David: Can you file an issue on the draft?  (yes)
 
 Mo:  I'm in favor and it needs to be sooner rather than later because there are a lot of other groups who will need to weigh in on this.
@@ -475,7 +461,7 @@ Jana: I think this is useful in another way, because it exercises our extension 
 Mnot: We'll talk among chairs and ADs and move from there.
 
 
-## Version Negotiation
+### Version Negotiation
 
 David Schinazi: Version Negotiation. (See slides).  Downgrade prevention of original invariant version and load-balancing issues have a hairy interaction.  The discussion was blocking v1, so it has move to an extension.  Two goals:  downgrade prevention and no use of an RTT.  Compatible versions are defined. Goes through the transport parameter.  
 
@@ -484,8 +470,6 @@ MT:  Client and server have to check that these match?
 David Schinazi: Yes.
 
 Document needs an editorial pass...
-
-[metanote from brian: the acoustics in ... room are .... ]
 
 Mark: Does the working group need this extension, is this a reasonable starting point, now or wait?
 
@@ -510,13 +494,13 @@ roy: http/1.1?
 david: no minor versions in QUIC yet. please put that out to the list.
 
 
-## QUIC Load Balancers
+### QUIC Load Balancers
 
 Mostly about servers and load balancers implemented by different folks to work together.
 
 This turned about to be a useful vehicle for several other problems. This also turns out to be useful for syncookie offload. Changes value statement from "QUIC tolerates no L7 middlebox" to "QUIC tolerates only explicitly trusted L7 middleboxes".  
 
-Martin goes through the linkability problem, and then shows common configuration schema. Then next bit is "how do you get the configruation around".  You can ship it around using anything you want, but there is also a simple in-band method described.  Feedback on this has been "varied" (from "We should never to use this" to "a few tweaks" to "just pick something that already exists").
+Martin goes through the linkability problem, and then shows common configuration schema. Then next bit is "how do you get the configuration around".  You can ship it around using anything you want, but there is also a simple in-band method described.  Feedback on this has been "varied" (from "We should never to use this" to "a few tweaks" to "just pick something that already exists").
 
 Other discussion points: linkability server decisions affect the client.  Retry services are version specific but CID parts are not.  Is OCID actually easier than crypto versions?  Engagement with cloud load balancer vendors?  The low-state vendors have been hard to engage with, but they should give us feedback.
 
@@ -544,6 +528,6 @@ Roberto: +4
 
 Mark: we expect a revised, pared-down draft. I have no uniform feedback on a lot of issues, do some coordination and bring it back for adoption.
 
-Mnot: One more thing: Jana can you speak briefly?
+### Interop Runner
 
 Jana: Marten Seeman and I have been working on QUIC Interop Runner; introduced in Cupertino, had a couple of implementations then, now we have 6-7. We have managed to get most of the tests in the interop suite. Value of this is you can run interop at any time. You get logs. If you don't have your implementation in, then please do so. [slides are here]() but were not shown
