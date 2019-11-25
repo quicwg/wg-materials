@@ -168,7 +168,7 @@ Eric Kinnear: I believe the current text highlights the attack and that it lists
 
 Mark: We've discussed this before, we had a separate issue that we wouldn't do this in QUICv1. Issue was locked, since we need to triage. Personal take is that making it an extension will be most productive. We would need a big privacy and security review if we were to take this.
 
-Igor Lubashev: There's discussion in TSVWG. Spin bit doesn't get delay and loss to the path, and many operators want to see this. There was a lot of discussion already for spin bit, and we adopted that. There wasn't a proposal at that time for a loss bit. However, now we have code implemented for a loss bit. I think there's a lot of interest in the community. We want WG engagement to do a review of the new draft.
+Igor Lubashev: There's discussion in TSVWG. Spin bit gets delay but not loss to the path, and many operators want to see this. There was a lot of discussion already for spin bit, and we adopted that. There wasn't a proposal at that time for a loss bit. However, now we have code implemented for a loss bit. I think there's a lot of interest in the community. We want WG engagement to do a review of the new draft. We can do a QUIC extension draft by the interim.
 
 Roberto Peon: I would like to ask what the layer of the protocol is. We're smooshing layers a lot in QUIC, but we're stepping a layer
 too deep to add these things. It seems sad to solve this in QUIC and not solve for other protocols. This should be a lower layer.
@@ -192,7 +192,7 @@ Chris Box: My day job is running mobile networks. Reiterate the need to understa
 
 Gorry Fairhurst: I think the use of bytes we call transport is what we do in TSV. IPPM is here. We need to stop going on about the later. It's part of the area, we should do this. Is this proposal right? Don't know. Spent so much time not talking about this. 
         
-Igor Lubashev: The opinion that we should do nothing here... _missing_ why QUIC is on UDP is due to the pragmatic realisation that it works. Pragmatism is in the spirit of QUIC. Meanwhile TSVWG is talking about how to do measurability the right way.
+Igor Lubashev: There was opinion that we should do nothing here. I disagree. Google deployed QUIC on UDP. Pragmatism is in the spirit of QUIC. Meanwhile TSVWG is talking about how to do measurability the right way.
     
 Ted Hardie: Clearly we must do this or people might deploy ECN, and we must prevent that. I am happy to work on this if it is not gating for V1. Do not set aside bits now. We need a real design process. 
     
