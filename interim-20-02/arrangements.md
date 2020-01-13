@@ -40,7 +40,8 @@ Google EURG building ([map](https://goo.gl/maps/N8BwruZkMMd8LXTR6)):
     8004 Zürich
     Switzerland
 
-Tuesday's interop event will be in the Sihlpost room on the fourth floor of the
+The interim WG meeting on Wednesday and Thursday, as well as Tuesday's interop 
+event will be in the Sihlpost room on the fourth floor of the
 Google EURA1 building (also called Sihlpost, the old central post office)
 ([map](https://goo.gl/maps/5JXtcBV2QRyx1hwn7)):
 
