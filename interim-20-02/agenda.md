@@ -53,3 +53,5 @@ _~15 minutes_
 ### As Time Permits
 
 * QUIC Loss Bits - Igor Lubashev
+* Multipath Extensions for QUIC - Quentin De Coninck
+
