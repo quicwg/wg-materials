@@ -52,4 +52,4 @@ _~15 minutes_
 
 ### As Time Permits
 
-_TBD_
+* QUIC Loss Bits - Igor Lubashev
