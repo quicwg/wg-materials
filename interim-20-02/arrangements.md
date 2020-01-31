@@ -33,23 +33,15 @@ See [the agenda](agenda.md) for full details.
 
 [Google](https://google.com/) is hosting our meeting at their offices in Zurich.
 
-Monday's interop event will be in the Alptransit room on the third floor of the
-Google EURG building ([map](https://goo.gl/maps/N8BwruZkMMd8LXTR6)):
-
-    Gustav-Gull-Platz 1
-    8004 Zürich
-    Switzerland
-
-The interim WG meeting on Wednesday and Thursday, as well as Tuesday's interop 
-event will be in the Sihlpost room on the fourth floor of the
-Google EURA1 building (also called Sihlpost, the old central post office)
-([map](https://goo.gl/maps/5JXtcBV2QRyx1hwn7)):
+The interop event and the interim WG meeting will be in the Sihlpost room 
+on the fourth floor of the Google EURA1 building (also called Sihlpost, 
+the old central post office) ([map](https://goo.gl/maps/5JXtcBV2QRyx1hwn7)):
 
     Kasernenstrasse 97
     8004 Zürich
     Switzerland
 
-In both cases, access to the building is controlled, and the meeting rooms are
+Access to the building is controlled, and the meeting rooms are
 adjacent to the reception area. Find the Google reception entrance at each
 building, go to reception, and retrieve your visitor badge upon arrival.
 
@@ -58,7 +50,7 @@ building, go to reception, and retrieve your visitor badge upon arrival.
 [Zurich Airport](https://www.flughafen-zuerich.ch) (IATA ZRH) is the closest
 international airport. 
 
-Both buildings are a short (EURA1: 1 minute, EURG: 6 minutes) walk from the 
+The building is a short (1 minute) walk from the 
 Europaallee exit of Zurich main railway station 
 ([Zürich HB](https://www.sbb.ch/en/station-services/railway-stations/shopville-zuerich-main-station.html)). 
 There is a [direct 12-minute train connection](https://goo.gl/maps/AnLnqysrCHJ97vKD9) 
