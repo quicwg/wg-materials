@@ -18,7 +18,7 @@ _5-6 February_
 
 * 9:30 - Start (doors open at 9:00)
   * Scribes, Blue Sheets, NOTE WELL
-* 12:15-13:15 - Lunch
+* 13:00-14:00 - Lunch
 * ~17:00 - End
 
 
