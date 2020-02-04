@@ -54,4 +54,4 @@ _~15 minutes_
 
 * QUIC Loss Bits - Igor Lubashev
 * Multipath Extensions for QUIC - Quentin De Coninck
-
+* Ack Delay Extension - Jana Iyengar, Ian Swett
