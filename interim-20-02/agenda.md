@@ -55,3 +55,4 @@ _~15 minutes_
 * QUIC Loss Bits - Igor Lubashev
 * Multipath Extensions for QUIC - Quentin De Coninck
 * Ack Delay Extension - Jana Iyengar, Ian Swett
+* QUIC on IoT Boards - Lars Eggert (in case we have nothing better to talk about)
