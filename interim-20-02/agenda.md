@@ -52,6 +52,7 @@ _~15 minutes_
 
 ### As Time Permits
 
+* QUIC-LB Update - Martin Duke (~ 5 minutes)
 * QUIC Loss Bits - Igor Lubashev
 * Multipath Extensions for QUIC - Quentin De Coninck
 * Ack Delay Extension - Jana Iyengar, Ian Swett
