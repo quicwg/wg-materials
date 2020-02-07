@@ -4,6 +4,7 @@
 Summarise a set of issues, based upon their labels.
 """
 
+import json
 import sys
 import time
 
@@ -85,11 +86,18 @@ def run():
         required=True,
         help="comma-separated labels to filter on",
     )
+    parser.add_argument(
+        "-d", "--dump", dest="dump", action="store_true", help="dump raw issues in JSON"
+    )
     args = parser.parse_args()
     repo_url = "https://api.github.com/repos/{repo}/issues?state={state}&labels={labels}".format(
         repo=args.repo, state=args.state, labels=args.labels
     )
-    print("\n".join(summarise_issues(get_issues(repo_url))))
+    issues = get_issues(repo_url)
+    if args.dump:
+        print(json.dumps(issues, indent=4, sort_keys=True))
+    else:
+        print("\n".join(summarise_issues(issues)))
 
 
 if __name__ == "__main__":
