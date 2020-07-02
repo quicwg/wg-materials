@@ -50,9 +50,13 @@
 
 ### As Time Permits
 
+*Subject to reordering*
+
 * 5+5 min - Discussion of the [QUIC Version Aliasing](https://tools.ietf.org/html/draft-duke-quic-version-aliasing) draft - *Martin Duke* 
 
 * 5+5 min - Discussion of the [Network Address Translation Support for QUIC](https://tools.ietf.org/html/draft-duke-quic-natsupp) draft - *Martin Duke* 
 
 * 5+5 min - Discussion of the [Optimizing ACK mechanism for QUIC](https://tools.ietf.org/html/draft-li-quic-optimizing-ack-in-wlan) draft - *Jiao Kang* 
+
+* 5+5 min - Discussion of the [Greasing the QUIC Bit](https://tools.ietf.org/html/draft-thomson-quic-bit-grease) draft - *Martin Thomson* 
 
