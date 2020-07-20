@@ -42,6 +42,11 @@
 
 * 5+10 min - Discussion of the [QUIC-LB](https://tools.ietf.org/html/draft-ietf-quic-load-balancers) draft - *Martin Duke* 
 
+### Manageability/Applicability of the QUIC Transport Protocol
+
+* 5+5 min - Discussion of the [Applicability](https://tools.ietf.org/html/
+draft-ietf-quic-applicability) and [Manageability](https://tools.ietf.org/html/
+draft-ietf-quic-manageability) drafts - *Mirja Kühlewind & Brian Trammell* 
 
 ### Planning
 
