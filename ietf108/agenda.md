@@ -1,9 +1,8 @@
 # IETF-108 QUIC WG *Preliminary* Agenda
 
-* [Meeting chat](xmpp:quic@jabber.ietf.org?join)
-* [Meetecho](http://www.meetecho.com/ietf108/quic) remote participation
-* [Minutes](https://etherpad.ietf.org/p/notes-ietf-108-quic)
-
+* [Meetecho](https://meetings.conf.meetecho.com/ietf108/?group=quic) remote participation
+* [Minutes](https://codimd.ietf.org/notes-ietf-108-quic)
+* [Meeting chat](xmpp:quic@jabber.ietf.org?join) ([Slack](https://quicdev.slack.com/) users can join the #jabber Slack channel)
 
 ## Monday-Friday, July 20-24, 2020
 
