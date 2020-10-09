@@ -55,6 +55,7 @@ def summarise_issues(issues):
                 # labels = [l["name"] for l in issue["labels"]]
                 # print "* #%i: [%s](%s)" % (issue['number'], issue['title'], issue['url'])
                 output.append("* #%i: %s" % (issue["number"], issue["title"]))
+                output.append();
     return output
 
 
