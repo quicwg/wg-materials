@@ -18,9 +18,9 @@
   * "Google's experience with multipath QUIC" (Jana/Ian/Fan, 5+5 min)
   * Multipath transports at Apple (Christoph, 5+5 min)
   * MPQUIC use cases (Yanmei/Yunfei, 5+5 min)
-  * Why Multipath QUIC (Florin, 5+5 min)
-  * Hybrid access networks and requirements on MPQUIC (Olivier, 5+5 min)
-  * Multipath steering modes in 3GPP ATSSS (Spencer, 5+5min)
   * Satellite/terrestrial multipath communication (Jörg, 5+5min)
+  * Hybrid access networks and requirements on MPQUIC (Olivier, 5+5 min)
+  * Why Multipath QUIC (Florin, 5+5 min)
+  * Multipath steering modes in 3GPP ATSSS (Spencer, 5+5min)
 
 ### Open discussion (40 min)
