@@ -5,8 +5,9 @@
 * [Drafts](https://github.com/quicwg/base-drafts)
 * [Chat](xmpp:quic@jabber.ietf.org?join)
 
-## Agenda
+See [the arrangements page](arrangements.md) for dial-in information.
 
+## Agenda
 
 ### Administrivia (10 min)
   * Scribes, Blue Sheets, Note Well
