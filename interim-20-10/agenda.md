@@ -22,5 +22,6 @@ See [the arrangements page](arrangements.md) for dial-in information.
   * [Satellite/terrestrial multipath communication](<Satellite-terrestrial multipath communication.pdf>) (Jörg, 5+5min)
   * [Hybrid access networks and requirements on MPQUIC](<Hybrid access networks and requirements on MPQUIC.pdf>) (Olivier, 5+5 min)
   * [Multipath in 3GPP ATSSS](<Multipath in 3GPP ATSSS.pdf>) (Spencer/Mirja/Florin/Hannu, 5+5min)
+  * [MASQUE](<MASQUE.pdf>) (David, 5+5min)
 
-### Open discussion (50 min)
+### Open discussion (40 min)
