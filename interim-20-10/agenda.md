@@ -15,13 +15,12 @@ See [the arrangements page](arrangements.md) for dial-in information.
     * To understand the requirements for supporting additional multipath
       capabilities for QUIC beyond what is offered by the current version
 
-### Use cases and requirements (70 min)
-  * "Google's experience with multipath QUIC" (Jana/Ian/Fan, 5+5 min)
+### Use cases and requirements (60 min)
+  * Multipath in Chromium (Fan, 5+5 min)
   * Multipath transports at Apple (Christoph, 5+5 min)
   * MPQUIC use cases (Yanmei/Yunfei, 5+5 min)
   * Satellite/terrestrial multipath communication (Jörg, 5+5min)
   * Hybrid access networks and requirements on MPQUIC (Olivier, 5+5 min)
-  * Why Multipath QUIC (Florin, 5+5 min)
-  * Multipath steering modes in 3GPP ATSSS (Spencer, 5+5min)
+  * Multipath steering modes in 3GPP ATSSS (Spencer/Mirja/Florin/Hannu, 5+5min)
 
-### Open discussion (40 min)
+### Open discussion (50 min)
