@@ -15,7 +15,7 @@ See [the arrangements page](arrangements.md) for dial-in information.
     * To understand the requirements for supporting additional multipath
       capabilities for QUIC beyond what is offered by the current version
 
-### Use cases and requirements (60 min)
+### Use cases and requirements (70 min)
   * [Multipath in Chromium](<>) (Fan, 5+5 min)
   * [Multipath transports at Apple](<Multipath transports at Apple.pdf>) (Christoph, 5+5 min)
   * [MPQUIC use cases](< MPQUIC use cases.pdf>) (Yanmei/Yunfei, 5+5 min)
