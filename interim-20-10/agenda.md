@@ -16,11 +16,11 @@ See [the arrangements page](arrangements.md) for dial-in information.
       capabilities for QUIC beyond what is offered by the current version
 
 ### Use cases and requirements (60 min)
-  * [Multipath in Chromium]() (Fan, 5+5 min)
-  * [Multipath transports at Apple](Multipath transports at Apple.pdf) (Christoph, 5+5 min)
-  * [MPQUIC use cases]( MPQUIC use cases.pdf) (Yanmei/Yunfei, 5+5 min)
-  * [Satellite/terrestrial multipath communication](Satellite-terrestrial multipath communication.pdf) (Jörg, 5+5min)
-  * [Hybrid access networks and requirements on MPQUIC](Hybrid access networks and requirements on MPQUIC.pdf) (Olivier, 5+5 min)
-  * [Multipath in 3GPP ATSSS](Multipath in 3GPP ATSSS.pdf) (Spencer/Mirja/Florin/Hannu, 5+5min)
+  * [Multipath in Chromium](<>) (Fan, 5+5 min)
+  * [Multipath transports at Apple](<Multipath transports at Apple.pdf>) (Christoph, 5+5 min)
+  * [MPQUIC use cases](< MPQUIC use cases.pdf>) (Yanmei/Yunfei, 5+5 min)
+  * [Satellite/terrestrial multipath communication](<Satellite-terrestrial multipath communication.pdf>) (Jörg, 5+5min)
+  * [Hybrid access networks and requirements on MPQUIC](<Hybrid access networks and requirements on MPQUIC.pdf>) (Olivier, 5+5 min)
+  * [Multipath in 3GPP ATSSS](<Multipath in 3GPP ATSSS.pdf>) (Spencer/Mirja/Florin/Hannu, 5+5min)
 
 ### Open discussion (50 min)
