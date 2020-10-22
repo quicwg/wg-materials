@@ -4,6 +4,7 @@
 * [Issues List](https://github.com/quicwg/base-drafts/issues)
 * [Drafts](https://github.com/quicwg/base-drafts)
 * [Chat](xmpp:quic@jabber.ietf.org?join)
+* [Minutes](https://codimd.ietf.org/GxEFhWYFT6GTyMVjE2s65A)
 
 See [the arrangements page](arrangements.md) for dial-in information.
 
