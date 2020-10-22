@@ -26,5 +26,4 @@ See [the arrangements page](arrangements.md) for dial-in information.
   * [Hybrid access networks and requirements on MPQUIC](<Hybrid access networks and requirements on MPQUIC.pdf>) (Olivier, 5+5 min)
   * [Multipath in 3GPP ATSSS](<Multipath in 3GPP ATSSS.pdf>) (Spencer/Mirja/Florin/Hannu, 5+5min)
 
-
 ### Open discussion (40 min)
