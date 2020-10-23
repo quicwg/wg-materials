@@ -2,6 +2,8 @@
 
 Scribes: Robin Marx, Eric Kinnear
 
+Recording available [here](https://youtu.be/p-ArboToDmk).
+
 ## Administrivia (10 min)
 
 - Scribes, Blue Sheets, Note Well
