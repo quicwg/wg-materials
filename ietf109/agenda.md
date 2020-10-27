@@ -59,3 +59,4 @@
 
 * 5+5 min - Discussion of the [Network Address Translation Support for QUIC](https://tools.ietf.org/html/draft-duke-quic-natsupp) draft - *Martin Duke* 
 
+* 5+5 min - Discussion of the [0-RTT-BDP](https://tools.ietf.org/html/draft-kuhn-quic-0rtt-bdp-07) draft - *Nicolas Kuhn*
