@@ -18,7 +18,7 @@ same time
 ## MASQUE cross pollination (10 min)
 [Slides](https://github.com/quicwg/wg-materials/blob/master/interim-20-10/MASQUE.pdf)
 
-**David Schinzi:** Here to explain what MASQUE is and how it might be relevant.
+**David Schinazi:** Here to explain what MASQUE is and how it might be relevant.
 HTTP supports CONNECT, works for TCP, not UDP. We need new ways to proxy UDP,
 especially over HTTP/3 where UDP won't be encapsulated in a TCP stream.
 
@@ -55,7 +55,7 @@ that's leaning more towards an IP address or an IP prefix?
 consensus on this yet. Can you file an issue in MASQUE for this to make sure we
 discuss this?
 
-**Spencer:** yes
+**Spencer:** Yes
 
 **Christian Huitema:** You say multipath and MASQUE are orthogonal, but they
 interact via Path MTU. Any app running over proxy or VPN will have to do Path
@@ -184,7 +184,7 @@ implementation be straightforward enough?
 that span multiple paths. The stream doesn't need to know, it either knows if
 data has been acked and can be removed or if it needs to stick around.
 
-**Igor Lubashev:* Talked to many internal Google client teams, but did you talk
+**Igor Lubashev:** Talked to many internal Google client teams, but did you talk
 to server teams if they were interested in Multipath? One example is YouTube.
 
 **Fan:** Working on the server-side myself, we have a use case where the server
@@ -323,7 +323,7 @@ Show short video demo showing video streaming not stalling when done over MPQUIC
 
 #### Q&A
 
-**Lars:** which MPQUIC do you mean? Draft-deconinck?
+**Lars:** Which MPQUIC do you mean? Draft-deconinck?
 
 **Yanmei:** Generic MP-QUIC, not the specific draft
 
@@ -357,11 +357,11 @@ since you're not doing draft-deconinck.
 
 **David:** Was this end-to-end or with proxy?
 
-**Yanmei:** end-to-end
+**Yanmei:** End-to-end
 
 **David:** Did you measure latency next to bandwidth?
 
-**Yanmei:** yes, just not shown in the slides.
+**Yanmei:** Yes, just not shown in the slides.
 
 **David:** Is MP making latency worse?
 
@@ -455,7 +455,7 @@ probably going over just 1 of the 2 paths.
 **Matt Joras:** And if I'm using QUIC with the MP-QUIC proxy, since datagrams
 can be forwarded over both.
 
-**Olivier:** then you could send the QUIC DATAGRAMS as DATAGRAMS over the two
+**Olivier:** Then you could send the QUIC DATAGRAMS as DATAGRAMS over the two
 paths.
 
 **Matt Joras:** That answers my question
@@ -471,7 +471,7 @@ packets on the server side so that you can avoid having it cause problems.
 **David:** So, artificially delay packets to put them back in order. We've seen
 issues with this in TCP, haven't tried in QUIC.
 
-**Olivier:** depends on implementations. Looked at this a year ago, QUIC
+**Olivier:** Depends on implementations. Looked at this a year ago, QUIC
 implementations at the time were much worse at handling reordering than TCP
 implementations, that may have changed.
 
@@ -565,7 +565,7 @@ networks.
 **David:** I'm not sure I understood, rephrase: This is good for the provider,
 but without end user benefit?
 
-**Spencer:** no, sorry, I'm saying that I'm presenting the provider view, which
+**Spencer:** No, sorry, I'm saying that I'm presenting the provider view, which
 assumes there are benefits for both the users and providers.
 
 **David:** We assume the benefits exist,s but what exactly are they expected to
@@ -581,7 +581,7 @@ be? Why do we expect practically?
 network, as well as that the proxy has info about what's happening on the
 network, so more information about which path to use
 
-**David:** talking about end user here: what benefit do I get from this when
+**David:** Talking about end user here: what benefit do I get from this when
 using my smartphone?
 
 **Mirja:** You have two paths available if the server does Multipath, you could
@@ -604,7 +604,7 @@ but not necessarily for the end user.
 
 ## More use cases from Mike Bishop
 
-**Mike Bishop:** have been talking about scenario where clients make requests.
+**Mike Bishop:** Have been talking about scenario where clients make requests.
 Those might end up at instances that do not have all information that the client
 is requesting, so they have to recursively fetch those resources. It would be
 nice if those nodes could directly send their replies to the client, instead of
@@ -637,7 +637,7 @@ application can do its own scheduling on those connections.
 **Ian Swett:** Think we have drafts that already solve the Direct Server Return
 case presented by Mike Bishop (last use case)
 
-**Martin Thomson:** there are interesting interactions between application and
+**Martin Thomson:** There are interesting interactions between application and
 multipath. QUIC is maybe less susceptible to burying these things deep in the
 OS, but want to up-level a bit. Question I want to ask is what the QUIC WG
 should be working on next, rather than just if we should do Multipath. I am
@@ -657,7 +657,7 @@ system may know about policy choices. Most questions seem to be how to deal with
 policy and platform design, not about how to build a protocol we can actually
 deploy at this time.
 
-**Mirja:** just wanted to react to Roberto. I really disagree with his point of
+**Mirja:** Just wanted to react to Roberto. I really disagree with his point of
 view. Many benefits doing it on transport (e.g., retransmitting across paths).
 Agree there is benefit from linking with app, but typically just a handful of
 schedulers needed for some scenarios and app could just choose 1 of those
