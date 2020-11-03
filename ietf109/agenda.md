@@ -40,7 +40,7 @@
 
 ### QUIC-LB: Generating Routable QUIC Connection IDs
 
-* 5+10 min - Discussion of the [QUIC-LB](https://tools.ietf.org/html/draft-ietf-quic-load-balancers) draft - *Martin Duke*
+* 10+10 min - Discussion of the [QUIC-LB](https://tools.ietf.org/html/draft-ietf-quic-load-balancers) draft - *Martin Duke*
 
 ### Manageability/Applicability of the QUIC Transport Protocol
 
