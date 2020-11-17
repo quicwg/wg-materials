@@ -51,4 +51,6 @@ _~15 minutes_
 
 ### As Time Permits
 
-_none yet_
+* QUIC Load Balancing (Martin Duke)
+* 16:00-16:15 31 January: QUIC logging, debugging and tooling (Robin Marx)
+* QUIC Negotiation for Packet Number Protection (Nick Banks)
