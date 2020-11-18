@@ -17,6 +17,8 @@
 
 ### Administrivia
 
+5 min total
+
 * Blue sheets
 * Scribe selection
 * [NOTE WELL](https://www.ietf.org/about/note-well.html)
@@ -30,7 +32,7 @@
 
 ### Base Drafts Discussion
 
-*Balance of time*
+30 min - Placeholder for any needed discussion on issues raised during IETF Last Call
 
 * [Transport issues](https://github.com/quicwg/base-drafts/issues?utf8=✓&q=is%3Aissue%20is%3Aopen%20label%3A-transport%20label%3Adesign)
 * [TLS issues](https://github.com/quicwg/base-drafts/issues?utf8=✓&q=is%3Aissue%20is%3Aopen%20label%3A-tls%20label%3Adesign)
@@ -40,11 +42,15 @@
 
 ### QUIC-LB: Generating Routable QUIC Connection IDs
 
-* 5+10 min - Discussion of the [QUIC-LB](https://tools.ietf.org/html/draft-ietf-quic-load-balancers) draft - *Martin Duke*
+* 10+10 min - Discussion of the [QUIC-LB](https://tools.ietf.org/html/draft-ietf-quic-load-balancers) draft - *Martin Duke*
 
 ### Manageability/Applicability of the QUIC Transport Protocol
 
-* 5 min - Final steps on the [Applicability](https://tools.ietf.org/html/draft-ietf-quic-applicability) and [Manageability](https://tools.ietf.org/html/draft-ietf-quic-manageability) drafts - *Mirja Kühlewind & Brian Trammell*
+* 5+5 min - Final steps on the [Applicability](https://tools.ietf.org/html/draft-ietf-quic-applicability) and [Manageability](https://tools.ietf.org/html/draft-ietf-quic-manageability) drafts - *Mirja Kühlewind & Brian Trammell*
+
+### QUIC Multipath
+
+30 min - Placeholder for any needed discussion based on the status of the mailing list discussion
 
 ### Planning & Wrap up
 
