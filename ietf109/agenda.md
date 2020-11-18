@@ -48,16 +48,7 @@
 
 * 5+5 min - Final steps on the [Applicability](https://tools.ietf.org/html/draft-ietf-quic-applicability) and [Manageability](https://tools.ietf.org/html/draft-ietf-quic-manageability) drafts - *Mirja Kühlewind & Brian Trammell*
 
-### QUIC Multipath
-
-30 min - Placeholder for any needed discussion based on the status of the mailing list discussion
-
-### Planning & Wrap up
-
-* 5 min - Future meetings, implementation drafts, etc.
-
-
-### As Time Permits
+### Other (aka "As Time Permits")
 
 *Subject to reordering*
 
@@ -68,3 +59,11 @@
 * 5+5 min - Discussion of the [0-RTT-BDP](https://tools.ietf.org/html/draft-kuhn-quic-0rtt-bdp) draft - *Nicolas Kuhn*
 
 * 5+5 min - Discussion of how to progress qlog ([main schema](https://tools.ietf.org/html/draft-marx-qlog-main-schema), [QUIC and HTTP/3 events](https://tools.ietf.org/html/draft-marx-qlog-event-definitions-quic-h3)) - *Robin Marx*
+
+### Planning & Wrap up
+
+* 5 min - Future meetings, implementation drafts, etc.
+
+### QUIC Multipath
+
+30 min - Placeholder for any needed discussion based on the status of the mailing list discussion
