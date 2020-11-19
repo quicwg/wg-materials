@@ -320,7 +320,7 @@ Robin Marx presents
 
 (We are running really short on time now)
 
-**Jana Iyengar**: I agree with Lars. This is 100% question of experimentation. People can do that today. Just because we specify doesn't mean people show up and start experimenting. It should be the other way around. So we should do what Ted proposes: let people present experiences but not protocol design. 
+**Jana Iyengar**: I agree with Lars. This is 100% question of experimentation. People can do that today. Just because we specify doesn't mean people show up and start experimenting. It should be the other way around. So we should do what Schinazi proposes: let people present experiences but not protocol design. 
   
 **Lars** See you on the mailing list and on the Slack.  Bye!
   
