@@ -6,8 +6,8 @@ protocol, and therefore acts as the focal point for any QUIC-related
 work in the IETF. It is chartered to pursue work in several areas,
 detailed below.
 
-The first such area is maintenance and evolution of the existing QUIC
-specifications and related documents:
+The working group will focus on maintenance and evolution of the
+existing QUIC specifications and related documents:
 
 - Maintenance and evolution of the QUIC base specifications that are
   describing its invariants, core transport mechanisms, security and
@@ -21,30 +21,32 @@ specifications and related documents:
   documents, such as it applicability and manageability statements,
   improved operation with load balancers, etc.
 
-Work in this first area needs to strongly be motivated by existing or
-ongoing production deployments of QUIC at scale, and needs to
-carefully consider its impact on the diverse set of applications that
-have adopted QUIC as a transport.
+Maintenance work needs to strongly be motivated by existing or ongoing
+production deployments of QUIC at scale, and needs to carefully consider
+its impact on the diverse set of applications that have adopted QUIC as
+a transport.
 
-A second area of work for the WG is new QUIC extensions that enables
-protocol functionality not currently part of the QUIC standard:
+The working group will also develop extensions to QUIC.  These
+extensions need to have general applicability to multiple application
+protocols.
 
-- QUIC extensions intending publication on the Standards Track need to
-  be motivated by existing or ongoing production deployments of QUIC at
-  scale, similar to work in the first area.
+The working group may also decide to publish QUIC extensions as
+Informational or Experimental documents, e.g., to allow vendors to
+publicly document deployed proprietary extensions or to enable wider
+experimentation with new protocol features.
 
-- The WG may also decide to publish QUIC extensions as Informational
-  or Experimental documents, e.g., to allow vendors to publicly document
-  deployed proprietary extensions or to enable wider experimentation
-  with new protocol features.
+Specifications for how an existing or new application protocol will use
+QUIC for transport need not in general be specified in the QUIC WG. The
+WG will collaborate with other groups that define application protocols
+that use QUIC. Extensions can also be defined outside of the QUIC WG
+after review and consultation. In particular, collaboration is
+recommended to reduce the chance that extensions do not duplicate
+existing work, or do not interact poorly with other extensions when
+deployed together.
 
-Specifications for how an existing or new application protocol will
-use QUIC for transport need not in general be specified in the QUIC
-WG, although the QUIC WG should be kept informed of such work and be
-given the opportunity for review. However, if such an application
-binding involves extensions or other changes to the QUIC protocol,
-those aspects must be specified in the QUIC WG, possibly together with
-the application binding itself.
+Groups that define application protocols or extensions to QUIC in
+support of those protocols are requested to consult with the QUIC WG and
+seek review of proposals.
 
 The QUIC WG originated the HTTP/3 binding to QUIC and the QPACK header
 compression scheme. These specifications are now maintained in the
