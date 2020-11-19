@@ -37,7 +37,7 @@ Informational or Experimental documents, e.g., to allow vendors to
 publicly document deployed proprietary extensions or to enable wider
 experimentation with new protocol features.
 
-Specifications desribing how new or existing application protocols use the
+Specifications describing how new or existing application protocols use the
 QUIC transport layer do not need to be specified in the QUIC WG. The
 WG will collaborate with other groups that define application protocols
 that use QUIC. New mappings might require QUIC extensions and it may be 
