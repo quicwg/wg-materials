@@ -49,7 +49,7 @@ duplicate work and/or conflicts with other extensions.
 
 The QUIC WG originated HTTP/3, the mapping of HTTP to QUIC, and the QPACK
 header compression scheme. These specifications are now maintained in the
-HTTPBIS WG.
+HTTP WG.
 
 Defining new congestion control schemes is explicitly out of scope for
 the WG. New QUIC extensions allowing the development and
