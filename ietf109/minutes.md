@@ -239,33 +239,33 @@ Subject to reordering
 
 Robin Marx presents
 
-**RM**: (slide 2): structured logging review, useful for debugging and analysis.  Cong windows, good for privacy, log just what you care about.  easy to build tooling.
+**RM**: (slide 2): structured logging review, useful for debugging and analysis.  Log congestion windows. It's good for privacy: log just what you care about.  Easy to build tooling.
 
-(slide 3): >70% adoption, notable FB in production -- it can scale and work in practice.  IMplementation that don't use qlog use something similar.  General concept is solid.
+(slide 3): >70% adoption, notable FB in production -- it can scale and work in practice.  Implementations that don't use qlog use something similar.  General concept is solid.
 
-(slide 4): still  just personal draft.  Few people dealing with day-to-day work.  Time for addl discussion how to progress it.  Who is going to do it and where to do it?
+(slide 4): Still just personal drafts.  Few people dealing with day-to-day work.  Time for additional discussion how to progress it.  Who is going to do it and where to do it?
 
-(slide 5): four options - nothing - interim/DT - adopt in QUIC WG - adopt in another WG.  Enventually I think we'll go with (4).  It's useful beyond QUIC.  Would take too long to do something generic.
+(slide 5): four options - nothing - interim/Design Team - adopt in QUIC WG - adopt in another WG.  Eventually I think we'll go with (4).  It's useful beyond QUIC.  Were planning to do this initially, but would take too long to do something generic. Started with QUIC/H3 POC. This is why we're bringing this to the QUIC wg first.
 
-**Lars**: I think the use case is very much QUIC and specifically TCP-based workloads already has tooling.  It fills the need for QUIC.  I think (3) is reasonable.  It does not preclude doing (4) at soem point.
+**Lars**: I think the use case is very much QUIC and specifically TCP-based workloads already has tooling.  It fills the need for QUIC.  I think (3) is reasonable.  It does not preclude doing (4) at some point.
 
-**Martin Duke** Want to see QLOG draft adopted by QUIC WG.  It's the general tol for this.  As far as core QLOG, conceptutally, not the right place, but practically, why not just do it here?
+**Martin Duke** Want to see qlog QUIC/H3 draft adopted by QUIC WG.  It's the general tool for this.  As far as main schema qlog draft goes, conceptutally, not the right place, but practically, why not just do it here?
 
-**Eric Kinnear**: QLOG is great, we've adopted it.  Nice privacy win.  Being able to visualize is very nice, esp. with HTTP/3 priotization.  Both useful and in helping conceptualize impact of changes.  It's useful for WG and implementations and deployment. I disagree with Lars.  I want to bring it to TCP.  Yes, there are tools, but QLOG is already as good as most of those tools.  Quicly becoming apparent that QUIC elicits "oh this is cool!" response.  Value of having all of that in one place.  Let's make it really robust.
+**Eric Kinnear**: qlog is great, we've adopted it.  Nice privacy win.  Being able to visualize is very nice, esp. with HTTP/3 priotization.  Both useful and in helping conceptualize impact of changes.  It's useful for WG and implementations and deployment. I disagree with Lars.  I want to bring it to TCP.  Yes, there are existing tools, but qlog/qvis is already as good as most of those tools.  Quicly becoming apparent that qvis elicits "oh this is cool!" response.  Value of having all of that in one place.  Let's make it really robust.
 
-**Robin Marx**: It's not so much TCP, it's more new app-layer protocols.  Lots of potential there.  BGP and that kind of stuff.
+**Robin Marx**: It's not so much TCP for me, it's more new/other app-layer protocols.  Lots of potential there.  BGP and that kind of stuff.
 
-**Ian Swett**: I support this work.  Having it for H2 would be amazing.  Expanding it to more transport would be hugely helpful.  More CC information in there.  I hope to work wityo7u on ethat.
+**Ian Swett**: I support this work.  Having it for HTTP/2 would be amazing.  Expanding it to more transport would be hugely helpful.  More congestion control information in there.  I hope to work with you on that.
 
-**Jana**: Thank you for this work Robin.  QLOG becomign defacto standard.  Many impl. support it and continue to support it.  Let's include it as part of QUIC WG.  We need to have tooling.  Seriosly good tooling, QLOG is.  Tooling is that people love, QLOG is what people read.   We're adopting QLOG the format not QVIZ the tool.  Let's not expand QLOG scope, then, to include TCP.  Let's not cast too wide a net.  Let's have QLOG be specific to QUIC.
+**Jana**: Thank you for this work Robin.  qlog becoming defacto standard.  Many impl. support it and continue to support it.  Let's include it as part of QUIC WG.  We need to have tooling.  Seriously good tooling, qvis is.  Though tooling is that people love, qlog is what people need.   We're adopting qlog the format not qvis the tool.  Let's not expand qlog scope, then, to include TCP.  Let's not cast too wide a net.  Let's have qlog be specific to QUIC.
 
-**Lars**: This distinction is interesting.  What's the model for jointly developing qviz or similar tools?  Strong deps between format and tools.  Nee dto have discussion about it.
+**Lars**: This distinction is interesting.  What's the model for jointly developing qvis or similar tools?  Strong deps between format and tools.  Need to have discussion about it.
 
-**Matt Joras**: Thank you.  QLOG is first thing I go to.  I support WG adoption.  Defacto standard.  QUIC WG is the logical place for it.  It's reasonable path fwd.  Another WG not much sense: it would be same epeople.
+**Matt Joras**: Thank you.  qlog is first thing I go to for our debugging needs.  I support WG adoption.  Defacto standard.  QUIC WG is the logical place for it.  It's reasonable path fwd.  Another WG not much sense: it would be same people.
 
 **Lucas Pardue**: I hoped this would come up: it's taken us a year from -01 to -02.  Large burden on Robin.  Not a criticism.  Hopefully people can contribute if we have more governance over this text.  As individual, I support adopting it somewhere.
 
-**Lars**: Robin is doing by himself other that doing his thesis.  If we're adopting it, we would encourage people to chip in and help out.  Both spec and developing and visualization tool as well.  Everyone would benefit.  Will continue discussion on the list.  Leaning toward (3) and (4).
+**Lars**: Robin is doing this by himself in addition to doing his thesis.  If we're adopting it, we would encourage people to chip in and help out.  Both spec and developing and visualization tool as well.  Everyone would benefit.  Will continue discussion on the list.  Leaning toward (3) and (4).
 
 ## Planning & Wrap up
 
