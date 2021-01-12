@@ -6,7 +6,7 @@ QUIC, a UDP-based, stream-multiplexing, encrypted transport protocol.
 The WG acts as the focal point for any QUIC-related work in the IETF.
 It is chartered to pursue work in the areas detailed below.
 
-The first such area focuses on maintenance and evolution of the existing
+The first area of work is maintenance and evolution of the existing
 QUIC specifications:
 
 - Maintenance and evolution of the QUIC base specifications that
@@ -22,12 +22,12 @@ existing or ongoing production deployments of QUIC at scale, and needs
 to carefully consider its impact on the diverse set of applications
 that have adopted QUIC as a transport.
 
-A second area of work for the WG is other QUIC-related specifications
-and documents, such as it applicability and manageability statements,
-improved operation with load balancers, the specifications of qlog
+The second area of work is supporting the operability of QUIC, which includes 
+specifications and documents, such as it applicability and manageability 
+statements, improved operation with load balancers, the specifications of qlog
 logging schemas, etc.
 
-A third area of work is the specification of new extensions to QUIC.
+The third area of work is the specification of new extensions to QUIC.
 These extensions need to have general applicability to multiple
 application protocols. The WG may decide to publish such extensions as
 Informational or Experimental documents, e.g., to allow vendors to
@@ -42,7 +42,7 @@ require QUIC extensions and it may be efficient to define these
 alongside the mapping specifications. Groups that define application
 protocols using QUIC, or extensions to QUIC in support of those
 protocols, are requested to consult with the QUIC WG and seek review
-of proposals. This is intended reduce the possibility of duplicate
+of proposals. This is intended to reduce the possibility of duplicate
 work and/or conflicts with other extensions.
 
 The QUIC WG originated HTTP/3, the mapping of HTTP to QUIC, and the
@@ -50,5 +50,6 @@ QPACK header compression scheme. These specifications are now
 maintained in the HTTP WG.
 
 Defining new congestion control schemes is explicitly out of scope for
-the WG. New QUIC extensions allowing the development and
-experimentation with new congestion control schemes are permitted.
+the WG. However, new QUIC extensions that support development and
+experimentation with new congestion control schemes may fall under the
+third work area.
