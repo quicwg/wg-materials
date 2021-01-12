@@ -24,16 +24,15 @@ that have adopted QUIC as a transport.
 
 A second area of work for the WG is other QUIC-related specifications
 and documents, such as it applicability and manageability statements,
-improved operation with load balancers, etc.
+improved operation with load balancers, the specifications of qlog
+logging schemas, etc.
 
 A third area of work is the specification of new extensions to QUIC.
 These extensions need to have general applicability to multiple
 application protocols. The WG may decide to publish such extensions as
 Informational or Experimental documents, e.g., to allow vendors to
 publicly document deployed proprietary extensions or to enable wider
-experimentation with new protocol features. Adoption of new QUIC
-extensions for publication on the Standards Track requires Area
-Director approval.
+experimentation with new protocol features.
 
 Specifications describing how new or existing application protocols
 use the QUIC transport layer do not need to be specified in the QUIC
