@@ -28,8 +28,8 @@ statements, improved operation with load balancers, the specification of
 a logging format and schemas for QUIC and HTTP/3 endpoints (qlog), etc.
 
 The third area of work is the specification of new extensions to QUIC.
-These extensions intended for standards track need to have general 
-applicability to multiple application protocols. Also, the WG may decide 
+Extensions intended for Standards Track need to have general 
+applicability to multiple application protocols. The WG may also decide 
 to publish extensions as Informational or Experimental documents, e.g., 
 to allow vendors to publicly document deployed proprietary extensions 
 or to enable wider experimentation with new protocol features.
