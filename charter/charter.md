@@ -12,10 +12,10 @@ QUIC specifications:
 - Maintenance and evolution of the QUIC base specifications that
   describe its invariants, core transport mechanisms, security and
   privacy, loss detection and recovery, congestion control, version and
-  extension negotiation, etc.
+  extension negotiation, etc. This includes the specification of
+  new versions of QUIC, if necessary. 
 
-- Maintenance and evolution of the specifications of existing QUIC
-  extensions, e.g., datagrams, etc.
+- Maintenance and evolution of the specifications of QUIC extensions.
 
 Maintenance and evolution work needs to be strongly motivated by
 existing or ongoing production deployments of QUIC at scale, and needs
@@ -24,15 +24,15 @@ that have adopted QUIC as a transport.
 
 The second area of work is supporting the operability of QUIC, which includes 
 specifications and documents, such as it applicability and manageability 
-statements, improved operation with load balancers, the specifications of qlog
-logging schemas, etc.
+statements, improved operation with load balancers, the specification of 
+a logging format and schemas for QUIC and HTTP/3 endpoints (qlog), etc.
 
 The third area of work is the specification of new extensions to QUIC.
-These extensions need to have general applicability to multiple
-application protocols. The WG may decide to publish such extensions as
-Informational or Experimental documents, e.g., to allow vendors to
-publicly document deployed proprietary extensions or to enable wider
-experimentation with new protocol features.
+Extensions intended for Standards Track need to have general 
+applicability to multiple application protocols. The WG may also decide 
+to publish extensions as Informational or Experimental documents, e.g., 
+to allow vendors to publicly document deployed proprietary extensions 
+or to enable wider experimentation with new protocol features.
 
 Specifications describing how new or existing application protocols
 use the QUIC transport layer do not need to be specified in the QUIC
