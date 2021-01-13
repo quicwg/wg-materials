@@ -15,7 +15,7 @@ QUIC specifications:
   extension negotiation, etc. This includes the specification of
   new versions of QUIC, if necessary. 
 
-- Maintenance and evolution of the specifications of QUIC extensions, 
+- Maintenance and evolution of the specifications of QUIC extensions.
 
 Maintenance and evolution work needs to be strongly motivated by
 existing or ongoing production deployments of QUIC at scale, and needs
