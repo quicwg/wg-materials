@@ -12,8 +12,8 @@ QUIC specifications:
 - Maintenance and evolution of the QUIC base specifications that
   describe its invariants, core transport mechanisms, security and
   privacy, loss detection and recovery, congestion control, version and
-  extension negotiation, etc. Addressing existing versions or if necessary
-  publish new versions of QUIC. 
+  extension negotiation, etc. This includes the specification of
+  new versions of QUIC, if necessary. 
 
 - Maintenance and evolution of the specifications of QUIC extensions, 
 
