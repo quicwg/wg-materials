@@ -31,6 +31,11 @@
 
 *Subject to reordering*
 
+* 5 min - Adopt
+  [draft-thomson-quic-bit-grease](https://datatracker.ietf.org/doc/draft-thomson-quic-bit-grease/) - *Martin
+  Thomson* (no presentation, or we can [reuse
+  one](https://github.com/quicwg/wg-materials/blob/master/ietf108/quic-bit-grease.pdf))
+
 ### Planning & Wrap up
 
 * 5 min - Future meetings, implementation drafts, etc.
