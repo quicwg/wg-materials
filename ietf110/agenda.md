@@ -36,6 +36,9 @@
   Thomson* (no presentation, or we can [reuse
   one](https://github.com/quicwg/wg-materials/blob/master/ietf108/quic-bit-grease.pdf))
 
+* 20 min - Adopt
+  [draft-iyengar-quic-delayed-ack](https://datatracker.ietf.org/doc/draft-iyengar-quic-delayed-ack/) - *Jana Iyengar*
+
 ### Planning & Wrap up
 
 * 5 min - Future meetings, implementation drafts, etc.
