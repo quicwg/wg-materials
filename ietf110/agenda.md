@@ -27,6 +27,8 @@
 
 ### WG Items
 
+* 15 min - Open issues, implementation experience, possible WGLC of [QUIC-LB](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers) - *Martin Duke*
+
 ### Other (aka "As Time Permits")
 
 *Subject to reordering*
