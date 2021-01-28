@@ -30,7 +30,7 @@ specification of a logging format, and more.
 The third area of work is the specification of new extensions to QUIC.
 The WG will primarily focus on extensions to the QUIC transport layer,
 i.e., extensions to QUIC that have broad applicability to multiple
-application protocols. The WG may also allow publish specifications to
+application protocols. The WG may also publish specifications to
 publicly document deployed proprietary extensions or to enable wider
 experimentation with proposed new protocol features.
 
