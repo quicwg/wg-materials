@@ -13,7 +13,7 @@ QUIC specifications:
   describe its invariants, core transport mechanisms, security and
   privacy, loss detection and recovery, congestion control, version and
   extension negotiation, etc. This includes the specification of new
-  versions of QUIC, if necessary.
+  versions of QUIC.
 
 - Maintenance and evolution of the specifications of QUIC extensions.
 
@@ -23,29 +23,27 @@ to carefully consider its impact on the diverse set of applications
 that have adopted QUIC as a transport.
 
 The second area of work is supporting the deployability of QUIC, which
-includes specifications and documents, such as it applicability and
+includes specifications and documents such as applicability and
 manageability statements, improved operation with load balancers, the
-specification of a logging format and schemas for QUIC and HTTP/3
-endpoints (qlog), etc.
+specification of a logging format, and more.
 
 The third area of work is the specification of new extensions to QUIC.
-Extensions intended for Standards Track need to have general
-applicability to multiple application protocols. The WG may also
-decide to publish extensions as Informational or Experimental
-documents, e.g., to allow vendors to publicly document deployed
-proprietary extensions or to enable wider experimentation with new
-protocol features.
+The WG will primarily focus on extensions to the QUIC transport layer,
+i.e., extensions to QUIC that have broad applicability to multiple
+application protocols. The WG may also publish specifications to
+publicly document deployed proprietary extensions or to enable wider
+experimentation with proposed new protocol features.
 
 Specifications describing how new or existing application protocols
-use the QUIC transport layer do not need to be specified in the QUIC
-WG. The QUIC WG will collaborate with other groups that define such
-application protocols that intend to use QUIC. New mappings might
-require QUIC extensions and it may be efficient to define these
-alongside the mapping specifications. Groups that define application
-protocols using QUIC, or extensions to QUIC in support of those
-protocols, are requested to consult with the QUIC WG and seek review
-of proposals. This is intended to reduce the possibility of duplicate
-work and/or conflicts with other extensions.
+use the QUIC transport layer need not be specified in the QUIC WG,
+although they can. The QUIC WG will collaborate with other groups that
+define such application protocols that intend to use QUIC. New
+mappings might require QUIC extensions and it may be efficient to
+define these alongside the mapping specifications. Groups that define
+application protocols using QUIC, or extensions to QUIC in support of
+those protocols, are strongly requested to consult with the QUIC WG and seek
+early and ongoing review of and collaboration on proposals. This is intended to reduce the possibility of
+duplicate work and/or conflicts with other extensions.
 
 The QUIC WG originated HTTP/3, the mapping of HTTP to QUIC, and the
 QPACK header compression scheme. These specifications are now
