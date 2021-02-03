@@ -28,6 +28,8 @@
 ### WG Items
 
 * 15 min - Open issues, implementation experience, possible WGLC of [QUIC-LB](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers) - *Martin Duke*
+* 30 min - Open issues, updates to [DATAGRAM](https://datatracker.ietf.org/doc/draft-ietf-quic-datagram/) - *Tommy Pauly*
+* 30 min - Open issues, updates to [version negotiation](https://datatracker.ietf.org/doc/draft-ietf-quic-version-negotiation/) - *David Schinazi*
 
 ### Other (aka "As Time Permits")
 
