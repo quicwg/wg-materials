@@ -18,7 +18,7 @@ QUIC specifications:
 - Maintenance and evolution of the existing QUIC extensions specified
   by the WG.
 
-Maintenance and evolution work needs to be strongly motivated by
+The working group adoption of maintenance and evolution work for QUIC base specifications needs to be strongly motivated by
 existing or ongoing production deployments of QUIC at scale, and needs
 to carefully consider its impact on the diverse set of applications
 that have adopted QUIC as a transport.
