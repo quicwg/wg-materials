@@ -6,9 +6,9 @@ statistics for our various repositories.
 
 Example:
 ``` shell
-# export GITDM_CONFIG=<location of this directory>
-# cd quicwg/base-drafts
-# git log -p | gitdm -l 5 -b $GITDM_CONFIG
+export GITDM_CONFIG=<location of this directory>
+cd quicwg/base-drafts
+git log -p | gitdm -l 5 -b $GITDM_CONFIG
 
 Grabbing changesets...done
 Processed 6322 csets from 84 developers
