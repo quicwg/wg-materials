@@ -1,0 +1,87 @@
+# Map email addresses onto employers.  These files contain lines like:
+#
+#         [user@]domain  employer  [< yyyy-mm-dd]
+#
+# If the "user@" portion is missing, all email from the given domain
+# will be treated as being associated with the given employer.  If a
+# date is provided, the entry is only valid up to that date;
+# otherwise it is considered valid into the indefinite future.  This
+# feature can be useful for properly tracking developers' work when
+# they change employers but do not change email addresses.
+
+abdn.ac.uk                              Uni. Aberdeen
+akamai.com                              Akamai
+alibaba-inc.com                         Alibaba
+apache.org                              Apache
+apple.com                               Apple
+arm.com                                 ARM
+bbc.co.uk                               BBC
+chromium.org                            Google
+cisco.com                               Cisco
+cloudflare.com                          Cloudflare
+cnes.fr                                 CNES
+csperkins.org                           Uni. Glasgow
+dell.com                                Dell
+dvide.com                               dVide
+ericsson.com                            Ericsson
+ethz.ch                                 ETHZ
+eurecom.fr                              EURECOM
+f5.com                                  F5
+f5net.com                               F5
+fb.com                                  Facebook
+fh-muenster.de                          FH Muenster
+google.com                              Google
+huitema.net                             Private Octopus
+iij.ad.jp                               IIJ
+intel.com                               Intel
+litespeedtech.com                       Litespeed
+llnw.com                                Limelight Networks
+luminis.eu                              Luminis
+microsoft.com                           Microsoft
+mozilla.com                             Mozilla
+netflix.com                             Netflix
+nokia-bell-labs.com                     Nokia
+orange.com                              Orange
+qut.edu.au                              QUT
+rwth-aachen.de                          RWTH Aachen
+sn3rd.com                               sn3rd
+trammell.ch                             Google
+tum.de                                  TU Munich
+uclouvain.be                            UC Louvain
+uhasselt.be                             Uni. Hasselt
+
+60349884+joergdeutschmann-i7@users.noreply.github.com   Uni. Erlangen–Nuremberg
+alessandro@ghedini.me                   Cloudflare
+alexis.lagoutte@gmail.com               Cheops Technology
+christoph.paasch@gmail.com              Apple
+daan.j.demeyer@gmail.com                Facebook
+dirkjan@ochtman.nl                      XavaMedia
+dragana.damjano@gmail.com               Mozilla
+dschinazi.ietf@gmail.com                Google
+ekr@rtfm.com                            Mozilla
+fielding@gbiv.com                       Adobe
+github@clemente.io                      Google
+ianswett@users.noreply.github.com       Google
+jari.arkko@piuha.net                    Ericsson
+jasnell@gmail.com                       NearForm
+jri.ietf@gmail.com                      Fastly
+julian.reschke@gmx.de                   greenbytes
+kai.mindi@gmx.de                        Uni. Stuttgart
+kazuhooku@gmail.com                     Fastly
+lars@eggert.org                         NetApp
+logan@cyberstorm.mu                     AFRINIC
+mail@felixguenther.info                 ETHZ
+mani.subodh@gmail.com                   Facebook
+marcus@ihlar.se                         Ericsson
+martenseemann@gmail.com                 Protocol Labs
+martin.thomson@gmail.com                Mozilla
+matt@mjoras.com                         Facebook
+mbishop@evequefou.be                    Akamai
+mcmanus@ducksong.com                    Fastly
+mnot@mnot.net                           Fastly
+peter@lekensteyn.nl                     Cloudflare
+rpaulo@me.com                           Apple
+serialx@serialx.net                     Devsisters
+slusnys@gmail.com                       Akamai
+spencerdawkins.ietf@gmail.com           Tencent
+tatsuhiro.t@gmail.com                   Yahoo!

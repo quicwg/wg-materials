@@ -1,0 +1,55 @@
+# Developers often post code under a number of different email
+# addresses, but it can be desirable to group them all together in
+# the statistics.  An EmailAliases file just contains a bunch of
+# lines of the form:
+#
+#         alias@address  canonical@address
+#
+# Any patches originating from alias@address will be treated as if
+# they had come from canonical@address.
+#
+# It may happen that some people set their git user data in the
+# following form: "joe.hacker@acme.org <Joe Hacker>". The
+# "Joe Hacker" is then considered as the email... but gitdm says
+# it is a "Funky" email. An alias line in the following form can
+# be used to alias these commits aliased to the correct email
+# address:
+#
+#         "Joe Hacker" joe.hacker@acme.org
+
+1229714+junhochoi@users.noreply.github.com      junho@cloudflare.com
+1991.daiki@gmail.com                            daiki.aminaka@intel.com
+200328+larseggert@users.noreply.github.com      lars@eggert.org
+30573755+ariel-anieli@users.noreply.github.com  otilibil@eurecom.fr
+32474881+erickinnear@users.noreply.github.com   ekinnear@apple.com
+404610+tatsuhiro-t@users.noreply.github.com     tatsuhiro.t@gmail.com
+afrind@users.noreply.github.com                 afrind@fb.com
+an01040@gmail.com                               anqing.aq@alibaba-inc.com
+bemasc@uproxy.org                               bemasc@google.com
+bencebeky@users.noreply.github.com              bnc@google.com
+bonaventure@acm.org                             olivier.bonaventure@uclouvain.be
+caw@heapingbits.net                             chriswood@cloudflare.com
+charles.krasic@gmail.com                        ckrasic@netflix.com
+coopdanger@users.noreply.github.com             alcoop@cisco.com
+daandemeyer@users.noreply.github.com            daan.j.demeyer@gmail.com
+davidschinazi@users.noreply.github.com          dschinazi.ietf@gmail.com
+dtikhonov@live.com                              dtikhonov@litespeedtech.com
+ekinnear@users.noreply.github.com               ekinnear@apple.com
+github@nharper.org                              nharper@chromium.org
+igorlord@alum.mit.edu                           ilubashe@akamai.com
+indiestory@gmail.com                            tom@erg.abdn.ac.uk
+kaduk-github@mit.edu                            bkaduk@akamai.com
+kaduk@mit.edu                                   bkaduk@akamai.com
+luca.niccolini@gmail.com                        lniccolini@fb.com
+lucaspardue.24.7@gmail.com                      lucas@cloudflare.com
+martin.h.duke@gmail.com                         m.duke@f5.com
+marx.robin@gmail.com                            robin.marx@uhasselt.be
+mikkelfj@gmail.com                              mikkel@dvide.com
+mt@lowentropy.net                               martin.thomson@gmail.com
+nicolas.kuhn.guivarch@gmail.com                 nicolas.kuhn@cnes.fr
+qdeconinck@users.noreply.github.com             quentin.deconinck@uclouvain.be
+rpaulo@users.noreply.github.com                 rpaulo@me.com
+stuartcheshire@users.noreply.github.com         cheshire@apple.com
+tj@enoti.me                                     tom@erg.abdn.ac.uk
+vasilvv@gmail.com                               vasilvv@google.com
+vasilvv@mit.edu                                 vasilvv@google.com
