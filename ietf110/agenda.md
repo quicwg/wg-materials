@@ -8,9 +8,9 @@
 
 [Hackathon](https://trac.ietf.org/trac/ietf/meeting/wiki/110hackathon)
 
-## TBD <!--Wednesday, November 18, 2021 (+07)-->
+## Wednesday, Match 10, 2021 (+01)
 
-*TBD<!--12:00-14:00	Wednesday Session I-->*
+13:00-15:00	Wednesday Session I
 
 ### Administrivia
 
@@ -26,7 +26,7 @@
 * 5 min - Recap of interpo at hackathon ([interop sheet](https://docs.google.com/spreadsheets/d/1D0tW89vOoaScs3IY9RGC0UesWGAwE6xyLk0l4JtvTVg/edit#gid=1991873121)) - *Lars Eggert*
 
 ### WG Items
-
+* 20 min - WGLC changes to [manageability](https://datatracker.ietf.org/doc/draft-ietf-quic-manageability/) and [applicability](https://datatracker.ietf.org/doc/draft-ietf-quic-applicability/)
 * 15 min - Open issues, implementation experience, possible WGLC of [QUIC-LB](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers) - *Martin Duke*
 * 30 min - Open issues, updates to [DATAGRAM](https://datatracker.ietf.org/doc/draft-ietf-quic-datagram/) - *Tommy Pauly*
 * 30 min - Open issues, updates to [version negotiation](https://datatracker.ietf.org/doc/draft-ietf-quic-version-negotiation/) - *David Schinazi*
