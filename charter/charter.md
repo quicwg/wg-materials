@@ -1,5 +1,3 @@
-# QUIC Working Group Charter
-
 The QUIC WG originated the specifications describing version 1 of
 QUIC, a UDP-based, stream-multiplexing, encrypted transport protocol.
 
@@ -9,20 +7,19 @@ It is chartered to pursue work in the areas detailed below:
 1. The first area of work is maintenance and evolution of the existing
    QUIC specifications:
 
-   - Maintenance and evolution of the QUIC base specifications that
+   * Maintenance and evolution of the QUIC base specifications that
      describe its invariants, core transport mechanisms, security and
-     privacy, loss detection and recovery, congestion control, version and
-     extension negotiation, etc. This includes the specification of new
-     versions of QUIC.
+     privacy properties, loss detection and recovery, congestion control,
+     version and extension negotiation, etc. This includes the
+     specification of new versions of QUIC.
 
-   - Maintenance and evolution of the existing QUIC extensions
+   * Maintenance and evolution of the existing QUIC extensions
      specified by the WG.
 
    WG adoption of work items falling into this first area of work
    needs to be strongly motivated by existing or ongoing production
    deployments of QUIC at scale, and needs to carefully consider its
-   impact on the diverse set of applications that have adopted QUIC as
-   a transport.
+   impact on the applications that have adopted QUIC as a transport.
 
 2. The second area of work is supporting the deployability of QUIC,
    which includes specifications and documents such as applicability and
@@ -37,16 +34,17 @@ It is chartered to pursue work in the areas detailed below:
    wider experimentation with proposed new protocol features.
 
 Specifications describing how new or existing application protocols
-use the QUIC transport layer need not be specified in the QUIC WG,
-although they can. The QUIC WG will collaborate with other groups that
-define such application protocols that intend to use QUIC. New
-mappings might require QUIC extensions and it may be efficient to
-define these alongside the mapping specifications. Groups that define
-application protocols using QUIC, or extensions to QUIC in support of
-those protocols, are strongly requested to consult with the QUIC WG
-and seek early and ongoing review of and collaboration on proposals.
-This is intended to reduce the possibility of duplicate work and/or
-conflicts with other extensions.
+use the QUIC transport layer, called application protocol mappings
+below, need not be specified in the QUIC WG, although they can. The
+QUIC WG will collaborate with other groups that define such
+application protocols that intend to use QUIC. New application
+protocol mappings might require QUIC extensions and it may be
+efficient to define these alongside the mapping specifications. Groups
+that define application protocols using QUIC, or extensions to QUIC in
+support of those protocols, are strongly requested to consult with the
+QUIC WG and seek early and ongoing review of and collaboration on
+proposals. This is intended to reduce the possibility of duplicate
+work and/or conflicts with other extensions.
 
 The QUIC WG originated HTTP/3, the mapping of HTTP to QUIC, and the
 QPACK header compression scheme. These specifications are now
