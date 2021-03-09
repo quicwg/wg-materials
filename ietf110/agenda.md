@@ -30,6 +30,7 @@
 * 25 min - Open issues, updates to [DATAGRAM](https://datatracker.ietf.org/doc/draft-ietf-quic-datagram/). [Slides](https://datatracker.ietf.org/meeting/110/materials/slides-110-quic-quic-datagrams-00) - *Tommy Pauly*
 * 25 min - Open issues, updates to [version negotiation](https://datatracker.ietf.org/doc/draft-ietf-quic-version-negotiation/). [Slides](https://datatracker.ietf.org/meeting/110/materials/slides-110-quic-quic-version-negotiation-00) - *David Schinazi*
 * 25 min - Open issues, implementation experience, possible WGLC of [QUIC-LB](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers). [Slides](https://datatracker.ietf.org/meeting/110/materials/slides-110-quic-quic-load-balancers-00) - *Martin Duke*
+* 20 min - Kill the masters
 
 ### Other (aka "As Time Permits")
 
