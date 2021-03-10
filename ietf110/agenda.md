@@ -26,7 +26,7 @@
 * 5 min - Recap of interop at hackathon ([interop sheet](https://docs.google.com/spreadsheets/d/1D0tW89vOoaScs3IY9RGC0UesWGAwE6xyLk0l4JtvTVg/edit#gid=2079541679)) - *Lars Eggert*
 
 ### WG Items
-* 25 min - WGLC changes to [manageability](https://datatracker.ietf.org/doc/draft-ietf-quic-manageability/) and [applicability](https://datatracker.ietf.org/doc/draft-ietf-quic-applicability/). [Slides](https://datatracker.ietf.org/meeting/110/materials/slides-110-quic-quic-applicability-and-manageability-wglc-update-00) - *Mirja Kuelwind*
+* 25 min - WGLC changes to [manageability](https://datatracker.ietf.org/doc/draft-ietf-quic-manageability/) and [applicability](https://datatracker.ietf.org/doc/draft-ietf-quic-applicability/). [Slides](https://datatracker.ietf.org/meeting/110/materials/slides-110-quic-quic-applicability-and-manageability-wglc-update-00) - *Mirja Kühlewind*
 * 25 min - Open issues, updates to [DATAGRAM](https://datatracker.ietf.org/doc/draft-ietf-quic-datagram/). [Slides](https://datatracker.ietf.org/meeting/110/materials/slides-110-quic-quic-datagrams-00) - *Tommy Pauly*
 * 25 min - Open issues, updates to [version negotiation](https://datatracker.ietf.org/doc/draft-ietf-quic-version-negotiation/). [Slides](https://datatracker.ietf.org/meeting/110/materials/slides-110-quic-quic-version-negotiation-00) - *David Schinazi*
 * 25 min - Open issues, implementation experience, possible WGLC of [QUIC-LB](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers). [Slides](https://datatracker.ietf.org/meeting/110/materials/slides-110-quic-quic-load-balancers-00) - *Martin Duke*
