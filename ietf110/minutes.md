@@ -117,7 +117,7 @@ Chairs: 🪑🪑🪑 (Lars Eggert (for the last time), Lucas Pardue, Matt Joras)
 **Martin Duke**: Can't comment out of hand, but definitely don't want to break ECH. Plaintext CID hsa been in there since start and has lots of support from QUIC community, who are privacy sensitive. Consider this more of a privacy continuum rather than discrete private vs non-private.
 
 ## Adoption: [QUIC bit greasing](https://datatracker.ietf.org/doc/draft-thomson-quic-bit-grease/)
-[Slides](https://github.com/quicwg/wg-materials/blob/master/ietf108/quic-bit-grease.pdf) *Martin Thomson*
+[Slides](https://github.com/quicwg/wg-materials/blob/main/ietf108/quic-bit-grease.pdf) *Martin Thomson*
 
 No presentation after some discussion about waiting for recharter and asking for adoption.
 
