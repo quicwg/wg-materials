@@ -8,7 +8,7 @@
 
 [Hackathon](https://trac.ietf.org/trac/ietf/meeting/wiki/110hackathon)
 
-## Wednesday, Match 10, 2021 (+01)
+## Wednesday, March 10, 2021 (+01)
 
 13:00-15:00	Wednesday Session I
 
