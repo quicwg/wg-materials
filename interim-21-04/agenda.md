@@ -18,11 +18,12 @@ See [the arrangements page](arrangements.md) for dial-in information.
 ### Editor's Opening Remarks - David Schinazi / EKR (5 min)
 
 ### Opportunity for Opening Remarks (10 min)
-   * High-level overview of ideas from commenters on mailing list
+  * High-level overview of ideas from commenters on mailing list
 
 ### Balance of Time (85 min)
 
 #### Version Negotiation - Watson Ladd (10 min)
+  * https://datatracker.ietf.org/meeting/interim-2021-quic-01/materials/slides-interim-2021-quic-01-sessa-versionnegotiation-watsonladd-00
 
 #### Open Issues
   * See https://github.com/quicwg/version-negotiation/issues
