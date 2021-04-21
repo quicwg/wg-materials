@@ -10,11 +10,23 @@ See [the arrangements page](arrangements.md) for dial-in information.
 
 ## Agenda
 
-### Administrivia (5 min)
+### Administrivia - Chairs (5 min)
   * Scribes, Blue Sheets, Note Well
   * Purpose of the meeting
+  * Agenda bashing
 
-### Open Issues (110 min)
+### Editor's Opening Remarks - David Schinazi / EKR (5 min)
+
+### Opportunity for Opening Remarks (10 min)
+   * High-level overview of ideas from commenters on mailing list
+
+### Balance of Time (85 min)
+
+#### Version Negotiation - Watson Ladd (10 min)
+
+#### Open Issues
   * See https://github.com/quicwg/version-negotiation/issues
+
+#### Open Floor
 
 ### Wrap up (5 min)
