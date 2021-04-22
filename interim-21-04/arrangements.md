@@ -1,4 +1,4 @@
-# QUIC Working Group Interim Meeting - October 2020
+# QUIC Working Group Interim Meeting - April 2021
 
 This is the arrangements page for the QUIC Working Group's April 2021 virtual interim meeting.
 
