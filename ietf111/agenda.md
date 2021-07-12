@@ -40,6 +40,7 @@
 *Subject to reordering*
 
 * QUIC versions, ALPN, version++. - *Martin Duke* 
+* Multi-path QUIC extension and experiments. - *Yanmei Liu/Yunfei Ma*
 
 ### Planning & Wrap up
 
