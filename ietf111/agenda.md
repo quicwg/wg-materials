@@ -39,7 +39,8 @@
 
 *Subject to reordering*
 
-* QUIC versions, ALPN, version++. - *Martin Duke* 
+* QUIC versions, ALPN, version++. - *Martin Duke*
+* Updates to [0-RTT-BDP](https://github.com/NicoKos/QUIC_HIGH_BDP/tree/master/ietf-document/draft-0rtt-bdp). - *Nicolas Kuhn* 
 * Multi-path QUIC extension and experiments. - *Yanmei Liu/Yunfei Ma*
 
 ### Planning & Wrap up
