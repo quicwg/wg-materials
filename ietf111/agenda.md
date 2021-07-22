@@ -27,11 +27,11 @@
 
 ### WG Items
 * 10 min - Open issues, updates to [manageability](https://datatracker.ietf.org/doc/draft-ietf-quic-manageability/) and [applicability](https://datatracker.ietf.org/doc/draft-ietf-quic-applicability/). - *Mirja Kühlewind*
-* 10 min - Open issues, updates to [DATAGRAM](https://datatracker.ietf.org/doc/draft-ietf-quic-datagram/). - *Presenter TBC*
+* 10 min - Open issues, updates to [DATAGRAM](https://datatracker.ietf.org/doc/draft-ietf-quic-datagram/). - *Tommy Pauly*
 * 10 min - Open issues, updates to [version negotiation](https://datatracker.ietf.org/doc/draft-ietf-quic-version-negotiation/). - *David Schinazi*
 * 10 min - Open issues, updates to [QUIC-LB](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers). - *Martin Duke*
 * 20 min - Open issues, updates to qlog. [Main schema](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema), [QUIC event schema](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-quic-events, [HTTP/3 and QPACK event schema](https://quicwg.github.io/qlog/#go.draft-ietf-quic-qlog-h3-events.html). - *Robin Marx*
-* 20 min  Open issues, updates to [ack frequency](https://github.com/quicwg/ack-frequency). - *Presenter TBC*
+* 20 min  Open issues, updates to [ack frequency](https://github.com/quicwg/ack-frequency). - *Jana Iyengar*
 * 10 min - Open issues, updates to [Greasing the QUIC bit](https://datatracker.ietf.org/doc/html/draft-ietf-quic-bit-grease). - *Martin Thomson*
 
 
