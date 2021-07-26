@@ -37,7 +37,7 @@
 *Subject to reordering*
 
 * QUIC versions, ALPN, version++. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf111/quic-version-stuff.pdf) - *Martin Duke*
-* Updates to [0-RTT-BDP](https://github.com/NicoKos/QUIC_HIGH_BDP/tree/master/ietf-document/draft-0rtt-bdp). - *Nicolas Kuhn* 
+* Updates to [0-RTT-BDP](https://github.com/NicoKos/QUIC_HIGH_BDP/tree/master/ietf-document/draft-0rtt-bdp) [slides](). - *Nicolas Kuhn* 
 * Multi-path QUIC extension and experiments. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf111/multipath-experiments.pdf)  - *Yanmei Liu/Yunfei Ma*
 
 
