@@ -25,9 +25,9 @@
 ### WG Items
 * 10 min - Open issues, updates to [manageability](https://datatracker.ietf.org/doc/draft-ietf-quic-manageability/) and [applicability](https://datatracker.ietf.org/doc/draft-ietf-quic-applicability/). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf111/ops-drafts.pdf)- *Mirja Kühlewind*
 * 10 min - Open issues, updates to [DATAGRAM](https://datatracker.ietf.org/doc/draft-ietf-quic-datagram/). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf111/datagram.pdf) - *Tommy Pauly*
-* 10 min - Open issues, updates to [version negotiation](https://datatracker.ietf.org/doc/draft-ietf-quic-version-negotiation/). - *David Schinazi*
+* 10 min - Open issues, updates to [version negotiation](https://datatracker.ietf.org/doc/draft-ietf-quic-version-negotiation/). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf111/version-negotiation.pdf) - *David Schinazi*
 * 10 min - Open issues, updates to [QUIC-LB](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf111/quic-lb.pdf) - *Martin Duke*
-* 20 min - Open issues, updates to qlog. [Main schema](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema), [QUIC event schema](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-quic-events), [HTTP/3 and QPACK event schema](https://quicwg.github.io/qlog/#go.draft-ietf-quic-qlog-h3-events.html). - *Robin Marx*
+* 20 min - Open issues, updates to qlog. [Main schema](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema), [QUIC event schema](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-quic-events), [HTTP/3 and QPACK event schema](https://quicwg.github.io/qlog/#go.draft-ietf-quic-qlog-h3-events.html). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf111/qlog.pdf) - *Robin Marx*
 * 20 min  Open issues, updates to [ack frequency](https://github.com/quicwg/ack-frequency). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf111/ack-frequency.pdf)- *Jana Iyengar*
 * 10 min - Open issues, updates to [Greasing the QUIC bit](https://datatracker.ietf.org/doc/html/draft-ietf-quic-bit-grease). - *Martin Thomson*
 
