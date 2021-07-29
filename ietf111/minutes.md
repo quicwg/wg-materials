@@ -245,11 +245,11 @@ _no slides_
 
 **MD**: should new version numbers be incremental or random? 
 
-**MD**: most interesting thing is ALPN here. Is ALPN token definively coupled to underlying QUIC version? Is clean, can use alt-svc. However, if many different QUIC version, you get broad matrix that's difficult to track. 
+**MD**: most interesting thing is ALPN here. How do we keep track of which QUIC versions can support which applications? 4 alternatives; (1) Couple ALPN to underlying QUIC version? Is clean, can use alt-svc. However, if many different QUIC version, you get broad matrix that's difficult to track, and applications that provide the ALPN have to know about QUIC versions.
 
-**MD**: several proposals: 1) ALPN registry lists supported QUIC versions 2) QUIC version registry lists unsupported ALPNs
+**MD**: Other proposals; (2) New versions can use the same ALPN but have to formally "update" the application draf -- might fill up the first page of application drafts.  (3) Extend an IANA registry (either ALPN or QUIC Versions) to keep track of which ALPNs or versions are supported. (4) Just put text in each new version or application draft covering compatibility with known applications or versions: this has the least bureaucracy, but hard to do the forensics on what supports what.
 
-**MD**: we could also do it ad-hoc: do the best you can with info available at that time. 
+**MD**: I would prefer (3) or (4)
 
 **Mike Bishop**: Previously did decide to tie ALPN to specific QUIC versions. If we want to change that, really don't like enumerating things that are allowed to used QUIC in the QUIC registry (so not option 3B). [missed a point here]. Or option 4 can also be workable. Main point: does QUIC provide features that the application needs? Maybe time to byte the bullet and explore how to write that formally. 
 
