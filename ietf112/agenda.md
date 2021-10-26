@@ -17,6 +17,9 @@
 * [NOTE WELL](https://www.ietf.org/about/note-well.html)
 * Agenda bashing
 
+### Chair Updates
+* 10 min - General updates about the WG
+
 
 ### WG Items
 * 15 min - Open issues, updates to [QUIC-LB](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers).
@@ -28,5 +31,5 @@
 
 ### Planning & Wrap up
 
-* 5 min - Future meetings, implementation drafts, etc.
+* 5 min - Future meetings, etc.
 
