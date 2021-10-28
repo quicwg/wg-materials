@@ -15,6 +15,7 @@
 * Blue sheets
 * Scribe selection
 * [NOTE WELL](https://www.ietf.org/about/note-well.html)
+* [Code of Conduct](https://www.rfc-editor.org/rfc/rfc7154.html)
 * Agenda bashing
 
 ### Chair Updates
@@ -22,14 +23,18 @@
 
 
 ### WG Items
-* 15 min - Open issues, updates to [QUIC-LB](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers).
+* 15 min - Open issues, updates to [ack frequency](https://github.com/quicwg/ack-frequency). [slides] (tbd) - *Jana Iyengar*
+* 15 min - Open issues, updates to qlog. [Main schema](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema), [QUIC event schema](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-quic-events), [HTTP/3 and QPACK event schema](https://quicwg.github.io/qlog/#go.draft-ietf-quic-qlog-h3-events.html). [slides] (tbd) - *Robin Marx*
+* 5 min - Open issues, updates to [version negotiation](https://datatracker.ietf.org/doc/draft-ietf-quic-version-negotiation/). [slides] (tbd) - *David Schinazi*
+* 15 min - Open issues, updates to [QUIC-LB](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers). [slides] (tbd) - *Martin Duke*
+
 
 ### Other (aka "As Time Permits")
 
-*Subject to reordering*
-
+* 30 mins - Unifying the Multipath extensions. [draft-lmbdhk-quic-multipath](https://datatracker.ietf.org/doc/draft-lmbdhk-quic-multipath/). [slides] (tbd) - *TBD - one or more of LMBDHK*
+* 10 mins - ACK_RECEIVE_TIMESTAMP extension. [draft-smith-quic-receive-ts](https://datatracker.ietf.org/doc/draft-smith-quic-receive-ts/). [slides] (tbd) - *Ian Swett*
+* 5 - QUIC version too. [draft-duke-quic-v2](https://datatracker.ietf.org/doc/draft-duke-quic-v2/). [slides] (tbd) - *Martin Duke*
 
 ### Planning & Wrap up
 
 * 5 min - Future meetings, etc.
-
