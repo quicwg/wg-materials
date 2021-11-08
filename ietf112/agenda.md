@@ -34,6 +34,8 @@
 ### Other (aka "As Time Permits")
 * 10 mins - ACK_RECEIVE_TIMESTAMP extension. [draft-smith-quic-receive-ts](https://datatracker.ietf.org/doc/draft-smith-quic-receive-ts/). [slides] (tbd) - *Ian Swett*
 * 5 - QUIC version too. [draft-duke-quic-v2](https://datatracker.ietf.org/doc/draft-duke-quic-v2/). [slides] (tbd) - *Martin Duke*
+* 10 mins - 0RTTBDP extension. [draft-kuhn-quic-0rtt-bdp](https://datatracker.ietf.org/doc/draft-kuhn-quic-0rtt-bdp/). [slides] (tbd) - *Nicolas Kuhn*
+
 
 ### Planning & Wrap up
 
