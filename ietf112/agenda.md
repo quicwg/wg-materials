@@ -29,7 +29,7 @@
 * 15 min - Open issues, updates to [QUIC-LB](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf112/quic-lb.pdf) - *Martin Duke*
 
 ### Unifying the Multipath extensions
-* 30 mins - Unifying the Multipath extensions. [draft-lmbdhk-quic-multipath](https://datatracker.ietf.org/doc/draft-lmbdhk-quic-multipath/). [slides] (tbd) - *TBD - one or more of LMBDHK*
+* 30 mins - Unifying the Multipath extensions. [draft-lmbdhk-quic-multipath](https://datatracker.ietf.org/doc/draft-lmbdhk-quic-multipath/). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf112/quic-lb.pdf) - *Mirja Kuehlwind*
 
 ### Other (aka "As Time Permits")
 * 10 mins - ACK_RECEIVE_TIMESTAMP extension. [draft-smith-quic-receive-ts](https://datatracker.ietf.org/doc/draft-smith-quic-receive-ts/). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf112/receive-timestamp.pdf) - *Ian Swett*
