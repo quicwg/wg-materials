@@ -23,7 +23,7 @@
 
 
 ### WG Items
-* 15 min - Open issues, updates to [ack frequency](https://github.com/quicwg/ack-frequency). [slides] (tbd) - *Jana Iyengar*
+* 15 min - Open issues, updates to [ack frequency](https://github.com/quicwg/ack-frequency). [slides] (https://github.com/quicwg/wg-materials/blob/main/ietf112/ack-frequency.pdf) - *Jana Iyengar*
 * 15 min - Open issues, updates to qlog. [Main schema](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema), [QUIC event schema](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-quic-events), [HTTP/3 and QPACK event schema](https://quicwg.github.io/qlog/#go.draft-ietf-quic-qlog-h3-events.html). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf111/qlog.pdf) - *Robin Marx*
 * 5 min - Open issues, updates to [version negotiation](https://datatracker.ietf.org/doc/draft-ietf-quic-version-negotiation/). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf111/version-negotiation.pdf) - *David Schinazi*
 * 15 min - Open issues, updates to [QUIC-LB](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf112/quic-lb.pdf) - *Martin Duke*
@@ -32,9 +32,9 @@
 * 30 mins - Unifying the Multipath extensions. [draft-lmbdhk-quic-multipath](https://datatracker.ietf.org/doc/draft-lmbdhk-quic-multipath/). [slides] (tbd) - *TBD - one or more of LMBDHK*
 
 ### Other (aka "As Time Permits")
-* 10 mins - ACK_RECEIVE_TIMESTAMP extension. [draft-smith-quic-receive-ts](https://datatracker.ietf.org/doc/draft-smith-quic-receive-ts/). [slides] (tbd) - *Ian Swett*
+* 10 mins - ACK_RECEIVE_TIMESTAMP extension. [draft-smith-quic-receive-ts](https://datatracker.ietf.org/doc/draft-smith-quic-receive-ts/). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf112/receive-timestamp.pdf) - *Ian Swett*
 * 5 - QUIC version too. [draft-duke-quic-v2](https://datatracker.ietf.org/doc/draft-duke-quic-v2/). [slides] (tbd) - *Martin Duke*
-* 10 mins - 0RTTBDP extension. [draft-kuhn-quic-0rtt-bdp](https://datatracker.ietf.org/doc/draft-kuhn-quic-0rtt-bdp/). [slides] (tbd) - *Nicolas Kuhn*
+* 10 mins - 0RTTBDP extension. [draft-kuhn-quic-0rtt-bdp](https://datatracker.ietf.org/doc/draft-kuhn-quic-0rtt-bdp/). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf112/0rtt_bdp.pdf) - *Nicolas Kuhn*
 
 
 ### Planning & Wrap up
