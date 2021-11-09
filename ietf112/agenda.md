@@ -25,7 +25,7 @@
 ### WG Items
 * 15 min - Open issues, updates to [ack frequency](https://github.com/quicwg/ack-frequency). [slides] (https://github.com/quicwg/wg-materials/blob/main/ietf112/ack-frequency.pdf) - *Jana Iyengar*
 * 15 min - Open issues, updates to qlog. [Main schema](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema), [QUIC event schema](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-quic-events), [HTTP/3 and QPACK event schema](https://quicwg.github.io/qlog/#go.draft-ietf-quic-qlog-h3-events.html). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf111/qlog.pdf) - *Robin Marx*
-* 5 min - Open issues, updates to [version negotiation](https://datatracker.ietf.org/doc/draft-ietf-quic-version-negotiation/). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf111/version-negotiation.pdf) - *David Schinazi*
+* 5 min - Open issues, updates to [version negotiation](https://datatracker.ietf.org/doc/draft-ietf-quic-version-negotiation/). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf112/version-negotiation.pdf) - *David Schinazi*
 * 15 min - Open issues, updates to [QUIC-LB](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf112/quic-lb.pdf) - *Martin Duke*
 
 ### Unifying the Multipath extensions
