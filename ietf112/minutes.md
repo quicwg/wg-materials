@@ -136,7 +136,7 @@ MD: together because of a common thread of middlebox coordination.
 MJ: From a chair perspective, what is your opinion on the necessity of interop. Seems like there haven't been a lot of design issues recently. Do we wait on interop? Do we have to interop everything?
 MD: two concerns on maturity.
   1) document is written in way that is implementable.
-  2) Trying to deploy this and further developing configuration model would be very nice to see in practical deployment. Google deployment for this will help. Co-author Nick Banks has worked on Azure for this as well, but has been difficult to get feedback on this from them.
+  2) We are making many decisions about what use cases are the most important, and what tradeoffs to make. Some actual requirements from people interested in deploying this would be very helpful for these decisions. My co-author, Nick Banks, has been working with Azure, but has had trouble getting feedback from them.
 
 
 ## Unifying the Multipath extensions
@@ -228,7 +228,7 @@ General: discussion on the chat about number of authors being too high on the dr
 ### Version too
 
 [draft-duke-quic-v2](https://datatracker.ietf.org/doc/draft-duke-quic-v2/).
-No slides - *Martin Duke*
+[slides](https://github.com/quicwg/wg-materials/blob/main/ietf112/quic-version-too.pdf) - *Martin Duke*
 
 Eric Kinnear (EK) : Any reason we'd want to include the bikesheds? Let's just rev the version.
 MD: in my view these are fundamental questions about what happens when you roll a new version that we didn't answer with RFC 9000. How do we number things and what do we do with ALPNs. We have to settle one way or the other.
