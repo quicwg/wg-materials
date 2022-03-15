@@ -4,7 +4,7 @@
 * [Minutes](https://codimd.ietf.org/notes-ietf-113-quic)
 * [Meeting chat](xmpp:quic@jabber.ietf.org?join) ([Slack](https://quicdev.slack.com/) users can join the #jabber Slack channel)
 
-## Tuesday, March 2, 2022
+## Tuesday, March 22, 2022
 
 09:00-11:00 Tuesday Session I
 
