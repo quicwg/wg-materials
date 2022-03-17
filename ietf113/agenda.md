@@ -32,5 +32,5 @@
 
 ### Other (aka "As Time Permits")
 
-* 10 mins - 0RTTBDP drafts [draft-kuhn-quic-bdpframe-extension](https://datatracker.ietf.org/doc/draft-kuhn-quic-bdpframe-extension/), [draft-kuhn-quic-careful-resume](https://datatracker.ietf.org/doc/draft-kuhn-quic-careful-resume/) [slides] (TBD) - *Gorry Fairhurst*
+* 10 mins - 0RTTBDP drafts [draft-kuhn-quic-bdpframe-extension](https://datatracker.ietf.org/doc/draft-kuhn-quic-bdpframe-extension/), [draft-kuhn-quic-careful-resume](https://datatracker.ietf.org/doc/draft-kuhn-quic-careful-resume/) [slides] (TBD) - *Nicolas Kuhn, Gorry Fairhurst*
 
