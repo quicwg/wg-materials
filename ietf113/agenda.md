@@ -23,14 +23,14 @@
 
 
 ### WG Items
-* 20 min - Open issues, updates to [version negotiation](https://datatracker.ietf.org/doc/draft-ietf-quic-version-negotiation/). [slides] (TBD) - *David Schinazi*
-* 10 min - Open issues, updates to [QUIC-LB](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers). [slides] (TBD) - *Martin Duke*
-* 10 min - Open issues, updates to [QUIC v2](https://datatracker.ietf.org/doc/html/draft-ietf-quic-v2). [slides] (TBD) - *Martin Duke*
+* 20 min - Open issues, updates to [version negotiation](https://datatracker.ietf.org/doc/draft-ietf-quic-version-negotiation/). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf113/quic-vn.pdf) - *David Schinazi*
+* 10 min - Open issues, updates to [QUIC-LB](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers). [slides] (https://github.com/quicwg/wg-materials/blob/main/ietf113/quic-lb.pdf) - *Martin Duke*
+* 10 min - Open issues, updates to [QUIC v2](https://datatracker.ietf.org/doc/html/draft-ietf-quic-v2). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf113/quic-v2.pdf) - *Martin Duke*
 * 30 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides] (TBD) - *Mirja Kuehlwind*
 * 20 min - Open issues, updates to qlog. [Main schema](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema), [QUIC event schema](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-quic-events), [HTTP/3 and QPACK event schema](https://quicwg.github.io/qlog/#go.draft-ietf-quic-qlog-h3-events.html). [slides] (TBD) - *Robin Marx*
 
 
 ### Other (aka "As Time Permits")
 
-* 10 mins - 0RTTBDP drafts [draft-kuhn-quic-bdpframe-extension](https://datatracker.ietf.org/doc/draft-kuhn-quic-bdpframe-extension/), [draft-kuhn-quic-careful-resume](https://datatracker.ietf.org/doc/draft-kuhn-quic-careful-resume/) [slides] (https://github.com/quicwg/wg-materials/blob/main/ietf113/0RTTBDP_IETF113.pdf) - *Nicolas Kuhn, Gorry Fairhurst*
+* 10 mins - 0RTTBDP drafts [draft-kuhn-quic-bdpframe-extension](https://datatracker.ietf.org/doc/draft-kuhn-quic-bdpframe-extension/), [draft-kuhn-quic-careful-resume](https://datatracker.ietf.org/doc/draft-kuhn-quic-careful-resume/) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf113/0rtt-bdp.pdf) - *Nicolas Kuhn, Gorry Fairhurst*
 
