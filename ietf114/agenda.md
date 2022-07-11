@@ -1,4 +1,4 @@
-# IETF-113 QUIC WG Agenda
+# IETF-114 QUIC WG Agenda
 
 * [Meetecho](https://meetings.conf.meetecho.com/ietf113/?group=quic) remote participation
 * [Minutes](https://codimd.ietf.org/notes-ietf-114-quic)
@@ -23,12 +23,10 @@
 
 
 ### WG Items
-* 30 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides] (TBD) - *Mirja Kuehlwind*
-* 15 min - Open issues, updates to [Acknowledgement frequency](https://datatracker.ietf.org/doc/html/draft-ietf-quic-ack-frequency). [slides] (TBD) - *Ian Swett*
-* 10 min - Open issues, updates to [QUIC-LB](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers). [slides] (TBD) - *Martin Duke*
+* 40 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides] (TBD) - *Mirja Kuehlwind*
+* 20 min - Open issues, updates to [Acknowledgement frequency](https://datatracker.ietf.org/doc/html/draft-ietf-quic-ack-frequency). [slides] (TBD) - *Ian Swett*
 
 
 ### Other (aka "As Time Permits")
-
-
-
+* 15 min - Quic Timestamps For Measuring One-Way Delays [draft-huitema-quic-ts](https://datatracker.ietf.org/doc/draft-huitema-quic-ts/). [slides] (TBD) - *Christian Huitema*
+* 10 min - Multicast Extension for QUIC [draft-jholland-quic-multicast](https://datatracker.ietf.org/doc/draft-jholland-quic-multicast/). [slides] (TBD) - *Jake Holland*
