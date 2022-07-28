@@ -19,7 +19,7 @@
 * Agenda bashing
 
 ### Chair Updates
-* 5 min - General updates about the WG [slides](TBD)
+* 5 min - General updates about the WG [slides](https://github.com/quicwg/wg-materials/blob/main/ietf114/chair-slides.pdf)
 
 
 ### WG Items
