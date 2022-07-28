@@ -23,7 +23,7 @@
 
 
 ### WG Items
-* 40 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides] (TBD) - *Mirja Kuehlwind*
+* 40 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf114/multipath.pdf) - *Mirja Kuehlwind*
 * 20 min - Open issues, updates to [Acknowledgement frequency](https://datatracker.ietf.org/doc/html/draft-ietf-quic-ack-frequency). [slides] (TBD) - *Ian Swett*
 * 10 min - Open issues, updates to [QUIC-LB](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers). (no slides) - *Martin Duke*
 
@@ -31,3 +31,4 @@
 ### Other (aka "As Time Permits")
 * 15 min - Quic Timestamps For Measuring One-Way Delays [draft-huitema-quic-ts](https://datatracker.ietf.org/doc/draft-huitema-quic-ts/). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf114/timestamps.pdf) - *Christian Huitema*
 * 10 min - Multicast Extension for QUIC [draft-jholland-quic-multicast](https://datatracker.ietf.org/doc/draft-jholland-quic-multicast/). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf114/multicast.pdf) - *Jake Holland*
+* 5 min - QUIC related protocols analyzers. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf114/protocols-analyzers.pdf) - *Emile Stephan*
