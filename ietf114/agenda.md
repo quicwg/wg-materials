@@ -24,7 +24,7 @@
 
 ### WG Items
 * 40 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf114/multipath.pdf) - *Mirja Kuehlwind*
-* 20 min - Open issues, updates to [Acknowledgement frequency](https://datatracker.ietf.org/doc/html/draft-ietf-quic-ack-frequency). [slides] (TBD) - *Ian Swett*
+* 20 min - Open issues, updates to [Acknowledgement frequency](https://datatracker.ietf.org/doc/html/draft-ietf-quic-ack-frequency). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf114/multicast.pdf) - *Ian Swett*
 * 10 min - Open issues, updates to [QUIC-LB](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers). (no slides) - *Martin Duke*
 
 
