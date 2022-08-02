@@ -26,7 +26,7 @@
 
 HTTP/3 is an RFC, yay! **applause**
 
-**Martin Duke (MD)**: Agenda bash. Lucas and MD have draft about putting QUIC in alt-svc records. Will be discussed in HTTPBIS today (strip down alt-svc to not have parameters). Upshot for this WG: probably strip down to just service B and the place where service B stuff lives will be in the QUIC wg. So look for that and call for adoption relatively early.
+**Martin Duke (MD)**: Agenda bash. Lucas and MD have draft about putting QUIC in alt-svc records. Will be discussed in HTTPBIS today (strip down alt-svc to not have parameters). Upshot for this WG: probably strip down to just SVCB and the place where SVCB stuff lives will be in the QUIC wg. So look for that and call for adoption relatively early.
 
 ## WG Items
 
