@@ -38,7 +38,7 @@ HTTP/3 is an RFC, yay! **applause**
 
 **Ian Swett (Ian)**: hardware offload: is there available hardware offload for QUIC today? Have looked for it haven't found it. Or are we anticipating future HW offload?
 
-**MD**: THat was my issue a while ago as well. I speculatively based on conversations with hardware vendors in the past. But no, not existing yet. Just concerned that messing with crypto algo means we have another mode for multipath that might not be viable. Not a show-stopper at this point, but we don't want to have special hardware just for multipath.
+**MD**: #25 (hardware offload) was my issue, filed speculatively based on conversations with hardware vendors in the past. But no, offload doesn't exist yet. Just concerned that messing with crypto algo means we have another mode for multipath that might not be viable. Not a show-stopper at this point, but we don't want to have special hardware just for multipath.
 
 **MK**: Nothing deployed. But have done some research to see how this would work, and we found that multiple PN space would make this easier.
 
@@ -182,7 +182,7 @@ HTTP/3 is an RFC, yay! **applause**
 
 10 min - Open issues, updates to [QUIC-LB](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers). (no slides) - *Martin Duke*
 
-**MD**: All issues are currently closed. only one worth discussion in crypto review. Simple fix suggested. Another suggestion to make it a bulk-pass algo for probably obvious reasons. CH submitted PR to explain reasoning there; look at this if you have a concern.
+**MD**: All issues are currently closed. only one worth discussion in crypto review. Simple fix suggested. Another suggestion to make it a 12-pass algo, declined for probably obvious reasons. CH submitted PR to explain reasoning for dismissal in security considerations; look at this if you have a concern.
 
 **MD**: Future path of this document. Have reached end of editorial process. 1 option is to go to WGLC. 2nd option is to wait for more code. Currently 2 LB-side implementations. 1 is mine at nginx, 2nd from Ant Financial. Because both are LB-side and none server-side, can't interop... current focus day job is to implement QUIC-LB on server side in Google QUICHE. Will have this soon at Google (within 12 months). So option 2 would be to wait for implementation/deployment experience with the Google implementation. Option 3, wait for more people who aren't me to implement this. What does the community want to see before WGLC?
 
