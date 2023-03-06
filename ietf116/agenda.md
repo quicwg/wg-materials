@@ -23,9 +23,9 @@
 
 
 ### WG Items
-* 40 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides](TBD) - *Presenter TBD*
+* 40 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides](TBD) - *Yanmei Liu & Yunfei Ma *
 * 20 min - Open issues, updates to [Acknowledgement frequency](https://datatracker.ietf.org/doc/html/draft-ietf-quic-ack-frequency). [slides](TBD) - *Presenter TBD*
-* 20 min - Open issues, updates to [qlog](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema). [slides](TBD) - *Presenter TBD*
+* 20 min - Open issues, updates to [qlog](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema). [slides](TBD) - *Robin Marx*
 
 
 ### Other (aka "As Time Permits")
