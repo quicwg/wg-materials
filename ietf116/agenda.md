@@ -31,4 +31,4 @@
 ### Other (aka "As Time Permits")
 
 * 15 min - Reliable Stream Resets. [slides] (TBD) - *Matt Joras & friends*
-* 15 min - QUIC handshakes in the Wild. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf116/quic-handshakes-in-the-wild.pdf) - *Marcin Nawrocki*
+* 15 min - QUIC handshake challenges. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf116/quic-handshake-challenges.pdf) - *Marcin Nawrocki*
