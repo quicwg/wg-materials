@@ -19,12 +19,12 @@
 * Agenda bashing
 
 ### Chair Updates
-* 5 min - General updates about the WG [slides](TBD)
+* 5 min - General updates about the WG [slides](https://github.com/quicwg/wg-materials/blob/main/ietf115/chairs.pdf)
 
 
 ### WG Items
 * 40 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf115/multipath.pdf) - *Quentin De Coninck*
-* 20 min - Open issues, updates to [Acknowledgement frequency](https://datatracker.ietf.org/doc/html/draft-ietf-quic-ack-frequency). [slides](TBD) - *Ian Swett*
+* 20 min - Open issues, updates to [Acknowledgement frequency](https://datatracker.ietf.org/doc/html/draft-ietf-quic-ack-frequency). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf115/ack-frequency.pdf) - *Ian Swett*
 * 20 min - Open issues, updates to [qlog](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf115/qlog.pdf) - *Robin Marx*
 * 10 min - Open issues, updates to [QUIC-LB](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf115/lb.pdf) - *Martin Duke*
 

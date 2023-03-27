@@ -19,16 +19,16 @@
 * Agenda bashing
 
 ### Chair Updates
-* 5 min - General updates about the WG [slides] (TBD)
+* 5 min - General updates about the WG [slides](https://github.com/quicwg/wg-materials/blob/main/ietf116/chairs.pdf)
 
 
 ### WG Items
-* 40 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides] (TBD) - *Yanmei Liu & Yunfei Ma *
-* 20 min - Open issues, updates to [Acknowledgement frequency](https://datatracker.ietf.org/doc/html/draft-ietf-quic-ack-frequency). [slides] (TBD) - *Presenter TBD*
-* 20 min - Open issues, updates to [qlog](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema). [slides] (TBD) - *Robin Marx*
+* 40 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf116/multipath.pdf) - *Yanmei Liu & Yunfei Ma *
+* 20 min - Open issues, updates to [Acknowledgement frequency](https://datatracker.ietf.org/doc/html/draft-ietf-quic-ack-frequency). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf116/ack-frequency.pdf) - *Ian Swett*
+* 20 min - Open issues, updates to [qlog](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf116/qlog.pdf) - *Lucas Pardue*
 
 
 ### Other (aka "As Time Permits")
 
 * 15 min - Reliable Stream Resets. [slides] (TBD) - *Matt Joras & friends*
-* 15 min - QUIC handshakes in the Wild. [slides] (TBD) - *Marcin Nawrocki*
+* 15 min - QUIC handshakes in the Wild. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf116/quic-handshakes-in-the-wild.pdf) - *Marcin Nawrocki*
