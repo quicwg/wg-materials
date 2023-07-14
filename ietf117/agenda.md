@@ -22,10 +22,11 @@
 * 5 min - General updates about the WG [slides](https://github.com/quicwg/wg-materials/blob/main/ietf117/chairs.pdf)
 
 ### WG Items
-* 20 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath).
-* 20 min - Open issues, updates to [Reliable Stream Resets](https://datatracker.ietf.org/doc/draft-ietf-quic-reliable-stream-reset/). 
+* 30 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath).
+* 30 min - Open issues, updates to [Reliable Stream Resets](https://datatracker.ietf.org/doc/draft-ietf-quic-reliable-stream-reset/). 
 * 15 min - Open issues, updates to [qlog](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema).
 * 10 min - Open issues, updates to [Acknowledgement frequency](https://datatracker.ietf.org/doc/html/draft-ietf-quic-ack-frequency).
+* 5 min - Open issues, updates to [QUIC-LB](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers/).
 
 ### Other (aka "As Time Permits")
 * 10 min - [QUIC-enabled Service Differentiation for Traffic Engineering](https://datatracker.ietf.org/doc/draft-zmlk-quic-te/)
