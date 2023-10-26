@@ -30,4 +30,3 @@
 
 ### Other (aka "As Time Permits")
 * 10 min - QUIC ACK receive timestamps
-* 20 min - [QUIC NAT Traversal](https://datatracker.ietf.org/doc/draft-seemann-quic-nat-traversal/)
