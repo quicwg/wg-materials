@@ -29,6 +29,6 @@
 ### Other (aka "As Time Permits")
 * 20 min - [QUIC NAT Traversal](https://datatracker.ietf.org/doc/draft-seemann-quic-nat-traversal/)
 * 10 min - QUIC ACK receive timestamps
-* 5 min [QUIC BDP frame](https://datatracker.ietf.org/doc/draft-kuhn-quic-bdpframe-extension/)
-* 5 min - FEC results
-* 5 min - FEC results
+* 5 min - [QUIC BDP frame](https://datatracker.ietf.org/doc/draft-kuhn-quic-bdpframe-extension/)
+* 5 min - FEC results (François Michel)
+* 5 min - FEC results (Huawei)
