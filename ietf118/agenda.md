@@ -22,13 +22,13 @@
 * 10 min - General updates about the WG [slides](https://github.com/quicwg/wg-materials/blob/main/ietf118/chairs.pdf)
 
 ### WG Items
-* 25 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath).
-* 15 min - Open issues, updates to [Reliable Stream Resets](https://datatracker.ietf.org/doc/draft-ietf-quic-reliable-stream-reset/). 
-* 15 min - Open issues, updates to [qlog](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema).
+* 25 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf118/multipath.pdf)
+* 15 min - Open issues, updates to [Reliable Stream Resets](https://datatracker.ietf.org/doc/draft-ietf-quic-reliable-stream-reset/). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf118/reliable-resets.pdf)
+* 15 min - Open issues, updates to [qlog](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf118/qlog.pdf)
 
 ### Other (aka "As Time Permits")
-* 20 min - [QUIC NAT Traversal](https://datatracker.ietf.org/doc/draft-seemann-quic-nat-traversal/)
-* 10 min - QUIC ACK receive timestamps
-* 5 min - [QUIC BDP frame](https://datatracker.ietf.org/doc/draft-kuhn-quic-bdpframe-extension/)
-* 5 min - FEC results (François Michel)
+* 20 min - [QUIC NAT Traversal](https://datatracker.ietf.org/doc/draft-seemann-quic-nat-traversal/) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf118/nat-traversal.pdf)
+* 10 min - QUIC ACK receive timestamps [slides](https://github.com/quicwg/wg-materials/blob/main/ietf118/timestamps.pdf)
+* 5 min - [QUIC BDP frame](https://datatracker.ietf.org/doc/draft-kuhn-quic-bdpframe-extension/) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf118/bdp-frame.pdf)
+* 5 min - FEC results (François Michel) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf118/michel-fec.pdf)
 * 5 min - FEC results (Huawei)
