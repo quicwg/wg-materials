@@ -6,7 +6,7 @@
 
 ## Wednesday, March 20, 2024
 
-14:30-16:30 Wednesday, Session I
+09:30-11:30 Wednesday, Session I
 
 ### Administrivia
 
@@ -23,9 +23,9 @@
 
 ### WG Items
 * 60 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf118/multipath.pdf)
-* 15 min - Open issues, updates to [Reliable Stream Resets](https://datatracker.ietf.org/doc/draft-ietf-quic-reliable-stream-reset/). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf118/reliable-resets.pdf)
-* 15 min - Open issues, updates to [qlog](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf118/qlog.pdf)
+* 20 min - Open issues, updates to [qlog](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf118/qlog.pdf)
 
 ### Other (aka "As Time Permits")
+* 5 min - QUIC on Streams
 * 5 min - [QUIC BDP frame](https://datatracker.ietf.org/doc/draft-kuhn-quic-bdpframe-extension/) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf118/bdp-frame.pdf)
 * 5 min - FEC results (François Michel) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf118/michel-fec.pdf)
