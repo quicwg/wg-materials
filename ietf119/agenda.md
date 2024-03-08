@@ -27,5 +27,6 @@
 
 ### Other (aka "As Time Permits")
 * 5 min - QUIC on Streams
-* 5 min - [QUIC BDP frame](https://datatracker.ietf.org/doc/draft-kuhn-quic-bdpframe-extension/) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf118/bdp-frame.pdf)
+* 10 min - [QUIC BDP frame](https://datatracker.ietf.org/doc/draft-kuhn-quic-bdpframe-extension/) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf118/bdp-frame.pdf)
 * 5 min - FEC results (François Michel) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf118/michel-fec.pdf)
+* 5 min - Accurate ECN
