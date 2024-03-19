@@ -24,9 +24,9 @@
 * 10 min - Open issues, updates to [ACK frequency](https://datatracker.ietf.org/doc/html/draft-ietf-quic-ack-frequency). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf119/ack-frequency.pdf)
 
 ### Other (aka "As Time Permits")
-* 10 min - QUIC Security Considerations
-* 5 min - QUIC on Streams (Kazuho Oku) 
-* 10 min - [QUIC BDP frame](https://datatracker.ietf.org/doc/draft-kuhn-quic-bdpframe-extension/) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf119/bdp-frame.pdf)
+* 10 min - QUIC Security Considerations (Marten Seemann) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf119/honeybadger-and-his-friend-the-mongoose.pdf)
+* 5 min - QUIC on Streams (Kazuho Oku) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf119/quic-on-streams.pdf)
+* 10 min - [QUIC BDP frame](https://datatracker.ietf.org/doc/draft-kuhn-quic-bdpframe-extension/) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf119/bdf-frame.pdf)
 * 5 min - FEC results (François Michel) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf119/michel-fec.pdf)
-* 5 min - Accurate ECN
-* 5 min - QUIC tokens
+* 5 min - Accurate ECN [slides](https://github.com/quicwg/wg-materials/blob/main/ietf119/accurate-ecn-acknowledgments.pdf)
+* 5 min - QUIC tokens (Mike Bishop) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf119/quic_token_confusion.pdf)
