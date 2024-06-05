@@ -14,13 +14,13 @@ Lucas (as chair) presented the Note Well.
 
 Mirja: _Note that the easiest solution would be to basically do nothing now because we can probably specify anything needed including the split with a new extension using a new transport parameter._
 
-Mirja: We need to deconflict path ID allocation if we allow servers to open paths.  Lots of discussion, continued from last time.
+Mirja: We need to deconflict path ID allocation if we allow servers to open paths.  Lots of discussion in the github issue, continued from last time.
 
-Mirja: My view is that there is no reason not to allow servers to initiate paths.  Even if we don't, we could reserve half of the path IDs.  There might be other ways to deconflict.
-... If both open with the same ID at the same time, there is a problem.  Maybe ok because a server can't migrate.
-... If both allocate different path IDs for the same path, maybe that is OK.
+Mirja: My view is that there is no reason not to allow servers to initiate paths.  Even if we do, we don't nessearily need to reserve half of the path IDs.  There might be other ways to deconflict.
+... If both open different paths with the same path ID at the same time, there is a conflict.  Maybe ok because a server can't migrate, so client should ignore it and server threats that as migration.
+... If both allocate different path IDs for the same path, maybe that is OK and we just have two paths.
 ... So maybe we don't need to deconflict.
-... We could wait until later and use a new transport parameter to enable server-initiated path creation and do the reservation.
+... We could always wait until later and use a new transport parameter to enable server-initiated path creation and do the reservation.
 
 Christian: I agree with Mirja.  The motivation was not to foreclose on symmetric setups, but when I started doing a PR to allow that and it becomes long and intricate to do it correctly. It affects lots of details.  This is not something we should do as part of closing out the last issues.
 ... I suggested an alternative with odd/even splits.  Uses 31 bits instead of 32.  But not allow servers to use their half of the space.
@@ -43,7 +43,7 @@ Christian: What I believe is that it is not a good idea to have asymmetry betwee
 
 Magnus: I wonder about what this has to do with MAX_PATHS and the potential for attack surface.  If either can increase it, then one could force the other to raise their value.  Does that open an attack surface.
 
-Christian: The reason we had complexity was for exactly that reason.  WIth two MAX_PATHS, you still need to control resource allocation.  You need an agreement.  Otherwise you have an overflow of resources.  It's complicated.
+Christian: The reason we had complexity was for exactly that reason.  With two MAX_PATHS, you still need to control resource allocation.  You need an agreement.  Otherwise you have an overflow of resources.  It's complicated.
 
 Mirja: Path IDs are bidirectional, so you need both peers to open the limit.
 
@@ -120,7 +120,7 @@ Resolution: Yes, we should recommend continous path numbers.
 
 [#338 Clarify how new CIDs are allocated](https://github.com/quicwg/multipath/issues/338)
 
-Mirja: _We now specify that the same path ID is used in both directions which could lead to a situation where each ends issues different path IDs and then no new oath can be opened. #318 is also related here because requiring the next in order path ID would avoid a mismatch but we still need to provide more recommendation about how many path IDs should be issued when._
+Mirja: _We now specify that the same path ID is used in both directions which could lead to a situation where each ends issues different path IDs and then no new path can be opened. #318 is also related here because requiring the next in order path ID would avoid a mismatch but we still need to provide more recommendation about how many path IDs should be issued when._
 
 Mirja: Stupid strategies can always shoot themselves in the foot. However, we want to recommend strategies that avoid some stupid misstakes. There are more aspects discussed in the issue.
 
