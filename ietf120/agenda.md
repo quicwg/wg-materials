@@ -1,4 +1,4 @@
-# IETF-119 QUIC WG Agenda
+# IETF-120 QUIC WG Agenda
 
 * [Meetecho](https://meetings.conf.meetecho.com/ietf120/?group=quic) remote participation
 * [Minutes](https://codimd.ietf.org/notes-ietf-120-quic)
