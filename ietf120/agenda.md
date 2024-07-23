@@ -19,10 +19,12 @@
 * Agenda bashing
 
 ### WG Items
-* 60 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf119/multipath.pdf)
-* 20 min - Open issues, updates to [qlog](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf119/qlog.pdf)
+* 60 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides](tbd)
+* 20 min - Open issues, updates to [qlog](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema). [slides](tbd)
 
 
 ### Other (aka "As Time Permits")
-* 10 min - Accurate ECN [slides](tbd)
+* 10 min - Accurate ECN (Marten Seemann) [slides](tbd)
+* 5 min - HTTP/3 Prioritization in the wild (Joris Herbots) [slides](tbd)
+* 5 min - QUIC tokens (Mike Bishop) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf120/quic_token_confusion.pdf)
 
