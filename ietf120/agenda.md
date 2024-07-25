@@ -20,7 +20,7 @@
 
 ### WG Items
 * 60 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf120/multipath.pdf)
-* 20 min - Open issues, updates to [qlog](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema).
+* 20 min - Open issues, updates to [qlog](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf120/qlog.pdf)
 
 
 ### Other (aka "As Time Permits")
