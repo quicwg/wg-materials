@@ -19,11 +19,11 @@
 * [Slides] (To come)
 
 ### WG Items
-* 30 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides] (to come)
+* 40 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides] (to come)
 * 20 min - Open issues, updates to [qlog](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema). [slides] (to come)
 
 
 ### Other (aka "As Time Permits")
 * 15 min - Address Discovery (Marten Seemann) - [draft](https://datatracker.ietf.org/doc/draft-seemann-quic-address-discovery/). [slides] (to come)
-* 10 min - Flexicast QUIC (Louis Navarre) - [draft](https://datatracker.ietf.org/doc/draft-navarre-quic-flexicast/). [slides] (to come)
+* 10 min - Flexicast QUIC (Louis Navarre) - [draft](https://datatracker.ietf.org/doc/draft-navarre-quic-flexicast/). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf121/flexicast.pdf)
 
