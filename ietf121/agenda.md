@@ -19,7 +19,7 @@
 * [Slides](https://github.com/quicwg/wg-materials/blob/main/ietf121/chairs.pdf)
 
 ### WG Items
-* 40 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf121/multicast.pdf)
+* 40 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf121/multipath.pdf)
 * 20 min - Open issues, updates to [qlog](https://datatracker.ietf.org/doc/html/draft-ietf-quic-qlog-main-schema). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf121/qlog.pdf)
 
 
