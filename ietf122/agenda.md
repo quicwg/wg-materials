@@ -26,3 +26,4 @@
 * 20 min - QUIC Ack Receive Timestamps / Extended ACKs [draft-smith-quic-receive-ts]() [slides] (https://datatracker.ietf.org/doc/draft-smith-quic-receive-ts/) 
 * 20 min - Extended Key Update [draft-rosomakho-quic-extended-key-update](https://datatracker.ietf.org/doc/draft-rosomakho-quic-extended-key-update/) [slides] ()
 * 10 min - Source Buffer Management [draft-cheshire-sbm](https://datatracker.ietf.org/doc/draft-cheshire-sbm/) [slides] ()
+* 15 min - Stream multiplexing [draft-kazuho-quic-quic-on-streams](https://datatracker.ietf.org/doc/draft-kazuho-quic-quic-on-streams/)
