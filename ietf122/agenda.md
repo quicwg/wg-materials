@@ -19,11 +19,11 @@
 * [Slides](https://github.com/quicwg/wg-materials/blob/main/ietf122/chairs.pdf)
 
 ### WG Items
-* 40 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides] ()
+* 15 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf122/multipath.pdf)
 * 10 min - Open issues, updates to [address discovery](https://datatracker.ietf.org/doc/draft-ietf-quic-address-discovery/). [slides] ()
 
 ### Other (aka "As Time Permits")
-* 20 min - QUIC Ack Receive Timestamps / Extended ACKs [draft-smith-quic-receive-ts]() [slides] (https://datatracker.ietf.org/doc/draft-smith-quic-receive-ts/) 
-* 20 min - Extended Key Update [draft-rosomakho-quic-extended-key-update](https://datatracker.ietf.org/doc/draft-rosomakho-quic-extended-key-update/) [slides] ()
-* 10 min - Source Buffer Management [draft-cheshire-sbm](https://datatracker.ietf.org/doc/draft-cheshire-sbm/) [slides] ()
+* 20 min - QUIC Ack Receive Timestamps / Extended ACKs [draft-smith-quic-receive-ts](https://datatracker.ietf.org/doc/draft-smith-quic-receive-ts/) [slides] () 
+* 20 min - Extended Key Update [draft-rosomakho-quic-extended-key-update](https://datatracker.ietf.org/doc/draft-rosomakho-quic-extended-key-update/) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf122/extended-key-update.pdf)
+* 10 min - Source Buffer Management [draft-cheshire-sbm](https://datatracker.ietf.org/doc/draft-cheshire-sbm/) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf122/source-buffer-management.pdf)
 * 15 min - Stream multiplexing [draft-kazuho-quic-quic-on-streams](https://datatracker.ietf.org/doc/draft-kazuho-quic-quic-on-streams/)
