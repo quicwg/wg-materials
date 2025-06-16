@@ -57,5 +57,7 @@ third work area.
 
 The working group will specify how QUIC stream multiplexing and other
 application-oriented extensions (e.g. Datagram) can be adapted to work
-over a secure, reliable, and bidirectional byte stream substrate. No
-effort will be made to enable insecure substrates.
+over a reliable and bidirectional byte stream substrate. When the
+substrate is insecure, TLS will be the default security provider; no
+effort will be made to enable unprotected communication without a
+security provider.
