@@ -38,7 +38,8 @@ It is chartered to pursue work in the areas detailed below:
    can be adapted to work over a reliable and bidirectional byte stream
    substrate. When the substrate is insecure, TLS will be the default
    security provider; no effort will be made to enable unprotected
-   communication without a security provider. Substrates must provide congestion-management capabilities applicable to their deployment
+   communication without a security provider. Substrates must provide
+   congestion-management capabilities applicable to their deployment
    environments.
 
 Specifications describing how new or existing application protocols
