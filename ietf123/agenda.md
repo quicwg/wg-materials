@@ -19,9 +19,10 @@
 * [Slides] (TBD)
 
 ### WG Items
-* 10 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides] (TBD)
+* 15 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides] (TBD)
 * 10 min - Open issues, updates to [extended key update](https://datatracker.ietf.org/doc/draft-ietf-quic-extended-key-update/) [slides] (TBD)
 * 5 min - Open issues, updates to [address discovery](https://datatracker.ietf.org/doc/draft-ietf-quic-address-discovery/). No slides.
+* 15 min - Open issues, updates to [ACK frequency](https://datatracker.ietf.org/doc/draft-ietf-quic-ack-frequency/)
 * 15 min - Open issues, updates to QUIC Ack Receive Timestamps / Extended ACKs/ [slides] (TBD)
 
 
@@ -32,3 +33,4 @@
 * 15 min - Deadline-Aware Streams for QUIC/QUIC-Multipath - Tony John. [slides] (TBD)
 * 10 min - QUIC optimistic ACK - Louis Navarre. [slides] (TBD)
 * 5 min - preview of Instant Acknowledgments in QUIC Handshakes - Jonas Muecke. [slides] (TBD)
+* 10 min - QUIC + MLS. [slides] (TBD)
