@@ -27,7 +27,7 @@
 
 
 ### QUIC stream multiplexing
-* 30 min - Discussion of potential protocol encoding formats. [slides] (TBD)
+* 30 min - Discussion of potential protocol encoding formats. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf123/qmux-comparing-wire-protocols.pdf)
 
 ### Other (aka "As Time Permits")
 * 15 min - Deadline-Aware Streams for QUIC/QUIC-Multipath - Tony John. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf123/deadline-aware-streams.pdf)
