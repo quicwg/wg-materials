@@ -19,11 +19,11 @@
 * [Slides] (TBD)
 
 ### WG Items
-* 15 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides] (TBD)
+* 15 min - Open issues, updates to [multipath QUIC](https://datatracker.ietf.org/doc/html/draft-ietf-quic-multipath). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf123/multipath.pdf)
 * 10 min - Open issues, updates to [extended key update](https://datatracker.ietf.org/doc/draft-ietf-quic-extended-key-update/) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf123/extended-key-update.pdf)
 * 5 min - Open issues, updates to [address discovery](https://datatracker.ietf.org/doc/draft-ietf-quic-address-discovery/). No slides.
-* 15 min - Open issues, updates to [ACK frequency](https://datatracker.ietf.org/doc/draft-ietf-quic-ack-frequency/)
-* 15 min - Open issues, updates to QUIC Ack Receive Timestamps / Extended ACKs/ [slides] (TBD)
+* 15 min - Open issues, updates to [ACK frequency](https://datatracker.ietf.org/doc/draft-ietf-quic-ack-frequency/). [slides](https://github.com/quicwg/wg-materials/blob/main/ietf123/ack-frequency.pdf)
+* 15 min - Open issues, updates to QUIC Ack Receive Timestamps / Extended ACKs/ [slides](https://github.com/quicwg/wg-materials/blob/main/ietf123/timestamps.pdf)
 
 
 ### QUIC stream multiplexing
