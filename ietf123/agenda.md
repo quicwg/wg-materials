@@ -33,4 +33,3 @@
 * 15 min - Deadline-Aware Streams for QUIC/QUIC-Multipath - Tony John. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf123/deadline-aware-streams.pdf)
 * 10 min - QUIC optimistic ACK - Louis Navarre. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf123/opportunistic-ack.pdf)
 * 5 min - preview of Instant Acknowledgments in QUIC Handshakes - Jonas Muecke. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf123/instant-ack.pdf)
-* 10 min - QUIC + MLS. [slides] (TBD)
