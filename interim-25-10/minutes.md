@@ -19,16 +19,16 @@ Robin updates group on updating qvis, ETA end of year for support for up-to-date
 
 Should we include the capsule protocol in HTTP/3 schema?
 
-decision made early on it wasn't useful, but maybe time to reconsider to put it into HTTP/3 spec
+The decision made early on it wasn't useful, but maybe time to reconsider to put it into HTTP/3 spec.
 
 Marten: we can log datagrams now, but can't log anything about capsules atm
     need a framework of how we log the capsule (parsed/created)
     still before WGLC
 
 Robin: no doubt it's useful, but do we want to include it here?
-    will likely delay, because will open flood gates for other thigns to include as well
+    will likely delay, because will open flood gates for other things to include as well
 
-Kazuho: capsules are built on semantics, so would be weird to define it in H3 document
+Kazuho: capsules are built on semantics, so it would be weird to define it in H3 document
     would prefer other document to capture capsuels (and other HTTP/3 semantics)
     We don't have HTTP semantics support
 
@@ -39,7 +39,7 @@ Lucas: would be ok to revisit past decision, work isn't that hard
 Mirja (chat): I think having a separate extension document for capsules would be fine. It's a quite specific thing.
     But I agree that having qlog for capsules would be really useful to debug masque stuff in future.
 
-    It might be worth thinking briefly how qlog for capsules would look like to ensure we didn't miss any basics needed in the base qlog doc
+    It might be worth thinking briefly how qlog for capsules would look like to ensure we didn't miss any basics needed in the base qlog doc.
 
 Marten: if there would be an HTTP semantics document, what else would that contain?
     Lucas: would be years worth of efforts again... HTTP is so huge. Would just do specific capsule draft.
@@ -48,7 +48,7 @@ Marten: if there would be an HTTP semantics document, what else would that conta
 Marten: willing to propose new text inside current qlog by Montreal to discuss further then
     will then discuss with WG and capsule users. TODO Lucas: post this to WG ahead of time
 
-Outcome: Marten to prepare a candidate proposal for how this could look and take it to montreal to engage folks (including in HTTP too) to help us make a decision
+Outcome: Marten to prepare a candidate proposal for how this could look and take it to montreal to engage folks (including in HTTP too) to help us make a decision.
 
 ### HTTP/3 frame RawInfo is confusing - https://github.com/quicwg/qlog/issues/484
 
@@ -71,13 +71,13 @@ Outcome: make a PR to remove the field from HTTP3FrameParsed and HTTP3FrameCreat
 
 ### Why does HTTP3FrameCreated and HTTP3FrameParsed have a length field? - https://github.com/quicwg/qlog/issues/483
 
-Support for not duplicating information across the logging structures. See also discussion above
+Support for not duplicating information across the logging structures. See also discussion above.
 
 Outcome: make a PR to remove the field from HTTP3FrameParsed and HTTP3FrameCreated
 
 ### PacketHeader.flags should be replaced with individual values - https://github.com/quicwg/qlog/issues/471
 
-Support for this PR
+Support for this PR.
 
 Outcome: update PR to address some feedback and plan to merge
 
@@ -102,28 +102,28 @@ Outcome: close with no action. Open new ticket to track track changing the name 
 
 ### JSON-SEQ is painful - https://github.com/quicwg/qlog/issues/434
 
-Lucas: afraid this will be a blocking issue for the draft unfortunately
+Lucas: I'm afraid this will be a blocking issue for the draft unfortunately
         Benefits and real pains
 
         personal opinion: just define newline-delimited as new format inside qlog to get around "non official format" issue
             (similar for new media types)
 
-Robin: how difficult will people be if we dont' use JSON-SEQ
+Robin: how difficult will people be if we don't use JSON-SEQ?
     Mirja: will definitely be questions; need a good reason on this. Difficult but not impossible
-    Lucas: might have some JSON parsing experts that will give issues because we have to fully/formally define the new format and will get edge cases wrong; might get stuck in IETF last call
+    Lucas: might have some JSON parsing experts that will give issues because we have to fully/formally define the new format and will get edge cases wrong; might get stuck in IETF Last Call
 
-Robin: how about we jsut remove the steraming option from the main docs and keep it as extension?
+Robin: how about we just remove the steraming option from the main docs and keep it as extension?
     Lucas: hate that... really need a streaming solution and needs to be clear for interop
-    Marten: also dont' like the option to have both... need to just pick one format
+    Marten: also don't like the option to have both... need to just pick one format
 
-Kazuho: I agree with Lucas' problem but I think we will have that pain with JSON-SEQ too (so I do not mind dropping the streaming option entirely, as Robin suggested)
+Kazuho: I agree with Lucas's problem, but I think we will have that pain with JSON-SEQ too (so I do not mind dropping the streaming option entirely, as Robin suggested)
     Not sure if we would succeed in defining our own thing... would prohibit something explicitly defined in the JSON RFC. Don't have high hopes in getting non-JSON-SEQ through
 
 Lucas: think we still need more thinking/input
-    Robin: so in Montreal, we'll find out if people would object to us defining our own straeming JSON format in qlog?
+    Robin: so in Montreal, we'll find out if people would object to us defining our own streaming JSON format in qlog?
         Lucas: correct
 
-not much has changed since last discussed. Another approach could be remove streaming format altogether. Proposal to present idea of defining our own newline streaming JSON in qlog itself at the next IETF meeting and gather more feedback.
+Not much has changed since last discussed. Another approach could be remove streaming format altogether. Proposal to present idea of defining our own newline streaming JSON in qlog itself at the next IETF meeting and gather more feedback.
 
 Outcome: make a strawperson proposal for a qlog-specific newline json in qlog docs themselves to see how others in the IETF might feel
 
@@ -138,19 +138,19 @@ Robin: agreed, but add 1 sentence of prose explaining we've left them out for th
 
 ### Discuss extensibility of extension points through type or group sockets - https://github.com/quicwg/qlog/issues/416
 
-Outcome: Robin to prepare some text before montreal
+Outcome: Robin to prepare some text before Montreal
 
 ### Give concrete guidance on how to extend qlog - https://github.com/quicwg/qlog/issues/405
 
-Outcome: Robin to prepare some text before montreal
+Outcome: Robin to prepare some text before Montreal
 
 ### Difference between negotiated vs actually accepted/enabled TPs - https://github.com/quicwg/qlog/issues/398
 
-Kazuho: problem with this approach: assumes endpoint decides when to use something at the handshake
+Kazuho: problem with this approach: assumes endpoint decides when to use something at the handshake,
         not always true
         Don't think we should be generalizing this as a concept
 
-Mirja: point of time you receive the parameter you make a decision, which could be logged as an event
+Mirja: At the point of time you receive the parameter you make a decision, which could be logged as an event
     Maybe just add some discusion that all this can happen, just not how to resolve it concretely
 
 Kazuho: We just record TPs received, then when something happens at a later moment of the connection, lookup TPs and decide what to do
@@ -158,7 +158,7 @@ Kazuho: We just record TPs received, then when something happens at a later mome
 
 Robin: propose to close with no changes, but add some prose that indicates that this might happen and that people should define their own events to disambiguate if needed
 
-Kazuho: +1 to no change but point out that others can add events
+Kazuho: +1 to no change, but point out that others can add events
 
 Outcome: no design changes needed. An editorial PR may follow up to better describe some of the considerations
 
@@ -196,7 +196,7 @@ Marten: can argue there are not multiple timers. There's only the timer that fir
         Mirja: agreed, as long as we can log
 
 Robin: maybe make timer_type extensible though, for other CCs
-    bit of discussion of whether we need an idle timer etc. here as well
+   ... bit of discussion of whether we need an idle timer etc. here as well
     Lucas: idle timer would change with every packet, so would be very chatty
         though maybe if we just make this a generic "timer_updated" and just make timer_type
 
@@ -225,7 +225,7 @@ Outcome: make the timer more generic, PR to come
 
 ### Allow the logging of Session Ticket contents and stored transport params/SETTINGS - https://github.com/quicwg/qlog/issues/121
 
-Marten: have ways to log Token and StatelessResetToken. We could replicate that for the SessionTicket.
+Marten: We have ways to log Token and StatelessResetToken. We could replicate that for the SessionTicket.
 
 Mirja: logging session ticket is useful, not sure where to put it
 
@@ -247,7 +247,7 @@ Outcome: Marten to propose a PR
 Lucas: implementation experience: haven't found much lacking in qlog here
         if we have bugs, it's deep inside TLS anyway, and we need TLS tooling for that anyway
 
-Kazuho: really only from the client viewpoint. For Server, you either just accept 0-RTT or not
+Kazuho: really only from the client viewpoint. For a Server, you either just accept 0-RTT or not
     from client side, could make many more decisions
     might be a good idea to ask client-side developers if they have an opinion
 
@@ -255,7 +255,7 @@ Marten: we might not be able to log if server rejects 0-RTT in TLS handshake at 
     at server-side it's easy: just drop packet
     at client-side we do want to be able to log that, since that influences how we re-use the stream etc.
 
-Mirja: new issue: might want to log packet number space for more than just acks
+Mirja: new issue: might want to log packet number space for more than just ACKs
 
 Outcome 1: logging 0-rtt accepting / rejection seems useful; @marten-seemann will prepare a PR for that. In addition, ask client implementers if there are any other gaps.
 
@@ -264,7 +264,7 @@ Outcome 2: Mirja will review with the context of multipath and packet spaces and
 
 ### PR: remove PacketHeader.length - https://github.com/quicwg/qlog/pull/477
 
-Mirja: bit on the fence. Seems like rawinfo is more like debugging/helper, not for general use
+Mirja: I'm a bit on the fence. Seems like rawinfo is more like debugging/helper, not for general use
         in that sense, having length right there makes sense
         However: having multiple ways for the same thing isn't good
 
