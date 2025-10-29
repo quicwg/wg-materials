@@ -24,6 +24,9 @@
 
 
 ### QUIC stream multiplexing
-* 45 min - Discussion of potential protocol encoding formats and adopting a starter design. [slides] ()
+* 45 min - Discussion of potential protocol encoding formats and adopting a starter design. [slides] (TBD)
 
 ### Other (aka "As Time Permits")
+
+* 10 min - New Server Preferred Address. [slides] (TBD)
+
