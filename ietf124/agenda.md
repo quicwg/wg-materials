@@ -16,7 +16,7 @@
 * [NOTE WELL](https://www.ietf.org/about/note-well.html)
 * [Code of Conduct](https://www.rfc-editor.org/rfc/rfc7154.html)
 * Agenda bashing
-* [Slides] (TBD)
+* [Slides](https://github.com/quicwg/wg-materials/blob/main/ietf124/chairs.pdf)
 
 ### WG Items
 * 20 min - Open issues, updates to qlog. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf124/qlog.pdf)
