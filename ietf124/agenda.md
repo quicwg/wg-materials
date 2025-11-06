@@ -19,14 +19,14 @@
 * [Slides] (TBD)
 
 ### WG Items
-* 20 min - Open issues, updates to qlog. [slides] (TBD)
-* 20 min - Open issues, updates to QUIC Ack Receive Timestamps. [slides] (TBD)
+* 20 min - Open issues, updates to qlog. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf124/qlog.pdf)
+* 20 min - Open issues, updates to QUIC Ack Receive Timestamps. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf124/receive-ts.pdf)
 
 
 ### QUIC stream multiplexing
-* 45 min - Discussion of potential protocol encoding formats and adopting a starter design. [slides] (TBD)
+* 45 min - Discussion of potential protocol encoding formats and adopting a starter design. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf124/qmux.pdf)
 
 ### Other (aka "As Time Permits")
 
-* 10 min - New Server Preferred Address. [slides] (TBD)
-* 10 min - Exchanging Congestion Control data. [slides] (TBD)
+* 10 min - New Server Preferred Address. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf124/new-preferred-address.pdf)
+* 10 min - Exchanging Congestion Control data. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf124/exchanging-cc-data.pdf)
