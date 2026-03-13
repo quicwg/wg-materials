@@ -24,4 +24,5 @@
 ### Other (aka "As Time Permits")
 
 * 5 min - Media over QUIC Transport over QMux https://datatracker.ietf.org/doc/draft-nandakumar-moq-qmux-moqt/ [slides] (TBD)
-* 10 min - Exchanging Congestion Control data. draft-li-quic-minimum-rtt-estimation [slides] (TBD)
+* 10 min - Minimum RTT estimation draft-li-quic-minimum-rtt-estimation [slides] (TBD)
+* 10 min - SCONE-inspired measurement bits draft-mdt-quic-explicit-measurements [slides] (TBD)
