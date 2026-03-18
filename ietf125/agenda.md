@@ -1,7 +1,7 @@
 # IETF-125 QUIC WG Agenda
 
-* [Meetecho](https://meetings.conf.meetecho.com/ietf124/?group=quic) remote participation
-* [Minutes](https://notes.ietf.org/notes-ietf-124-quic  )
+* [Meetecho](https://meetings.conf.meetecho.com/ietf125/?group=quic) remote participation
+* [Minutes](https://notes.ietf.org/notes-ietf-125-quic  )
 * [Slack](https://quicdev.slack.com/)
 
 ## Thursday, March 19 2026
@@ -19,7 +19,7 @@
 * [Slides] (TBD)
 
 ### WG Items
-* 20 min - Open issues, updates to qmux. [slides] (TBD)
+* 20 min - Open issues, updates to qmux. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf125/qmux.pdf)
 
 ### Other (aka "As Time Permits")
 
