@@ -23,6 +23,6 @@
 
 ### Other (aka "As Time Permits")
 
-* 5 min - Media over QUIC Transport over QMux https://datatracker.ietf.org/doc/draft-nandakumar-moq-qmux-moqt/ [slides] (TBD)
-* 10 min - Minimum RTT estimation draft-li-quic-minimum-rtt-estimation [slides] (TBD)
-* 10 min - SCONE-inspired measurement bits draft-mdt-quic-explicit-measurements [slides] (TBD)
+* 5 min - Media over QUIC Transport over QMux https://datatracker.ietf.org/doc/draft-nandakumar-moq-qmux-moqt/ [slides](https://github.com/quicwg/wg-materials/blob/main/ietf125/moqt-qmux.pdf)
+* 10 min - Minimum RTT estimation draft-li-quic-minimum-rtt-estimation [slides](https://github.com/quicwg/wg-materials/blob/main/ietf125/minrtt.pdf)
+* 10 min - SCONE-inspired measurement bits draft-mdt-quic-explicit-measurements [slides](https://github.com/quicwg/wg-materials/blob/main/ietf125/measurement.pdf)
