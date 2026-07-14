@@ -1,5 +1,5 @@
 # IETF 124: QUIC Working Group Session Minutes
-**Date:** November 6, 2025
+**Date:** March 19, 2025
 **Chairs:** Lucas Pardue, Matt Joras
 **Note takers:** https://ietfminutes.org (AI generated and may contain mistakes)
 
