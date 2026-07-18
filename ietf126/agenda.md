@@ -4,7 +4,7 @@
 * [Minutes](https://notes.ietf.org/notes-ietf-126-quic  )
 * [Slack](https://quicdev.slack.com/)
 
-## Thursday, March 19 2026
+## Wednesday, July 22 2026
 
 16:00-18:00 Wednesday, Session IV
 
@@ -21,12 +21,15 @@
 ### WG Items
 * 15 min - Open issues, updates to qmux. [slides] (TODO)
 * 10 min - Open issues, updates to extended key update. [slides] (TODO)
+* 10 min - Open issues, updates to receive timestamps. [slides] (TODO)
 * 5 min - Open issues, updates to qlog. [slides] (TODO)
 
 ### Other (aka "As Time Permits")
 
-* 10 min - Reverso for QUIUC
+* 10 min - Reverso for QUIC
   https://datatracker.ietf.org/doc/draft-frochet-quicwg-reverso-for-quic/
-  [slides]
-  (TODO) - Florentin Rochet
+  [slides] (TODO) - Florentin Rochet
 * 10 min - TAPS over QUIC [slides] (TODO) - Ingebrigt Hovind
+* 15 min - Authentication Tag lengths [slides] (TODO) - Magnus Westerlund
+* 5 min - HTTPS RR and QUIC v2 measurements [slides] (TODO) - Max Inden
+* 10 min - Mutable Idle Time out? [slides] (TODO) - Lucas Pardue
