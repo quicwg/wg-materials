@@ -29,7 +29,7 @@
 * 10 min - Reverso for QUIC
   https://datatracker.ietf.org/doc/draft-frochet-quicwg-reverso-for-quic/
   [slides] (TODO) - Florentin Rochet
-* 10 min - TAPS over QUIC [slides] (TODO) - Ingebrigt Hovind
+* 10 min - TAPS over QUIC [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/taps.pdf) - Ingebrigt Hovind
 * 15 min - Authentication Tag lengths [slides] (TODO) - Magnus Westerlund
 * 5 min - HTTPS RR and QUIC v2 measurements [slides] (TODO) - Max Inden
 * 10 min - Mutable Idle Time out? [slides] (TODO) - Lucas Pardue
