@@ -33,3 +33,4 @@
 * 15 min - Authentication Tag lengths [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/GCM-SST.pdf) - Magnus Westerlund
 * 5 min - HTTPS RR and QUIC v2 measurements [slides] (TODO) - Max Inden
 * 10 min - Mutable Idle Time out? [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/idle-timeout.pdf) - Lucas Pardue
+* 15 min - QUIC and multicast IP [slides] (TODO) - Multiple presenters
