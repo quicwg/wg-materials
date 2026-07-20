@@ -21,14 +21,14 @@
 ### WG Items
 * 15 min - Open issues, updates to qmux. [slides] (TODO)
 * 10 min - Open issues, updates to extended key update. [slides] (TODO)
-* 10 min - Open issues, updates to receive timestamps. [slides] (TODO)
+* 10 min - Open issues, updates to receive timestamps. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/receive-ts.pdf)
 * 5 min - Open issues, updates to qlog. [slides] (TODO)
 
 ### Other (aka "As Time Permits")
 
 * 10 min - Reverso for QUIC
   https://datatracker.ietf.org/doc/draft-frochet-quicwg-reverso-for-quic/
-  [slides] (TODO) - Florentin Rochet
+  [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/reverso.pdf) - Florentin Rochet
 * 10 min - TAPS over QUIC [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/taps.pdf) - Ingebrigt Hovind
 * 15 min - Authentication Tag lengths [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/GCM-SST.pdf) - Magnus Westerlund
 * 5 min - HTTPS RR and QUIC v2 measurements [slides] (TODO) - Max Inden
