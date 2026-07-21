@@ -33,6 +33,15 @@ It is chartered to pursue work in the areas detailed below:
    to publicly document deployed proprietary extensions or to enable
    wider experimentation with proposed new protocol features.
 
+4. The fourth area of work is the specification of how QUIC stream
+   multiplexing and other application-oriented extensions (e.g. Datagram)
+   can be adapted to work over a reliable and bidirectional byte stream
+   substrate. When the substrate is insecure, TLS will be the default
+   security provider; no effort will be made to enable unprotected
+   communication without a security provider. Substrates must provide
+   congestion-management capabilities applicable to their deployment
+   environments.
+
 Specifications describing how new or existing application protocols
 use the QUIC transport layer, called application protocol mappings
 below, need not be specified in the QUIC WG, although they can. The
