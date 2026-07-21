@@ -31,6 +31,6 @@
   [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/reverso.pdf) - Florentin Rochet
 * 10 min - TAPS over QUIC [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/taps.pdf) - Ingebrigt Hovind
 * 15 min - Authentication Tag lengths [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/GCM-SST.pdf) - Magnus Westerlund
-* 5 min - HTTPS RR and QUIC v2 measurements [slides] (TODO) - Max Inden
+* 5 min - HTTPS RR and QUIC v2 measurements [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/https-rr-quic-v2.pdf) - Max Inden
 * 10 min - Mutable Idle Time out? [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/idle-timeout.pdf) - Lucas Pardue
 * 15 min - QUIC and multicast IP [slides] (TODO) - Multiple presenters
