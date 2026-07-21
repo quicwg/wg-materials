@@ -20,7 +20,7 @@
 
 ### WG Items
 * 15 min - Open issues, updates to qmux. [slides] (TODO)
-* 10 min - Open issues, updates to extended key update. [slides] (TODO)
+* 10 min - Open issues, updates to extended key update. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/extended-key-update.pdf)
 * 10 min - Open issues, updates to receive timestamps. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/receive-ts.pdf)
 * 5 min - Open issues, updates to qlog. [slides] (TODO)
 
