@@ -19,7 +19,7 @@
 * [Slides] (TBD)
 
 ### WG Items
-* 15 min - Open issues, updates to qmux. [slides] (TODO)
+* 15 min - Open issues, updates to qmux. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/qmux.pdf)
 * 10 min - Open issues, updates to extended key update. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/extended-key-update.pdf)
 * 10 min - Open issues, updates to receive timestamps. [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/receive-ts.pdf)
 * 5 min - Open issues, updates to qlog. [slides] (TODO)
@@ -34,4 +34,6 @@
 * 5 min - HTTPS RR and QUIC v2 measurements [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/https-rr-quic-v2.pdf) - Max Inden
 * 10 min - Mutable Idle Time out? [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/idle-timeout.pdf) - Lucas Pardue
 * 15 min - QUIC and multicast IP [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/multicast.pdf) - Multiple presenters
-* 5 min - n0 NAT [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/n0-nat.pdf)
+* 5 min - n0 NAT
+  [slides](https://github.com/quicwg/wg-materials/blob/main/ietf126/n0-nat.pdf)
+  - Floris Bruynooghe
