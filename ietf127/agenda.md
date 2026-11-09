@@ -19,24 +19,24 @@
 * [Slides] (TBD)
 
 ### WG Items
-* 30 min - Open issues, updates to QUIC-LB. [slides] (TODO)
-* 30 min - Open issues, updates to qlog. [slides] (TODO)
-* 5 min - Open issues, updates to receive timestamps. [slides] (TODO)
+* 30 min - Open issues, updates to QUIC-LB. [I-D](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers/) [slides] (TODO)
+* 30 min - Open issues, updates to qlog. [I-D main schema](https://datatracker.ietf.org/doc/draft-ietf-quic-qlog-main-schema/) [I-D QUIC events](https://datatracker.ietf.org/doc/draft-ietf-quic-qlog-quic-events/) [I-D HTTP/3 events](https://datatracker.ietf.org/doc/draft-ietf-quic-qlog-h3-events/) [slides] (TODO)
+* 5 min - Open issues, updates to receive timestamps. [I-D](https://datatracker.ietf.org/doc/draft-ietf-quic-receive-ts/) [slides] (TODO)
 
 
 ### Other (aka "As Time Permits")
 
 * 5 min - SQUAD BoF report - Max Franke
 * 15 min - Delegated Stateless Reset
-  https://datatracker.ietf.org/doc/draft-kazuho-quic-delegated-stateless-reset/
+  [draft-kazuho-quic-delegated-stateless-reset](https://datatracker.ietf.org/doc/draft-kazuho-quic-delegated-stateless-reset/)
   [slides] (TODO) - Stefano Duo
 * 15 min - Exchanging Congestion Control Data in QUIC
-  https://datatracker.ietf.org/doc/draft-yuan-quic-congestion-data/
+  [draft-yuan-quic-congestion-data](https://datatracker.ietf.org/doc/draft-yuan-quic-congestion-data/)
   [slides] (TODO) - Jinghao Yuan
 * 10 min - Alternative addresses and NAT traversal
-  https://datatracker.ietf.org/doc/draft-munizaga-quic-alternative-server-address/
-  https://datatracker.ietf.org/doc/draft-seemann-quic-nat-traversal/
+  [draft-munizaga-quic-alternative-server-address](https://datatracker.ietf.org/doc/draft-munizaga-quic-alternative-server-address/)
+  [draft-seemann-quic-nat-traversal](https://datatracker.ietf.org/doc/draft-seemann-quic-nat-traversal/)
   [slides] (TODO) - Marten Seemann
 * 5 min - Cuback
-  https://datatracker.ietf.org/doc/draft-kazuho-ccwg-cuback/
+  [draft-kazuho-ccwg-cuback](https://datatracker.ietf.org/doc/draft-kazuho-ccwg-cuback/)
   [slides] (TODO) - Kazuho Oku
