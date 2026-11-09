@@ -27,7 +27,16 @@
 ### Other (aka "As Time Permits")
 
 * 5 min - SQUAD BoF report - Max Franke
-* 15 min - Delegated Stateless Reset - Stefano Duo
-* 15 min - Exchanging Congestion Control Data in QUIC - Jinghao Yuan
-* 10 min - Alternative addresses and NAT traversal - Marten Seemann
-* 5 min - Cuback - Kazuho Oku
+* 15 min - Delegated Stateless Reset
+  https://datatracker.ietf.org/doc/draft-kazuho-quic-delegated-stateless-reset/
+  [slides] (TODO) - Stefano Duo
+* 15 min - Exchanging Congestion Control Data in QUIC
+  https://datatracker.ietf.org/doc/draft-yuan-quic-congestion-data/
+  [slides] (TODO) - Jinghao Yuan
+* 10 min - Alternative addresses and NAT traversal
+  https://datatracker.ietf.org/doc/draft-munizaga-quic-alternative-server-address/
+  https://datatracker.ietf.org/doc/draft-seemann-quic-nat-traversal/
+  [slides] (TODO) - Marten Seemann
+* 5 min - Cuback
+  https://datatracker.ietf.org/doc/draft-kazuho-ccwg-cuback/
+  [slides] (TODO) - Kazuho Oku
