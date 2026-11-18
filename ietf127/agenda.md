@@ -20,7 +20,7 @@
 
 ### WG Items
 * 30 min - Open issues, updates to QUIC-LB. [I-D](https://datatracker.ietf.org/doc/draft-ietf-quic-load-balancers/) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf127/quic-lb.pdf)
-* 30 min - Open issues, updates to qlog. [I-D main schema](https://datatracker.ietf.org/doc/draft-ietf-quic-qlog-main-schema/) [I-D QUIC events](https://datatracker.ietf.org/doc/draft-ietf-quic-qlog-quic-events/) [I-D HTTP/3 events](https://datatracker.ietf.org/doc/draft-ietf-quic-qlog-h3-events/) [slides] (TODO)
+* 30 min - Open issues, updates to qlog. [I-D main schema](https://datatracker.ietf.org/doc/draft-ietf-quic-qlog-main-schema/) [I-D QUIC events](https://datatracker.ietf.org/doc/draft-ietf-quic-qlog-quic-events/) [I-D HTTP/3 events](https://datatracker.ietf.org/doc/draft-ietf-quic-qlog-h3-events/) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf127/qlog.pdf)
 * 5 min - Open issues, updates to receive timestamps. [I-D](https://datatracker.ietf.org/doc/draft-ietf-quic-receive-ts/) [slides](https://github.com/quicwg/wg-materials/blob/main/ietf127/receive-ts.pdf)
 
 
@@ -36,7 +36,7 @@
 * 10 min - Alternative addresses and NAT traversal
   [draft-munizaga-quic-alternative-server-address](https://datatracker.ietf.org/doc/draft-munizaga-quic-alternative-server-address/)
   [draft-seemann-quic-nat-traversal](https://datatracker.ietf.org/doc/draft-seemann-quic-nat-traversal/)
-  [slides] (TODO) - Marten Seemann
+  [slides](https://github.com/quicwg/wg-materials/blob/main/ietf127/nat-traversal.pdf) - Marten Seemann
 * 5 min - Cuback
   [draft-kazuho-ccwg-cuback](https://datatracker.ietf.org/doc/draft-kazuho-ccwg-cuback/)
   [slides](https://github.com/quicwg/wg-materials/blob/main/ietf127/cuback.pdf) - Kazuho Oku
